@@ -467,10 +467,10 @@ get_header(); ?>
               <div class="col-md-6">
 				<div class="section-headline">
 					<h2>Vad skrivs om WordPress?</h2>
-					<span>Få koll på vad som skrivs på andra sidor om WordPress <a href="#">#wpse</a></span>
+					<span>Få koll på vad som skrivs på andra sidor om WordPress <a href="https://twitter.com/hashtag/wpse?src=hash">#wpse</a></span>
 				</div>
                 <div id="twitter-feed">
-                    	<a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="497073041344442368" data-chrome="noborders transparent">#wpse Tweets</a>
+                    	<a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="497073041344442368" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">#wpse Tweets</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </div>
               </div>
