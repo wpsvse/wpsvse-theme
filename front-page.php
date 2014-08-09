@@ -32,39 +32,33 @@ get_header(); ?>
         <!-- End welcome -->
         <!-- Start Slider -->
         <section id="header-slider" class="section carousel slide col-md-5 hidden-xs">
-        <!-- Start Slider Navigation -->
-        <ol class="carousel-indicators">
-            <li class="active" data-slide-to="0" data-target="#header-slider"></li>
-            <li data-slide-to="1" data-target="#header-slider"></li>
-        </ol>
-        <!-- End Slider Navigation -->
-        <div class="carousel-inner">
-          <!-- Start SLIDER -->
-		  <?php // WP_Query arguments
-          $slider_args = array (
-		  		'posts_per_page' 	=> '3',
-		  		'post_type' 		=> 'wpsvse_slider' 
-		  );
-          
-          // The Query
-          $slider_query = new WP_Query( $slider_args );
-          
-          // The Loop
-          if ( $slider_query->have_posts() ) {
-              while ( $slider_query->have_posts() ) {
-                  $slider_query->the_post(); ?>
-
-              <div class="item row">
-              	  <?php the_content(); ?>
-              </div>
-
-          <?php }
-          }
-          
-          // Restore original Post Data
-          wp_reset_postdata(); ?>
-          <!-- End SLIDER -->
-        </div>
+            <div class="slide-inner">
+              <!-- Start SLIDER LOOP -->
+              <?php // WP_Query arguments
+              $slider_args = array (
+                    'posts_per_page' 	=> '3',
+                    'post_type' 		=> 'wpsvse_slider' 
+              );
+              
+              // The Query
+              $slider_query = new WP_Query( $slider_args );
+              
+              // The Loop
+              if ( $slider_query->have_posts() ) {
+                  while ( $slider_query->have_posts() ) {
+                      $slider_query->the_post(); ?>
+    
+                  <div class="item row">
+                      <?php the_content(); ?>
+                  </div>
+    
+              <?php }
+              }
+              
+              // Restore original Post Data
+              wp_reset_postdata(); ?>
+              <!-- End SLIDER LOOP -->
+            </div>
         </section>
       </section>
     </div>
