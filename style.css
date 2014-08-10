@@ -151,6 +151,7 @@ input[type=text],
 	padding: 20px 0;
 }
 
+.navbar-inverse .navbar-nav > li > a,
 .navbar-nav > li > a {
     color: #FFF;
     font-weight: 400;
