@@ -16,13 +16,9 @@
 					<p>Copyright &copy; 2007-<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 				</div>
 				<div class="col-md-7">
-                  <!-- Start INSERT 2ND WP_NAV_MENU -->
-					<ul class="hidden-xs footer-links pull-right">
-						<li><a href="#">Cookies</a></li>
-						<li><a href="#">Användarvillkor/förhållningsregler</a></li>
-						<li><a href="#">Kontakt</a></li>
-					</ul>
-                  <!-- End INSERT 2ND WP_NAV_MENU -->
+                  <!-- Start FOOTER MENU -->
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer','container' => false,'items_wrap' => '<ul id="menu-footer" class="hidden-xs footer-links pull-right %2$s">%3$s</ul>' ) ); ?>
+                  <!-- End FOOTER MENU -->
 				</div>
 			</div>
 		</div>
