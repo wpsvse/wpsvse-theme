@@ -1068,8 +1068,13 @@ input[type=text],
 .nomargin-bottom {
 	margin-bottom: 0;
 }
-
-.form-container {
+.twitter-container .tab-content {
+	background: #fff;
+	border: solid 1px #ddd;
+	border-top: none;
+	padding-bottom: 10px;
+}
+.social-container {
 	padding:20px;
 	background: rgba(0,0,0,0.3);
 	border:1px solid rgba(0,0,0,0.5);
@@ -1078,51 +1083,31 @@ input[type=text],
 	min-width: 70%;
 }
 
-	.form-container p {
-		color: #FFF;
-	}
-
-.input-large {
-	width:70%;
-	border: 1px solid rgba(0,0,0,0.6);
-}
-
-.btn-submit {
-	background: #21759b;
-	border-radius: 0;
-	font-size: 14px;
-	text-transform: uppercase;
-	padding: 12px 25px;
-}
-
-.form-container .privacy-text {
-	font-size: 13px;
-	color: #777575;
-}
 
 	/* ---------------------------------------------------------------------- */
 	/*	Social bookmarks
 	/* ---------------------------------------------------------------------- */
 
-	 .social {
+	.social {
 		list-style: none;
+		margin-bottom: 0;
 	}
 
 		.social li {
 			margin-right: 10px;
-			font-size: 24px;
-			display:inline-block;
+			font-size: 31px;
+			display: inline-block;
 		}
 		
 		.social li:last-child {
 			margin-right: 0;
 		}
 
-	.social li i {
+	.social li a {
 		box-shadow:inset 0px 0px 1px #333;
-		height: 45px;
-		width: 45px;
-		line-height:45px;
+		height: 64px;
+		width: 64px;
+		line-height:64px;
 		border-radius:3px;
 		color:#fff;
 		-webkit-transition:background 1s ease;
@@ -1132,28 +1117,26 @@ input[type=text],
 		text-align:center;
 		display: block;
 	}
+	
+	.social .fb-group span {
+		font-size: 11px;
+		vertical-align: bottom;
+	}
 
-	.social i.facebook {
+	.social .facebook a,
+	.social .fb-group a {
 		background:#3c5b9b;
 	}
 
-	.social i.twitter {
+	.social .twitter a {
 		background:#2daae1;
 	}
 
-	.social i.google-plus {
-		background:#f63e28;
+	.social .rss a {
+		background:#ff9900;
 	}
 
-	i.pinterest {
-		background:#cb2027;
-	}
-
-	.social i.linkedin {
-		background:#0173b2;
-	}
-
-	.social i:hover {
+	.social a:hover {
 		background:#000;
 		-webkit-transition:background 1s ease;
 		-moz-transition:background 1s ease;
@@ -1171,7 +1154,9 @@ input[type=text],
 /* ==========================================================================
 	Footer Links
 ============================================================================ */
-
+#footer p {
+	margin-bottom: 0;
+}
 .footer-links {
 	list-style: none;
 }
