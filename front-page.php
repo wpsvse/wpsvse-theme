@@ -32,39 +32,33 @@ get_header(); ?>
         <!-- End welcome -->
         <!-- Start Slider -->
         <section id="header-slider" class="section carousel slide col-md-5 hidden-xs">
-        <!-- Start Slider Navigation -->
-        <ol class="carousel-indicators">
-            <li class="active" data-slide-to="0" data-target="#header-slider"></li>
-            <li data-slide-to="1" data-target="#header-slider"></li>
-        </ol>
-        <!-- End Slider Navigation -->
-        <div class="carousel-inner">
-          <!-- Start SLIDER -->
-		  <?php // WP_Query arguments
-          $slider_args = array (
-		  		'posts_per_page' 	=> '3',
-		  		'post_type' 		=> 'wpsvse_slider' 
-		  );
-          
-          // The Query
-          $slider_query = new WP_Query( $slider_args );
-          
-          // The Loop
-          if ( $slider_query->have_posts() ) {
-              while ( $slider_query->have_posts() ) {
-                  $slider_query->the_post(); ?>
-
-              <div class="item row">
-              	  <?php the_content(); ?>
-              </div>
-
-          <?php }
-          }
-          
-          // Restore original Post Data
-          wp_reset_postdata(); ?>
-          <!-- End SLIDER -->
-        </div>
+            <div class="slide-inner">
+              <!-- Start SLIDER LOOP -->
+              <?php // WP_Query arguments
+              $slider_args = array (
+                    'posts_per_page' 	=> '3',
+                    'post_type' 		=> 'wpsvse_slider' 
+              );
+              
+              // The Query
+              $slider_query = new WP_Query( $slider_args );
+              
+              // The Loop
+              if ( $slider_query->have_posts() ) {
+                  while ( $slider_query->have_posts() ) {
+                      $slider_query->the_post(); ?>
+    
+                  <div class="item row">
+                      <?php the_content(); ?>
+                  </div>
+    
+              <?php }
+              }
+              
+              // Restore original Post Data
+              wp_reset_postdata(); ?>
+              <!-- End SLIDER LOOP -->
+            </div>
         </section>
       </section>
     </div>
@@ -464,18 +458,28 @@ get_header(); ?>
                     	<?php bp_get_template_part( 'groups/front' ); ?>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 twitter-container">
 				<div class="section-headline">
-					<h2>Vad skrivs om WordPress?</h2>
-					<span>Få koll på vad som skrivs på andra sidor om WordPress <a href="#">#wpse</a></span>
+					<h2>Socialt med WordPress?</h2>
+					<span>Få koll på vad som skrivs om WordPress <a href="https://twitter.com/hashtag/wpse?src=hash">#wpse</a></span>
 				</div>
-                <div id="twitter-feed">
-                    	<a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="497073041344442368" data-chrome="noborders transparent">#wpse Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="active"><a href="#wpsvse-twitter" role="tab" data-toggle="tab">@WPSverige</a></li>
+                  <li><a href="#wpse-twitter" role="tab" data-toggle="tab">#wpse</a></li>
+                </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane text-center active" id="wpsvse-twitter">
+                  	<a class="twitter-timeline" width="100%" href="https://twitter.com/WPSverige" data-widget-id="498245749222543361" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">Tweets by @WPSverige</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                  </div>
+                  <div class="tab-pane text-center" id="wpse-twitter">
+                  	<a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="498246358826897408" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">#wpse Tweets</a>
+                  </div>
                 </div>
               </div>
-			</div>
-			<div class="row">
 			</div>
 		</div>
 	</section>
@@ -486,26 +490,22 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div class="section-headline nomargin-bottom white-heading">
-					<h2>Socialt med WordPress</h2>
-					<span>Skapa kontakter socialt med WordPress som gemensam nämnare</span>
-                    
+					<h2>Följ WordPress Sverige</h2>
+					<span>Få flöden serverade från WordPress Sverige och den svenska communityn</span>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<div class="form-container">
-                      <!-- Start INSERT TWITTER @WPSVERIGE -->
-						<p>
-							WordPress Sverige på Twitter - @WPSverige
-						</p>
-                      <!-- End INSERT TWITTER @WPSVERIGE -->
+					<div class="social-container">
+                        <ul class="social">
+                         <!-- Start FOLLOW WORDPRESS -->
+                          <li class="facebook"><a href="#" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sveriges Facebooksida"><i class="fa fa-facebook"></i></a></li>
+                          <li class="fb-group"><a href="#" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sveriges officiella Facebookgrupp"><i class="fa fa-facebook-square"></i></a></li>
+                          <li class="twitter"><a href="#" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sverige på Twitter"><i class="fa fa-twitter"></i></a></li>
+                          <li class="rss"><a href="#" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sveriges RSS-flöden"><i class="fa fa-rss"></i></a></li>
+                         <!-- End FOLLOW WORDPRESS -->
+                        </ul>
 					</div>
-					<ul class="social">
-                     <!-- Start INSERT SOCIAL NETWORK ICONS -->
-                      <li><a href="#"><i class="fa fa-facebook facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter twitter"></i></a></li>
-                     <!-- End INSERT SOCIAL NETWORK ICONS -->
-					</ul>
 				</div>
 			</div>		
 		</div>
