@@ -30,11 +30,11 @@ get_header();
 				the_content();
 				
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'wpsvse' ),
+					'before' => '<div class="page-links">' . __( 'Sidor:', 'wpsvse' ),
 					'after'  => '</div>',
 				) );
 				
-                edit_post_link( __( 'Edit', 'wpsvse' ), '<span class="edit-link">', '</span>' );
+                edit_post_link( 'Redigera', '<span class="edit-link">', '</span>' );
 				?>
               </div>
               <?php get_sidebar(); ?>
@@ -45,11 +45,4 @@ get_header();
 
 	<?php endwhile; // end of the loop. ?>
     
-    <section id="other" class="section">
-        <div class="container">
-            <div class="row">
-            </div>
-        </div>
-    </section>
-
 <?php get_footer(); ?>

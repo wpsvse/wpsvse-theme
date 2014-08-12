@@ -450,7 +450,7 @@ input[type=text],
 	border-bottom: 1px solid #EEE;
 	background: #F8F8F8;
 }
-#social-media {
+#footer-widgets {
 	background: url(img/blur.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -851,9 +851,10 @@ input[type=text],
 	font-weight: bold;
 }
 .page-title {
-	line-height: 120px;
+	line-height: 100px;
 	font-weight: 300;
 	text-shadow: none;
+	margin-bottom: 0;
 }
 .headline h2 {
 	font-size: 20px;
