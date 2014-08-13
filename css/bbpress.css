@@ -305,7 +305,8 @@ div.bbp-topic-tags {
 
 #bbpress-forums div.bbp-breadcrumb p,
 #bbpress-forums div.bbp-topic-tags p {
-	margin-bottom: 10px
+	margin-bottom: 15px;
+	line-height: 1;
 }
 
 div.bbp-topic-tags {
@@ -416,9 +417,7 @@ td.bbp-topic-counts {
 	float: right;
 }
 .bbp-pagination {
-	float: left;
-	width: 100%;
-	margin-bottom: 15px;
+	float: right;
 }
 
 .bbp-topic-pagination {
@@ -1020,11 +1019,11 @@ body.my-account #bbpress-forums {
 	padding: 10px 2% 10px 2%;
 }
 
-#bbpress-forums .bbp-template-notice.info,
+/*#bbpress-forums .bbp-template-notice.info,
 #bbpress-forums .bbp-pagination .bbp-pagination-count {
 	display: none;
 }
-
+*/
 .bbp-forums-list .bbp-forum .last-posted-topic-title,
 .bbp-forums-list .bbp-forum .last-posted-topic-user,
 .bbp-forums-list .bbp-forum .last-posted-topic-time {
