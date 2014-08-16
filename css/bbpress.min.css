@@ -309,8 +309,15 @@ div.bbp-topic-tags {
 	line-height: 1;
 }
 
+#bbpress-forums div.bbp-topic-tags p:before {
+	content: "\f02c";
+	display: inline-block;
+	font-family: "fontawesome";
+	margin-right: 4px;
+}
+
 div.bbp-topic-tags {
-	float: right;
+	float: left;
 }
 
 /* =Admin Links
@@ -321,7 +328,7 @@ span.bbp-admin-links {
 	color: #ddd;
 }
 span.bbp-admin-links a {
-	color: #bbb;
+	color: #999;
 	font-weight: normal;
 	font-size: 10px;
 	text-transform: uppercase;
@@ -448,11 +455,15 @@ td.bbp-topic-counts {
 
 #bbpress-forums fieldset.bbp-form legend {
 	padding: 5px;
+	display: inline-block;
+	width: auto;
+	border-bottom: none;
 }
 
 #bbpress-forums fieldset.bbp-form label {
 	margin: 0;
 	display: inline-block;
+	font-weight: 400;
 }
 
 #bbp-edit-topic-tag.bbp-form fieldset.bbp-form label,
@@ -497,7 +508,8 @@ textarea#bbp_forum_content {
 .bbp-topic-form,
 .bbp-reply-form,
 .bbp-topic-tag-form {
-	clear: left;
+	clear: both;
+	padding-top: 35px;
 }
 body.topic-edit .bbp-topic-form div.avatar img,
 body.reply-edit .bbp-reply-form div.avatar img,
@@ -544,6 +556,8 @@ p.form-allowed-tags {
 -------------------------------------------------------------- */
 #bbpress-forums div.bbp-the-content-wrapper {
 	margin-bottom: 10px;
+	border: 1px solid #eee;
+	border-top: none;
 }
 
 #bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
