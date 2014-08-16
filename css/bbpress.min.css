@@ -735,6 +735,9 @@ div.bbp-template-notice a {
 		font-size: 12px;
 		line-height: 140%;
 	}
+	a.bbp-author-name {
+		color: #21759B !important;
+	}
 
 /* =Stickies
 -------------------------------------------------------------- */
