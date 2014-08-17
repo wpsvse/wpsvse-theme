@@ -987,8 +987,34 @@ body.my-account #bbpress-forums {
 
 #bbpress-forums .bbp-forums .bbp-forum-info > .bbp-forum-title {
 	display: block;
-	padding: 10px;
-	background: #D1D1D1;
+	font-size: 16px;
+	background-color: #21759b;
+	color: #fff;
+	padding: 10px 15px;
+	border-bottom: 3px solid #ccc;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#bbpress-forums .bbp-forums .bbp-forum-content {
+	background: #f4f4f4;
+	padding: 10px 15px;
+	border-bottom: 1px solid #eee;
+}
+
+#bbpress-forums .bbp-forums .bbp-forum-content i {
+	color: #21759b;
+}
+
+#bbpress-forums .bbp-forums .bbp-forum-content p {
+	margin: 0;
+	line-height: 1;
+	font-size: 13px;
+	display: inline-block;
 }
 
 #bbpress-forums .bbp-forums-list li.odd-forum-row,
@@ -997,26 +1023,37 @@ body.my-account #bbpress-forums {
     font-size: 11px;
 	width: 100%;
 	height: 85px;
-	border-top: 1px solid #999999;
+	padding: 8px 15px;
+	border-bottom: 1px solid #eee;
 }
 
+#bbpress-forums .bbp-forums-list li.even-forum-row {
+	background-color: #eeeeee;
+	-moz-box-shadow: inset 0px 0px 1px 1px #ffffff;
+	-webkit-box-shadow: inset 0px 0px 1px 1px #ffffff;
+	box-shadow: inset 0px 0px 1px 1px #ffffff;
+}
 
 #bbpress-forums .bbp-forums-list li.odd-forum-row {
-	background-color: #eeeeee;
+	background-color: #fff;
+	-moz-box-shadow: inset 0px 0px 1px 1px #f8f8f8;
+	-webkit-box-shadow: inset 0px 0px 1px 1px #f8f8f8;
+	box-shadow: inset 0px 0px 1px 1px #f8f8f8;
 }
 	
 #bbpress-forums .bbp-forums-list .bbp-forum-title-container  {
-	width: 56%;
+	width: 60%;
 	display: block;
 	float: left;
 	height: 65px;
-	padding: 10px 2% 10px 2%;
+	padding: 10px 0;
 }
 
 #bbpress-forums .bbp-forums-list .bbp-forum .bbp-forum-link  {
 	width: 100%;
 	display: block;
-	font-size: 14px;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 #bbpress-forums .bbp-forums-list .bbp-forum .topic-reply-counts {
@@ -1029,11 +1066,9 @@ body.my-account #bbpress-forums {
 }
 
 #bbpress-forums .bbp-forums-list .freshness-forum-link {
-	width: 20%;
 	display: block;
 	float: left;
-	height: 65px;
-	padding: 10px 2% 10px 2%;
+	padding: 4px 0;
 }
 
 /*#bbpress-forums .bbp-template-notice.info,
@@ -1050,7 +1085,7 @@ body.my-account #bbpress-forums {
 
 #bbpress-forums .bbp-forums-list, #bbpress-forums .bbp-forums .bbp-body .bbp-forum-info {
     width: 100%;
-	margin: 0 0 0 0px;
+	margin: 0 0 25px 0px;
     padding-left: 0px;
 }
 

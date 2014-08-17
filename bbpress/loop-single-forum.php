@@ -19,7 +19,7 @@
         
         <?php do_action( 'bbp_theme_before_forum_description' ); ?>
 
-		<div class="bbp-forum-content"><?php the_content(); ?></div>
+		<div class="bbp-forum-content"><i class="fa fa-info-circle"></i> <?php the_content(); ?></div>
 
 		<?php do_action( 'bbp_theme_after_forum_description' ); ?>
 
@@ -32,9 +32,9 @@
 		'after'             => '</ul>',
 		'link_before'       => '<li class="bbp-forum">',
 		'link_after'        => '</li>',
-		'count_before'      => '<div class="topic-reply-counts">Topics: ',
+		'count_before'      => '<div class="topic-reply-counts">Ämnen: ',
 		'count_after'       => '</div>',
-		'count_sep'         => '<br />Posts: ',
+		'count_sep'         => '<br />Svar: ',
 		'separator'         => '<div style="clear:both;"></div>',
 		'forum_id'          => '',
 		'show_topic_count'  => true,
