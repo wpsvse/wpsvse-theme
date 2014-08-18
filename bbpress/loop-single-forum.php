@@ -49,8 +49,8 @@
 	</li>
 
 	<li class="bbp-forum-topic-count">
-		<div class="topic-reply-counts">Topics: <?php bbp_forum_topic_count(); ?></div>
-		<div class="topic-reply-counts">Posts: <?php bbp_show_lead_topic() ? bbp_forum_reply_count() : bbp_forum_post_count(); ?></div>
+		<div class="topic-reply-counts">Ämnen: <?php bbp_forum_topic_count(); ?></div>
+		<div class="topic-reply-counts">Inlägg: <?php bbp_show_lead_topic() ? bbp_forum_reply_count() : bbp_forum_post_count(); ?></div>
 	</li>
 
 	<li class="bbp-forum-freshness">
