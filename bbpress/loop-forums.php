@@ -14,7 +14,7 @@
 
 <div class="bbp-breadcrumb"><?php bbp_breadcrumb(); ?></div>
 
-<a href="#" class="btn btn-primary"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+<a href="#" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 
 <ul id="forums-list-<?php bbp_forum_id(); ?>" class="bbp-forums">
 	<li class="forum-title-item">
@@ -52,6 +52,6 @@
 
 </ul><!-- .forums-directory -->
 
-<a href="#" class="btn btn-primary"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+<a href="#" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 
 <?php do_action( 'bbp_template_after_forums_loop' ); ?>
