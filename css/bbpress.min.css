@@ -40,7 +40,7 @@
 }
 
 .single-forum #bbpress-forums ul.even {
-	background-color: #eeeeee;
+	background-color: #f8f8f8;
 	-moz-box-shadow: inset 0px 0px 1px 1px #ffffff;
 	-webkit-box-shadow: inset 0px 0px 1px 1px #ffffff;
 	box-shadow: inset 0px 0px 1px 1px #ffffff;
@@ -164,9 +164,7 @@
 .bbp-topics li.bbp-forum-reply-count,
 .bbp-topics li.bbp-topic-counts {
 	display: inline-block;
-	text-align: center;
 	width: 14%;
-	font-size: 12px;
 }
 
 .bbp-topics li.bbp-forum-freshness,
@@ -726,7 +724,7 @@ div.indicator-hint {
 	clear: both;
 }
 div.bbp-template-notice a {
-	color: #555;
+	color: #21759B;
 	text-decoration: none;
 }
 	div.bbp-template-notice a:hover {
@@ -754,9 +752,6 @@ div.bbp-template-notice a {
 		padding: 2px;
 		font-size: 12px;
 		line-height: 140%;
-	}
-	a.bbp-author-name {
-		color: #21759B !important;
 	}
 
 /* =Stickies
@@ -1066,7 +1061,7 @@ body.my-account #bbpress-forums {
 }
 
 #bbpress-forums .bbp-forums-list li.even-forum-row {
-	background-color: #eeeeee;
+	background-color: #f8f8f8;
 	-moz-box-shadow: inset 0px 0px 1px 1px #ffffff;
 	-webkit-box-shadow: inset 0px 0px 1px 1px #ffffff;
 	box-shadow: inset 0px 0px 1px 1px #ffffff;
@@ -1157,6 +1152,9 @@ body.my-account #bbpress-forums {
 	color: #21759b;
 	border: none;
 }
+.single-forum #bbpress-forums .bbp-forums .bbp-forum-info > .bbp-forum-title:hover {
+	color: #626c72;
+}
 
 /*.single-forum #bbpress-forums div.bbp-forum-title,
 .single-forum #bbpress-forums .bbp-topics .bbp-header {
@@ -1213,11 +1211,11 @@ body.my-account #bbpress-forums {
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
 	}
-	#latest-forum .bbp-body p {
+	.bbp-topics .bbp-body p {
 		margin-bottom: 0;
 	}
-	#latest-forum .topic {
-		padding: 8px 15px;
+	.bbp-topics .topic {
+		padding: 8px 15px !important;
 		border-bottom: 1px solid #eee;
 	}
 		#latest-forum .topic.even {
@@ -1235,8 +1233,8 @@ body.my-account #bbpress-forums {
 			#latest-forum .bbp-header li {
 				display: inline-block;
 			}
-			#latest-forum .topic .bbp-topic-permalink {
-				font-size: 18px;
+			.bbp-topics .topic .bbp-topic-permalink {
+				font-size: 18px !important;
 				font-weight: 300;
 				line-height: 1;
 			}
@@ -1248,16 +1246,16 @@ body.my-account #bbpress-forums {
 				#latest-forum .topic .bbp-topic-freshness {
 					font-size: 12px;
 				}
-			#latest-forum .topic .bbp-topic-counts,
-			#latest-forum .bbp-header .bbp-topic-counts {
+			.bbp-topics .bbp-topic-counts,
+			.bbp-topics .bbp-header .bbp-topic-counts {
 				width: 14%;
 				position: relative;
 			}
-				#latest-forum .topic .bbp-topic-counts i {
+				.bbp-topics li.bbp-topic-counts i {
 					font-size: 48px;
 					color: #eee;
 				}
-			#latest-forum .topic .bbp-count-badge {
+			.bbp-topics .bbp-count-badge {
 				position: absolute;
 				color: #333;
 				width: 48px;
