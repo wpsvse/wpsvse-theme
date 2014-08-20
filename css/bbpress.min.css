@@ -365,6 +365,13 @@ td.bbp-topic-counts {
 	margin-left: 10px;
 	color: #21759b;
 }
+.bbp-topic-report-link:before {
+	content: "\f071";
+	display: inline-block;
+	margin-right: 3px;
+	color: #c00;
+	font-family: "fontawesome";
+}
 
 /* =Toggles
 -------------------------------------------------------------- */
@@ -519,10 +526,10 @@ textarea#bbp_forum_content {
 /**
  * Fix for too-long forum names, usually from conversion
  */
-#bbpress-forums fieldset select#bbp_forum_id {
+/*#bbpress-forums fieldset select#bbp_forum_id {
 	max-width: 200px;
 }
-
+*/
 .bbp-topic-form,
 .bbp-reply-form,
 .bbp-topic-tag-form {
