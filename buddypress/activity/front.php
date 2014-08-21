@@ -6,9 +6,7 @@
             
                 <?php if ( is_user_logged_in() ) : ?>
                 
-                  <div class="bp-statuses">            
                     <?php bp_get_template_part( 'activity/post-form' ); ?>
-                  </div>
             
                 <?php endif; ?>
             
