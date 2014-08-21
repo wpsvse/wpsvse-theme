@@ -14,7 +14,7 @@ get_header();
 		<div class="container">
 			<div class="row">
               <div class="col-md-12">
-            	<h1 class="page-title"><?php the_title(); ?></h1>
+            	<h1 class="page-title">Forum</h1>
               </div>
             </div>
         </div>
@@ -26,6 +26,7 @@ get_header();
 		<div class="container">
 			<div class="row">
               <div class="col-md-12">
+                <h2><?php the_title(); ?></h2>
               	<?php the_content(); ?>
               </div>
 			</div>
