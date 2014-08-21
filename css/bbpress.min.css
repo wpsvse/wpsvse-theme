@@ -365,7 +365,8 @@ td.bbp-topic-counts {
 	margin-left: 10px;
 	color: #21759b;
 }
-.bbp-topic-report-link:before {
+.bbp-topic-report-link:before,
+.bbp-reply-report-link:before {
 	content: "\f071";
 	display: inline-block;
 	margin-right: 3px;
