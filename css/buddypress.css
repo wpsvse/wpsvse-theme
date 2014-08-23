@@ -1041,6 +1041,16 @@ input#file {
 #buddypress table.notification-settings {
 	margin-bottom: 20px;
 	text-align: left;
+	width: 100%;
+}
+#buddypress table.notification-settings tr {
+	border-bottom: 1px solid #f8f8f8;
+}
+#buddypress table.notification-settings tr:hover {
+	background-color: #f8f8f8;
+}
+#buddypress table.notification-settings td {
+	padding: 4px 0;
 }
 #buddypress #groups-notification-settings {
 	margin-bottom: 0;
