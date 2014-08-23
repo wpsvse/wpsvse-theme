@@ -656,6 +656,8 @@ body.activity-permalink #buddypress div.activity-comments div.acomment-content {
 }
 #buddypress .standard-form input[type=password] {
 	margin-bottom: 5px;
+	width: auto;
+	display: inline-block;
 }
 #buddypress .standard-form label,
 #buddypress .standard-form span.label {
@@ -1352,6 +1354,12 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	background-color: #21759b;
 	color: #fff;
 }
+#buddypress #subnav ul li.selected a,
+#buddypress #subnav ul li.current a {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
 #buddypress div.item-list-tabs ul li.selected a span,
 #buddypress div.item-list-tabs ul li.current a span,
 #buddypress div.item-list-tabs ul li a:hover span {
@@ -1450,7 +1458,6 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 #buddypress div.message-search {
 	float: right;
-	margin: 0 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1505,6 +1512,12 @@ body.register #buddypress div.page ul {
 }
 #buddypress .field-visibility select {
 	margin: 0;
+}
+div#bbp-user-topics-started,
+div#bbp-user-replies-created,
+div#bbp-user-favorites,
+div#bbp-user-subscriptions {
+	margin-top: 35px;
 }
 
 /*--------------------------------------------------------------
