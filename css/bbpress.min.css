@@ -377,55 +377,49 @@ td.bbp-topic-counts {
 /* =Toggles
 -------------------------------------------------------------- */
 
-.bbp-topic-action #favorite-toggle a {
-	text-decoration: none;
-	padding: 0 3px 1px;
-	color: #7c7;
-	border: 1px solid #aca;
-	background-color: #dfd;
-	font-weight: bold;
-	font-size: 13px;
-	}
-	.bbp-topic-action #favorite-toggle a:hover {
-		color: #5a5;
-		border-color: #7c7;
-		background-color: #beb;
-	}
-	.bbp-topic-action #favorite-toggle span.is-favorite a {
-		color: #faa;
-		border: 1px solid #faa;
-		background-color: #fee;
-		}
-		.bbp-topic-action #favorite-toggle span.is-favorite a:hover {
-			color: #c88;
-			border-color: #c88;
-			background-color: #fdd;
-		}
-
+.bbp-topic-action {
+	float: left;
+	margin-right: 8px;
+	margin-top: 10px;
+}
+.bbp-topic-action #favorite-toggle span.is-favorite a:before {
+	font-family: "fontawesome";
+	display: inline-block;
+	content: "\f00d";
+	margin-right: 4px;
+	color: #c88;
+}
+.bbp-topic-action #favorite-toggle a,
 .bbp-topic-action #subscription-toggle a {
 	text-decoration: none;
-	padding: 0 3px 1px;
-	color: #7c7;
-	border: 1px solid #aca;
-	background-color: #dfd;
-	font-weight: bold;
 	font-size: 13px;
 	}
-	.bbp-topic-action #subscription-toggle a:hover {
+	.bbp-topic-action #favorite-toggle a:hover,
+	.bbp-topic-action #subscription-toggle a:hover  {
 		color: #5a5;
 		border-color: #7c7;
 		background-color: #beb;
 	}
+	.bbp-topic-action #favorite-toggle span.is-favorite a,
 	.bbp-topic-action #subscription-toggle span.is-subscribed a {
-		color: #faa;
-		border: 1px solid #faa;
-		background-color: #fee;
+		background-color: #f2dede;
+		padding: 8px;
+		color: #333;
 		}
+		.bbp-topic-action #favorite-toggle span.is-favorite a:hover,
 		.bbp-topic-action #subscription-toggle span.is-subscribed a:hover {
 			color: #c88;
 			border-color: #c88;
 			background-color: #fdd;
 		}
+.bbp-topic-action #subscription-toggle span.is-subscribed a {
+	color: #c88;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 4px 8px;
+	line-height: 1;
+}
+
 
 #bbpress-forums p.bbp-topic-meta {
 /*	margin: 5px 0 5px;
