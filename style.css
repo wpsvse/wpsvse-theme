@@ -372,6 +372,10 @@ input[type=text],
 .btn-primary {
 	background-color: #21759b;
 }
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+	background-color: #333;
+	border-color: #000;
+}
 .btn-blue {
 	margin-bottom: 40px;
 	background: #21759b;
@@ -545,6 +549,9 @@ input[type=text],
 	background: #21759b;
 	color: #FFF;
 }
+#quick-buttons .quick-link:hover i {
+	background-color: #333;
+}
 
 /* ==========================================================================
 	Latest News
@@ -561,11 +568,11 @@ input[type=text],
 	color: #fff;
 }
 .news-meta .news-comments {
-	bottom: 25px;
+	bottom: 0;
 	background-color: rgba(51,51,51,.7);
 }
 .news-meta time {
-	bottom: 0;
+	bottom: 25px;
 	background-color: rgba(33,117,155,.7);
 }
 .news-title-frame {
@@ -879,6 +886,23 @@ input[type=text],
 }
 .top-right .active {
 	background: #333;
+}
+
+/* ==========================================================================
+	Posts (blog/news)
+============================================================================ */
+article.post {
+}
+article.post img {
+	max-width: 100%;
+	height: auto;
+}
+article.post h1 a {
+	color: #333;
+	font-weight: 300;
+}
+.post-image {
+	position: relative;
 }
 
 /* ==========================================================================
