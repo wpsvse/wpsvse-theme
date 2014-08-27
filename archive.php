@@ -46,7 +46,12 @@ get_header(); ?>
 							printf( __( 'Year: %s', 'wpsvse' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
 						else :
-							_e( 'Archives', 'wpsvse' );
+
+							if ( 'post' == get_post_type() ) {
+								echo 'Nyheter';
+							} elseif ( 'wpsvse_blogg' == get_post_type() ) {
+								echo 'Blogg';
+							}
 
 						endif;
 					?>
@@ -63,26 +68,26 @@ get_header(); ?>
 			<div class="row">
               <div class="col-md-9">
 
-				<?php /* Start the Loop */ ?>
-                <?php while ( have_posts() ) : the_post(); ?>
+				<?php /* Start the Loop */
+                while ( have_posts() ) : the_post();
     
-                    <?php
+                    
                         /* Include the Post-Format-specific template for the content.
                          * If you want to override this in a child theme, then include a file
                          * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                          */
                         get_template_part( 'content' );
-                    ?>
+                
     
-                <?php endwhile; ?>
+                endwhile;
     
-                <?php wpsvse_content_nav( 'nav-below' ); ?>
-    
-            <?php else : ?>
-    
-                <?php get_template_part( 'no-results', 'archive' ); ?>
-    
-            <?php endif; ?>
+					wpsvse_content_nav( 'nav-below' );
+		
+				else :
+		
+					get_template_part( 'no-results', 'archive' );
+		
+				endif; ?>
 
               </div>
               <?php get_sidebar(); ?>
