@@ -68,9 +68,10 @@
 	background-color: #fdd;
 }
 
-#bbpress-forums .status-closed,
-#bbpress-forums .status-closed a {
-	color: #ccc;
+#bbpress-forums .status-closed .bbp-topic-permalink:before {
+	font-family: "fontawesome";
+	content: "\f023";
+	margin-right: 4px;
 }
 
 #bbpress-forums ul {
@@ -754,6 +755,12 @@ div.bbp-template-notice a {
 		padding: 2px;
 		font-size: 12px;
 		line-height: 140%;
+	}
+div.status-reported {
+	background-color: rgba(204,0,0,.1) !important;
+}
+	.bbp-rc-reply-is-reported {
+		color: #c00;
 	}
 
 /* =Stickies

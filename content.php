@@ -5,7 +5,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
         
         <div class="post-image">
           <a href="<?php the_permalink(); ?>" rel="bookmark">
@@ -15,19 +14,12 @@
                 <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/post-placeholder.jpg" alt="" />
               <?php } ?>
           </a>
-          <div class="post-meta">
-            <div class="meta-date">onsdag, 24 juni 2014</div>
-            <div class="meta-comments"><a href="#">2 kommentarer</a></div>
-          </div>
+            <h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+            <div class="post-meta meta-date"><time>onsdag, 24 juni 2014</time></div>
         </div><!-- .post-image -->
-            
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-        <div class="entry-meta">Publicerat av <a href="#">Kalle</a> under <a href="#">kategori</a></div>
-        
-	</header><!-- .entry-header -->
-
+    
 	<div class="entry-content">
-		<?php the_content( __( 'Läs mer', 'wpsvse' ) ); ?>
+		<?php the_excerpt( __( 'Läs mer', 'wpsvse' ) ); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Sidor:', 'wpsvse' ),
@@ -35,5 +27,12 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+    
+    <div class="entry-meta">
+    	<div class="enty-meta-user"><i class="fa fa-user"></i> <a href="#">Kalle</a></div>
+        <div class="entry-meta-category"><i class="fa fa-folder-open"></i> <a href="#">kategori</a></div>
+        <div class="entry-meta-comments"><i class="fa fa-comments"></i> <a href="#">2 kommentarer</a></div>
+        <a href="#" class="btn btn-primary btn-small read-more-link">Läs mer</a>
+    </div><!-- .entry-meta -->
     
 </article><!-- #post-## -->
