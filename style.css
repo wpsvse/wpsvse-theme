@@ -557,7 +557,7 @@ input[type=text],
 	Latest News
 ============================================================================ */
 .news-meta { position: relative; }
-.news-meta .news-comments,
+.news-meta .category-meta,
 .news-meta time {
 	position: absolute;
 	right: 0;
@@ -567,29 +567,64 @@ input[type=text],
 	padding: 4px 8px;
 	color: #fff;
 }
-.news-meta .news-comments {
+.news-meta .category-meta {
 	bottom: 0;
 	background-color: rgba(51,51,51,.7);
+}
+.news-meta .category-meta a {
+	color: #fff;
 }
 .news-meta time {
 	bottom: 25px;
 	background-color: rgba(33,117,155,.7);
 }
 .news-title-frame {
-	padding: 15px;
 	background-color: #f8f8f8;
 	border: 1px solid #eee;
 	border-top: none;
 }
 .news-title-frame h3 {
 	margin: 0;
+	padding: 15px;
 }
-.news-title-frame .news-category {
-	font-style: italic;
-	color: #ADADAD;
+.news-excerpt p {
+	font-size: 12px;
+	line-height: normal;
+	padding: 0 15px;
 }
-.news-title-frame .news-category span {
-	color: #333;
+.news-meta-second {
+	background-color: #333;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+}
+.user-meta,
+.comments-meta,
+.read-more-meta {
+	display: inline-block;
+}
+.user-meta {
+	padding: 4px 15px;
+}
+.comments-meta {
+	margin-left: 8px;
+}
+.user-meta .avatar {
+	width: 24px;
+	height: auto;
+	border-radius: 12px;
+}
+.read-more-meta {
+	float: right;
+	color: #fff;
+	font-size: 12px;
+	line-height: 19px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.read-more-meta:hover {
+	border-color: #333;
 }
 
 /* ==========================================================================
@@ -892,9 +927,7 @@ input[type=text],
 	Posts (blog/news)
 ============================================================================ */
 article.post {
-	margin-bottom: 50px;
-	padding-bottom: 50px;
-	border-bottom: 1px dashed #ddd;
+	margin-bottom: 75px;
 }
 .post .content-frame {
 	padding: 8px 15px;
@@ -907,15 +940,11 @@ article.post img {
 	height: auto;
 }
 .post .entry-title {
-	position: absolute;
-	padding: 8px 15px;
-	top: 25px;
 	font-size: 28px;
-	background-color: rgba(33,117,155,.7);
 	text-shadow: none;
+	padding: 0 15px;
 }
 article.post h1 a {
-	color: #fff;
 	font-weight: 300;
 }
 .post-image {
@@ -924,48 +953,49 @@ article.post h1 a {
 .post .entry-content {
 	padding: 15px 0;
 }
-.post .entry-meta {
-	padding: 15px;
+.post .entry-wrapper {
 	background-color: #f8f8f8;
 	border: 1px solid #eee;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	position: relative;
+	border-top: none;
 }
-.post .entry-meta div {
+.post .entry-excerpt p {
+	padding: 0 15px;
+	line-height: normal;
+}
+.entry-meta {
+	background-color: #333;
+	color: #fff;
+}
+.entry-meta .entry-meta-user,
+.entry-meta .entry-meta-comments,
+.entry-meta .entry-meta-read-more {
 	display: inline-block;
-	padding-right: 15px;
 }
-.post .entry-meta div i {
-	color: #ddd;
+.entry-meta .entry-meta-user {
+	padding: 8px 15px;
 }
-.post .entry-meta div a {
-	color: #666;
-	font-size: 12px;
+.entry-meta .entry-meta-user .avatar {
+	width: 32px;
+	height: auto;
+	border-radius: 16px;
+	background-color: #fff;
+}
+.entry-meta .entry-meta-comments a {
+	color: #fff;
+}
+.entry-meta .entry-meta-read-more {
+	float: right;
+	border-radius: 0;
+	line-height: 34px;
 }
 .meta-date {
 	position: absolute;
-	top: 71px;
+	bottom: 35px;
 	background-color: rgba(51,51,51,.7);
 	padding: 5px 15px;
 	color: #fff;
 	font-size: 18px;
 	font-weight: 300;
-}
-.post a.read-more-link {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	right: 0;
-	line-height: 48px;
-	padding: 0 25px;
-	-webkit-border-top-left-radius: 1px;
-	-webkit-border-bottom-left-radius: 1px;
-	-moz-border-radius-topleft: 1px;
-	-moz-border-radius-bottomleft: 1px;
-	border-top-left-radius: 1px;
-	border-bottom-left-radius: 1px;
 }
 
 /* ==========================================================================
