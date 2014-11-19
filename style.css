@@ -914,7 +914,7 @@ article.post img {
 .post .entry-title {
 	font-size: 28px;
 	text-shadow: none;
-	padding: 0 25px;
+	padding: 25px 25px 10px 25px;
 }
 article.post h1 a {
 	font-weight: 300;
@@ -923,49 +923,36 @@ article.post h1 a {
 	position: relative;
 }
 .post .entry-content {
-	padding: 25px 0;
-}
-.post .entry-wrapper {
 	background-color: #f8f8f8;
 	border: 1px solid #eee;
-	border-top: none;
+	border-top: 3px solid #21759B;
 }
 .post .entry-excerpt p {
 	padding: 10px 25px;
 	line-height: normal;
 	font-weight: 300;
 }
-.entry-meta {
-	background-color: #333;
-	color: #fff;
+.entry-footer-meta {
+	background-color: #f3f3f3;
+	padding: 8px 25px;
+	line-height: 32px;
 }
-.entry-meta .entry-meta-user,
-.entry-meta .entry-meta-comments,
-.entry-meta .entry-meta-read-more {
+.entry-meta-user,
+.entry-meta-category,
+.entry-meta-read-more {
 	display: inline-block;
 }
-.entry-meta .entry-meta-user {
-	padding: 8px 15px;
-}
-.entry-meta .entry-meta-user .avatar {
-	width: 32px;
+.entry-meta-user .avatar {
+	width: 24px;
 	height: auto;
 	border-radius: 16px;
 	background-color: #fff;
 }
-.entry-meta .entry-meta-comments a {
-	color: #fff;
-}
-.entry-meta .entry-meta-read-more {
+.entry-meta-read-more {
 	float: right;
-	border-radius: 0;
-	line-height: 34px;
-}
-.entry-meta .entry-meta-read-more:hover {
-	border-color: #333;
 }
 .entry-meta-date,
-.entry-meta-category {
+.entry-meta-comments {
 	position: absolute;
 	padding: 5px 15px;
 	color: #fff;
@@ -978,12 +965,12 @@ article.post h1 a {
 	background-color: rgba(33,117,155,.7);
 	bottom: 35px;
 }
-.entry-meta-category {
+.entry-meta-comments {
 	background-color: rgba(51,51,51,.7);
 	bottom: 0;
 	color: #fff;
 }
-.entry-meta-category a {
+.entry-meta-comments a {
 	color: #fff;
 }
 
