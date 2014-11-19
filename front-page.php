@@ -98,7 +98,7 @@ get_header(); ?>
                     <div class="col-md-4 article-item">
                         <article>
                           <div class="news-meta">
-                              <div class="category-meta"><?php the_category(', '); ?></div>
+                          	  <div class="comments-meta"><?php comments_popup_link('0 kommentarer', '1 kommentar', '% kommentarer'); ?></div>
                               <time datetime="<?php the_time('c'); ?>"><?php the_time('l, j F'); ?></time>
                               <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
 							  <?php if ( has_post_thumbnail() ) {	
@@ -110,8 +110,7 @@ get_header(); ?>
                           </div>
                           <div class="news-title-frame">
                               <h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-                              <div class="news-excerpt"><?php the_excerpt('&hellip;'); ?></div>
-                              <div class="news-meta-second"><div class="user-meta"><?php echo get_avatar( get_the_author_meta('ID'), 32 ); ?> <?php the_author(); ?></div> <div class="comments-meta"><?php comments_popup_link('<i class="fa fa-comment-o"></i> 0', '<i class="fa fa-comment-o"></i> 1', '<i class="fa fa-comment-o"></i> %'); ?></div> <a href="<?php the_permalink(); ?>" class="btn btn-primary read-more-meta">Läs mer <i class="fa fa-angle-right"></i></a></div>
+                              <div class="category-meta">Postat under <?php the_category(', '); ?></div>
                           </div>
                         </article>
                     </div>

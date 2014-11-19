@@ -11,7 +11,7 @@
           <?php if ( has_post_thumbnail() ) { 
             the_post_thumbnail('post-img');
           } else { ?>
-            <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/post-placeholder.jpg" alt="" />
+            <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/default.jpg" alt="" />
           <?php } ?>
       </a>
         <div class="entry-meta-category"><?php the_category(', '); ?></div>

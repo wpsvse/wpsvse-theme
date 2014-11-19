@@ -557,7 +557,7 @@ input[type=text],
 	Latest News
 ============================================================================ */
 .news-meta { position: relative; }
-.news-meta .category-meta,
+.news-meta .comments-meta,
 .news-meta time {
 	position: absolute;
 	right: 0;
@@ -567,11 +567,11 @@ input[type=text],
 	padding: 4px 8px;
 	color: #fff;
 }
-.news-meta .category-meta {
+.news-meta .comments-meta {
 	bottom: 0;
 	background-color: rgba(51,51,51,.7);
 }
-.news-meta .category-meta a {
+.news-meta .comments-meta a {
 	color: #fff;
 }
 .news-meta time {
@@ -582,49 +582,21 @@ input[type=text],
 	background-color: #f8f8f8;
 	border: 1px solid #eee;
 	border-top: none;
+	padding: 15px;
+	border-top: 3px solid #21759B;
 }
 .news-title-frame h3 {
 	margin: 0;
-	padding: 15px;
+	padding-bottom: 10px;
 }
-.news-excerpt p {
-	font-size: 12px;
-	line-height: normal;
-	padding: 0 15px;
+.news-title-frame h3 a {
+	color: #333;
 }
-.news-meta-second {
-	background-color: #333;
-	color: #fff;
-	font-size: 12px;
-	line-height: 24px;
+.news-title-frame h3 a:hover {
+	color: #21759b;
 }
-.user-meta,
-.comments-meta,
-.read-more-meta {
-	display: inline-block;
-}
-.user-meta {
-	padding: 4px 15px;
-}
-.comments-meta {
-	margin-left: 8px;
-}
-.user-meta .avatar {
-	width: 24px;
-	height: auto;
-	border-radius: 12px;
-}
-.read-more-meta {
-	float: right;
-	color: #fff;
-	font-size: 12px;
-	line-height: 19px;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-}
-.read-more-meta:hover {
-	border-color: #333;
+.category-meta {
+	font-weight: 300;
 }
 
 /* ==========================================================================
@@ -942,7 +914,7 @@ article.post img {
 .post .entry-title {
 	font-size: 28px;
 	text-shadow: none;
-	padding: 0 15px;
+	padding: 0 25px;
 }
 article.post h1 a {
 	font-weight: 300;
@@ -951,7 +923,7 @@ article.post h1 a {
 	position: relative;
 }
 .post .entry-content {
-	padding: 15px 0;
+	padding: 25px 0;
 }
 .post .entry-wrapper {
 	background-color: #f8f8f8;
@@ -959,8 +931,9 @@ article.post h1 a {
 	border-top: none;
 }
 .post .entry-excerpt p {
-	padding: 0 15px;
+	padding: 10px 25px;
 	line-height: normal;
+	font-weight: 300;
 }
 .entry-meta {
 	background-color: #333;
@@ -988,14 +961,30 @@ article.post h1 a {
 	border-radius: 0;
 	line-height: 34px;
 }
-.meta-date {
+.entry-meta .entry-meta-read-more:hover {
+	border-color: #333;
+}
+.entry-meta-date,
+.entry-meta-category {
 	position: absolute;
-	bottom: 35px;
-	background-color: rgba(51,51,51,.7);
 	padding: 5px 15px;
 	color: #fff;
 	font-size: 18px;
 	font-weight: 300;
+	text-align: right;
+	right: 0;
+}
+.entry-meta-date {
+	background-color: rgba(33,117,155,.7);
+	bottom: 35px;
+}
+.entry-meta-category {
+	background-color: rgba(51,51,51,.7);
+	bottom: 0;
+	color: #fff;
+}
+.entry-meta-category a {
+	color: #fff;
 }
 
 /* ==========================================================================
