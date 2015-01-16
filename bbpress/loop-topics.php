@@ -11,8 +11,6 @@
 
 <?php do_action( 'bbp_template_before_topics_loop' ); ?>
 
-<div class="bbp-breadcrumb"><?php bbp_breadcrumb(); ?></div>
-
 <ul id="bbp-forum-<?php bbp_forum_id(); ?>" class="bbp-topics">
 
     <li class="bbp-header">
