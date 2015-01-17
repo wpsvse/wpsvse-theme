@@ -351,6 +351,7 @@ div.bbp-breadcrumb {
 #bbpress-forums .bbp-new-topic-btn {
 	float: right;
 	margin-bottom: 15px;
+	clear: both;
 }
 
 div.bbp-breadcrumb,
@@ -482,6 +483,7 @@ td.bbp-topic-counts {
 }
 .bbp-pagination {
 	float: right;
+	padding-bottom: 15px;
 }
 
 .bbp-topic-pagination {
