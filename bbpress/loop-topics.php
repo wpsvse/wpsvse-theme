@@ -14,10 +14,10 @@
 <ul id="bbp-forum-<?php bbp_forum_id(); ?>" class="bbp-topics">
 
     <li class="bbp-header">
-        <ul class="forum-titles">
-            <li class="bbp-topic-title">Ämne</li>
-            <li class="bbp-topic-counts">Inlägg</li>
-            <li class="bbp-topic-freshness">Aktivitet</li>
+        <ul class="forum-titles row">
+            <li class="bbp-topic-title col-lg-8">Ämne</li>
+            <li class="bbp-topic-counts col-lg-1">Inlägg</li>
+            <li class="bbp-topic-freshness col-lg-3">Aktivitet</li>
         </ul>
     </li>
                         
