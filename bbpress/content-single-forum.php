@@ -20,7 +20,7 @@
     
     	<?php bbp_single_forum_description(); ?>
         
-        <a href="#" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+        <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
         
         <div class="bbp-breadcrumb"><?php bbp_breadcrumb(); ?></div>
 
@@ -38,7 +38,7 @@
 
 			<?php bbp_get_template_part( 'pagination', 'topics'    ); ?>
             
-            <a href="#" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+            <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 
 			<?php bbp_get_template_part( 'form',       'topic'     ); ?>
 
@@ -49,7 +49,9 @@
 			<?php bbp_get_template_part( 'form',       'topic'     ); ?>
 
 		<?php endif; ?>
-
+        
+        <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+        
 	<?php endif; ?>
 
 	<?php do_action( 'bbp_template_after_single_forum' ); ?>
