@@ -205,7 +205,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="section-headline">
 					<h2>Diskussionsforum</h2>
-					<span>Behöver du hjälp, har du funderingar, vill du hjälpa andra eller vara en del av communityn? Då är vårt forum platsen för dig!</span>
+					<span>Behöver du hjälp, har du funderingar, vill du hjälpa andra eller vara en del av communityn? Då är vårt <a href="<?php echo esc_url( home_url( '/forum/' ) ); ?>" rel="help">forum</a> platsen för dig!</span>
 				</div>
 			</div>
 			<div class="row">
