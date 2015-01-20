@@ -51,7 +51,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<p>Copyright &copy; 2007-<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+					<p><abbr title="Gnu Public Licens version 2">GPL</abbr> 2007-<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 				</div>
 				<div class="col-md-7">
                   <!-- Start FOOTER MENU -->
