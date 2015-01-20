@@ -1284,7 +1284,7 @@ body.my-account #bbpress-forums {
 	.bbp-header {
 		background-color: #21759b;
 		color: #fff;
-		padding: 15px;
+		padding: 15px 0;
 		border-bottom: 3px solid #ccc;
 		-webkit-border-top-left-radius: 5px;
 		-webkit-border-top-right-radius: 5px;
@@ -1297,8 +1297,9 @@ body.my-account #bbpress-forums {
 		margin-bottom: 0;
 	}
 	.bbp-topics .topic {
-		padding: 8px 15px !important;
+		padding: 8px 0 !important;
 		border-bottom: 1px solid #eee;
+		display: table;
 	}
 		#latest-forum .topic.even {
 			background-color: #fff;
@@ -1311,18 +1312,17 @@ body.my-account #bbpress-forums {
 			-webkit-box-shadow: inset 0px 0px 1px 1px #ffffff;
 			box-shadow: inset 0px 0px 1px 1px #ffffff;
 		}
-			#latest-forum .topic li,
+			/*#latest-forum .topic li,
 			#latest-forum .bbp-header li {
-				display: inline-block;
-			}
+			}*/
 			.bbp-topics .topic .bbp-topic-permalink {
 				font-size: 18px !important;
 				font-weight: 300;
 				line-height: 1;
 			}
-			#latest-forum .topic .bbp-topic-title,
+			/*#latest-forum .topic .bbp-topic-title,
 			#latest-forum .bbp-header .bbp-topic-title {
-			}
+			}*/
 				#latest-forum .topic .bbp-topic-meta,
 				#latest-forum .topic .bbp-topic-freshness {
 					font-size: 12px;
