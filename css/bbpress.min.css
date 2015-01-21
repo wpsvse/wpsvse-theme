@@ -501,6 +501,7 @@ td.bbp-topic-counts {
 .bbp-pagination {
 	float: right;
 	padding-bottom: 15px;
+	clear: both;
 }
 
 .bbp-topic-pagination {

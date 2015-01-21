@@ -50,8 +50,6 @@
 
 		<?php endif; ?>
         
-        <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-        
 	<?php endif; ?>
 
 	<?php do_action( 'bbp_template_after_single_forum' ); ?>
