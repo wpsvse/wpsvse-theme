@@ -20,7 +20,7 @@
     
     	<?php bbp_single_forum_description(); ?>
         
-        <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+        <?php if ( bb_is_user_logged_in() ) { ?><a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a><?php } ?>
         
         <div class="bbp-breadcrumb"><?php bbp_breadcrumb(); ?></div>
 
@@ -38,7 +38,7 @@
 
 			<?php bbp_get_template_part( 'pagination', 'topics'    ); ?>
             
-            <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+        <?php if ( bb_is_user_logged_in() ) { ?><a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a><?php } ?>
 
 			<?php bbp_get_template_part( 'form',       'topic'     ); ?>
 
