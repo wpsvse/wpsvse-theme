@@ -29,7 +29,7 @@
 
 		<?php if ( bbp_has_replies() ) : ?>
         
-        <?php if ( bb_is_user_logged_in() ) : ?><a href="#" title="Svara på detta ämne" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Svara</a><?php endif; ?>
+        <a href="#" title="Svara på detta ämne" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Svara</a>
 
 			<?php bbp_get_template_part( 'pagination', 'replies' ); ?>
 
@@ -37,7 +37,7 @@
 
 			<?php bbp_get_template_part( 'pagination', 'replies' ); ?>
             
-        <?php if ( bb_is_user_logged_in() ) : ?><a href="#" title="Svara på detta ämne" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Svara</a><?php endif; ?>
+        <a href="#" title="Svara på detta ämne" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Svara</a>
 
 		<?php endif; ?>
         
