@@ -340,6 +340,7 @@ body.activity-permalink #buddypress .activity-content blockquote {
 #buddypress .activity-list li.load-more a,
 #buddypress .activity-list li.load-newest a {
 	color: #fff;
+	display: block;
 }
 
 

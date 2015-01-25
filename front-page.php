@@ -301,7 +301,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="section-headline">
 					<h2>Aktivitetsflöde</h2>
-					<span>Följ den senaste aktiviteten på <?php bloginfo( 'name' ); ?></span>
+					<span>Följ den senaste <a href="<?php echo esc_url( home_url( '/aktivitet/' ) ); ?>">aktiviteten</a> på <?php bloginfo( 'name' ); ?></span>
 				</div>
 			</div>
 			<div class="row">
