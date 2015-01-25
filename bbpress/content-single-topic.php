@@ -37,7 +37,7 @@
         
         <?php } else { ?>
         
-        <a href="#new-post" title="Svara på detta ämne" class="btn btn-primary bbp-new-reply-btn"><i class="fa fa-plus-square"></i> Svara</a>
+        <a href="#new-post" title="Svara på detta ämne" class="btn btn-primary bbp-new-reply-btn" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i> Svara</a>
         
         <?php } ?>
 
@@ -47,7 +47,7 @@
 
 			<?php bbp_get_template_part( 'pagination', 'replies' ); ?>
             
-                <?php // Check if topic is closed
+        <?php // Check if topic is closed
 		$is_topic_closed = bbp_get_topic_status( $topic_id );
 		if ($is_topic_closed == 'closed') { ?>
         
@@ -55,10 +55,9 @@
         
         <?php } else { ?>
         
-        <a href="#new-post" title="Svara på detta ämne" class="btn btn-primary bbp-new-reply-btn"><i class="fa fa-plus-square"></i> Svara</a>
+        <a href="#new-post" title="Svara på detta ämne" class="btn btn-primary bbp-new-reply-btn" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i> Svara</a>
         
         <?php } ?>
-
 
 		<?php endif; ?>
         
