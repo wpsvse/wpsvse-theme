@@ -13,8 +13,6 @@
 
 <div id="bbpress-forums">
 
-	<?php bbp_breadcrumb(); ?>
-
 <?php endif; ?>
 
 <?php if ( bbp_current_user_can_access_create_reply_form() ) : ?>

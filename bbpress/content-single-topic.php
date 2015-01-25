@@ -9,7 +9,7 @@
 
 ?>
 
-<div id="bbpress-forums">
+<div id="bbpress-forums" <?php bbp_topic_class(); ?>>
 
 	<?php do_action( 'bbp_template_before_single_topic' ); ?>
 
@@ -29,7 +29,17 @@
 
 		<?php if ( bbp_has_replies() ) : ?>
         
-        <a href="#" title="Svara på detta ämne" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Svara</a>
+        <?php // Check if topic is closed
+		$is_topic_closed = bbp_get_topic_status( $topic_id );
+		if ($is_topic_closed == 'closed') { ?>
+        
+        <span title="Detta ämne är stängt för nya svar" class="btn btn-primary bbp-new-reply-btn"><i class="fa fa-lock"></i> Stängt</span>
+        
+        <?php } else { ?>
+        
+        <a href="#new-post" title="Svara på detta ämne" class="btn btn-primary bbp-new-reply-btn"><i class="fa fa-plus-square"></i> Svara</a>
+        
+        <?php } ?>
 
 			<?php bbp_get_template_part( 'pagination', 'replies' ); ?>
 
@@ -37,7 +47,18 @@
 
 			<?php bbp_get_template_part( 'pagination', 'replies' ); ?>
             
-        <a href="#" title="Svara på detta ämne" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Svara</a>
+                <?php // Check if topic is closed
+		$is_topic_closed = bbp_get_topic_status( $topic_id );
+		if ($is_topic_closed == 'closed') { ?>
+        
+        <span title="Detta ämne är stängt för nya svar" class="btn btn-primary bbp-new-reply-btn"><i class="fa fa-lock"></i> Stängt</span>
+        
+        <?php } else { ?>
+        
+        <a href="#new-post" title="Svara på detta ämne" class="btn btn-primary bbp-new-reply-btn"><i class="fa fa-plus-square"></i> Svara</a>
+        
+        <?php } ?>
+
 
 		<?php endif; ?>
         

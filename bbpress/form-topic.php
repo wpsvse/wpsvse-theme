@@ -13,8 +13,6 @@
 
 <div id="bbpress-forums">
 
-	<?php bbp_breadcrumb(); ?>
-
 <?php endif; ?>
 
 <?php if ( bbp_is_topic_edit() ) : ?>
