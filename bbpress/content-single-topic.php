@@ -40,6 +40,21 @@
         <a href="#new-post" title="Svara på detta ämne" class="btn btn-primary bbp-new-reply-btn" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i> Svara</a>
         
         <?php } ?>
+        
+        <div class="bbp-search-form-topic">    
+            <form role="search" method="get" id="bbp-search-form" action="<?php the_permalink(); ?>">
+            <label class="screen-reader-text hidden" for="bbp_search"><?php _e( 'Search for:', 'bbpress' ); ?></label>
+            <div class="input-group">
+             <!-- Start BBPRESS SEARCH FORM -->
+              <input type="text" value="<?php echo esc_attr( bbp_get_search_terms() ); ?>" placeholder="Sök i ämne&hellip;" name="bbp_search" id="bbp_search" class="form-control">
+              <input type="hidden" name="action" value="bbp-search-request" />
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit" id="bbp_search_submit">Sök</button>
+              </span>
+             <!-- End BBPRESS SEARCH FORM -->
+            </div><!-- /input-group -->
+            </form>
+        </div>
 
 			<?php bbp_get_template_part( 'pagination', 'replies' ); ?>
 

@@ -14,8 +14,8 @@
             <div class="row">
             <?php if ( is_bbpress() ) { ?>
             	<div class="col-md-12 forum-legend">
-                <p>Legend</p>
                 	<ul>
+                    	<li><strong>Info:</strong></li>
                     	<li><i class="fa fa-bullhorn"></i> Forumnotis</li>
                         <li><i class="fa fa-thumb-tack"></i> Klistrat ämne</li>
                         <li><i class="fa fa-exclamation-triangle"></i> Rapporterat ämne</li>
