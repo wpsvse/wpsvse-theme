@@ -27,7 +27,10 @@ get_header();
 			<div class="row">
               <div class="col-md-12">
               	<?php bbp_breadcrumb(); ?>
-                <h2><?php the_title(); ?></h2>
+                <div class="bbp-search-form-forum">
+					<?php bbp_get_template_part( 'form', 'search' ); ?>
+                </div>
+                <h2 class="page-title-forum"><?php the_title(); ?></h2>
               	<?php the_content(); ?>
               </div>
 			</div>
