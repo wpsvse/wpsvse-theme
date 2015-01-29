@@ -428,6 +428,29 @@ input[type=text],
 	float: left;
 	margin-right: 15px;
 }
+
+/* ==========================================================================
+	Panels
+============================================================================ */
+
+.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #21759b;
+	border-color: #2e6da4;
+	cursor: pointer;
+}
+
+.panel-primary>.panel-heading i {
+	margin-right: 4px;
+}
+
+.panel-primary {
+	border-color: #2e6da4;
+}
+
+.panel-primary label {
+	font-weight: normal;
+}
 	
 /* ==========================================================================
   Main Sections
@@ -470,6 +493,9 @@ input[type=text],
 	border-top: 1px solid #EEE;
 	border-bottom: 1px solid #EEE;
 	background: #F8F8F8;
+}
+.bbpress #other {
+	padding: 25px 0;
 }
 #footer-widgets {
 	background: url(img/blur.jpg);
@@ -914,13 +940,30 @@ article.post img {
 .post .entry-title {
 	font-size: 28px;
 	text-shadow: none;
-	padding: 25px 25px 10px 25px;
+	padding: 25px 25px 0px 25px;
+}
+.post .single-entry-title {
+	font-size: 28px;
+	text-shadow: none;
+	padding: 25px 0 0;
 }
 article.post h1 a {
 	font-weight: 300;
 }
 .post-image {
 	position: relative;
+}
+.single .post-image {
+	border-bottom: 3px solid #21759B;
+}
+.single-meta-header {
+	padding-bottom: 25px;
+}
+.single-meta-header span {
+	padding-right: 15px;
+}
+.single-meta-header span a {
+	color: #666;
 }
 .post .entry-content {
 	background-color: #f8f8f8;
@@ -933,9 +976,17 @@ article.post h1 a {
 	font-weight: 300;
 }
 .entry-footer-meta {
-	background-color: #f3f3f3;
+	background-color: #f1f1f1;
 	padding: 8px 25px;
 	line-height: 32px;
+}
+.single-footer-meta {
+	background-color: #f1f1f1;
+	padding: 8px 25px;
+	line-height: 20px;
+	min-height: 56px;
+	font-style: italic;
+	font-size: 12px;
 }
 .entry-meta-user,
 .entry-meta-category,
@@ -948,11 +999,19 @@ article.post h1 a {
 	border-radius: 16px;
 	background-color: #fff;
 }
+.single-footer-meta .avatar {
+	width: 40px;
+	border-radius: 20px;
+	float: left;
+	margin-right: 15px;
+}
 .entry-meta-read-more {
 	float: right;
 }
 .entry-meta-date,
-.entry-meta-comments {
+.entry-meta-comments,
+.single-meta-date,
+.single-meta-comments {
 	position: absolute;
 	padding: 5px 15px;
 	color: #fff;
@@ -961,16 +1020,19 @@ article.post h1 a {
 	text-align: right;
 	right: 0;
 }
-.entry-meta-date {
+.entry-meta-date,
+.single-meta-date {
 	background-color: rgba(33,117,155,.7);
 	bottom: 35px;
 }
-.entry-meta-comments {
+.entry-meta-comments,
+.single-meta-comments {
 	background-color: rgba(51,51,51,.7);
 	bottom: 0;
 	color: #fff;
 }
-.entry-meta-comments a {
+.entry-meta-comments a,
+.single-meta-comments a {
 	color: #fff;
 }
 
@@ -1093,8 +1155,19 @@ article.post h1 a {
 /* ==========================================================================
 	Footer Links
 ============================================================================ */
+.forum-legend li {
+	display: inline-block;
+	margin-right: 15px;
+}
+.forum-legend p {
+	margin: 0;
+	color: #999;
+}
 #footer p {
 	margin-bottom: 0;
+}
+#footer i {
+	color: #21759B;
 }
 .footer-links {
 	list-style: none;
