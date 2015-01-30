@@ -76,6 +76,14 @@ button {
 	-o-transition:all 0.3s ease-in-out;
 	transition:all 0.3s ease-in-out;
 }
+button.popover-link {
+	padding: 0;
+	border: none;
+	background: none;
+}
+button.popover-link:focus {
+	outline: none;
+}
 ul {
 	list-style: none;
 	padding-left: 0;
@@ -981,12 +989,8 @@ article.post h1 a {
 	line-height: 32px;
 }
 .single-footer-meta {
-	background-color: #f1f1f1;
-	padding: 8px 25px;
-	line-height: 20px;
-	min-height: 56px;
-	font-style: italic;
-	font-size: 12px;
+	background-color: #f8f8f8;
+	padding: 8px 15px;
 }
 .entry-meta-user,
 .entry-meta-category,
@@ -996,14 +1000,22 @@ article.post h1 a {
 .entry-meta-user .avatar {
 	width: 24px;
 	height: auto;
-	border-radius: 16px;
+	border-radius: 12px;
 	background-color: #fff;
 }
 .single-footer-meta .avatar {
-	width: 40px;
-	border-radius: 20px;
+	width: 24px;
+	border-radius: 12px;
 	float: left;
-	margin-right: 15px;
+}
+.single-footer-meta .popover-link {
+	margin-right: 8px;
+}
+.single-footer-meta .popover-link i {
+	font-size: 24px;
+	line-height: 24px;
+	float: left;
+	color: #21759b;
 }
 .entry-meta-read-more {
 	float: right;
