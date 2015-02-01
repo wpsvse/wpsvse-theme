@@ -33,9 +33,13 @@ get_header(); ?>
                              * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                              */
                             get_template_part( 'content', 'single' );
-                        ?>
-        
-                    <?php endwhile; ?>
+							
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;
+			
+					endwhile; ?>
         
               </div>
               <?php get_sidebar(); ?>
