@@ -935,6 +935,9 @@ input[type=text],
 article.post {
 	margin-bottom: 75px;
 }
+.single article.post {
+	margin-bottom: 25px;
+}
 .post .content-frame {
 	padding: 8px 15px;
 }
@@ -990,7 +993,9 @@ article.post h1 a {
 }
 .single-footer-meta {
 	background-color: #f8f8f8;
-	padding: 8px 15px;
+	padding: 8px 15px 2px;
+	margin: 25px 0 0;
+	border: 1px solid #eee;
 }
 .entry-meta-user,
 .entry-meta-category,
@@ -1082,6 +1087,31 @@ article.post h1 a {
 }
 .extra-features h4 {
 	font-weight: bold;
+}
+
+/* ==========================================================================
+   Sidebar
+============================================================================ */
+#sidebar {}
+
+#sidebar .widget {
+	padding-bottom: 25px;
+}
+#sidebar li {
+	padding: 4px 0 4px 15px;
+}
+#sidebar li:hover {
+	background-color: #f8f8f8;
+}
+#sidebar li:before {
+	font-family: "FontAwesome";
+	content: "\f105";
+	left: 15px;
+	position: absolute;
+}
+#sidebar li:hover:before {
+	color: #21759B;
+	content: "\f0da";
 }
 
 /* ==========================================================================
