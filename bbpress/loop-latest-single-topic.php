@@ -26,7 +26,7 @@
 
 		</li>
 
-		<li class="bbp-topic-reply-count">Replies: <?php bbp_show_lead_topic() ? bbp_topic_reply_count() : bbp_topic_post_count(); ?></li>
+		<li class="bbp-topic-reply-count">Svar: <?php bbp_show_lead_topic() ? bbp_topic_reply_count() : bbp_topic_post_count(); ?></li>
 
 		<li class="bbp-topic-freshness">
 				<p class="bbp-topic-meta">
