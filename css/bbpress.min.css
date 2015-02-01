@@ -444,7 +444,7 @@ span.bbp-admin-links {
 	color: #ddd;
 }
 span.bbp-admin-links a {
-	color: #999;
+	color: #666;
 	font-weight: normal;
 	font-size: 10px;
 	text-transform: uppercase;
@@ -531,6 +531,46 @@ td.bbp-topic-counts {
 #bbpress-forums p.bbp-topic-meta span {
 	white-space: nowrap;
 }
+
+div.bbpl_button_wrapper {
+	margin-left: 3px;
+}
+
+a.bbpl_button {
+	background: none;
+	color: #666;
+	font-weight: normal;
+	font-size: 10px;
+	text-transform: uppercase;
+	float: none;
+	padding: 0;
+}
+
+a.bbpl_button:before {
+	content: " | ";
+	font-size: 10px;
+	color: #ddd;
+}
+
+a.bbpl_button:after {
+	font-family: FontAwesome;
+	content: "\f164";
+	display: inline-block;
+	margin-left: 4px;
+	font-size: 13px;
+	color: #2174A5;
+}
+
+span.bbpl_number {
+	float: none;
+	color: #21759b;
+	font-size: 11px;
+}
+
+a.bbpl_button.liked {
+	opacity: 0.8;
+}
+
 
 /* =Pagination
 -------------------------------------------------------------- */
