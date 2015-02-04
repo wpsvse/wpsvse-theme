@@ -238,7 +238,7 @@ get_header(); ?>
                 	<h3>Ställ en fråga</h3>
                     <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett inlägg med din fråga nu&hellip;</p>
                     <!-- Start INSERT BBPRESS NEW POST BUTTON -->
-                    <button type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</button>
+                    <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</a>
                     <!-- End INSERT BBPRESS NEW POST BUTTON -->
                   </div>
                   

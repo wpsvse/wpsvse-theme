@@ -20,13 +20,13 @@
     
     	<?php bbp_single_forum_description(); ?>
         
-        	<a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+        	<a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 
 		<?php if ( bbp_get_forum_subforum_count() && bbp_has_forums() ) : ?>
 			
 			<?php bbp_get_template_part( 'loop', 'forums' ); ?>
             
-            <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+            <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 
 		<?php endif; ?>
 
@@ -38,7 +38,7 @@
 
 			<?php bbp_get_template_part( 'pagination', 'topics'    ); ?>
             
-            <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+            <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 
 			<?php bbp_get_template_part( 'form',       'topic'     ); ?>
 
