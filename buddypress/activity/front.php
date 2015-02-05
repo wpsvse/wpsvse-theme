@@ -143,15 +143,11 @@
                             <?php bp_get_template_part( 'activity/entry' ); ?>
                     
                         <?php endwhile; ?>
-                    
-                        <?php if ( bp_activity_has_more_items() ) : ?>
-                    
-                            <li class="load-more">
-                                <a href="#more"><?php _e( 'Load More', 'buddypress' ); ?></a>
+                                        
+                            <li class="load-more-link">
+                                <a href="<?php echo esc_url( home_url( '/aktivitet/' ) ); ?>"><?php _e( 'Load More', 'buddypress' ); ?></a>
                             </li>
-                    
-                        <?php endif; ?>
-                    
+                                        
                         <?php if ( empty( $_POST['page'] ) ) : ?>
                     
                             </ul>

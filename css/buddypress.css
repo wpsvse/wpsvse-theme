@@ -327,6 +327,7 @@ body.activity-permalink #buddypress .activity-content blockquote {
 	white-space: nowrap;
 }
 #buddypress .activity-list li.load-more,
+#buddypress .activity-list li.load-more-link,
 #buddypress .activity-list li.load-newest {
 	background: #21759B;
 	font-size: 110%;
@@ -338,6 +339,7 @@ body.activity-permalink #buddypress .activity-content blockquote {
 	border-radius: 3px;
 }
 #buddypress .activity-list li.load-more a,
+#buddypress .activity-list li.load-more-link a,
 #buddypress .activity-list li.load-newest a {
 	color: #fff;
 	display: block;
