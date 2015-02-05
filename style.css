@@ -935,30 +935,37 @@ input[type=text],
 article.post {
 	margin-bottom: 75px;
 }
-.single article.post {
+.single article.post,
+.single-wpsvse_blog article.wpsvse_blog {
 	margin-bottom: 25px;
 }
-.post .content-frame {
+.post .content-frame,
+.wpsvse_blog .content-frame {
 	padding: 8px 15px;
 }
-.post .content-frame p {
+.post .content-frame p,
+.wpsvse_blog .content-frame p {
 	margin-bottom: 0;
 }
-article.post img {
+article.post img,
+article.wpsvse_blog img {
 	max-width: 100%;
 	height: auto;
 }
-.post .entry-title {
+.post .entry-title,
+.wpsvse_blog .entry-title {
 	font-size: 28px;
 	text-shadow: none;
 	padding: 25px 25px 0px 25px;
 }
-.post .single-entry-title {
+.post .single-entry-title,
+.wpsvse_blog .single-entry-title {
 	font-size: 28px;
 	text-shadow: none;
 	padding: 25px 0 0;
 }
-article.post h1 a {
+article.post h1 a,
+article.wpsvse_blog h1 a {
 	font-weight: 300;
 }
 .post-image {
@@ -976,12 +983,14 @@ article.post h1 a {
 .single-meta-header span a {
 	color: #666;
 }
-.post .entry-content {
+.post .entry-content,
+.wpsvse_blog .entry-content {
 	background-color: #f8f8f8;
 	border: 1px solid #eee;
 	border-top: 3px solid #21759B;
 }
-.post .entry-excerpt p {
+.post .entry-excerpt p,
+.wpsvse_blog .entry-excerpt p {
 	padding: 10px 25px;
 	line-height: normal;
 	font-weight: 300;
