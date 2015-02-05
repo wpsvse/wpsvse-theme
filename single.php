@@ -11,7 +11,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
               <div class="col-md-12">
-            	<h1 class="page-title">Nyheter</h1>   
+            	<h1 class="page-title"><?php if ( 'wpsvse_blog' == get_post_type() ) { ?>Blogg<?php } else { ?>Nyheter<?php } ?></h1>   
               </div>
             </div>
         </div>
