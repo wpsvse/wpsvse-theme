@@ -116,8 +116,8 @@ select,
 .tab-nav,
 .tab-nav > li > a,
 .tab-nav > li:first-child a
-.tab-nav > li:last-child a 
-.accordion-group 
+.tab-nav > li:last-child a
+.accordion-group
 .accordion .accordion-inner img.thumbnail
 .navbar
 .nav-1
@@ -145,7 +145,7 @@ select,
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
 }
-	
+
 /* ==========================================================================
   Navigation
 ============================================================================ */
@@ -459,7 +459,7 @@ input[type=text],
 .panel-primary label {
 	font-weight: normal;
 }
-	
+
 /* ==========================================================================
   Main Sections
 ============================================================================ */
@@ -480,7 +480,7 @@ input[type=text],
 #sponsor {
 	background: #F8F8F8;
 	border-top: 1px solid #EEE;
-}   
+}
 #latest-blog-header {
 	background: #21759b;
 }
@@ -538,6 +538,27 @@ input[type=text],
 }
 .extra-download-link {
 	color: #999;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/*	Share Buttons
+/* ---------------------------------------------------------------------- */
+
+.container .sd-social-icon .sd-content ul li[class*='share-'] a ,
+.container .sd-social-icon .sd-content ul li[class*='share-'] a:hover{
+  position: static;
+  box-shadow: inset 0px 0px 1px #333;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 9px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -643,7 +664,7 @@ input[type=text],
 	color: #999;
 	padding-right: 50px;
 }
-#sponsor img { 
+#sponsor img {
 	max-width: 100%;
 	padding: 0 15px;
 }
@@ -696,7 +717,7 @@ input[type=text],
 
 
 /* ==========================================================================
-	Activity 
+	Activity
 ============================================================================ */
 .bp-statuses {
 	background-color: #f8f8f8;
@@ -754,7 +775,7 @@ input[type=text],
 }
 
 /* ==========================================================================
-	Groups 
+	Groups
 ============================================================================ */
 #bp-groups {
 }
@@ -848,7 +869,7 @@ input[type=text],
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	border-bottom:1px solid rgba(0,0,0,0.1);
-}	
+}
 
 /* ---------------------------------------------------------------------- */
 /*	Stats
@@ -876,7 +897,7 @@ input[type=text],
 .stats p {
 	margin-bottom: 0;
 }
-	
+
 /* ---------------------------------------------------------------------- */
 /*	Testimonials
 /* ---------------------------------------------------------------------- */
@@ -1072,7 +1093,7 @@ article.wpsvse_blog h1 a {
 	-ms-transition: all .4s;
 	transition: all .4s;
 	margin-bottom: 60px;
-}  
+}
 .extra-features i {
 	clear: both;
 	display: inline-block;
@@ -1159,7 +1180,7 @@ article.wpsvse_blog h1 a {
 			margin-right: 10px;
 			font-size: 31px;
 			display: inline-block;
-		}	
+		}
 		.social li:last-child {
 			margin-right: 0;
 		}
@@ -1202,7 +1223,7 @@ article.wpsvse_blog h1 a {
 		color:#fff;
 		text-decoration:none;
 	}
-	
+
 /* ==========================================================================
 	Footer Links
 ============================================================================ */
@@ -1255,7 +1276,7 @@ article.wpsvse_blog h1 a {
 /* ==========================================================================
 	Responsive Fixes
 ============================================================================ */
-@media handheld, only screen and (max-width: 767px) { 
+@media handheld, only screen and (max-width: 767px) {
     .row {
         padding-left: 15px;
         padding-right: 15px;
@@ -1275,7 +1296,7 @@ article.wpsvse_blog h1 a {
         }
 }
 
-@media handheld, only screen and (max-width: 500px) { 
+@media handheld, only screen and (max-width: 500px) {
 
 	.navbar-collapse { background-color: transparent; }
 
@@ -1309,26 +1330,26 @@ article.wpsvse_blog h1 a {
 	}
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
      { /* Styles */:  }
 }
 
 
-     
+
 @media handheld, only screen and (max-width: 767px){
 }
 
-@media handheld, only screen and (max-width: 2200px) { 
+@media handheld, only screen and (max-width: 2200px) {
     /* ===[ Styles ]===
            ==================================================
        ================================================== */
 }
 
-@media handheld, only screen and (max-width: 1240px) { 
-    
+@media handheld, only screen and (max-width: 1240px) {
+
 }
 
-@media handheld, only screen and (max-width: 1024px) { 
+@media handheld, only screen and (max-width: 1024px) {
      { /* Styles */:  }
 }
 
