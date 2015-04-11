@@ -1122,7 +1122,10 @@ article.wpsvse_blog h1 a {
 /* ==========================================================================
    Sidebar
 ============================================================================ */
-#sidebar {}
+#sidebar {
+  width: 25%;
+  word-break: break-all;
+}
 
 #sidebar .widget {
 	padding-bottom: 25px;
