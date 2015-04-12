@@ -679,15 +679,18 @@ input[type=text],
 	margin-bottom: 0;
 }
 #latest-blog-header .carr-down {
-	content: "";
-	position: absolute;
-	bottom: -20px;
-	left: 50%;
-	width: 0px;
-	height: 0px;
-	border-style: solid;
-	border-width: 20px 15px 0 15px;
-	border-color: #21759b transparent transparent transparent;
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(33, 117, 155, 0);
+  border-top-color: #21759b;
+  border-width: 25px;
+  margin-left: -25px;
 }
 
 /* ==========================================================================
@@ -1122,7 +1125,10 @@ article.wpsvse_blog h1 a {
 /* ==========================================================================
    Sidebar
 ============================================================================ */
-#sidebar {}
+#sidebar,
+#latest-forum-sidebar {
+  word-break: break-all;
+}
 
 #sidebar .widget {
 	padding-bottom: 25px;
