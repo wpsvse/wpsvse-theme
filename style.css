@@ -473,7 +473,6 @@ input[type=text],
 	padding: 0 12px;
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: bold;
   border: 1px solid rgba(0,0,0,0.2);
   color: #FFF;
 }
