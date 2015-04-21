@@ -115,6 +115,20 @@ select, .form-control {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+
+/* ==========================================================================
+  WP-Adminbar
+============================================================================ */
+
+#wpadminbar {
+  background: #222;
+}
+
+#wpadminbar .ab-icon:before,
+#wpadminbar #adminbarsearch:before {
+  color: #fff;
+}
+
 /* ==========================================================================
   Top Part
 ============================================================================ */
@@ -197,7 +211,6 @@ select, .form-control {
 .navbar-inverse .navbar-brand {
   color: #FFF;
 }
-.navbar-header {}
 .navbar-toggle {
   position: relative;
   float: right;
@@ -1077,6 +1090,7 @@ article.post h1 a, article.wpsvse_blog h1 a {
 .entry-meta-comments a, .single-meta-comments a {
   color: #fff;
 }
+
 /* ==========================================================================
    Extra Features
 ============================================================================ */
@@ -1404,8 +1418,39 @@ article.post h1 a, article.wpsvse_blog h1 a {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .navbar-header {
+    margin-bottom: 25px;
+  }
+  .navbar-nav {
+    margin: 0;
+    padding: 0;
+  }
+  .nav > li {
+    border-top: 1px solid #fff;
+    background: #2e6da4; /* alt black #222 */
+  }
+  .nav > li:nth-child(1) {
+    border-top: 0;
+  }
+  .nav > li:hover {
+    background: #2b6597;
+  }
+  .navbar-nav > li > a {
+    padding: 15px 25px;
+  }
+  .navbar-inverse .navbar-nav > li > a:hover {
+    color: #fff;
+  }
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    float: left;
+    border: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   #header .navbar-inverse .container {
     width: 100%;
+    padding: 0;
   }
   .navbar-brand img {
     margin: 0 15px
