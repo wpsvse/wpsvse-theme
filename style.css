@@ -1323,11 +1323,11 @@ article.post h1 a, article.wpsvse_blog h1 a {
   min-width: 70%;
 }
 
-/* Twitter Feed */
-#twitter-widget-0 .timeline.var-chromeless {
+/* Twitter Feed [needs fix to iframe]*/
+/*#twitter-widget-0 .timeline.var-chromeless {
   width: 90%;
   margin: 0 auto;
-}
+} */ 
 
 /* ---------------------------------------------------------------------- */
 /*	Social bookmarks
