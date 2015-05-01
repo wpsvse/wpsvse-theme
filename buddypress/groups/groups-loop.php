@@ -37,34 +37,20 @@
 
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
-		<li>
-			<div class="item-avatar">
-				<a href="<?php bp_group_permalink(); ?>"><?php bp_group_avatar( 'type=thumb&width=50&height=50' ); ?></a>
-			</div>
-
+		<li class="col-xs-6 col-sm-6 col-md-3 bp-group-listing">
 			<div class="item">
-				<div class="item-title"><a href="<?php bp_group_permalink(); ?>"><?php bp_group_name(); ?></a></div>
-				<div class="item-meta"><span class="activity"><?php printf( __( 'active %s', 'buddypress' ), bp_get_group_last_active() ); ?></span></div>
-
-				<div class="item-desc"><?php bp_group_description_excerpt(); ?></div>
+        <a href="<?php bp_group_permalink(); ?>" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="<?php bp_group_name(); ?> - <?php bp_group_member_count(); ?>"><?php bp_group_avatar( 'type=thumb&width=256&height=256' ); ?>
+          <div class="item-title item-type"><?php bp_group_name(); ?></div>
+          <div class="item-meta item-type"><?php printf( __( 'Active %s', 'buddypress' ), bp_get_group_last_active() ); ?></div>
+					<div class="item-count item-type"><?php bp_group_type(); ?> / <?php bp_group_member_count(); ?> </div>
+				</a>
 
 				<?php do_action( 'bp_directory_groups_item' ); ?>
 
 			</div>
 
-			<div class="action">
-
 				<?php do_action( 'bp_directory_groups_actions' ); ?>
 
-				<div class="meta">
-
-					<?php bp_group_type(); ?> / <?php bp_group_member_count(); ?>
-
-				</div>
-
-			</div>
-
-			<div class="clear"></div>
 		</li>
 
 	<?php endwhile; ?>
