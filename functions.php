@@ -44,8 +44,8 @@ function wpsvse_setup() {
 	/**
 	 * Resizes avatars (buddypress)
 	 */
-	define ( 'BP_AVATAR_THUMB_WIDTH', 128 );
-	define ( 'BP_AVATAR_THUMB_HEIGHT', 128 );
+	define ( 'BP_AVATAR_THUMB_WIDTH', 256 );
+	define ( 'BP_AVATAR_THUMB_HEIGHT', 256 );
 	define ( 'BP_AVATAR_FULL_WIDTH', 512 );
 	define ( 'BP_AVATAR_FULL_HEIGHT', 512 );
 	define ( 'BP_AVATAR_ORIGINAL_MAX_WIDTH', 512 );

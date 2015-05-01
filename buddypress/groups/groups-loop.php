@@ -39,7 +39,6 @@
 
 		<li>
 			<div class="item-avatar">
-				<a href="<?php bp_group_permalink(); ?>"><?php bp_group_avatar( 'type=thumb&width=50&height=50' ); ?></a>
 			</div>
 
 			<div class="item">
