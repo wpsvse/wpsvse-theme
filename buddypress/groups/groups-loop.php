@@ -37,7 +37,7 @@
 
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
-		<li class="col-xs-6 col-sm-6 col-md-3 bp-group-listing">
+		<li class="col-xs-12 col-sm-6 col-md-3 bp-group-listing">
 			<div class="item">
         <a href="<?php bp_group_permalink(); ?>" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="<?php bp_group_name(); ?> - <?php bp_group_member_count(); ?>"><?php bp_group_avatar( 'type=thumb&width=256&height=256' ); ?>
           <div class="item-title item-type"><?php bp_group_name(); ?></div>
