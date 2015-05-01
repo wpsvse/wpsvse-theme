@@ -1499,7 +1499,16 @@ article.post h1 a, article.wpsvse_blog h1 a {
     display: none;
   }
 
+  #bbpress-forums li.bbp-topic-counts {
+    position: relative;
+  }
+
+  #bbpress-forums .bbp-topics .bbp-count-badge {
+    position: absolute;
+    top: 15px;
+  }
 }
+
 @media handheld, only screen and (max-width: 500px) {
   .navbar-collapse {
     background-color: transparent;
