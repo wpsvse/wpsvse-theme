@@ -502,10 +502,23 @@ input[type=text], .form-inline input, .form-control {
   border-top: 1px solid #EEE;
   padding: 40px 0;
 }
+
 /* ---------------------------------------------------------------------- */
-/*	WP-PageNavi
+/*	Forum Tweaks
 /* ---------------------------------------------------------------------- */
 
+#bbpress-forums li.bbp-topic-counts {
+  position: relative;
+}
+
+#bbpress-forums .bbp-topics .bbp-count-badge {
+  position: absolute;
+  top: 15px;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	WP PageNav
+/* ---------------------------------------------------------------------- */
 .wp-pagenavi .extend, .wp-pagenavi a, .wp-pagenavi .pages {
   margin-bottom: 40px;
   background: #21759b;
@@ -523,7 +536,6 @@ input[type=text], .form-inline input, .form-control {
   -webkit-transition: all 500ms ease;
 }
 /* active */
-
 .wp-pagenavi .current {
   margin-bottom: 40px;
   background: #000;
@@ -829,10 +841,11 @@ input[type=text], .form-inline input, .form-control {
   bottom: 0;
   font-size: 12px;
 }
-#bp-groups a.group-button.join-group {
+#bp-groups .join-group {
   background: #21759b;
   border-radius: 0;
-  padding: 15px 30px;
+  border: 0;
+  padding: 10px;
   font-size: 14px;
   text-transform: uppercase;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -840,7 +853,7 @@ input[type=text], .form-inline input, .form-control {
   text-align: center;
   width: 100%;
 }
-#bp-groups a.group-button.join-group:hover {
+#bp-groups .join-group:hover {
   background: #000;
   color: #FFF;
   -webkit-transition: all 500ms ease;
@@ -1498,15 +1511,6 @@ article.post h1 a, article.wpsvse_blog h1 a {
   #bbpress-forums .bbp-topic-freshness {
     display: none;
   }
-
-  #bbpress-forums li.bbp-topic-counts {
-    position: relative;
-  }
-
-  #bbpress-forums .bbp-topics .bbp-count-badge {
-    position: absolute;
-    top: 15px;
-  }
 }
 
 @media handheld, only screen and (max-width: 500px) {
@@ -1544,6 +1548,12 @@ article.post h1 a, article.wpsvse_blog h1 a {
   .footer-links {
     float: none;
   }
+
+  .home-page #groups-list {
+    width: 250px;
+    margin: 0 auto;
+  }
+
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   {
