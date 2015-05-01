@@ -8,7 +8,7 @@
 
 			<li>
 				<div class="item-avatar">
-					<a href="<?php bp_group_permalink(); ?>"><?php bp_group_avatar( 'type=thumb&width=50&height=50' ); ?></a>
+					<a href="<?php bp_group_permalink(); ?>"><?php bp_group_avatar( 'type=thumb&width=128&height=128' ); ?></a>
 				</div>
 
 				<h4><a href="<?php bp_group_permalink(); ?>"><?php bp_group_name(); ?></a><span class="small"> - <?php printf( __( '%s members', 'buddypress' ), bp_group_total_members( false ) ); ?></span></h4>
