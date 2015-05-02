@@ -858,6 +858,40 @@ input[type=text], .form-inline input, .form-control {
   color: #FFF;
   -webkit-transition: all 500ms ease;
 }
+
+/* Group Listing */
+.bp-group-listing .item {
+  position: relative;
+  max-width: 256px;
+}
+#buddypress .bp-group-listing .item-type {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  padding: 3px 8px;
+  text-align: right;
+}
+#buddypress ul.item-list .bp-group-listing .item-title {
+  background-color: rgba(33, 117, 155, .7);
+  bottom: 44px;
+  color: #fff;
+  font-size: 16px;
+}
+#buddypress ul.item-list .bp-group-listing .item-meta {
+  background-color: rgba(51, 51, 51, .7);
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  width: 100%;
+}
+#buddypress .bp-group-listing .item-count {
+  background-color: rgba(51, 51, 51, .7);
+  position: absolute;
+  bottom: 22px;
+  font-size: 12px;
+  width: 100%;
+}
+
 /* ==========================================================================
 	Other
 ============================================================================ */
