@@ -891,7 +891,14 @@ input[type=text], .form-inline input, .form-control {
   font-size: 12px;
   width: 100%;
 }
-
+/* Group Create Tweaks */
+#group-create-body input#file {
+  line-height: 0;
+  padding: 12px 8px;
+}
+#buddypress form.standard-form .left-menu {
+  margin-right: 25px;
+}
 /* ==========================================================================
 	Other
 ============================================================================ */
