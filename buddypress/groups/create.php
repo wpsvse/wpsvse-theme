@@ -134,7 +134,7 @@
 
 					<div class="left-menu">
 
-						<?php bp_new_group_avatar(); ?>
+						<?php bp_new_group_avatar( 'type=thumb&width=256&height=256' ); ?>
 
 					</div><!-- .left-menu -->
 
