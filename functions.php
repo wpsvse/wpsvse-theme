@@ -40,6 +40,12 @@ function wpsvse_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	/**
+	 * Extra image sizes
+	 */
+	if ( function_exists( 'add_image_size' ) ) { 
+		add_image_size( 'post-image', 850, 600, true );
+	}
 
 	/**
 	 * Resizes avatars (buddypress)
