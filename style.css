@@ -903,6 +903,14 @@ input[type=text], .form-inline input, .form-control {
 #buddypress form.standard-form .left-menu {
   margin-right: 25px;
 }
+#buddypress .item-list-tabs {
+  margin-top: 15px;
+  background-color: #f8f8f8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
 /* ==========================================================================
 	Other
 ============================================================================ */
@@ -1379,6 +1387,9 @@ article.post h1 a, article.wpsvse_blog h1 a {
   display: inline-block;
   margin: 30px auto;
   min-width: 70%;
+}
+.sd-block {
+  padding: 0;
 }
 
 /* Twitter Feed [needs fix to iframe]*/
