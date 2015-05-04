@@ -8,7 +8,7 @@
 
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
-		<li class="col-sm-6">		
+		<li class="col-xs-6 col-sm-6">		
 
 			<div class="item">
             	<a href="<?php bp_group_permalink(); ?>" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="<?php bp_group_name(); ?> - <?php bp_group_member_count(); ?>"><?php bp_group_avatar( 'type=thumb&width=256&height=256' ); ?>
@@ -21,7 +21,7 @@
 			</div>
 
 				<?php do_action( 'bp_directory_groups_actions' ); ?>
-				
+
 		</li>
 
 	<?php endwhile; ?>
