@@ -841,22 +841,26 @@ input[type=text], .form-inline input, .form-control {
   bottom: 0;
   font-size: 12px;
 }
-#bp-groups .join-group {
+#bp-groups .group-button {
   background: #21759b;
   border-radius: 0;
   border: 0;
   padding: 10px;
   font-size: 14px;
   text-transform: uppercase;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  color: #FFF;
   text-align: center;
   width: 100%;
 }
-#bp-groups .join-group:hover {
+#bp-groups .group-button a {
+  color: #fff;
+}
+#bp-groups .group-button:hover {
   background: #000;
   color: #FFF;
   -webkit-transition: all 500ms ease;
+}
+.home-page #groups-list .item {
+  margin-bottom: 25px;
 }
 
 /* Group Listing */
@@ -1589,11 +1593,6 @@ article.post h1 a, article.wpsvse_blog h1 a {
   }
   .footer-links {
     float: none;
-  }
-
-  .home-page #groups-list {
-    width: 250px;
-    margin: 0 auto;
   }
 
 }
