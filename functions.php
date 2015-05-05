@@ -44,7 +44,7 @@ function wpsvse_setup() {
 	 * Extra image sizes
 	 */
 	if ( function_exists( 'add_image_size' ) ) { 
-		add_image_size( 'post-image', 850, 600, true );
+		add_image_size( 'post-image', 850, 550, true );
 	}
 
 	/**
