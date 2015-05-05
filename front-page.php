@@ -322,7 +322,7 @@ get_header(); ?>
               <div class="col-md-6">
 				<div class="section-headline">
 					<h2>Aktiva grupper</h2>
-					<span>Skapa kontakter via olika grupper inom WordPress</span>
+					<span>Skapa kontakter via olika <a href="<?php echo esc_url( home_url( '/grupper/' ) ); ?>">grupper</a> inom WordPress</span>
 				</div>
                 <div id="bp-groups">
                     	<?php bp_get_template_part( 'groups/front' ); ?>
