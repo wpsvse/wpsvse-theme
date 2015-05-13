@@ -1388,7 +1388,8 @@ article.post h1 a, article.wpsvse_blog h1 a {
   border-top: none;
   padding-bottom: 10px;
 }
-.twitter-container .nav > li {
+.twitter-container .nav > li,
+.twitter-container .nav > li:hover {
   border: 0;
   background: none;
   border-bottom: 1px thin black;
