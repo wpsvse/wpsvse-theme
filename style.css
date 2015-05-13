@@ -1498,6 +1498,14 @@ article.post h1 a, article.wpsvse_blog h1 a {
 .footer-links li:last-child {
   margin-right: 0;
 }
+/* the fallback for menu */
+#footer .menu li.page_item  {
+  display: inline-block;
+  margin-right: 20px;
+}
+#footer .menu li.page_item:last-child {
+  margin-right: 0;
+}
 /* ==========================================================================
 	Scroll Up
 ============================================================================ */
