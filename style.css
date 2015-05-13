@@ -1383,6 +1383,21 @@ article.post h1 a, article.wpsvse_blog h1 a {
   border-top: none;
   padding-bottom: 10px;
 }
+.twitter-container .nav > li {
+  border: 0;
+  background: none;
+  border-bottom: 1px thin black;
+}
+.twitter-container .nav-tabs a {
+  background: #21759b;
+  color: #fff;
+}
+.twitter-container .nav-tabs a:active,
+.twitter-container .nav-tabs a:focus,
+.twitter-container .nav-tabs .active a {
+  background: #fff;
+  color: #222;
+}
 .social-container {
   padding: 20px;
   background: rgba(0, 0, 0, 0.3);
@@ -1618,7 +1633,9 @@ article.post h1 a, article.wpsvse_blog h1 a {
   .footer-links {
     float: none;
   }
-
+  .twitter-container .tab-content {
+    padding: 15px;
+  }
 }
 
 /* =Screen reader
