@@ -913,6 +913,11 @@ input[type=text], .form-inline input, .form-control {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+/* search */
+#group-dir-search .form-control {
+  color: #747474;
+  font-weight: 400;
+}
 
 /* ==========================================================================
 	Other
@@ -1383,7 +1388,8 @@ article.post h1 a, article.wpsvse_blog h1 a {
   border-top: none;
   padding-bottom: 10px;
 }
-.twitter-container .nav > li {
+.twitter-container .nav > li,
+.twitter-container .nav > li:hover {
   border: 0;
   background: none;
   border-bottom: 1px thin black;
@@ -1496,6 +1502,14 @@ article.post h1 a, article.wpsvse_blog h1 a {
   margin-right: 20px;
 }
 .footer-links li:last-child {
+  margin-right: 0;
+}
+/* the fallback for menu */
+#footer .menu li.page_item  {
+  display: inline-block;
+  margin-right: 20px;
+}
+#footer .menu li.page_item:last-child {
   margin-right: 0;
 }
 /* ==========================================================================
