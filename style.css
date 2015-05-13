@@ -223,6 +223,9 @@ select, .form-control {
 .navbar-toggle:hover, .navbar-toggle:focus {
   background-color: transparent
 }
+.navbar-header {
+  position: absolute;
+}
 /* ==========================================================================
   Main Slider
 ============================================================================ */
@@ -1505,6 +1508,15 @@ article.post h1 a, article.wpsvse_blog h1 a {
 	Responsive Fixes
 ============================================================================ */
 
+@media handheld, only screen and (max-width:1199px) {}
+
+@media handheld, only screen and (max-width:991px) {
+  /* Posts on front */
+  .article-item {
+    margin-bottom: 50px;
+  }
+}
+
 @media handheld, only screen and (max-width: 767px) {
   .row {
     padding-left: 15px;
@@ -1512,6 +1524,7 @@ article.post h1 a, article.wpsvse_blog h1 a {
   }
   .navbar-header {
     margin-bottom: 25px;
+    position: static;
   }
   .navbar-nav {
     margin: 0;
@@ -1607,27 +1620,7 @@ article.post h1 a, article.wpsvse_blog h1 a {
   }
 
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  {
-    /* Styles */
 
-    :
-  }
-}
-@media handheld, only screen and (max-width: 767px) {}
-@media handheld, only screen and (max-width: 2200px) {
-  /* ===[ Styles ]===
-           ==================================================
-       ================================================== */
-}
-@media handheld, only screen and (max-width: 1240px) {}
-@media handheld, only screen and (max-width: 1024px) {
-  {
-    /* Styles */
-
-    :
-  }
-}
 /* =Screen reader
 ----------------------------------------------- */
 /* Text meant only for screen readers */
