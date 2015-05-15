@@ -21,3 +21,19 @@ jQuery(document).ready(function($) {
 	})
 	
 });
+
+// ***************************
+// Scroll to top
+// *************************** 
+jQuery(window).scroll(function(){
+	var $scrollup = jQuery('.back-to-top');
+	if (jQuery(this).scrollTop() > 100) { $scrollup.fadeIn(); }
+	else { $scrollup.fadeOut(); }
+});
+
+jQuery('.back-to-top').click(function () {
+	jQuery("html, body").animate({
+		scrollTop: 0
+	}, 600);
+	return false;
+});
