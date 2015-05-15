@@ -188,11 +188,19 @@ select, .form-control {
 .dropdown-menu > li > a {
   color: #fff;
 }
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   color: #999;
   text-decoration: none;
 }
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus {
+  background: transparent;
+  color: #fff;
+  text-decoration: underline;
+}
+
 .navbar-brand img {
   display: block;
   float: left;
@@ -222,6 +230,9 @@ select, .form-control {
 }
 .navbar-toggle:hover, .navbar-toggle:focus {
   background-color: transparent
+}
+.navbar-header {
+  position: absolute;
 }
 /* ==========================================================================
   Main Slider
@@ -895,6 +906,9 @@ input[type=text], .form-inline input, .form-control {
   font-size: 12px;
   width: 100%;
 }
+#buddypress div#item-header div#item-meta {
+  color: #747474;
+}
 /* Group Create Tweaks */
 #group-create-body input#file {
   line-height: 0;
@@ -909,6 +923,11 @@ input[type=text], .form-inline input, .form-control {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+}
+/* search */
+#group-dir-search .form-control {
+  color: #747474;
+  font-weight: 400;
 }
 
 /* ==========================================================================
@@ -1380,6 +1399,22 @@ article.post h1 a, article.wpsvse_blog h1 a {
   border-top: none;
   padding-bottom: 10px;
 }
+.twitter-container .nav > li,
+.twitter-container .nav > li:hover {
+  border: 0;
+  background: none;
+  border-bottom: 1px thin black;
+}
+.twitter-container .nav-tabs a {
+  background: #21759b;
+  color: #fff;
+}
+.twitter-container .nav-tabs a:active,
+.twitter-container .nav-tabs a:focus,
+.twitter-container .nav-tabs .active a {
+  background: #fff;
+  color: #222;
+}
 .social-container {
   padding: 20px;
   background: rgba(0, 0, 0, 0.3);
@@ -1480,6 +1515,14 @@ article.post h1 a, article.wpsvse_blog h1 a {
 .footer-links li:last-child {
   margin-right: 0;
 }
+/* the fallback for menu */
+#footer .menu li.page_item  {
+  display: inline-block;
+  margin-right: 20px;
+}
+#footer .menu li.page_item:last-child {
+  margin-right: 0;
+}
 /* ==========================================================================
 	Scroll Up
 ============================================================================ */
@@ -1505,6 +1548,15 @@ article.post h1 a, article.wpsvse_blog h1 a {
 	Responsive Fixes
 ============================================================================ */
 
+@media handheld, only screen and (max-width:1199px) {}
+
+@media handheld, only screen and (max-width:991px) {
+  /* Posts on front */
+  .article-item {
+    margin-bottom: 50px;
+  }
+}
+
 @media handheld, only screen and (max-width: 767px) {
   .row {
     padding-left: 15px;
@@ -1512,6 +1564,7 @@ article.post h1 a, article.wpsvse_blog h1 a {
   }
   .navbar-header {
     margin-bottom: 25px;
+    position: static;
   }
   .navbar-nav {
     margin: 0;
@@ -1605,29 +1658,17 @@ article.post h1 a, article.wpsvse_blog h1 a {
   .footer-links {
     float: none;
   }
-
-}
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  {
-    /* Styles */
-
-    :
+  .twitter-container .tab-content {
+    padding: 15px;
+  }
+  #footer-widgets .social-container {
+    padding: 15px;
+  }
+  #footer-widgets .social li {
+    margin: 10px 0;
   }
 }
-@media handheld, only screen and (max-width: 767px) {}
-@media handheld, only screen and (max-width: 2200px) {
-  /* ===[ Styles ]===
-           ==================================================
-       ================================================== */
-}
-@media handheld, only screen and (max-width: 1240px) {}
-@media handheld, only screen and (max-width: 1024px) {
-  {
-    /* Styles */
 
-    :
-  }
-}
 /* =Screen reader
 ----------------------------------------------- */
 /* Text meant only for screen readers */

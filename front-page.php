@@ -12,13 +12,13 @@ get_header(); ?>
       <section id="header-content" class="row">
         <!-- Start welcome -->
         <section id="welcome" class="section col-md-7">
-        
+
         	<?php while ( have_posts() ) : the_post();
-            
+
             	the_content('Läs mer');
-                
+
             endwhile; ?>
-            
+
             <section id="latest-downloads">
                 <h3>Ladda ner senaste WordPress</h3>
                     <div id="dl-btns" class="row">
@@ -37,24 +37,24 @@ get_header(); ?>
               <?php // WP_Query arguments
               $slider_args = array (
                     'posts_per_page' 	=> '3',
-                    'post_type' 		=> 'wpsvse_slider' 
+                    'post_type' 		=> 'wpsvse_slider'
               );
-              
+
               // The Query
               $slider_query = new WP_Query( $slider_args );
-              
+
               // The Loop
               if ( $slider_query->have_posts() ) {
                   while ( $slider_query->have_posts() ) {
                       $slider_query->the_post(); ?>
-    
+
                   <div class="item row">
                       <?php the_content(); ?>
                   </div>
-    
+
               <?php }
               }
-              
+
               // Restore original Post Data
               wp_reset_postdata(); ?>
               <!-- End SLIDER LOOP -->
@@ -86,22 +86,22 @@ get_header(); ?>
               <!-- Start NEWS LOOP -->
               <?php // WP_Query arguments
 			  $news_args = array ( 'posts_per_page' => '3' );
-			  
+
 			  // The Query
 			  $news_query = new WP_Query( $news_args );
-			  
+
 			  // The Loop
 			  if ( $news_query->have_posts() ) {
 				  while ( $news_query->have_posts() ) {
 					  $news_query->the_post(); ?>
-                      
+
                     <div class="col-md-4 article-item">
                         <article>
                           <div class="news-meta">
                           	  <div class="comments-meta"><?php comments_popup_link('0 kommentarer', '1 kommentar', '% kommentarer'); ?></div>
                               <time datetime="<?php the_time('c'); ?>"><?php the_time('l, j F'); ?></time>
                               <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
-							  <?php if ( has_post_thumbnail() ) {	
+							  <?php if ( has_post_thumbnail() ) {
                                 	the_post_thumbnail( 'post-image', array('class' => 'img-responsive') );
                         	  } else { ?>
                               	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />
@@ -114,10 +114,10 @@ get_header(); ?>
                           </div>
                         </article>
                     </div>
-                      
+
 			  <?php  }
 			  }
-			  
+
 			  // Restore original Post Data
 			  wp_reset_postdata(); ?>
               <!-- End NEWS LOOP -->
@@ -125,7 +125,7 @@ get_header(); ?>
 		</div>
 	</section>
 	<!-- End Latest News -->
-	
+
 	<!-- Start Sponsor -->
 	<section id="sponsor" class="section">
 		<div class="container">
@@ -133,20 +133,20 @@ get_header(); ?>
              <!-- Start SPONSOR WIDGET -->
 	             <?php if ( ! dynamic_sidebar( 'sponsor-widget' ) ) : endif; // end sidebar widget area ?>
              <!-- End SPONSOR WIDGET -->
-			</div>		
+			</div>
 		</div>
 	</section>
 	<!-- End Sponsor -->
 
-	<!-- Start Latest Blog Header -->			
+	<!-- Start Latest Blog Header -->
 	<section id="latest-blog-header" class="section">
-		<div class="container">	
+		<div class="container">
 			<div class="row">
 				<div class="section-headline white-heading">
 					<h2>Senaste ur bloggen</h2>
 					<span>Det senaste ur <?php bloginfo( 'name' ); ?>s blogg</span>
 				</div>
-			</div>	
+			</div>
 		</div>
         <div class="carr-down"></div>
 	</section>
@@ -163,18 +163,18 @@ get_header(); ?>
                   'post_type'		=> 'wpsvse_blog',
                   'posts_per_page'	=> '4',
               );
-              
+
               // The Query
               $blog_query = new WP_Query( $args );
-              
+
               // The Loop
               if ( $blog_query->have_posts() ) {
                   while ( $blog_query->have_posts() ) {
                       $blog_query->the_post(); ?>
-                      
+
                     <article class="col-md-3 blog-item">
                         <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
-						<?php if ( has_post_thumbnail() ) {	
+						<?php if ( has_post_thumbnail() ) {
                               the_post_thumbnail( 'post-image', array('class' => 'img-responsive img-thumbnail') );
                         } else { ?>
                           <img class="img-responsive img-thumbnail" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />
@@ -185,10 +185,10 @@ get_header(); ?>
                         <?php the_excerpt(); ?>
                         <a href="<?php the_permalink() ?>" class="btn-primary btn-sm">Läs mer</a>
                     </article>
-                
+
               <?php  }
               }
-              
+
               // Restore original Post Data
               wp_reset_postdata(); ?>
               <!-- End BLOG LOOP -->
@@ -209,13 +209,13 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="row">
-              	
+
             	<div class="latest-forum-topics col-md-9">
                 <!-- Start LATEST FORUM POSTS -->
-                	<?php echo do_shortcode('[bbp-topic-index]'); ?>    
+                	<?php echo do_shortcode('[bbp-topic-index]'); ?>
                 <!-- End LATEST FORUM POSTS -->
                 </div>
-                
+
                 <div id="latest-forum-sidebar" class="col-md-3">
                   <div class="forum-widget bbp-forum-search">
                   	<h3>Hitta svar</h3>
@@ -233,7 +233,7 @@ get_header(); ?>
                     </div><!-- /input-group -->
                     </form>
                   </div>
-                  
+
                   <div class="forum-widget new-bbp-post">
                 	<h3>Ställ en fråga</h3>
                     <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett inlägg med din fråga nu&hellip;</p>
@@ -241,12 +241,12 @@ get_header(); ?>
                     <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</a>
                     <!-- End INSERT BBPRESS NEW POST BUTTON -->
                   </div>
-                  
+
                   <!-- Start BBPRESS TAGCLOUD -->
                   <div class="forum-widget bbp-forum-tagcloud widget_tag_cloud">
                       <h3 class="widgettitle">Populära ämnestaggar</h3>
                       <div class="tagcloud">
-                        <?php echo do_shortcode('[bbp-topic-tags]'); ?> 
+                        <?php echo do_shortcode('[bbp-topic-tags]'); ?>
                       </div>
                   </div>
                   <!-- End BBPRESS TAGCLOUD -->
@@ -255,7 +255,7 @@ get_header(); ?>
 		</div>
 	</section>
 	<!-- End Latest Forum -->
-	
+
 	<!-- Start Statistics -->
 	<section id="statistics" class="section">
 		<div class="container">
@@ -263,31 +263,31 @@ get_header(); ?>
               <!-- Start SITEWIDE STATISTICS -->
                 <?php $stats = bbp_get_statistics(); ?>
 				<?php do_action( 'bbp_before_statistics' ); ?>
-				
-                <div class="col-md-3 col-xs-6">                                        
+
+                <div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
 						<i class="fa fa-group"></i>
 						<h1><?php echo esc_html( $stats['user_count'] ); ?><span>Medlemmar</span></h1>
 					</div>
 				</div>
-				<div class="col-md-3 col-xs-6">
+				<div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
 						<i class="fa fa-thumb-tack"></i>
 						<h1><?php echo esc_html( $stats['topic_count'] ); ?><span>Ämnen</span></h1>
 					</div>
 				</div>
-				<div class="col-md-3 col-xs-6">
+				<div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
 						<i class="fa fa-comments"></i>
-						<h1><?php echo esc_html( $stats['reply_count'] ); ?><span>Svar</span></h1> 
+						<h1><?php echo esc_html( $stats['reply_count'] ); ?><span>Svar</span></h1>
 					</div>
 				</div>
- 
+
                 <?php do_action( 'bbp_after_statistics' ); ?>
-                
+
                 <?php unset( $stats ); ?>
 
-				<div class="col-md-3 col-xs-6">
+				<div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
 						<i class="fa fa-sitemap"></i>
 						<h1><?php echo bp_get_total_group_count(); ?><span>Grupper</span></h1>
@@ -298,7 +298,7 @@ get_header(); ?>
 		</div>
 	</section>
 	<!-- End Statistics -->
-	
+
 	<!-- Start Activity -->
 	<section id="activity" class="section">
 		<div class="container">
@@ -314,7 +314,7 @@ get_header(); ?>
 		</div>
 	</section>
 	<!-- End Activity -->
-	
+
 	<!-- Start Other -->
 	<section id="other" class="section">
 		<div class="container">
@@ -338,7 +338,7 @@ get_header(); ?>
                   <li class="active"><a href="#wpsvse-twitter" role="tab" data-toggle="tab">@WPSverige</a></li>
                   <li><a href="#wpse-twitter" role="tab" data-toggle="tab">#wpse</a></li>
                 </ul>
-                
+
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div class="tab-pane text-center active" id="wpsvse-twitter">
@@ -354,5 +354,5 @@ get_header(); ?>
 		</div>
 	</section>
 	<!-- End Other -->
-	
+
 <?php get_footer(); ?>
