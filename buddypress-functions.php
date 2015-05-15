@@ -1558,6 +1558,15 @@ function bp_legacy_theme_ajax_messages_autocomplete_results() {
 	exit;
 }
 
+function wpsvse_bp_directory_members_search_form() {
+	$search_form_html = '<form action="" method="get" id="search-members-form">
+				<label><input type="text" name="s" class="form-control" id="members_search" placeholder="'. esc_attr( $search_value ) .'" /></label>
+				<input class="btn btn-primary" type="submit" id="members_search_submit" name="members_search_submit" value="'. __( 'Search', 'buddypress' ) .'" />
+		</form>';
+	return $search_form_html;
+}
+add_filter('bp_directory_members_search_form', 'wpsvse_bp_directory_members_search_form');
+
 function wpsvse_bp_directory_groups_search_form() {
   $search_form_html = '<form action="" method="get" id="search-groups-form">
 				<label><input type="text" name="s" class="form-control" id="groups_search" placeholder="'. esc_attr( $search_value ) .'" /></label>
