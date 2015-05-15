@@ -1,10 +1,9 @@
 <?php
-
 /**
  * Class Name: wp_bootstrap_navwalker
  * GitHub URI: https://github.com/twittem/wp-bootstrap-navwalker
  * Description: A custom WordPress nav walker class to implement the Bootstrap 3 navigation style in a custom theme using the WordPress built in menu manager.
- * Version: 2.0.4
+ * Version: 2.0.4 (multilevel edit @https://raw.githubusercontent.com/twittem/wp-bootstrap-navwalker/925e5d22345d1c1d7c9d122bdb9d198e04479fa9/wp_bootstrap_navwalker.php )
  * Author: Edward McIntyre - @twittem
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -62,8 +61,11 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
 			$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 
-			if ( $args->has_children )
+			if ( $args->has_children && $depth ==  0 )
 				$class_names .= ' dropdown';
+
+			if ( $args->has_children && $depth >= 1 )
+				$class_names .= ' dropdown-submenu';
 
 			if ( in_array( 'current-menu-item', $classes ) )
 				$class_names .= ' active';
@@ -85,7 +87,6 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 				$atts['href']   		= '#';
 				$atts['data-toggle']	= 'dropdown';
 				$atts['class']			= 'dropdown-toggle';
-				$atts['aria-haspopup']	= 'true';
 			} else {
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '';
 			}
