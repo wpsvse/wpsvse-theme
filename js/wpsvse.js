@@ -1,5 +1,5 @@
 // *************************
-// WPSVSE JS v. 20140809
+// WPSVSE JS v. 20150515
 // *************************
 jQuery(document).ready(function($) {
 
@@ -19,4 +19,21 @@ jQuery(document).ready(function($) {
 	$('#header-slider').carousel({
   		interval: 10000
 	})
+	
+});
+
+// ***************************
+// Scroll to top
+// *************************** 
+jQuery(window).scroll(function(){
+	var $scrollup = jQuery('.back-to-top');
+	if (jQuery(this).scrollTop() > 100) { $scrollup.fadeIn(); }
+	else { $scrollup.fadeOut(); }
+});
+
+jQuery('.back-to-top').click(function () {
+	jQuery("html, body").animate({
+		scrollTop: 0
+	}, 600);
+	return false;
 });
