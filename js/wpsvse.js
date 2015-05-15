@@ -1,5 +1,5 @@
 // *************************
-// WPSVSE JS v. 20140809
+// WPSVSE JS v. 20150515
 // *************************
 jQuery(document).ready(function($) {
 
@@ -19,4 +19,5 @@ jQuery(document).ready(function($) {
 	$('#header-slider').carousel({
   		interval: 10000
 	})
+	
 });
