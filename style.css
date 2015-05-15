@@ -560,11 +560,13 @@ input[type=text], .form-inline input, .form-control {
 
 #bbpress-forums li.bbp-topic-counts {
   position: relative;
+  padding: 0 15px;
+  vertical-align: top;
 }
 
 #bbpress-forums .bbp-topics .bbp-count-badge {
   position: absolute;
-  top: 15px;
+  top: 13px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -1599,8 +1601,10 @@ article.post h1 a, article.wpsvse_blog h1 a {
 	Responsive Fixes
 ============================================================================ */
 
+/* LG */
 @media handheld, only screen and (max-width:1199px) {}
 
+/* MD */
 @media handheld, only screen and (max-width:991px) {
   /* Posts on front */
   .article-item {
@@ -1608,6 +1612,7 @@ article.post h1 a, article.wpsvse_blog h1 a {
   }
 }
 
+/* SM */
 @media handheld, only screen and (max-width: 767px) {
   .row {
     padding-left: 15px;
@@ -1666,7 +1671,9 @@ article.post h1 a, article.wpsvse_blog h1 a {
   .carousel .item img {
     max-height: 380px;
   }
-
+  #quick-buttons .quick-btn {
+    border: 0;
+  }
   /* Forum */
   #bbpress-forums .bbp-topic-counts,
   #bbpress-forums .bbp-topic-freshness {
@@ -1674,6 +1681,7 @@ article.post h1 a, article.wpsvse_blog h1 a {
   }
 }
 
+/* XS */
 @media handheld, only screen and (max-width: 500px) {
   .navbar-collapse {
     background-color: transparent;
