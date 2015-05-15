@@ -37,24 +37,21 @@
 
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 
-		<li>
-			<div class="item-avatar">
-				<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
-			</div>
+		<li class="col-xs-12 col-sm-6 col-md-3 buddypress-listing">
 
 			<div class="item">
-				<div class="item-title">
+				<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
+				<div class="item-title item-type">
 					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
-
-					<?php if ( bp_get_member_latest_update() ) : ?>
-
-						<span class="update"> <?php bp_member_latest_update(); ?></span>
-
-					<?php endif; ?>
-
 				</div>
 
-				<div class="item-meta"><span class="activity"><?php bp_member_last_active(); ?></span></div>
+				<?php if ( bp_get_member_latest_update() ) : ?>
+
+					<div class="item-update item-type"> <?php bp_member_latest_update(); ?></div>
+
+				<?php endif; ?>
+
+				<div class="item-meta item-type"><span class="activity"><?php bp_member_last_active(); ?></span></div>
 
 				<?php do_action( 'bp_directory_members_item' ); ?>
 
