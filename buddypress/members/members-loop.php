@@ -41,31 +41,26 @@
 
 			<div class="item">
 				<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
-				<div class="item-title item-type">
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
-				</div>
-
-				<?php if ( bp_get_member_latest_update() ) : ?>
-
+				<div class="item-type-wrapper clearfix">
+					<div class="item-title item-type"> <a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?> </a> </div>
+					<?php if ( bp_get_member_latest_update() ) : ?>
 					<div class="item-update item-type"> <?php bp_member_latest_update(); ?></div>
+					<?php endif; ?>
+					<div class="item-meta item-type"><span class="activity"><?php bp_member_last_active(); ?></span></div>
+					<?php do_action( 'bp_directory_members_item' ); ?>
 
-				<?php endif; ?>
-
-				<div class="item-meta item-type"><span class="activity"><?php bp_member_last_active(); ?></span></div>
-
-				<?php do_action( 'bp_directory_members_item' ); ?>
-
-				<?php
-				 /***
-				  * If you want to show specific profile fields here you can,
-				  * but it'll add an extra query for each member in the loop
-				  * (only one regardless of the number of fields you show):
-				  *
-				  * bp_member_profile_data( 'field=the field name' );
-				  */
-				?>
+					<?php
+					 /***
+					  * If you want to show specific profile fields here you can,
+					  * but it'll add an extra query for each member in the loop
+					  * (only one regardless of the number of fields you show):
+					  *
+					  * bp_member_profile_data( 'field=the field name' );
+					  */
+					?>
+				</div>
 			</div>
-
+			
 			<div class="action">
 
 				<?php do_action( 'bp_directory_members_actions' ); ?>
