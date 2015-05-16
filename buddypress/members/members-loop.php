@@ -37,7 +37,7 @@
 
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 
-		<li class="col-xs-12 col-sm-6 col-md-3 buddypress-listing">
+		<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buddypress-listing">
 
 			<div class="item">
 				<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>

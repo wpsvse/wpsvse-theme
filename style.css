@@ -912,7 +912,7 @@ input[type=text], .form-inline input, .form-control {
   color: #FFF;
   -webkit-transition: all 500ms ease;
 }
-.home-page #groups-list .item {
+.home-page #groups-list .col-xs-8 {
   margin-bottom: 25px;
 }
 
@@ -987,7 +987,7 @@ input[type=text], .form-inline input, .form-control {
 }
 .tooltip.top {
   background: transparent;
-  border-color: #000;
+  border: 0;
 }
 
 /* ---------------------------------------------------------------------- */
