@@ -970,6 +970,7 @@ input[type=text], .form-inline input, .form-control {
   border-radius: 4px;
 }
 /* search */
+#search-form .form-control,
 #members-dir-search .form-control,
 #group-dir-search .form-control {
   color: #747474;
@@ -1242,6 +1243,9 @@ article.post h1 a, article.wpsvse_blog h1 a {
 }
 .entry-meta-comments a, .single-meta-comments a {
   color: #fff;
+}
+.blog-listings article {
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================

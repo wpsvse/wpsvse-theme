@@ -24,13 +24,13 @@ get_header(); ?>
 	<section id="page-full" class="section">
 		<div class="container">
 			<div class="row">
-              <div class="col-md-9">
-              
+              <div class="col-md-9 blog-listings">
+
 				<?php if ( have_posts() ) : ?>
-        
+
                     <?php /* Start the Loop */ ?>
                     <?php while ( have_posts() ) : the_post(); ?>
-        
+
                         <?php
                             /* Include the Post-Format-specific template for the content.
                              * If you want to override this in a child theme, then include a file
@@ -38,15 +38,15 @@ get_header(); ?>
                              */
                             get_template_part( 'content' );
                         ?>
-        
+
                     <?php endwhile; ?>
-        
+
                     <?php wpsvse_content_nav( 'nav-below' ); ?>
-        
+
                 <?php else : ?>
-        
+
                     <?php get_template_part( 'no-results', 'index' ); ?>
-        
+
                 <?php endif; ?>
 
               </div>
