@@ -532,6 +532,10 @@ td.bbp-topic-counts {
 	white-space: nowrap;
 }
 
+#bbpress-forums p.bbp-topic-meta span i {
+	padding-left: 4px;
+}
+
 div.bbpl_button_wrapper {
 	margin-left: 3px;
 }
