@@ -645,6 +645,9 @@ input[type=text], .form-inline input, .form-control {
   display: inline-block;
   padding: 9px;
 }
+.sharedaddy  {
+  padding: 20px 0;
+}
 .container div.sharedaddy h3.sd-title {
   font-size: 18px;
   font-weight: 300;
