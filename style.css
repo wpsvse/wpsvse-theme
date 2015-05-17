@@ -890,20 +890,20 @@ input[type=text], .form-inline input, .form-control {
   background-color: rgba(51, 51, 51, .7);
   font-size: 12px;
 }
-#bp-groups .group-button {
+#bp-groups .group-button a {
+  color: #fff;
   background: #21759b;
+  width: 100%;
+  padding: 5px;
   border-radius: 0;
   border: 0;
-  padding: 10px;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+  display: block;
 }
-#bp-groups .group-button a {
-  color: #fff;
-}
-#bp-groups .group-button:hover {
+#bp-groups .group-button a:hover {
   background: #000;
   color: #FFF;
   -webkit-transition: all 500ms ease;

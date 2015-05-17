@@ -318,39 +318,41 @@ get_header(); ?>
 	<!-- Start Other -->
 	<section id="other" class="section">
 		<div class="container">
-			<div class="row">
-              <div class="col-md-6">
-				<div class="section-headline">
-					<h2>Aktiva grupper</h2>
-					<span>Skapa kontakter via olika <a href="<?php echo esc_url( home_url( '/grupper/' ) ); ?>">grupper</a> inom WordPress</span>
-				</div>
-                <div id="bp-groups">
-                    	<?php bp_get_template_part( 'groups/front' ); ?>
-                </div>
-              </div>
-              <div class="col-md-6 twitter-container">
-				<div class="section-headline">
-					<h2>Socialt med WordPress?</h2>
-					<span>Få koll på vad som skrivs om WordPress <a href="https://twitter.com/hashtag/wpse?src=hash">#wpse</a></span>
-				</div>
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="active"><a href="#wpsvse-twitter" role="tab" data-toggle="tab">@WPSverige</a></li>
-                  <li><a href="#wpse-twitter" role="tab" data-toggle="tab">#wpse</a></li>
-                </ul>
+			<div class="row col-md-6">
 
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div class="tab-pane text-center active" id="wpsvse-twitter">
-                  	<a class="twitter-timeline" width="100%" href="https://twitter.com/WPSverige" data-widget-id="498245749222543361" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">Tweets by @WPSverige</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                  </div>
-                  <div class="tab-pane text-center" id="wpse-twitter">
-                  	<a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="498246358826897408" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">#wpse Tweets</a>
-                  </div>
-                </div>
+          <div class="section-headline">
+            <h2>Aktiva grupper</h2>
+            <span>Skapa kontakter via olika <a href="<?php echo esc_url( home_url( '/grupper/' ) ); ?>">grupper</a> inom WordPress</span>
+          </div>
+
+          <div id="bp-groups">
+            <?php bp_get_template_part( 'groups/front' ); ?>
+          </div>
+      </div>
+
+      <div class="row col-md-6 twitter-container">
+          <div class="section-headline">
+            <h2>Socialt med WordPress?</h2>
+            <span>Få koll på vad som skrivs om WordPress <a href="https://twitter.com/hashtag/wpse?src=hash">#wpse</a></span>
+          </div>
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+              <li class="active"><a href="#wpsvse-twitter" role="tab" data-toggle="tab">@WPSverige</a></li>
+              <li><a href="#wpse-twitter" role="tab" data-toggle="tab">#wpse</a></li>
+          </ul>
+
+                  <!-- Tab panes -->
+          <div class="tab-content">
+              <div class="tab-pane text-center active" id="wpsvse-twitter">
+                <a class="twitter-timeline" width="100%" href="https://twitter.com/WPSverige" data-widget-id="498245749222543361" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">Tweets by @WPSverige</a>
+  					    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
               </div>
-			</div>
+
+              <div class="tab-pane text-center" id="wpse-twitter">
+                <a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="498246358826897408" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">#wpse Tweets</a>
+              </div>
+          </div>
 		</div>
 	</section>
 	<!-- End Other -->
