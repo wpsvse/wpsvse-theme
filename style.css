@@ -917,6 +917,7 @@ input[type=text], .form-inline input, .form-control {
 .buddypress-listing .item {
   position: relative;
   max-width: 256px;
+  background-color: rgba(34,34,34,0.5);
 }
 #buddypress .item-type a {
   color: #fff;
