@@ -80,7 +80,34 @@ function wpsvse_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidofält', 'wpsvse' ),
 		'id'            => 'sidebar-1',
-		'description'   => 'Allmänt widgetfält för sidopaneler.',
+		'description'   => 'Allmänt widgetfält för sidopaneler i generella mallar, så som t.ex sökresultat.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidofält för nyheter', 'wpsvse' ),
+		'id'            => 'news-widgets',
+		'description'   => 'Widgetfält för sidopaneler på nyhetssidor.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidofält för blogg', 'wpsvse' ),
+		'id'            => 'blog-widgets',
+		'description'   => 'Widgetfält för sidopaneler på bloggsidor.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidofält för filarkiv', 'wpsvse' ),
+		'id'            => 'file-widgets',
+		'description'   => 'Widgetfält för sidofält på bloggsidor.',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
