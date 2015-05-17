@@ -20,6 +20,13 @@ jQuery(document).ready(function($) {
   		interval: 10000
 	})
 	
+	// ***************************
+	// Collapse trigger
+	// ***************************
+	 $(".bbp-topic-reply-link,.d4p-bbt-quote-link").click(function(){
+        $(".bbp-reply-form .collapse").collapse('toggle');
+    });
+		
 });
 
 // ***************************
