@@ -8,13 +8,15 @@
 
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
-		<li class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-6">		
+		<li class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-6 buddypress-listing">
 
 			<div class="item">
             	<a href="<?php bp_group_permalink(); ?>" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="<?php bp_group_name(); ?> - <?php bp_group_member_count(); ?>"><?php bp_group_avatar( 'type=thumb&width=256&height=256' ); ?>
-                    <div class="item-title"><?php bp_group_name(); ?></div>
+								<div class="item-type-wrapper clearfix">
+										<div class="item-title"><?php bp_group_name(); ?></div>
                     <div class="item-meta"><?php printf( __( 'Active %s', 'buddypress' ), bp_get_group_last_active() ); ?></div>
-                </a>
+              	</div>
+						  </a>
 
 				<?php do_action( 'bp_directory_groups_item' ); ?>
 
