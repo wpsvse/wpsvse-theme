@@ -646,7 +646,7 @@ input[type=text], .form-inline input, .form-control {
   padding: 9px;
 }
 .sharedaddy  {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
 }
 .container div.sharedaddy h3.sd-title {
   font-size: 18px;
@@ -977,6 +977,17 @@ input[type=text], .form-inline input, .form-control {
 #members-dir-search .form-control,
 #group-dir-search .form-control {
   color: #747474;
+  font-weight: 400;
+}
+#buddypress ul.item-list li div.action {
+  top: 0;
+  background-color: rgba(33, 117, 155, .7);
+}
+#buddypress ul.item-list .friendship-button {
+  color: #fff;
+  padding: 3px 3px 3px 8px;
+  text-align: right;
+  font-size: 16px;
   font-weight: 400;
 }
 
