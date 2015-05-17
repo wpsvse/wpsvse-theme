@@ -25,8 +25,14 @@ jQuery(document).ready(function($) {
 	// ***************************
 	 $(".bbp-topic-reply-link,.d4p-bbt-quote-link").click(function(){
         $(".bbp-reply-form .collapse").collapse('toggle');
-    });
-		
+   });
+	 
+	 // Show collapsed elemento on load
+	 // for new topic page and .no-js class
+	 $(function() {
+	 			$(".page-id-85 .bbp-topic-form .collapse,.no-js .bbp-topic-form .collapse").collapse('show');
+	 });
+	 
 });
 
 // ***************************
