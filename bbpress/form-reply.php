@@ -25,9 +25,9 @@
 
 			<div class="panel panel-primary">
 				<div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i> <?php printf( __( 'Reply To: %s', 'bbpress' ), bbp_get_topic_title() ); ?></h3>
-            </div>
+      </div>
                 
-                <div class="panel-body collapse" id="bbp-reply-panel">
+      <div class="panel-body collapse" id="bbp-reply-panel">
 
 				<?php do_action( 'bbp_theme_before_reply_form_notices' ); ?>
 
