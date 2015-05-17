@@ -58,13 +58,13 @@
 					  * bp_member_profile_data( 'field=the field name' );
 					  */
 					?>
+
 				</div>
-			</div>
-			
-			<div class="action">
 
-				<?php do_action( 'bp_directory_members_actions' ); ?>
-
+				<div class="action">
+					<?php do_action( 'bp_directory_members_actions' ); ?>
+				</div>
+				
 			</div>
 
 			<div class="clear"></div>

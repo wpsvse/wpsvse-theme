@@ -645,6 +645,9 @@ input[type=text], .form-inline input, .form-control {
   display: inline-block;
   padding: 9px;
 }
+.sharedaddy  {
+  padding: 20px 0 10px 0;
+}
 .container div.sharedaddy h3.sd-title {
   font-size: 18px;
   font-weight: 300;
@@ -890,20 +893,20 @@ input[type=text], .form-inline input, .form-control {
   background-color: rgba(51, 51, 51, .7);
   font-size: 12px;
 }
-#bp-groups .group-button {
+#bp-groups .group-button a {
+  color: #fff;
   background: #21759b;
+  width: 100%;
+  padding: 5px;
   border-radius: 0;
   border: 0;
-  padding: 10px;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+  display: block;
 }
-#bp-groups .group-button a {
-  color: #fff;
-}
-#bp-groups .group-button:hover {
+#bp-groups .group-button a:hover {
   background: #000;
   color: #FFF;
   -webkit-transition: all 500ms ease;
@@ -917,6 +920,7 @@ input[type=text], .form-inline input, .form-control {
 .buddypress-listing .item {
   position: relative;
   max-width: 256px;
+  background-color: rgba(34,34,34,0.5);
 }
 #buddypress .item-type a {
   color: #fff;
@@ -969,9 +973,21 @@ input[type=text], .form-inline input, .form-control {
   border-radius: 4px;
 }
 /* search */
+#search-form .form-control,
 #members-dir-search .form-control,
 #group-dir-search .form-control {
   color: #747474;
+  font-weight: 400;
+}
+#buddypress ul.item-list li div.action {
+  top: 0;
+  background-color: rgba(33, 117, 155, .7);
+}
+#buddypress ul.item-list .friendship-button {
+  color: #fff;
+  padding: 3px 3px 3px 8px;
+  text-align: right;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -1241,6 +1257,9 @@ article.post h1 a, article.wpsvse_blog h1 a {
 }
 .entry-meta-comments a, .single-meta-comments a {
   color: #fff;
+}
+.blog-listings article {
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================
