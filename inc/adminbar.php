@@ -18,7 +18,8 @@ function wpsvse_brand_logo() {
 		}
 		#wpadminbar * { line-height: 48px; }
 		.navbar {
-			  padding-top: 42px;
+			  padding-top: 48px;
+  			padding-bottom: 7px;
 		}
 		#wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a, #wpadminbar .shortlink-input { height: 48px; }
     #wpadminbar>#wp-toolbar #wp-admin-bar-wp-logo .ab-icon { 
@@ -47,7 +48,12 @@ function wpsvse_brand_logo() {
     }
 		#wpadminbar #adminbarsearch { height: 48px; }
 		#wpadminbar #adminbarsearch:before { top: 14px; }
-		#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input { height: 32px; }		
+		#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input { height: 32px; }
+		@media screen and (max-width:782px){
+				#wpadminbar .ab-icon, #wpadminbar .ab-item:before, #wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon {
+						padding: 0;
+				}
+		}
     </style>
     ';
 }
