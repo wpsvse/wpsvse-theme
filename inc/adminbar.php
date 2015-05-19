@@ -16,6 +16,9 @@ function wpsvse_brand_logo() {
 				background: rgba(0,0,0,.75);
 				height: 48px;
 		}
+		.wp-admin #wpadminbar {
+				background: #23282D;
+		}
 		#wpadminbar * { line-height: 48px; }
 		.navbar {
 			  padding-top: 48px;
@@ -53,6 +56,9 @@ function wpsvse_brand_logo() {
 				#wpadminbar .ab-icon, #wpadminbar .ab-item:before, #wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon {
 						padding: 0;
 				}
+		}
+		html.wp-toolbar {
+				padding-top: 48px;
 		}
     </style>
     ';
