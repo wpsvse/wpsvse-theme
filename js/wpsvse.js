@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 	 // Show collapsed elemento on load
 	 // for new topic page and .no-js class
 	 $(function() {
-	 			$(".page-id-85 .bbp-topic-form .collapse,.no-js .bbp-topic-form .collapse").collapse('show');
+	 			$(".page-new-topic .bbp-topic-form .collapse,.no-js .bbp-topic-form .collapse,.no-js .bbp-reply-form .collapse,.reply-edit .bbp-reply-form .collapse,.topic-edit .bbp-topic-form .collapse,.topic-edit .bbp-reply-form .collapse").collapse('show');
 	 });
 	 
 });
