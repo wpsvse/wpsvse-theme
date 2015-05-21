@@ -25,19 +25,19 @@ get_header();
 	<section id="page-full" class="section">
 		<div class="container">
 			<div class="row">
-              <div class="col-md-9">
-              	<?php 
-				the_content(); 
-				
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Sidor:', 'wpsvse' ),
-					'after'  => '</div>',
-				) );
-				
-                edit_post_link( 'Redigera', '<span class="edit-link">', '</span>' );
-				?>
-              </div>
-              <?php get_sidebar(); ?>
+        <div class="col-md-9">
+          <?php 
+          the_content(); 
+          
+          wp_link_pages( array(
+            'before' => '<div class="page-links">' . __( 'Sidor:', 'wpsvse' ),
+            'after'  => '</div>',
+          ) );
+          
+          edit_post_link( 'Redigera', '<span class="edit-link">', '</span>' );
+          ?>
+        </div>
+        <?php get_sidebar(); ?>
 			</div>
 		</div>
 	</section>
