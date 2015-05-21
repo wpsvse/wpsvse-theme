@@ -88,7 +88,7 @@
 	font-family: "fontawesome";
 	content: "\f071";
 	margin-right: 4px;
-	color: #CC0000;
+	color: #FF6600;
 }
 
 #bbpress-forums .sticky .bbp-topic-permalink:before {
@@ -96,6 +96,13 @@
 	content: "\f08d";
 	margin-right: 4px;
 	color: #21759B;
+}
+
+#bbpress-forums .super-sticky .bbp-topic-permalink:before {
+	font-family: "fontawesome";
+	content: "\f0a1";
+	margin-right: 4px;
+	color: #666;
 }
 
 #bbpress-forums ul {
@@ -936,7 +943,8 @@ div.bbp-template-notice a {
 		font-size: 12px;
 		line-height: 140%;
 	}
-div.status-reported {
+div.status-reported .bbp-body,
+div.reply.status-reported {
 	background-color: rgba(204,0,0,.1) !important;
 }
 	.bbp-rc-reply-is-reported {
@@ -953,7 +961,11 @@ div.status-reported {
 	background-color: #E9F1F5 !important;
 	font-size: 1.1em;
 }
-.bbp-topics .sticky li.bbp-topic-counts i {
+.bbp-topics ul.super-sticky {
+	border: 1px solid rgba(33,117,155,.5) !important;
+}
+.bbp-topics .sticky li.bbp-topic-counts i,
+.bbp-topics .super-sticky li.bbp-topic-counts i {
 	color: #fff;
 }
 
