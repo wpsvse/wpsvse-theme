@@ -469,6 +469,33 @@ input[type=text], .form-inline input, .form-control {
   float: left;
   margin-right: 15px;
 }
+.btn-android,
+.btn-apple,
+.btn-wphone,
+.btn-windows {
+	color: #fff;
+	margin-bottom: 3px;
+}
+.btn-android:hover,
+.btn-apple:hover,
+.btn-wphone:hover,
+.btn-windows:hover {
+	background: #333;
+	color: #fff;
+}
+.btn-android {
+  background-color: #AFC833;
+}
+.btn-apple {
+  background-color: #797C89;
+}
+.btn-wphone {
+  background-color: #68217A;
+}
+.btn-windows {
+  background-color: #13B4F4;
+}
+
 /* ==========================================================================
 	Panels
 ============================================================================ */
@@ -533,8 +560,8 @@ input[type=text], .form-inline input, .form-control {
   border-bottom: 1px solid #EEE;
   background: #F8F8F8;
 }
-.bbpress #other {
-  padding: 25px 0;
+#other {
+  padding: 15px 0;
 }
 #footer-widgets {
   background: url(img/blur.jpg);
@@ -1046,6 +1073,15 @@ fieldset[disabled] #buddypress .standard-form textarea {
   background: transparent;
   border: 0;
 }
+.tapatalk-note {
+	color: #333;
+  background-color: #f5f5f5;
+  border: solid 1px #ddd;
+	padding: 15px;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 25px;
+}
 
 /* ---------------------------------------------------------------------- */
 /*	Headlines
@@ -1457,7 +1493,7 @@ article.post h1 a, article.wpsvse_blog h1 a {
   padding-left: 10px;
 }
 /* ==========================================================================
-   Social Media
+   Social Media / Tapatalk
 ============================================================================ */
 
 .text-center {
@@ -1488,13 +1524,20 @@ article.post h1 a, article.wpsvse_blog h1 a {
   background: #fff;
   color: #222;
 }
-.social-container {
+.social-container,
+.app-container {
   padding: 20px;
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(0, 0, 0, 0.5);
   display: inline-block;
   margin: 30px auto;
   min-width: 70%;
+}
+ul.apps {
+	margin: 0;
+}
+.apps li {
+	display: inline;
 }
 .sd-block {
   padding: 0;
@@ -1564,13 +1607,27 @@ article.post h1 a, article.wpsvse_blog h1 a {
 	Footer Links
 ============================================================================ */
 
+.forum-legend ul {
+}
 .forum-legend li {
   display: inline-block;
   margin-right: 15px;
 }
-.forum-legend p {
-  margin: 0;
-  color: #999;
+.forum-legend i {
+	font-size: 24px;
+  vertical-align: sub;
+}
+.forum-legend i.fa-bullhorn {
+	color: #666;
+}
+.forum-legend i.fa-thumb-tack {
+	color: #21759B;
+}
+.forum-legend i.fa-exclamation-triangle {
+	color: #FF6600;
+}
+.forum-legend i.fa-lock {
+	color: #CC0000;
 }
 #footer p {
   margin-bottom: 0;
