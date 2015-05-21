@@ -71,11 +71,11 @@ get_header(); ?>
     <section id="quick-buttons" class="section">
 		<div class="container">
 			<div class="row">
-              <!-- Start QUICK BUTTONS -->
+      	<!-- Start QUICK BUTTONS -->
 				<?php get_template_part( 'quickbuttons' ); ?>
-              <!-- End QUICK BUTTONS -->
-            </div>
-        </div>
+        <!-- End QUICK BUTTONS -->
+      </div>
+    </div>
     </section>
     <!-- Start Quick Buttons -->
 
@@ -83,8 +83,8 @@ get_header(); ?>
 	<section id="latest-news" class="section">
 		<div class="container">
 			<div class="row">
-              <!-- Start NEWS LOOP -->
-              <?php // WP_Query arguments
+      <!-- Start NEWS LOOP -->
+      <?php // WP_Query arguments
 			  $news_args = array ( 'posts_per_page' => '3' );
 
 			  // The Query
@@ -120,7 +120,7 @@ get_header(); ?>
 
 			  // Restore original Post Data
 			  wp_reset_postdata(); ?>
-              <!-- End NEWS LOOP -->
+      <!-- End NEWS LOOP -->
 			</div>
 		</div>
 	</section>
@@ -130,9 +130,9 @@ get_header(); ?>
 	<section id="sponsor" class="section">
 		<div class="container">
 			<div class="row">
-             <!-- Start SPONSOR WIDGET -->
-	             <?php if ( ! dynamic_sidebar( 'sponsor-widget' ) ) : endif; // end sidebar widget area ?>
-             <!-- End SPONSOR WIDGET -->
+         <!-- Start SPONSOR WIDGET -->
+           <?php if ( ! dynamic_sidebar( 'sponsor-widget' ) ) : endif; // end sidebar widget area ?>
+         <!-- End SPONSOR WIDGET -->
 			</div>
 		</div>
 	</section>
@@ -148,7 +148,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-        <div class="carr-down"></div>
+    <div class="carr-down"></div>
 	</section>
 	<!-- End Latest Blog Header -->
 
@@ -174,7 +174,7 @@ get_header(); ?>
 
                     <article class="col-md-3 blog-item">
                         <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
-						<?php if ( has_post_thumbnail() ) {
+												<?php if ( has_post_thumbnail() ) {
                               the_post_thumbnail( 'post-image', array('class' => 'img-responsive img-thumbnail') );
                         } else { ?>
                           <img class="img-responsive img-thumbnail" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />
@@ -210,56 +210,57 @@ get_header(); ?>
 			</div>
 			<div class="row">
 
-            	<div class="latest-forum-topics col-md-9">
-                <div class="tapatalk-note hidden-md hidden-lg">
-                	<p>Du vet väl att vårt forum har stöd för appen <strong>Tapatalk</strong>! Ladda ner Tapatalk för din enhet.</p>
-                  <p>
-                  	<a href="https://play.google.com/store/apps/details?id=com.quoord.tapatalkpro.activity" class="btn btn-android"><i class="fa fa-android"></i> Android</a> 
-                  	<a href="https://itunes.apple.com/se/app/tapatalk-community-reader/id307880732?mt=8" class="btn btn-apple"><i class="fa fa-apple"></i> iOS</a> 
-                  	<a href="http://www.windowsphone.com/sv-se/store/app/tapatalk/913ffd61-3ba0-435c-a894-9d3ec7e78d6e" class="btn btn-wphone"><i class="fa fa-windows"></i> Windows Phone</a> 
-                  	<a href="http://apps.microsoft.com/windows/sv-se/app/0ea0706f-33ea-4842-8706-77e89cecda16" class="btn btn-windows"><i class="fa fa-windows"></i> Windows 8</a>
-                  </p>
+        <div class="latest-forum-topics col-md-9">
+          <div class="tapatalk-note hidden-md hidden-lg">
+            <p>Du vet väl att vårt forum har stöd för appen <strong>Tapatalk</strong>! Ladda ner Tapatalk för din enhet.</p>
+            <p>
+              <a href="https://play.google.com/store/apps/details?id=com.quoord.tapatalkpro.activity" class="btn btn-android"><i class="fa fa-android"></i> Android</a> 
+              <a href="https://itunes.apple.com/se/app/tapatalk-community-reader/id307880732?mt=8" class="btn btn-apple"><i class="fa fa-apple"></i> iOS</a> 
+              <a href="http://www.windowsphone.com/sv-se/store/app/tapatalk/913ffd61-3ba0-435c-a894-9d3ec7e78d6e" class="btn btn-wphone"><i class="fa fa-windows"></i> Windows Phone</a> 
+              <a href="http://apps.microsoft.com/windows/sv-se/app/0ea0706f-33ea-4842-8706-77e89cecda16" class="btn btn-windows"><i class="fa fa-windows"></i> Windows 8</a>
+            </p>
+          </div>
+          <!-- Start LATEST FORUM POSTS -->
+            <?php bbp_get_template_part( 'content-latest-topics' ); ?>
+          <!-- End LATEST FORUM POSTS -->
+          </div>
+    
+          <div id="latest-forum-sidebar" class="col-md-3">
+            <div class="forum-widget bbp-forum-search">
+              <h3>Hitta svar</h3>
+              <p>Vårt forum är som en stor databas med frågor och svar. Testa att söka efter din fråga och få ett svar direkt&hellip;</p>
+              <form role="search" method="get" id="bbp-search-form" action="<?php bbp_search_url(); ?>">
+              <label class="screen-reader-text hidden" for="bbp_search"><?php _e( 'Search for:', 'bbpress' ); ?></label>
+              <div class="input-group">
+               <!-- Start BBPRESS SEARCH FORM -->
+                <input type="text" value="<?php echo esc_attr( bbp_get_search_terms() ); ?>" name="bbp_search" id="bbp_search" class="form-control">
+                <input type="hidden" name="action" value="bbp-search-request" />
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="submit" id="bbp_search_submit">Sök</button>
+                </span>
+               <!-- End BBPRESS SEARCH FORM -->
+              </div><!-- /input-group -->
+              </form>
+            </div>
+    
+            <div class="forum-widget new-bbp-post">
+            <h3>Ställ en fråga</h3>
+              <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett inlägg med din fråga nu&hellip;</p>
+              <!-- Start BBPRESS NEW POST BUTTON -->
+              <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+              <!-- End BBPRESS NEW POST BUTTON -->
+            </div>
+    
+            <!-- Start BBPRESS TAGCLOUD -->
+            <div class="forum-widget bbp-forum-tagcloud widget_tag_cloud">
+                <h3 class="widgettitle">Populära ämnestaggar</h3>
+                <div class="tagcloud">
+                  <?php echo do_shortcode('[bbp-topic-tags]'); ?>
                 </div>
-                <!-- Start LATEST FORUM POSTS -->
-                	<?php echo do_shortcode('[bbp-topic-index]'); ?>
-                <!-- End LATEST FORUM POSTS -->
-                </div>
-
-                <div id="latest-forum-sidebar" class="col-md-3">
-                  <div class="forum-widget bbp-forum-search">
-                  	<h3>Hitta svar</h3>
-                    <p>Vårt forum är som en stor databas med frågor och svar. Testa att söka efter din fråga och få ett svar direkt&hellip;</p>
-                    <form role="search" method="get" id="bbp-search-form" action="<?php bbp_search_url(); ?>">
-                    <label class="screen-reader-text hidden" for="bbp_search"><?php _e( 'Search for:', 'bbpress' ); ?></label>
-                    <div class="input-group">
-                     <!-- Start BBPRESS SEARCH FORM -->
-                      <input type="text" value="<?php echo esc_attr( bbp_get_search_terms() ); ?>" name="bbp_search" id="bbp_search" class="form-control">
-                      <input type="hidden" name="action" value="bbp-search-request" />
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary" type="submit" id="bbp_search_submit">Sök</button>
-                      </span>
-                     <!-- End BBPRESS SEARCH FORM -->
-                    </div><!-- /input-group -->
-                    </form>
-                  </div>
-
-                  <div class="forum-widget new-bbp-post">
-                	<h3>Ställ en fråga</h3>
-                    <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett inlägg med din fråga nu&hellip;</p>
-                    <!-- Start BBPRESS NEW POST BUTTON -->
-                    <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-                    <!-- End BBPRESS NEW POST BUTTON -->
-                  </div>
-
-                  <!-- Start BBPRESS TAGCLOUD -->
-                  <div class="forum-widget bbp-forum-tagcloud widget_tag_cloud">
-                      <h3 class="widgettitle">Populära ämnestaggar</h3>
-                      <div class="tagcloud">
-                        <?php echo do_shortcode('[bbp-topic-tags]'); ?>
-                      </div>
-                  </div>
-                  <!-- End BBPRESS TAGCLOUD -->
-                </div>
+            </div>
+            <!-- End BBPRESS TAGCLOUD -->
+          </div>
+          
 			</div>
 		</div>
 	</section>
@@ -269,11 +270,11 @@ get_header(); ?>
 	<section id="statistics" class="section">
 		<div class="container">
 			<div class="row">
-              <!-- Start SITEWIDE STATISTICS -->
-                <?php $stats = bbp_get_statistics(); ?>
+      <!-- Start SITEWIDE STATISTICS -->
+        <?php $stats = bbp_get_statistics(); ?>
 				<?php do_action( 'bbp_before_statistics' ); ?>
 
-                <div class="clearfix col-sm-6 col-md-3">
+        <div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
 						<i class="fa fa-group"></i>
 						<h1><?php echo esc_html( $stats['user_count'] ); ?><span>Medlemmar</span></h1>
@@ -292,9 +293,9 @@ get_header(); ?>
 					</div>
 				</div>
 
-                <?php do_action( 'bbp_after_statistics' ); ?>
-
-                <?php unset( $stats ); ?>
+				<?php do_action( 'bbp_after_statistics' ); ?>
+  
+        <?php unset( $stats ); ?>
 
 				<div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
@@ -302,7 +303,7 @@ get_header(); ?>
 						<h1><?php echo bp_get_total_group_count(); ?><span>Grupper</span></h1>
 					</div>
 				</div>
-              <!-- End SITEWIDE STATISTICS -->
+      <!-- End SITEWIDE STATISTICS -->
 			</div>
 		</div>
 	</section>
