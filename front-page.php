@@ -211,6 +211,15 @@ get_header(); ?>
 			<div class="row">
 
             	<div class="latest-forum-topics col-md-9">
+                <div class="tapatalk-note hidden-md hidden-lg">
+                	<p>Du vet väl att vårt forum har stöd för appen <strong>Tapatalk</strong>! Ladda ner Tapatalk för din enhet.</p>
+                  <p>
+                  	<a href="https://play.google.com/store/apps/details?id=com.quoord.tapatalkpro.activity" class="btn btn-android"><i class="fa fa-android"></i> Android</a> 
+                  	<a href="https://itunes.apple.com/se/app/tapatalk-community-reader/id307880732?mt=8" class="btn btn-apple"><i class="fa fa-apple"></i> iOS</a> 
+                  	<a href="http://www.windowsphone.com/sv-se/store/app/tapatalk/913ffd61-3ba0-435c-a894-9d3ec7e78d6e" class="btn btn-wphone"><i class="fa fa-windows"></i> Windows Phone</a> 
+                  	<a href="http://apps.microsoft.com/windows/sv-se/app/0ea0706f-33ea-4842-8706-77e89cecda16" class="btn btn-windows"><i class="fa fa-windows"></i> Windows 8</a>
+                  </p>
+                </div>
                 <!-- Start LATEST FORUM POSTS -->
                 	<?php echo do_shortcode('[bbp-topic-index]'); ?>
                 <!-- End LATEST FORUM POSTS -->
@@ -237,9 +246,9 @@ get_header(); ?>
                   <div class="forum-widget new-bbp-post">
                 	<h3>Ställ en fråga</h3>
                     <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett inlägg med din fråga nu&hellip;</p>
-                    <!-- Start INSERT BBPRESS NEW POST BUTTON -->
+                    <!-- Start BBPRESS NEW POST BUTTON -->
                     <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-                    <!-- End INSERT BBPRESS NEW POST BUTTON -->
+                    <!-- End BBPRESS NEW POST BUTTON -->
                   </div>
 
                   <!-- Start BBPRESS TAGCLOUD -->
