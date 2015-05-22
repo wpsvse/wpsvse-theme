@@ -229,6 +229,9 @@ select, .form-control {
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
 .navbar-brand img {
   display: block;
   float: left;
@@ -256,12 +259,6 @@ select, .form-control {
   background-color: transparent;
   border: 1px solid rgba(38, 39, 48, 0);
 }
-.navbar-inverse .navbar-nav li:hover > ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
 .navbar-toggle:hover, .navbar-toggle:focus {
   background-color: transparent
 }
@@ -1015,7 +1012,7 @@ input[type=text], .form-inline input, .form-control {
   font-weight: 400;
 }
 
-/* Text Area Bootstrap to BuddyPress */ 
+/* Text Area Bootstrap to BuddyPress */
 #buddypress .standard-form textarea {
   display: block;
   width: 75%;
