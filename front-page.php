@@ -172,7 +172,7 @@ get_header(); ?>
                   while ( $blog_query->have_posts() ) {
                       $blog_query->the_post(); ?>
 
-                    <article class="col-md-3 blog-item">
+                    <article class="col-md-3 blog-item article-item">
                         <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
 												<?php if ( has_post_thumbnail() ) {
                               the_post_thumbnail( 'post-image', array('class' => 'img-responsive img-thumbnail') );
@@ -214,9 +214,9 @@ get_header(); ?>
           <div class="tapatalk-note hidden-md hidden-lg">
             <p>Du vet väl att vårt forum har stöd för appen <strong>Tapatalk</strong>! Ladda ner Tapatalk för din enhet.</p>
             <p>
-              <a href="https://play.google.com/store/apps/details?id=com.quoord.tapatalkpro.activity" class="btn btn-android"><i class="fa fa-android"></i> Android</a> 
-              <a href="https://itunes.apple.com/se/app/tapatalk-community-reader/id307880732?mt=8" class="btn btn-apple"><i class="fa fa-apple"></i> iOS</a> 
-              <a href="http://www.windowsphone.com/sv-se/store/app/tapatalk/913ffd61-3ba0-435c-a894-9d3ec7e78d6e" class="btn btn-wphone"><i class="fa fa-windows"></i> Windows Phone</a> 
+              <a href="https://play.google.com/store/apps/details?id=com.quoord.tapatalkpro.activity" class="btn btn-android"><i class="fa fa-android"></i> Android</a>
+              <a href="https://itunes.apple.com/se/app/tapatalk-community-reader/id307880732?mt=8" class="btn btn-apple"><i class="fa fa-apple"></i> iOS</a>
+              <a href="http://www.windowsphone.com/sv-se/store/app/tapatalk/913ffd61-3ba0-435c-a894-9d3ec7e78d6e" class="btn btn-wphone"><i class="fa fa-windows"></i> Windows Phone</a>
               <a href="http://apps.microsoft.com/windows/sv-se/app/0ea0706f-33ea-4842-8706-77e89cecda16" class="btn btn-windows"><i class="fa fa-windows"></i> Windows 8</a>
             </p>
           </div>
@@ -224,7 +224,7 @@ get_header(); ?>
             <?php bbp_get_template_part( 'content-latest-topics' ); ?>
           <!-- End LATEST FORUM POSTS -->
           </div>
-    
+
           <div id="latest-forum-sidebar" class="col-md-3">
             <div class="forum-widget bbp-forum-search">
               <h3>Hitta svar</h3>
@@ -242,7 +242,7 @@ get_header(); ?>
               </div><!-- /input-group -->
               </form>
             </div>
-    
+
             <div class="forum-widget new-bbp-post">
             <h3>Ställ en fråga</h3>
               <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett inlägg med din fråga nu&hellip;</p>
@@ -250,7 +250,7 @@ get_header(); ?>
               <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</a>
               <!-- End BBPRESS NEW POST BUTTON -->
             </div>
-    
+
             <!-- Start BBPRESS TAGCLOUD -->
             <div class="forum-widget bbp-forum-tagcloud widget_tag_cloud">
                 <h3 class="widgettitle">Populära ämnestaggar</h3>
@@ -260,7 +260,7 @@ get_header(); ?>
             </div>
             <!-- End BBPRESS TAGCLOUD -->
           </div>
-          
+
 			</div>
 		</div>
 	</section>
@@ -294,7 +294,7 @@ get_header(); ?>
 				</div>
 
 				<?php do_action( 'bbp_after_statistics' ); ?>
-  
+
         <?php unset( $stats ); ?>
 
 				<div class="clearfix col-sm-6 col-md-3">
