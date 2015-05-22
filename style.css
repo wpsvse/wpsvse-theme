@@ -937,6 +937,10 @@ input[type=text], .form-inline input, .form-control {
   BuddyPress
 ============================================================================ */
 
+#buddypress .activity-list li .activity-content {
+  max-width: 100%;
+  width: auto;
+}
 /* Listings */
 .buddypress-listing .item {
   position: relative;
@@ -1684,7 +1688,7 @@ ul.apps {
   .article-item {
     margin-bottom: 50px;
   }
-  
+
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
