@@ -188,31 +188,14 @@ select, .form-control {
   color: #fff;
   text-decoration: underline;
 }
-.dropdown-submenu {
-    position: relative;
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
 }
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu.pull-left {
-    float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-}
+
 /* Hover fix */
 @media (min-width: 979px) {
-  ul.nav li.dropdown:hover > ul.dropdown-menu {
+  .dropdown:hover > .dropdown-menu ,
+  .dropdown-submenu:hover >.dropdown-menu{
     display: block;
   }
 }
