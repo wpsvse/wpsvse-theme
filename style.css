@@ -229,8 +229,11 @@ select, .form-control {
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
-ul.nav li.dropdown:hover > ul.dropdown-menu {
+/* Hover fix */
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
+  }
 }
 .navbar-brand img {
   display: block;
@@ -1689,9 +1692,6 @@ ul.apps {
     margin-bottom: 50px;
   }
 
-  ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;
-  }
 }
 
 /* SM */
@@ -1809,7 +1809,6 @@ ul.apps {
     margin: 10px 0;
   }
 }
-
 /* =Screen reader
 ----------------------------------------------- */
 /* Text meant only for screen readers */
