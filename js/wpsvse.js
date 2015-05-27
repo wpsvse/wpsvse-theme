@@ -14,11 +14,6 @@ jQuery(document).ready(function($) {
 	$('[data-toggle="popover"]').popover()
 
 	// ***************************
-	// Drodown Enchamment class
-	// ***************************
-	$('.dropdown-menu .menu-item').addClass('dropdown-submenu');
-
-	// ***************************
 	// Head slider
 	// ***************************
 	$('#header-slider').carousel({

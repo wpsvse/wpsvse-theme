@@ -191,7 +191,6 @@ select, .form-control {
 .dropdown-submenu:hover>a:after {
     border-left-color: #fff;
 }
-
 /* Hover fix */
 @media (min-width: 979px) {
   .dropdown:hover > .dropdown-menu ,
@@ -543,7 +542,7 @@ input[type=text], .form-inline input, .form-control {
 }
 
 /* ---------------------------------------------------------------------- */
-/*	Forum Tweaks
+/*	Forum
 /* ---------------------------------------------------------------------- */
 
 #bbpress-forums li.bbp-topic-counts {
@@ -551,12 +550,58 @@ input[type=text], .form-inline input, .form-control {
   padding: 0 15px;
   vertical-align: top;
 }
-
 #bbpress-forums .bbp-topics .bbp-count-badge {
   position: absolute;
   top: 13px;
 }
-
+#bbpress-forums .bbp-attachments ol {
+  padding: 0;
+}
+#bbpress-forums .bbp-attachments h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.bbp-user-stats {
+  margin-top: 20px;
+}
+.bbp-user-stats .bbp-label,
+.bbp-user-stats .bbp-value
+.bbp-author-role,
+span.bbp-author-ip {
+  font-weight: 400;
+  color: #333;
+}
+.bbp-user-stats .bbp-value {
+  font-weight: 400;
+}
+.bbp-user-stats .bbp-label:first-child + .bbp-value {
+  display: block;
+}
+#bbpress-forums div.bbp-reply-author a.bbp-author-name {
+  font-size: 17px;
+  font-weight: 700;
+  word-break: break-word;
+}
+#bbpress-forums div.bbp-reply-author .bbp-author-role {
+  font-style: normal;
+  font-size: 12px;
+}
+#bbpress-forums div.bbp-reply-author {
+  width: 130px;
+}
+#bbpress-forums div.bbp-reply-content {
+  margin-left: 155px;
+}
+#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
+  color: #333;
+  font-size: 13px;
+  border-color: #444;
+  border-radius: 4px;
+}
+#bbpress-forums fieldset.bbp-form {
+  padding: 0;
+  border: 0;
+}
 /* ---------------------------------------------------------------------- */
 /*	WP PageNav
 /* ---------------------------------------------------------------------- */
