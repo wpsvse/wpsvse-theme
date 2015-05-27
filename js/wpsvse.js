@@ -7,37 +7,42 @@ jQuery(document).ready(function($) {
 	// Tooltips
 	// ***************************
 	$('.wpsvse-tooltip').tooltip()
-	
+
 	// ***************************
 	// Popover
 	// ***************************
 	$('[data-toggle="popover"]').popover()
-	
+
+	// ***************************
+	// Drodown Enchamment class
+	// ***************************
+	$('.dropdown-menu .menu-item').addClass('dropdown-submenu');
+
 	// ***************************
 	// Head slider
 	// ***************************
 	$('#header-slider').carousel({
   		interval: 10000
 	})
-	
+
 	// ***************************
 	// Collapse trigger
 	// ***************************
 	 $(".bbp-topic-reply-link,.d4p-bbt-quote-link").click(function(){
         $(".bbp-reply-form .collapse").collapse('toggle');
    });
-	 
+
 	 // Show collapsed elemento on load
 	 // for new topic page and .no-js class
 	 $(function() {
 	 			$(".page-new-topic .bbp-topic-form .collapse,.no-js .bbp-topic-form .collapse,.no-js .bbp-reply-form .collapse,.reply-edit .bbp-reply-form .collapse,.topic-edit .bbp-topic-form .collapse,.topic-edit .bbp-reply-form .collapse").collapse('show');
 	 });
-	 
+
 });
 
 // ***************************
 // Scroll to top
-// *************************** 
+// ***************************
 jQuery(window).scroll(function(){
 	var $scrollup = jQuery('.back-to-top');
 	if (jQuery(this).scrollTop() > 100) { $scrollup.fadeIn(); }
