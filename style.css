@@ -191,7 +191,6 @@ select, .form-control {
 .dropdown-submenu:hover>a:after {
     border-left-color: #fff;
 }
-
 /* Hover fix */
 @media (min-width: 979px) {
   .dropdown:hover > .dropdown-menu ,
@@ -581,7 +580,6 @@ span.bbp-author-ip {
 #bbpress-forums div.bbp-reply-author a.bbp-author-name {
   font-size: 17px;
   font-weight: 700;
-  margin: 0 7px;
   word-break: break-word;
 }
 #bbpress-forums div.bbp-reply-author .bbp-author-role {
