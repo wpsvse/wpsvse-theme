@@ -58,8 +58,9 @@ function wpsvse_brand_logo() {
 				}
 		}
 		.wpseo-score-icon { margin: 18px 10px 0 4px!important; }
-		html.wp-toolbar {
-				padding-top: 48px;
+		html.wp-toolbar { padding-top: 48px; }
+		#wpadminbar #wp-admin-bar-my-account.with-avatar>a img {
+			background: none;
 		}
     </style>
     ';
