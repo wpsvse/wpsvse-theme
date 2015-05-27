@@ -5,6 +5,9 @@
  * @package WordPress Sverige
  */
 
+/*
+Template Name: Sida (fullbredd)
+*/
 get_header();
 
 	while ( have_posts() ) : the_post(); ?>
@@ -25,7 +28,7 @@ get_header();
 	<section id="page-full" class="section">
 		<div class="container">
 			<div class="row">
-        <div class="col-md-9">
+        <div class="col-md-12">
           <?php 
           the_content(); 
           
@@ -37,7 +40,6 @@ get_header();
           edit_post_link( 'Redigera', '<span class="edit-link">', '</span>' );
           ?>
         </div>
-        <?php get_sidebar(); ?>
 			</div>
 		</div>
 	</section>
