@@ -580,6 +580,7 @@ span.bbp-author-ip {
 }
 #bbpress-forums div.bbp-reply-author a.bbp-author-name {
   font-size: 17px;
+  font-weight: 700;
   margin: 0 7px;
   word-break: break-word;
 }
@@ -593,7 +594,16 @@ span.bbp-author-ip {
 #bbpress-forums div.bbp-reply-content {
   margin-left: 155px;
 }
-
+#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
+  color: #333;
+  font-size: 13px;
+  border-color: #444;
+  border-radius: 4px;
+}
+#bbpress-forums fieldset.bbp-form {
+  padding: 0;
+  border: 0;
+}
 /* ---------------------------------------------------------------------- */
 /*	WP PageNav
 /* ---------------------------------------------------------------------- */
