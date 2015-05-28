@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * WordPress Sverige functions for the adminbar
  *
@@ -15,18 +15,18 @@ function wpsvse_brand_logo() {
 		#wpadminbar {
 				background: rgba(0,0,0,.75);
 				height: 48px;
+        line-height: 48px;
 		}
 		.wp-admin #wpadminbar {
 				background: #23282D;
 		}
-		#wpadminbar * { line-height: 48px; }
 		.navbar {
 			  padding-top: 48px;
   			padding-bottom: 7px;
 		}
-		#wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a, #wpadminbar .shortlink-input { height: 48px; }
-    #wpadminbar>#wp-toolbar #wp-admin-bar-wp-logo .ab-icon { 
-        background-image: url(' . get_bloginfo('stylesheet_directory') . '/img/icons/brand-icon.png) !important; 
+		#wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a, #wpadminbar .shortlink-input { height: 48px; line-height: 48px;}
+    #wpadminbar>#wp-toolbar #wp-admin-bar-wp-logo .ab-icon {
+        background-image: url(' . get_bloginfo('stylesheet_directory') . '/img/icons/brand-icon.png) !important;
         background-position: 0 8px;
         background-repeat: no-repeat;
         width: 32px;
