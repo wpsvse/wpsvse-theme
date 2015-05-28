@@ -573,12 +573,13 @@ span.bbp-author-ip {
 }
 .bbp-user-stats .bbp-value {
   font-weight: 400;
+  color: #333;
 }
 .bbp-user-stats .bbp-label:first-child + .bbp-value {
   display: block;
 }
 #bbpress-forums div.bbp-reply-author a.bbp-author-name {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   margin: 0;
   word-break: break-word;
@@ -602,6 +603,9 @@ span.bbp-author-ip {
 #bbpress-forums fieldset.bbp-form {
   padding: 0;
   border: 0;
+}
+#bbpress-forums div.bbp-reply-author img.avatar {
+  margin: 12px auto;
 }
 /* ---------------------------------------------------------------------- */
 /*	WP PageNav
