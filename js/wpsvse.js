@@ -21,6 +21,13 @@ jQuery(document).ready(function($) {
 	})
 
 	// ***************************
+	// Magnific Popup trigger
+	// ***************************	
+	$('.lightbox').magnificPopup({
+			type:'image'
+	});
+
+	// ***************************
 	// Collapse trigger
 	// ***************************
 	 $(".bbp-topic-reply-link,.d4p-bbt-quote-link").click(function(){
