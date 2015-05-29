@@ -120,6 +120,15 @@ function wpsvse_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget sponsor-link %2$s">',
 		'after_widget'  => '</div>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Widgets för 404', 'wpsvse' ),
+		'id'            => 'error-404',
+		'description'   => 'Widgetfält som visas på felsidan för 404.',
+		'before_widget' => '<aside id="%1$s" class="col-md-4 widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );	
 }
 endif;
 add_action( 'widgets_init', 'wpsvse_widgets_init' );
