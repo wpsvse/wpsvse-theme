@@ -368,6 +368,18 @@ select, .form-control {
   clear: both;
   padding: 20px 0;
 }
+.divider-line {
+  clear: both;
+  padding: 10px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #eee; 
+}
+.back-headline {
+  font-size: 250px;
+  color: #f8f8f8;
+  position: absolute;
+  top: 168px;
+}
 input[type=text], .form-inline input, .form-control {
   border: 1px solid rgba(0, 0, 0.5);
 }

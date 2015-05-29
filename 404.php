@@ -23,14 +23,14 @@ get_header(); ?>
 	<section id="page-full" class="section">
 		<div class="container">
 			<div class="row">
-        <div class="col-md-12">
-        	<span class="back-headline">404</span>
+      <span class="back-headline">404</span>
+        <div class="col-md-12">  	
         	<h2>Oops! Sidan kunde inte hittas</h2>
           <p>Den här sidan laddade troligen inte det du förväntade dig, men bara lugn. Du kan ta dig vidare genom att använda huvudmenyn eller sökfältet längst upp till höger på sidan. Annars kanske någon av följande länkar kan hjälpa dig.</p>  
         </div>
-        
-        <section id="latest-news" class="section">
+        <section id="latest-news">
         <div class="col-md-12">
+        <div class="divider-line"></div>
         	<h2>Senaste nyheterna</h2>
         </div>
         <!-- Start NEWS LOOP -->
@@ -72,9 +72,9 @@ get_header(); ?>
           wp_reset_postdata(); ?>
         <!-- End NEWS LOOP -->
         </section>
-
         <div class="col-md-12">
-        	<h3>Senaste aktiviteten i portalen</h3>
+        <div class="divider-line"></div>
+        	<h2>Senaste aktiviteten i portalen</h2>
         </div>
         <section class="error-404-widgets">
         	<?php if ( ! dynamic_sidebar( 'error-404' ) ) : endif;?>
