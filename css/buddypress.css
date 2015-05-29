@@ -48,7 +48,6 @@ Hello, this is the BuddyPress Legacy stylesheet.
 }
 #buddypress div.pagination .pag-count {
 	float: left;
-	margin-left: 10px;
 }
 #buddypress div.pagination .pagination-links {
 	float: right;
