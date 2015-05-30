@@ -25,9 +25,10 @@
 	<div class="top-part">
 		<!-- Start Header -->
 		<header id="header">
+		<div class="container">
+			<div class="row">
 			<!-- Start Navigation -->
 			<nav class="navbar navbar-inverse" role="navigation">
-			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>
@@ -41,9 +42,10 @@
 				<div class="navbar-collapse collapse">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary','container' => false,'items_wrap' => '<ul id="menu" class="nav navbar-nav %2$s">%3$s</ul>', 'fallback_cb' => 'wp_bootstrap_navwalker::fallback', 'walker' => new wp_bootstrap_navwalker() ) ); ?>
 				</div>
-			</div>
 			</nav>
+			</div>
 		<!-- End Navigation -->
+		</div>
 		</header>
 		<!-- End Header -->
   <?php if ( !is_front_page() ) { ?>

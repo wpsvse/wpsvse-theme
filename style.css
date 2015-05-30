@@ -136,8 +136,15 @@ select, .form-control {
   Navigation
 ============================================================================ */
 
-.navbar {
+#header {
   background-color: rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+  border-radius: 0;
+  margin-bottom: 0;
+  min-height: 100px;
+}
+.navbar {
+  background-color: transparent;
   border-color: transparent;
   border-radius: 0;
   margin-bottom: 0;
@@ -219,9 +226,8 @@ select, .form-control {
 .navbar-toggle {
   position: relative;
   float: right;
-  padding: 10px 10px;
-  margin-top: 23px;
-  margin-bottom: 8px;
+  padding: 10px;
+  margin-top: 18px;
   background-color: transparent;
   border: 1px solid rgba(38, 39, 48, 0);
 }
@@ -659,11 +665,11 @@ span.bbp-author-ip {
   color: #FFF;
   margin-bottom: 20px;
 }
-#welcome p {
+.welcome-block p {
   color: #ccc;
   margin-bottom: 25px;
 }
-#welcome h3 {
+.welcome-block h3 {
   color: #FFF;
   margin-bottom: 20px;
 }
@@ -1768,10 +1774,6 @@ ul.apps {
 
 /* SM */
 @media handheld, only screen and (max-width: 767px) {
-  .row {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
   .navbar-header {
     margin-bottom: 25px;
     position: static;
@@ -1805,9 +1807,11 @@ ul.apps {
     margin: 0;
     padding: 0;
   }
-  #header .navbar-inverse .container {
-    width: 100%;
-    padding: 0;
+  .navbar-inverse .navbar-brand {
+    padding: 5px;
+  }
+  .text-logo {
+    font-size: 22px;
   }
   .navbar-brand img {
     margin: 0 15px
