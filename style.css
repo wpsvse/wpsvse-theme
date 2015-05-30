@@ -665,16 +665,19 @@ span.bbp-author-ip {
   color: #FFF;
   margin-bottom: 20px;
 }
-.welcome-block p {
+#welcome p {
   color: #ccc;
   margin-bottom: 25px;
 }
-.welcome-block h3 {
+#welcome h3 {
   color: #FFF;
   margin-bottom: 20px;
 }
 #latest-downloads {
   padding-top: 35px;
+}
+#latest-downloads .btn-sv-se {
+  max-width: 450px;
 }
 .extra-download-link {
   color: #999;
