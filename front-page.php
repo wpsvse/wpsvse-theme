@@ -11,25 +11,25 @@ get_header(); ?>
     <div class="container">
       <section id="header-content" class="row">
         <!-- Start welcome -->
-        <section id="welcome" class="section welcome-block">
+        <section id="welcome" class="section">
           <div class="col-md-7">
-          	<?php while ( have_posts() ) : the_post();
 
-              	the_content('Läs mer');
+        	<?php while ( have_posts() ) : the_post();
 
-              endwhile; ?>
+            	the_content('Läs mer');
+
+            endwhile; ?>
+
+            <section id="latest-downloads">
+                <h3>Ladda ner senaste WordPress</h3>
+                    <div id="dl-btns">
+                      <a class="btn btn-blue btn-sv-se" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.0 <span>(internationell)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
+                      <p><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
+                    </div>
+            </section>
           </div>
         </section>
         <!-- End welcome -->
-        <section id="latest-downloads" class="col-md-7 welcome-block">
-          <h3>Ladda ner senaste WordPress</h3>
-            <div id="dl-btns" class="row">
-              <div class="col-md-8">
-                <a class="btn btn-blue btn-sv-se" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.0 <span>(internationell)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
-              </div>
-              <p class="col-md-12"><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
-            </div>
-        </section>
         <!-- Start Slider -->
         <section id="header-slider" class="section carousel slide col-md-5 hidden-xs">
             <div class="slide-inner">
