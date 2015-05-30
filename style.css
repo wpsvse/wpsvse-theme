@@ -227,7 +227,7 @@ select, .form-control {
   position: relative;
   float: right;
   padding: 10px;
-  margin-top: 18px;
+  margin: 15px 0 0 0;
   background-color: transparent;
   border: 1px solid rgba(38, 39, 48, 0);
 }
@@ -1778,7 +1778,6 @@ ul.apps {
 /* SM */
 @media handheld, only screen and (max-width: 767px) {
   .navbar-header {
-    margin-bottom: 25px;
     position: static;
   }
   .navbar-nav {
@@ -1811,7 +1810,11 @@ ul.apps {
     padding: 0;
   }
   .navbar-inverse .navbar-brand {
-    padding: 5px;
+    padding: 0;
+    height: auto;
+  }
+  .navbar-header {
+    padding: 15px;
   }
   .text-logo {
     font-size: 22px;
