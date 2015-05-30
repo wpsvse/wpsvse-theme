@@ -1117,6 +1117,8 @@ img.wp-smiley,
 img.emoji {
   width: 20px !important;
   height: 20px !important;
+  max-height: 20px !important;
+  vertical-align: middle !important;
 }
 
 /* ---------------------------------------------------------------------- */
