@@ -20,6 +20,9 @@ function wpsvse_brand_logo() {
 		.wp-admin #wpadminbar {
 				background: #23282D;
 		}
+    #wpadminbar .quicklinks li#wp-admin-bar-bp-notifications #ab-pending-notifications, #wpadminbar .quicklinks li#wp-admin-bar-my-account a span.count, #wpadminbar .quicklinks li#wp-admin-bar-my-account-with-avatar a span.count {
+      padding: 1px 5px;
+    }
 		.navbar {
 			  padding-top: 48px;
   			padding-bottom: 7px;
