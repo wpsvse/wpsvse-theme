@@ -5,9 +5,9 @@
  * @package WordPress Sverige
  */
 
-/**
- * Add specific CSS class for new topic page
- */
+//**************************************************
+// Add specific CSS class for new topic page
+//**************************************************
 function wpsvse_topic_page_class( $classes ) {
 	if (is_page('nytt-amne')) {
 		$classes[] = 'page-new-topic';
@@ -16,9 +16,9 @@ function wpsvse_topic_page_class( $classes ) {
 }
 add_filter( 'body_class', 'wpsvse_topic_page_class' );
 
-/**
- * Set specific length for excerpt on frontpage
- */
+//**************************************************
+// Set specific length for excerpt on frontpage
+//**************************************************
 function wpsvse_fp_excerpt_length($length) {
     if (is_front_page()) {
         return 20;
@@ -28,18 +28,18 @@ function wpsvse_fp_excerpt_length($length) {
 }
 add_filter('excerpt_length', 'wpsvse_fp_excerpt_length');
 
-/**
- * Custom excerpt hellip
- */
+//**************************************************
+// Custom excerpt hellip
+//**************************************************
 function wpsvse_excerpt_more($more) {
     global $post;
 		 return '...';
 }
 add_filter('excerpt_more', 'wpsvse_excerpt_more');
 
-/**
- * Get all posts for tag archive template
- */
+//**************************************************
+// Get all posts for tag archive template
+//**************************************************
 function wpsvse_set_term_post_types( $query ){
     if( $query->is_tag ):
         $query->set( 'post_type', array( 'post', 'wpsvse_blog' ) );
@@ -48,27 +48,27 @@ function wpsvse_set_term_post_types( $query ){
 }
 add_action( 'pre_get_posts', 'wpsvse_set_term_post_types' );
 
-/**
- * Include topics i global search
- */
+//**************************************************
+// Include topics i global search
+//**************************************************
 function wpsvse_bbp_topic_search( $wpsvse_topic_search ) {
     $wpsvse_topic_search['exclude_from_search'] = false;
     return $wpsvse_topic_search;
 }
 add_filter( 'bbp_register_topic_post_type', 'wpsvse_bbp_topic_search' );
 
-/**
- * Include replies i global search
- */
+//**************************************************
+// Include replies i global search
+//**************************************************
 function wpsvse_bbp_reply_search( $wpsvse_reply_search ) {
     $wpsvse_reply_search['exclude_from_search'] = false;
     return $wpsvse_reply_search;
 }
 add_filter( 'bbp_register_reply_post_type', 'wpsvse_bbp_reply_search' );
 
-/**
- * Customize the login screen
- */
+//**************************************************
+// Customize the login screen
+//**************************************************
 function wpsvse_custom_login_logo() {
 	$style = '<style type="text/css"> h1 a { background: transparent url(' . get_bloginfo('template_directory') . '/img/login-logo.png) no-repeat center top !important; padding-bottom: 70px!important; width: 260px!important;} </style>';
 	echo $style;
