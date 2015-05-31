@@ -132,6 +132,40 @@ select, .form-control {
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
 }
+
+/* Adminbar login */
+#wpadminbar #loginform p {
+  display: inline;
+}
+#wpadminbar #loginform .input {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.25);
+  height: 28px;
+  line-height: 28px;
+  padding: 0px 4px;
+  margin-top: 9px;
+  width: 100px;
+}
+#wpadminbar #loginform #wp-submit {
+  height: 30px;
+  line-height: 28px;
+  padding: 0 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+	background-color: #21759b;
+	color: #fff;
+  border-color: #2e6da4;
+}
+#wpadminbar #loginform .login-remember label {
+  font-size: 11px !important;
+}
+#wpadminbar #loginform #rememberme {
+  vertical-align: middle;
+}
+
+
 /* ==========================================================================
   Navigation
 ============================================================================ */
