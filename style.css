@@ -227,7 +227,7 @@ select, .form-control {
   position: relative;
   float: right;
   padding: 10px;
-  margin-top: 18px;
+  margin: 15px 0 0 0;
   background-color: transparent;
   border: 1px solid rgba(38, 39, 48, 0);
 }
@@ -617,6 +617,7 @@ span.bbp-author-ip {
   font-size: 13px;
   border-color: #dddddd;
   border-radius: 4px;
+  padding: 6px;
 }
 #bbpress-forums fieldset.bbp-form {
   padding: 0;
@@ -1101,6 +1102,54 @@ fieldset[disabled] #buddypress .standard-form textarea {
 #buddypress .standard-form textarea[disabled],
 fieldset[disabled] #buddypress .standard-form textarea {
   cursor: not-allowed;
+}
+/* Notifications */
+#buddypress table.notifications thead tr {
+ color: #fff;
+ background: #21759B;
+}
+#buddypress table.notifications #select-all-notifications {
+ display: block;
+}
+#buddypress table.notifications th,
+#buddypress table.notifications td,  {
+  padding: 10px;
+  text-align: center;
+}
+#buddypress table.notifications td {
+ border-bottom: 1px solid #ccc;
+ margin: 10px 0;
+}
+#buddypress table.notifications {
+  border: 1px solid #ccc;
+  width: 100%;
+  margin:0;
+  padding:0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.notifications-options-nav {
+ margin: 10px 0;
+}
+.notifications-options-nav select {
+ max-width: 400px;
+}
+#notification-bulk-manage {
+  margin-bottom: 40px;
+  background: #21759b;
+  border-radius: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 15px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #FFF;
+}
+#notification-bulk-manage:hover {
+  background: #000;
+  color: #FFF;
+  -webkit-transition: all 500ms ease;
 }
 
 
@@ -1778,7 +1827,6 @@ ul.apps {
 /* SM */
 @media handheld, only screen and (max-width: 767px) {
   .navbar-header {
-    margin-bottom: 25px;
     position: static;
   }
   .navbar-nav {
@@ -1811,7 +1859,11 @@ ul.apps {
     padding: 0;
   }
   .navbar-inverse .navbar-brand {
-    padding: 5px;
+    padding: 0;
+    height: auto;
+  }
+  .navbar-header {
+    padding: 15px;
   }
   .text-logo {
     font-size: 22px;
@@ -1839,6 +1891,34 @@ ul.apps {
   #bbpress-forums .bbp-topic-counts,
   #bbpress-forums .bbp-topic-freshness {
     display: none;
+  }
+  /* Table Notifications */
+  #buddypress table.notifications {
+    border: 0;
+  }
+  #buddypress table.notifications thead,
+  #buddypress table.notifications .notification-check {
+    display: none;
+  }
+  #buddypress table.notifications tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+  #buddypress table.notifications td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-bottom: 1px dotted #ccc;
+  }
+  #buddypress table.notifications td:last-child {
+    border-bottom: 0;
+  }
+  #buddypress table.notifications td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }
 
