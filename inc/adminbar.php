@@ -52,6 +52,10 @@ function wpsvse_brand_logo() {
     #wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {
         background-position: 0 0;
     }
+	#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input {
+		margin-top: 8px;
+ 		margin-right: 8px;
+	}
 		#wpadminbar #adminbarsearch { height: 48px; }
 		#wpadminbar #adminbarsearch:before { top: 14px; }
 		#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input { height: 32px; }
@@ -72,3 +76,20 @@ function wpsvse_brand_logo() {
 
 //hook into the administrative header output
 add_action('wp_before_admin_bar_render', 'wpsvse_brand_logo');
+
+//**************************************************
+// Toolbar login form
+//**************************************************
+function wpsvse_toolbar_login( $wp_admin_bar ) {
+	global $wp_admin_bar;
+  if(!is_user_logged_in()) {
+		$form_args = array( 'echo' => false, 'label_username' => '', 'label_password' => '', 'label_remember' => 'Kom ihåg', );
+		$wpsvse_login_form = wp_login_form( $form_args );
+		$wp_admin_bar->add_menu( array(
+			'id'     => 'wpsvse-login',
+			'parent' => 'top-secondary',
+			'title'  => $wpsvse_login_form,
+		) );
+  }
+}
+add_action( 'admin_bar_menu', 'wpsvse_toolbar_login' );
