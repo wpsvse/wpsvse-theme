@@ -729,10 +729,10 @@ span.bbp-author-ip {
 
 .search-results {
   margin-bottom: 0;
-  margin: 25px 0;
+  padding: 35px 0;
   border-bottom: 3px solid #21759B;
 }
-.article.post.search-results {
+article.post.search-results {
   margin-bottom: 0;
 }
 .search-results .search-entry-title a {
@@ -781,6 +781,7 @@ span.bbp-author-ip {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
+  padding-right: 10px;
 }
 
 .search-results.wpsvse_blog .search-entry-title a {
