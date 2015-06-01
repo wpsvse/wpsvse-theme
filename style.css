@@ -598,9 +598,9 @@ input[type=text], .form-inline input, .form-control {
   padding: 40px 0;
 }
 
-/* ---------------------------------------------------------------------- */
-/*	Forum
-/* ---------------------------------------------------------------------- */
+/* ==========================================================================
+  Forums
+============================================================================ */
 
 #bbpress-forums li.bbp-topic-counts {
   position: relative;
@@ -665,9 +665,9 @@ span.bbp-author-ip {
 #bbpress-forums div.bbp-reply-author img.avatar {
   margin: 12px auto;
 }
-/* ---------------------------------------------------------------------- */
-/*	WP PageNav
-/* ---------------------------------------------------------------------- */
+/* ==========================================================================
+  WP Page Nav
+============================================================================ */
 .wp-pagenavi .extend, .wp-pagenavi a, .wp-pagenavi .pages {
   margin-bottom: 40px;
   background: #21759b;
@@ -696,9 +696,9 @@ span.bbp-author-ip {
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: #FFF;
 }
-/* ---------------------------------------------------------------------- */
-/*	Welcome
-/* ---------------------------------------------------------------------- */
+/* ==========================================================================
+  Welcome Block
+============================================================================ */
 
 #welcome h1 {
   font-size: 55px;
@@ -722,9 +722,103 @@ span.bbp-author-ip {
 .extra-download-link {
   color: #999;
 }
-/* ---------------------------------------------------------------------- */
-/*	Share Buttons
-/* ---------------------------------------------------------------------- */
+
+/* ==========================================================================
+  Search
+============================================================================ */
+
+.search-results {
+  margin-bottom: 0;
+  margin: 25px 0;
+  border-bottom: 3px solid #21759B;
+}
+.article.post.search-results {
+  margin-bottom: 0;
+}
+.search-results .search-entry-title a {
+  font-weight: 700;
+}
+.search-results.topic .search-entry-title a {
+  color: #125c6e;
+}
+.search-results.topic .search-entry-title:before {
+  content: '\f0e6';
+  color: #125c6e;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  padding-right: 10px;
+}
+.search-results.post .search-entry-title a {
+  color: #1f8098;
+}
+.search-results.post .search-entry-title:before {
+  content: '\f040';
+  color: #1f8098;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  padding-right: 10px;
+}
+.search-results.reply .search-entry-title a {
+  color: #12436e;
+}
+.search-results.reply .search-entry-title:before {
+  content: '\f112';
+  color: #12436e;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.search-results.wpsvse_blog .search-entry-title a {
+  color: #2781ae;
+}
+.search-results.wpsvse_blog .search-entry-title:before {
+  content: '\f1ea';
+  color: #2781ae;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  padding-right: 10px;
+}
+
+.search-results.page .search-entry-title a {
+  color: #125c6e;
+}
+.search-results.page .search-entry-title:before {
+  content: '\f0e8';
+  color: #125c6e;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  padding-right: 10px;
+}
+
+
+/* ==========================================================================
+  Share Buttons
+============================================================================ */
 
 .sd-block {
   padding: 8px 25px;
@@ -754,9 +848,9 @@ span.bbp-author-ip {
   display: inline-block;
   line-height: 1.6;
 }
-/* ---------------------------------------------------------------------- */
-/*	Quick Buttons
-/* ---------------------------------------------------------------------- */
+/* ==========================================================================
+  Quick Buttons
+============================================================================ */
 
 #quick-buttons .row {
   border-left: 1px solid #eee;
@@ -1149,6 +1243,7 @@ fieldset[disabled] #buddypress .standard-form textarea {
 }
 #buddypress table.notifications #select-all-notifications {
  display: block;
+ margin-left: 5px;
 }
 #buddypress table.notifications th,
 #buddypress table.notifications td,  {
@@ -1627,12 +1722,6 @@ article.post h1 a, article.wpsvse_blog h1 a {
   transform: translate(0, 0);
   color: #286090;
 }
-#sidebar .comment-author-link, #sidebar .bbp-forum-title, #sidebar .cat-item a {
-  padding-left: 10px;
-}
-.widget_display_topics {
-
-}
 .widget_display_topics .widget-title {
   margin: 10px 0;
 }
@@ -1926,6 +2015,10 @@ ul.apps {
   #quick-buttons .quick-btn {
     border: 0;
   }
+  /* BuddyPress Profile */
+  #buddypress div.item-list-tabs ul li {
+    float: none;
+  }
   /* Forum */
   #bbpress-forums .bbp-topic-counts,
   #bbpress-forums .bbp-topic-freshness {
@@ -1942,11 +2035,10 @@ ul.apps {
   #buddypress table.notifications tr {
     margin-bottom: 10px;
     display: block;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #1D6A90;
   }
   #buddypress table.notifications td {
     display: block;
-    text-align: right;
     font-size: 13px;
     border-bottom: 1px dotted #ccc;
   }
