@@ -12,6 +12,10 @@ function wpsvse_brand_logo() {
     echo '
     <style type="text/css">
 		html { margin:0!important; }
+		#wpadminbar .fa {
+			font: normal normal normal 14px/1 FontAwesome !important;
+			color: rgba(240,245,250,.6);
+		}
 		#wpadminbar {
 			background: rgba(0,0,0,.75);
 			height: 48px;
@@ -59,12 +63,35 @@ function wpsvse_brand_logo() {
 		#wpadminbar #adminbarsearch { height: 48px; }
 		#wpadminbar #adminbarsearch:before { top: 14px; }
 		#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input { height: 32px; }
+		@media (min-width: 992px) {
+			#wpadminbar #wp-admin-bar-wpsvse-mobile-search {
+				display: none;
+			}
+			#wpadminbar #wp-admin-bar-search {
+				display: list-item;
+			}
+		}
+		@media screen and (max-width:989px){
+			#wpadminbar #wp-admin-bar-search {
+					display: none;
+				}
+		}
 		@media screen and (max-width:782px){
 				#wpadminbar .ab-icon, #wpadminbar .ab-item:before, #wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon {
 					padding: 0;
 				}
 				#wpadminbar>#wp-toolbar #wp-admin-bar-wp-logo .ab-icon {
 					width: 48px;
+				}
+				#wpadminbar #wp-admin-bar-wpsvse-mobile-login,
+				#wpadminbar #wp-admin-bar-wpsvse-mobile-register,
+				#wpadminbar #wp-admin-bar-wpsvse-mobile-search
+				 {
+					display: list-item;
+					padding-left: 8px;
+				}
+				#wpadminbar #wp-admin-bar-wpsvse-mobile-search {
+					padding-right: 8px;
 				}
 		}
 		.wpseo-score-icon { margin: 18px 10px 0 4px!important; }
@@ -79,6 +106,20 @@ function wpsvse_brand_logo() {
 
 //hook into the administrative header output
 add_action('wp_before_admin_bar_render', 'wpsvse_brand_logo');
+
+//**************************************************
+// Toolbar search link
+//**************************************************
+function wpsvse_toolbar_search_link( $wp_admin_bar ) {
+	global $wp_admin_bar;
+		$wp_admin_bar->add_menu( array(
+			'id'     => 'wpsvse-mobile-search',
+			'parent' => 'top-secondary',
+			'title'  => '<i class="fa fa-search"></i>',
+			'href'		=> get_home_url() . '/sok/',
+		) );
+}
+add_action( 'admin_bar_menu', 'wpsvse_toolbar_search_link' );
 
 //**************************************************
 // Toolbar login form
@@ -96,6 +137,28 @@ function wpsvse_toolbar_login( $wp_admin_bar ) {
   }
 }
 add_action( 'admin_bar_menu', 'wpsvse_toolbar_login' );
+
+//**************************************************
+// Add custom links for register and login
+//**************************************************
+function wpsvse_toolbar_links( $wp_admin_bar ) {
+	global $wp_admin_bar;
+  if(!is_user_logged_in()) {
+		$wp_admin_bar->add_menu( array(
+			'id'     => 'wpsvse-mobile-login',
+			'parent' => 'top-secondary',
+			'title'  => 'Logga in',
+			'href'		=> get_home_url() . '/logga-in/',
+		) );
+		$wp_admin_bar->add_menu( array(
+			'id'     => 'wpsvse-mobile-register',
+			'parent' => 'top-secondary',
+			'title'  => 'Bli medlem',
+			'href'		=> get_home_url() . '/bli-medlem/',
+		) );
+  }
+}
+add_action( 'admin_bar_menu', 'wpsvse_toolbar_links' );
 
 //**************************************************
 // Remove BP login link
