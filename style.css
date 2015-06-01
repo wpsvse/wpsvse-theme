@@ -239,6 +239,11 @@ select, .form-control {
     display: block;
   }
 }
+@media handheld, only screen and (max-width: 767px) {
+	.navbar-nav .dropdown-menu .dropdown-menu {
+		display: block;
+	}
+}
 .navbar-brand img {
   display: block;
   float: left;
