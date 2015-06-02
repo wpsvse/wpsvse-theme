@@ -737,7 +737,7 @@ article.post.search-results {
 }
 .search-results .search-entry-title a {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .search-results.topic .search-entry-title a {
   color: #125c6e;
@@ -842,6 +842,9 @@ article.post.search-results {
 }
 .sharedaddy  {
   padding: 20px 0 10px 0;
+}
+.sd-content ul li {
+  vertical-align: middle;
 }
 .container div.sharedaddy h3.sd-title {
   font-size: 18px;
@@ -1237,6 +1240,13 @@ fieldset[disabled] #buddypress .standard-form textarea {
 #buddypress .standard-form textarea[disabled],
 fieldset[disabled] #buddypress .standard-form textarea {
   cursor: not-allowed;
+}
+/* Profile */
+#buddypress table.profile-fields tr td.label {
+
+}
+#buddypress input#file {
+  line-height: 1;
 }
 /* Notifications */
 #buddypress table.notifications thead tr {
