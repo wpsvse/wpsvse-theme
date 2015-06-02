@@ -736,7 +736,8 @@ article.post.search-results {
   margin-bottom: 0;
 }
 .search-results .search-entry-title a {
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
 }
 .search-results.topic .search-entry-title a {
   color: #125c6e;
@@ -746,7 +747,7 @@ article.post.search-results {
   color: #125c6e;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -761,7 +762,7 @@ article.post.search-results {
   color: #1f8098;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -776,7 +777,7 @@ article.post.search-results {
   color: #12436e;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -792,7 +793,7 @@ article.post.search-results {
   color: #2781ae;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -808,7 +809,7 @@ article.post.search-results {
   color: #125c6e;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -841,6 +842,9 @@ article.post.search-results {
 }
 .sharedaddy  {
   padding: 20px 0 10px 0;
+}
+.sd-content ul li {
+  vertical-align: middle;
 }
 .container div.sharedaddy h3.sd-title {
   font-size: 18px;
@@ -1236,6 +1240,13 @@ fieldset[disabled] #buddypress .standard-form textarea {
 #buddypress .standard-form textarea[disabled],
 fieldset[disabled] #buddypress .standard-form textarea {
   cursor: not-allowed;
+}
+/* Profile */
+#buddypress table.profile-fields tr td.label {
+
+}
+#buddypress input#file {
+  line-height: 1;
 }
 /* Notifications */
 #buddypress table.notifications thead tr {
