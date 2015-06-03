@@ -729,14 +729,15 @@ span.bbp-author-ip {
 
 .search-results {
   margin-bottom: 0;
-  margin: 25px 0;
+  padding: 35px 0;
   border-bottom: 3px solid #21759B;
 }
-.article.post.search-results {
+article.post.search-results {
   margin-bottom: 0;
 }
 .search-results .search-entry-title a {
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
 }
 .search-results.topic .search-entry-title a {
   color: #125c6e;
@@ -746,7 +747,7 @@ span.bbp-author-ip {
   color: #125c6e;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -761,7 +762,7 @@ span.bbp-author-ip {
   color: #1f8098;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -776,11 +777,12 @@ span.bbp-author-ip {
   color: #12436e;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
+  padding-right: 10px;
 }
 
 .search-results.wpsvse_blog .search-entry-title a {
@@ -791,7 +793,7 @@ span.bbp-author-ip {
   color: #2781ae;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -807,7 +809,7 @@ span.bbp-author-ip {
   color: #125c6e;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -840,6 +842,9 @@ span.bbp-author-ip {
 }
 .sharedaddy  {
   padding: 20px 0 10px 0;
+}
+.sd-content ul li {
+  vertical-align: middle;
 }
 .container div.sharedaddy h3.sd-title {
   font-size: 18px;
@@ -1235,6 +1240,13 @@ fieldset[disabled] #buddypress .standard-form textarea {
 #buddypress .standard-form textarea[disabled],
 fieldset[disabled] #buddypress .standard-form textarea {
   cursor: not-allowed;
+}
+/* Profile */
+#buddypress table.profile-fields tr td.label {
+
+}
+#buddypress input#file {
+  line-height: 1;
 }
 /* Notifications */
 #buddypress table.notifications thead tr {
