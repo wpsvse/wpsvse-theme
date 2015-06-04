@@ -61,4 +61,3 @@ do_action( 'bp_before_group_header' );
 <?php
 do_action( 'bp_after_group_header' ); ?>
 <div id="message-outer"> <?php do_action( 'template_notices' ); ?> </div>
-?>
