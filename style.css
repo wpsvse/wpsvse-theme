@@ -1197,7 +1197,7 @@ article.post.search-results {
 }
 #buddypress ul.item-list .friendship-button {
   font-size: 0;
-  padding: 0 2px;
+  padding: 0 4px;
 }
 #buddypress ul.item-list .friendship-button a.remove:before,
 #buddypress ul.item-list .friendship-button a.pending_friend:before {
@@ -1207,7 +1207,25 @@ article.post.search-results {
   display: block;
   padding: 4px;
 }
-
+#buddypress ul.item-list .join-group {
+  position: absolute;
+  top: 15px;
+  left: 226px;
+  font-size: 0;
+}
+#buddypress ul.item-list .join-group:before {
+  content: "\f067";
+  font-family: "fontawesome";
+  font-size: 16px;
+  display: block;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  text-indent: 0 !important;
+  text-align: center;
+  background-color: rgba(33, 117, 155, .7);
+}
 
 /* Text Area Bootstrap to BuddyPress */
 #buddypress .standard-form textarea {
