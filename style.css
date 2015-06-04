@@ -1104,7 +1104,16 @@ article.post.search-results {
   width: 100%;
   display: block;
 }
-#bp-groups .group-button a:hover {
+#bp-groups .group-button .join-group:before {
+  content: "\f067";
+  font-family: "fontawesome";
+  font-size: 16px;
+  padding: 4px;
+  color: #fff;
+  text-align: center;
+}
+#bp-groups .group-button a:hover,
+#buddypress ul.item-list .join-group a:hover {
   background: #000;
   color: #FFF;
   -webkit-transition: all 500ms ease;
@@ -1222,7 +1231,6 @@ article.post.search-results {
   width: 30px;
   height: 30px;
   color: #fff;
-  text-indent: 0 !important;
   text-align: center;
   background-color: rgba(33, 117, 155, .7);
 }
