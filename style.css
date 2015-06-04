@@ -1195,6 +1195,19 @@ article.post.search-results {
   font-size: 16px;
   font-weight: 400;
 }
+#buddypress ul.item-list .friendship-button {
+  font-size: 0;
+  padding: 0 2px;
+}
+#buddypress ul.item-list .friendship-button a.remove:before,
+#buddypress ul.item-list .friendship-button a.pending_friend:before {
+  content: "\f00d";
+  font-family: "fontawesome";
+  font-size: 16px;
+  display: block;
+  padding: 4px;
+}
+
 
 /* Text Area Bootstrap to BuddyPress */
 #buddypress .standard-form textarea {
