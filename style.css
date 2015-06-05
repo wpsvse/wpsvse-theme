@@ -1091,11 +1091,14 @@ article.post.search-results {
   background-color: rgba(51, 51, 51, .7);
   font-size: 12px;
 }
-#bp-groups .group-button a {
-  color: #fff;
+#bp-groups .group-button .join-group,
+#bp-groups .group-button .leave-group {
+	position: absolute; 
+	color: #fff;
+  font-size: 0;
   background: #21759b;
-  text-align: center;
-  display: block;
+	top: 0;
+	left: 225px;
 }
 #bp-groups .group-button .join-group:before {
   content: "\f067";
@@ -1104,6 +1107,9 @@ article.post.search-results {
   padding: 4px;
   color: #fff;
   text-align: center;
+	width: 30px;
+  height: 30px;
+	display: block;
 }
 #bp-groups .group-button .leave-group:before {
   content: "\f00d";
@@ -1112,6 +1118,9 @@ article.post.search-results {
   padding: 4px;
   color: #fff;
   text-align: center;
+	width: 30px;
+  height: 30px;
+	display: block;
 }
 
 #bp-groups .group-button a:hover,
@@ -1220,9 +1229,7 @@ article.post.search-results {
   padding: 4px;
 }
 #buddypress ul.item-list .join-group,
-#buddypress ul.item-list .leave-group,
-#bp-groups .group-button .join-group,
-#bp-groups .group-button .leave-group {
+#buddypress ul.item-list .leave-group {
   position: absolute;
   top: 15px;
   left: 226px;
