@@ -1094,14 +1094,7 @@ article.post.search-results {
 #bp-groups .group-button a {
   color: #fff;
   background: #21759b;
-  width: 100%;
-  padding: 5px;
-  border-radius: 0;
-  border: 0;
-  font-size: 14px;
-  text-transform: uppercase;
   text-align: center;
-  width: 100%;
   display: block;
 }
 #bp-groups .group-button .join-group:before {
@@ -1227,7 +1220,9 @@ article.post.search-results {
   padding: 4px;
 }
 #buddypress ul.item-list .join-group,
-#buddypress ul.item-list .leave-group {
+#buddypress ul.item-list .leave-group,
+#bp-groups .group-button .join-group,
+#bp-groups .group-button .leave-group {
   position: absolute;
   top: 15px;
   left: 226px;
