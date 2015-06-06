@@ -478,16 +478,21 @@ input[type=text], .form-inline input, .form-control {
   font-size: 11px;
   font-weight: normal;
 }
-.btn-org, .btn-sv-se {
+.btn-org, .btn-dl {
   display: block;
   margin-bottom: 15px;
   text-align: left;
   white-space: normal;
+  padding: 15px;
 }
-.btn-org .fa-cloud-download, .btn-sv-se .fa-cloud-download {
+.btn-dl .fa-cloud-download {
   font-size: 42px;
   float: left;
   margin-right: 15px;
+}
+#dl-btns .col-md-6,
+#dl-btns .col-md-12 {
+  padding-left: 0;
 }
 .btn-android,
 .btn-apple,
