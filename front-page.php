@@ -23,8 +23,13 @@ get_header(); ?>
             <section id="latest-downloads">
                 <h3>Ladda ner senaste WordPress</h3>
                     <div id="dl-btns">
-                      <a class="btn btn-blue btn-sv-se" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.0 <span>(internationell)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
-                      <p><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
+										<div class="col-md-6">
+                      <a class="btn btn-blue btn-dl" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.2.2 <span>(svensk)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
+										</div>
+										<div class="col-md-6">
+											<a class="btn btn-dark btn-dl" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.2.2 <span>(internationell)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
+										</div>
+                      <p class="col-md-12"><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
                     </div>
             </section>
           </div>
