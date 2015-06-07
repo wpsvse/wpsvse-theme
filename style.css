@@ -851,6 +851,13 @@ article.post.search-results {
 .sd-content ul li {
   vertical-align: middle;
 }
+.sd-social-icon .sd-content ul li[class*='share-'] a.sd-button.share-custom {
+  padding: 10px 8px 6px 8px;
+  top: 5px;
+}
+.sd-social-icon .sd-content ul li[class*='share-'] a.sd-button.share-custom span {
+  vertical-align: top;
+}
 .container div.sharedaddy h3.sd-title {
   font-size: 18px;
   font-weight: 300;
@@ -1098,7 +1105,7 @@ article.post.search-results {
 }
 #bp-groups .group-button .join-group,
 #bp-groups .group-button .leave-group {
-	position: absolute; 
+	position: absolute;
 	color: #fff;
   font-size: 0;
   background: #21759b;
