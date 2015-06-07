@@ -619,6 +619,9 @@ input[type=text], .form-inline input, .form-control {
 #bbpress-forums .bbp-attachments ol {
   padding: 0;
 }
+#bbpress-forums ul {
+  width: 100%;
+}
 #bbpress-forums .bbp-attachments h6 {
   font-size: 14px;
   font-weight: 400;
