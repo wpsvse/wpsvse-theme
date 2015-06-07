@@ -732,24 +732,25 @@ span.bbp-author-ip {
   Search
 ============================================================================ */
 
-.search-results {
+article.search-results {
   margin-bottom: 0;
   padding: 35px 0;
-  border-bottom: 3px solid #21759B;
+  border-bottom: 1px solid #eee;
 }
 article.post.search-results {
   margin-bottom: 0;
 }
+.search-results .search-entry-title {
+  text-shadow: none;
+}
 .search-results .search-entry-title a {
+  color: #333940;
   font-size: 20px;
   font-weight: 400;
 }
-.search-results.topic .search-entry-title a {
-  color: #125c6e;
-}
 .search-results.topic .search-entry-title:before {
   content: '\f0e6';
-  color: #125c6e;
+  color: #4C5B5C;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 20px;
@@ -758,13 +759,10 @@ article.post.search-results {
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
   padding-right: 10px;
-}
-.search-results.post .search-entry-title a {
-  color: #1f8098;
 }
 .search-results.post .search-entry-title:before {
   content: '\f040';
-  color: #1f8098;
+  color: #FF715B;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 20px;
@@ -773,13 +771,10 @@ article.post.search-results {
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
   padding-right: 10px;
-}
-.search-results.reply .search-entry-title a {
-  color: #12436e;
 }
 .search-results.reply .search-entry-title:before {
   content: '\f112';
-  color: #12436e;
+  color: #F9CB40;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 20px;
@@ -788,14 +783,10 @@ article.post.search-results {
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
   padding-right: 10px;
-}
-
-.search-results.wpsvse_blog .search-entry-title a {
-  color: #2781ae;
 }
 .search-results.wpsvse_blog .search-entry-title:before {
   content: '\f1ea';
-  color: #2781ae;
+  color: #BCED09;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 20px;
@@ -804,14 +795,10 @@ article.post.search-results {
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
   padding-right: 10px;
-}
-
-.search-results.page .search-entry-title a {
-  color: #125c6e;
 }
 .search-results.page .search-entry-title:before {
   content: '\f0e8';
-  color: #125c6e;
+  color: #2F52E0;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 20px;
@@ -821,7 +808,6 @@ article.post.search-results {
   transform: translate(0, 0);
   padding-right: 10px;
 }
-
 
 /* ==========================================================================
   Share Buttons
