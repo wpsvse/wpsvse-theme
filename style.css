@@ -751,6 +751,10 @@ article.post.search-results {
   font-size: 20px;
   font-weight: 400;
 }
+.search-results .search-meta-header {
+  color: #969696;
+  font-size: 13px;
+}
 .search-results.topic .search-entry-title:before {
   content: '\f0e6';
   color: #4C5B5C;
@@ -2102,7 +2106,7 @@ ul.apps {
   #bbpress-forums .bbp-topic-freshness {
     display: none;
   }
-  /* Table Notifications */
+  /* Table Notificationsev. */
   #buddypress table.notifications {
     border: 0;
   }
