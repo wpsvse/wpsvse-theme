@@ -1197,7 +1197,7 @@ article.post.search-results {
 #buddypress div#item-header div#item-meta {
   color: #747474;
 }
-#buddypress ul.item-list li div.action.request {
+#buddypress ul.item-list li .item-type-wrapper div.request {
   position: static;
 }
 /* Group Create Tweaks */
@@ -1387,6 +1387,19 @@ input#select-all-notifications{
   background: #000;
   color: #FFF;
   -webkit-transition: all 500ms ease;
+}
+/* unread messages */
+#buddypress table#message-threads tr.unread td {
+  background: #21759b;
+  border-top: 1px solid #21759b;
+  border-bottom: 1px solid #e5e5e5;
+  color: #fff;
+  font-weight: bold;
+}
+#buddypress table tr.unread td.thread-options a,
+#buddypress table tr.unread td.thread-info p.thread-excerpt,
+#buddypress table tr.unread td.thread-info a {
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -2138,10 +2151,10 @@ ul.apps {
     display: none;
   }
 
-  #buddypress table#message-threads tr.unread td {
-    width: 100%;
+  #buddypress table#message-threads tr td {
+    text-align: left;
   }
-  
+
   #buddypress table tr {
     margin-bottom: 10px;
     display: block;
