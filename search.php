@@ -1,4 +1,4 @@
-<?php
++<?php
 /**
  * The template for displaying Search Results pages.
  *
@@ -23,22 +23,22 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
          <div class="col-md-9">
-              
+
 						<?php if ( have_posts() ) : ?>
-          
+
                 <?php /* Start the Loop */ ?>
                 <?php while ( have_posts() ) : the_post(); ?>
-    
+
                     <?php get_template_part( 'content', 'search' ); ?>
-    
+
                 <?php endwhile; ?>
-    
+
                 <?php wpsvse_content_nav( 'nav-below' ); ?>
-    
+
             <?php else : ?>
-    
+
                 <?php get_template_part( 'content', 'no-results' ); ?>
-    
+
             <?php endif; ?>
 
         </div>
