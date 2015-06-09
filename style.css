@@ -1197,7 +1197,7 @@ article.post.search-results {
 #buddypress div#item-header div#item-meta {
   color: #747474;
 }
-#buddypress ul.item-list li div.action.request {
+#buddypress ul.item-list li .item-type-wrapper div.request {
   position: static;
 }
 /* Group Create Tweaks */
