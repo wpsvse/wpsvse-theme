@@ -56,6 +56,8 @@ function wpsvse_setup() {
 	define ( 'BP_AVATAR_FULL_HEIGHT', 512 );
 	define ( 'BP_AVATAR_ORIGINAL_MAX_WIDTH', 512 );
 	define ( 'BP_AVATAR_ORIGINAL_MAX_FILESIZE', 819200 );
+	define ( 'BP_AVATAR_TINY_WIDTH', 50);
+	define ( 'BP_AVATAR_TINY_HEIGHT', 50);
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -128,7 +130,7 @@ function wpsvse_widgets_init() {
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
-	) );	
+	) );
 }
 endif;
 add_action( 'widgets_init', 'wpsvse_widgets_init' );
@@ -159,7 +161,7 @@ function wpsvse_scripts() {
 	wp_enqueue_script( 'HTML5shiv', get_template_directory_uri() . '/js/html5shiv.js', array('jquery'), '3.7.0' );
 
 	wp_enqueue_script( 'respond_js', get_template_directory_uri() . '/js/respond.min.js', array('jquery'), '1.3.0' );
-	
+
 	wp_enqueue_script( 'magnific_popup', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array('jquery'), '1.0.0' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
