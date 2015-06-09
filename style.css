@@ -2124,6 +2124,9 @@ ul.apps {
   #buddypress div.item-list-tabs ul li {
     float: none;
   }
+  #buddypress table.profile-fields tr td {
+    text-align: left;
+  }
   /* Forum */
   #bbpress-forums .bbp-topic-counts,
   #bbpress-forums .bbp-topic-freshness {
