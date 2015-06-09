@@ -1330,37 +1330,46 @@ fieldset[disabled] #buddypress .standard-form textarea {
 #buddypress input#file {
   line-height: 1;
 }
-/* Notifications */
-#buddypress table thead tr {
- color: #fff;
- background: #21759B;
-}
-#buddypress table #select-all-notifications {
- display: block;
- margin-left: 5px;
-}
-#buddypress table th,
-#buddypress table td,  {
-  padding: 10px;
-  text-align: center;
-}
-#buddypress table td {
- border-bottom: 1px solid #ccc;
- margin: 10px 0;
-}
-#buddypress table {
+/* Tables in BuddyPress with Tweaks for sepcifics */
+
+#buddypress #item-body table {
   border: 1px solid #ccc;
   width: 100%;
   margin:0;
   padding:0;
   border-collapse: collapse;
+  border: 0;
   border-spacing: 0;
 }
+
+#buddypress #item-body table tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#buddypress #item-body table th, table td {
+  padding: 10px;
+  text-align: center;
+}
+
+#buddypress #item-body table th {
+  font-size: 14px;
+}
+
 .notifications-options-nav {
  margin: 10px 0;
 }
 .notifications-options-nav select {
  max-width: 400px;
+}
+input#select-all-notifications{
+  margin-left: 5px;
+}
+
+#buddypress div.messages-options-nav {
+  background: transparent;
+  max-width: 400px;
+  text-align: left;
 }
 #notification-bulk-manage {
   margin-bottom: 40px;
@@ -1379,7 +1388,9 @@ fieldset[disabled] #buddypress .standard-form textarea {
   color: #FFF;
   -webkit-transition: all 500ms ease;
 }
-
+#buddypress table#message-threads tr.unread td {
+  width: 100%;
+}
 
 /* ==========================================================================
 	Other
@@ -2122,24 +2133,29 @@ ul.apps {
   #buddypress table {
     border: 0;
   }
-  #buddypress table thead,
-  #buddypress table.notifications .notification-check {
+
+  #buddypress table thead {
     display: none;
   }
+
   #buddypress table tr {
     margin-bottom: 10px;
     display: block;
-    border-bottom: 2px solid #1D6A90;
+    border-bottom: 2px solid #ddd;
   }
+
   #buddypress table td {
     display: block;
+    text-align: right;
     font-size: 13px;
     border-bottom: 1px dotted #ccc;
   }
+
   #buddypress table td:last-child {
     border-bottom: 0;
   }
-  #buddypress table td:before {
+
+  table td:before {
     content: attr(data-label);
     float: left;
     text-transform: uppercase;

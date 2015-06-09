@@ -16,10 +16,10 @@
 
 				<tr>
 					<td></td>
-					<td><input id="<?php bp_the_notification_id(); ?>" type="checkbox" name="notifications[]" value="<?php bp_the_notification_id(); ?>" class="notification-check"></td>
-					<td><?php bp_the_notification_description();  ?></td>
-					<td><?php bp_the_notification_time_since();   ?></td>
-					<td><?php bp_the_notification_action_links(); ?></td>
+					<td data-label="Markera Alla"><input id="<?php bp_the_notification_id(); ?>" type="checkbox" name="notifications[]" value="<?php bp_the_notification_id(); ?>" class="notification-check"></td>
+					<td data-label="Notifikation"><?php bp_the_notification_description();  ?></td>
+					<td data-label="Datum"><?php bp_the_notification_time_since();   ?></td>
+					<td data-label="Åtgärder"><?php bp_the_notification_action_links(); ?></td>
 				</tr>
 
 			<?php endwhile; ?>
