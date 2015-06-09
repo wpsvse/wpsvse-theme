@@ -28,14 +28,14 @@
 
 				<div class="item">
 					<div class="item-type-wrapper clearfix">
-						<div class="item-title item-type"><a href="<?php bp_member_link(); ?>"><?php bp_member_name(); ?></a></div>
-						<div class="item-meta item-type"><span class="activity"><?php bp_member_last_active(); ?></span></div>
-						<?php do_action( 'bp_friend_requests_item' ); ?>
-						<div class="action item-type">
+						<div class="request action item-type">
 							<a class="button accept" href="<?php bp_friend_accept_request_link(); ?>"><?php _e( 'Accept', 'buddypress' ); ?></a> &nbsp;
 							<a class="button reject" href="<?php bp_friend_reject_request_link(); ?>"><?php _e( 'Reject', 'buddypress' ); ?></a>
 								<?php do_action( 'bp_friend_requests_item_action' ); ?>
 						</div>
+						<div class="item-title item-type"><a href="<?php bp_member_link(); ?>"><?php bp_member_name(); ?></a></div>
+						<div class="item-meta item-type"><span class="activity"><?php bp_member_last_active(); ?></span></div>
+						<?php do_action( 'bp_friend_requests_item' ); ?>
 					</div>
 				</div>
 			</li>
