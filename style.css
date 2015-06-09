@@ -1388,9 +1388,6 @@ input#select-all-notifications{
   color: #FFF;
   -webkit-transition: all 500ms ease;
 }
-#buddypress table#message-threads tr.unread td {
-  width: 100%;
-}
 
 /* ==========================================================================
 	Other
@@ -2132,7 +2129,7 @@ ul.apps {
   #bbpress-forums .bbp-topic-freshness {
     display: none;
   }
-  /* Table Notificationsev. */
+  /* Responsvie Table with data-label */
   #buddypress table {
     border: 0;
   }
@@ -2141,6 +2138,10 @@ ul.apps {
     display: none;
   }
 
+  #buddypress table#message-threads tr.unread td {
+    width: 100%;
+  }
+  
   #buddypress table tr {
     margin-bottom: 10px;
     display: block;
