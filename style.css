@@ -682,6 +682,9 @@ span.bbp-author-ip {
   -webkit-box-shadow: inset 0px 0px 1px 1px #ffffff;
   box-shadow: inset 0px 0px 1px 1px #ffffff;
 }
+#item-body > #bbpress-forums {
+  padding: 15px 0;
+}
 /* ==========================================================================
   WP Page Nav
 ============================================================================ */
@@ -1197,7 +1200,7 @@ article.post.search-results {
 #buddypress div#item-header div#item-meta {
   color: #747474;
 }
-#buddypress ul.item-list li .item-type-wrapper div.request {
+#buddypress ul.item-list li .item-type-wrapper adiv.request {
   position: static;
 }
 /* Group Create Tweaks */
@@ -1324,8 +1327,25 @@ fieldset[disabled] #buddypress .standard-form textarea {
   cursor: not-allowed;
 }
 /* Profile */
-#buddypress table.profile-fields tr td.label {
+#buddypress table.profile-fields {
 
+}
+#buddypress table.profile-fields td {
+  text-align: left;
+}
+#buddypress table.profile-fields tr td.label {
+  display: table-cell;
+  vertical-align: middle;
+  color: #333;
+  font-weight: 400;
+  font-size: 12px;
+}
+#buddypress table.profile-fields td.data {
+  max-width: 500px;
+  word-wrap: break-word;
+}
+.profile .bp-widget > h4 {
+  padding-bottom: 15px;
 }
 #buddypress input#file {
   line-height: 1;
@@ -1370,6 +1390,7 @@ input#select-all-notifications{
   background: transparent;
   max-width: 400px;
   text-align: left;
+  padding: 15px 0;
 }
 #notification-bulk-manage {
   margin-bottom: 40px;
@@ -1783,6 +1804,21 @@ article.post h1 a, article.wpsvse_blog h1 a {
   content: '\f073';
   padding-left: 15px;
 }
+
+/* ==========================================================================
+   Widgets
+============================================================================ */
+
+.widget_tag_cloud .tagcloud a {
+  background: #2174A5;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+.widget_tag_cloud .tagcloud a:hover {
+  background: #000;
+}
+
 #wp-calendar thead th {
   text-align: center;
   margin-bottom: 5px;
@@ -1837,10 +1873,13 @@ article.post h1 a, article.wpsvse_blog h1 a {
   transform: translate(0, 0);
   color: #286090;
 }
-.widget_display_topics .widget-title {
+.widget.widget_display_topics .widget-title {
   margin: 10px 0;
 }
-.widget_display_topics .bbp-forum-title:before {
+.widget.widget_display_topics li {
+  padding: 5px 0;
+}
+.widget.widget_display_topics .bbp-forum-title:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -1853,10 +1892,13 @@ article.post h1 a, article.wpsvse_blog h1 a {
 .widget .widget-title {
   margin: 5px 0;
 }
-.widget_recent_entries .post-date {
+.widget.widget_recent_entries .post-date {
   display: block;
 }
-.widget_recent_entries > a:before {
+.widget.widget_recent_entries li {
+  padding: 7px 0;
+}
+.widget.widget_recent_entries > a:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
