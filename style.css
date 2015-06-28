@@ -522,6 +522,20 @@ input[type=text], .form-inline input, .form-control {
 }
 
 /* ==========================================================================
+	Downloads
+============================================================================ */
+#download-page .download_group#download-search, #download-page #download-search#download-search { padding: 15px 15px 35px; }
+#download-page .download_group#download-search label, #download-page #download-search#download-search label, #download-page .download_group#download-search input[type=submit], #download-page #download-search#download-search input[type=submit] { display: inline-block; }
+#download-page .input-lg { height: 46px !important; }
+#download-page .fa { color: #CDCDCD; }
+#download-page .download_group, #download-page #download-search {
+  box-shadow: none;
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+}
+#download-page label { font-weight: normal; }
+
+/* ==========================================================================
 	Panels
 ============================================================================ */
 

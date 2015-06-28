@@ -14,7 +14,7 @@ global $dlm_download;
 
 	<div class="download-box-content">
 
-		<h1><?php $dlm_download->the_title(); ?></h1>
+		<h1><a href="<?php the_permalink(); ?>"><?php $dlm_download->the_title(); ?></a></h1>
 
 		<?php $dlm_download->the_short_description(); ?>
 
