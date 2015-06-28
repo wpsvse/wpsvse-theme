@@ -8,6 +8,7 @@ global $dlm_download, $dlm_page_addon;
 $versions = $dlm_download->get_file_versions();
 $previous_versions = '';
 ?>
+<h3><?php echo $dlm_download->get_the_title() . '&nbsp;' . $dlm_download->get_the_version_number(); ?></h3>
 <section class="download-information">
 	<aside>
 		<?php do_action( 'dlm_page_addon_aside_start' ); ?>

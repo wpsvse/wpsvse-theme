@@ -28,7 +28,7 @@ global $dlm_download;
 		<div class="container">
 			<div class="row">
         <div class="col-md-9">
-				<h3><?php the_title(); ?></h3>
+				<p class="dlm-breadcrumbs"><?php the_title(); ?></p>
 				
           <?php 
           the_content(); 
