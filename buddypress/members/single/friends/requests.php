@@ -18,28 +18,25 @@
 
 	</div>
 
-	<ul id="friend-list" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buddypress-listing item-list" role="main">
+	<ul id="friend-list" class="item-list" role="main">
 		<?php while ( bp_members() ) : bp_the_member(); ?>
 
-			<li id="friendship-<?php bp_friend_friendship_id(); ?>">
+			<li id="friendship-<?php bp_friend_friendship_id(); ?>" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buddypress-listing">
 				<div class="item-avatar">
 					<a href="<?php bp_member_link(); ?>"><?php bp_member_avatar(); ?></a>
 				</div>
 
 				<div class="item">
 					<div class="item-type-wrapper clearfix">
-						<div class="item-title"><a href="<?php bp_member_link(); ?>"><?php bp_member_name(); ?></a></div>
-						<div class="item-meta"><span class="activity"><?php bp_member_last_active(); ?></span></div>
+						<div class="request action item-type">
+							<a class="button accept" href="<?php bp_friend_accept_request_link(); ?>"><?php _e( 'Accept', 'buddypress' ); ?></a> &nbsp;
+							<a class="button reject" href="<?php bp_friend_reject_request_link(); ?>"><?php _e( 'Reject', 'buddypress' ); ?></a>
+								<?php do_action( 'bp_friend_requests_item_action' ); ?>
+						</div>
+						<div class="item-title item-type"><a href="<?php bp_member_link(); ?>"><?php bp_member_name(); ?></a></div>
+						<div class="item-meta item-type"><span class="activity"><?php bp_member_last_active(); ?></span></div>
+						<?php do_action( 'bp_friend_requests_item' ); ?>
 					</div>
-				</div>
-
-				<?php do_action( 'bp_friend_requests_item' ); ?>
-
-				<div class="action">
-					<a class="button accept" href="<?php bp_friend_accept_request_link(); ?>"><?php _e( 'Accept', 'buddypress' ); ?></a> &nbsp;
-					<a class="button reject" href="<?php bp_friend_reject_request_link(); ?>"><?php _e( 'Reject', 'buddypress' ); ?></a>
-
-					<?php do_action( 'bp_friend_requests_item_action' ); ?>
 				</div>
 			</li>
 

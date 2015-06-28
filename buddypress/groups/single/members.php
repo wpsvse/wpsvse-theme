@@ -32,27 +32,31 @@
 
 		<?php while ( bp_group_members() ) : bp_group_the_member(); ?>
 
-			<li>
+			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buddypress-listing">
 				<a href="<?php bp_group_member_domain(); ?>">
 
 					<?php bp_group_member_avatar_thumb(); ?>
 
 				</a>
 
-				<h5><?php bp_group_member_link(); ?></h5>
-				<span class="activity"><?php bp_group_member_joined_since(); ?></span>
+				<div class="item">
+					<div class="item-type-wrapper clearfix">
+						<div class="item-type item-title"><?php bp_group_member_link(); ?></div>
+						<div class="item-type item-meta"><?php bp_group_member_joined_since(); ?></div>
 
-				<?php do_action( 'bp_group_members_list_item' ); ?>
+						<?php do_action( 'bp_group_members_list_item' ); ?>
 
-				<?php if ( bp_is_active( 'friends' ) ) : ?>
+						<?php if ( bp_is_active( 'friends' ) ) : ?>
 
-					<div class="action">
+							<div class="item-type action">
 
-						<?php bp_add_friend_button( bp_get_group_member_id(), bp_get_group_member_is_friend() ); ?>
+								<?php bp_add_friend_button( bp_get_group_member_id(), bp_get_group_member_is_friend() ); ?>
 
-						<?php do_action( 'bp_group_members_list_item_action' ); ?>
+								<?php do_action( 'bp_group_members_list_item_action' ); ?>
 
+							</div>
 					</div>
+				</div>
 
 				<?php endif; ?>
 			</li>
