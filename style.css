@@ -535,6 +535,18 @@ input[type=text], .form-inline input, .form-control {
 }
 #download-page label { font-weight: normal; }
 
+#download-page .download_group h3, #download-page #download-search h3 {
+  background-color: #286090;
+  color: #fff;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+#download-page .download_group h3 a { color: #fff; }
+
 /* ==========================================================================
 	Panels
 ============================================================================ */
