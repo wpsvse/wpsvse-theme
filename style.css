@@ -527,7 +527,6 @@ input[type=text], .form-inline input, .form-control {
 #download-page .download_group#download-search, #download-page #download-search#download-search { padding: 15px 15px 35px; }
 #download-page .download_group#download-search label, #download-page #download-search#download-search label, #download-page .download_group#download-search input[type=submit], #download-page #download-search#download-search input[type=submit] { display: inline-block; }
 #download-page .input-lg { height: 46px !important; }
-#download-page .fa { color: #CDCDCD; }
 #download-page .download_group,
 #download-page #download-search,
 #download-page .download-monitor-orderby,
@@ -550,7 +549,26 @@ input[type=text], .form-inline input, .form-control {
   border-top-right-radius: 4px;
 }
 #download-page .download_group h3 a { color: #fff; }
-
+.btn-dlm { 
+	display: block;
+	margin-bottom: 15px;
+}
+#download-page img.wp-post-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+table.single-download-meta {
+  width: 100%;
+  font-size: 13px;
+}
+#download-page td {
+  padding: 4px 4px 4px 0;
+}
+#download-page td.name {
+  font-weight: bold;
+  width: 20%;
+}
 
 /* ==========================================================================
 	Panels
@@ -1381,8 +1399,8 @@ fieldset[disabled] #buddypress .standard-form textarea {
 #buddypress input#file {
   line-height: 1;
 }
-/* Tables in BuddyPress with Tweaks for sepcifics */
 
+/* Tables in BuddyPress with Tweaks for sepcifics */
 #buddypress #item-body table {
   border: 1px solid #ccc;
   width: 100%;
@@ -1392,17 +1410,15 @@ fieldset[disabled] #buddypress .standard-form textarea {
   border: 0;
   border-spacing: 0;
 }
-
 #buddypress #item-body table tr {
   border: 1px solid #ddd;
   padding: 5px;
 }
-
-#buddypress #item-body table th, table td {
+#buddypress #item-body table th,
+#buddypress #item-body table td {
   padding: 10px;
   text-align: center;
 }
-
 #buddypress #item-body table th {
   font-size: 14px;
 }

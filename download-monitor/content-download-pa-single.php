@@ -8,21 +8,23 @@ global $dlm_download, $dlm_page_addon;
 $versions = $dlm_download->get_file_versions();
 $previous_versions = '';
 ?>
+
 <h3><?php echo $dlm_download->get_the_title() . '&nbsp;' . $dlm_download->get_the_version_number(); ?></h3>
-<section class="download-information">
-	<aside>
+
+<section class="single-download row">
+	<aside class="col-md-3">
 		<?php do_action( 'dlm_page_addon_aside_start' ); ?>
 
 		<?php echo $dlm_download->get_the_image( 'full' ); ?>
 
-		<a class="aligncenter download-button" href="<?php $dlm_download->the_download_link(); ?>" rel="nofollow">
-			<?php _e( 'Download', 'dlm_page_addon' ); ?>
+		<a class="btn btn-primary btn-dlm" href="<?php $dlm_download->the_download_link(); ?>" rel="nofollow">
+			<i class="fa fa-cloud-download"></i> <?php _e( 'Download', 'dlm_page_addon' ); ?>
 		</a>
 
 		<?php do_action( 'dlm_page_addon_aside_end' ); ?>
 	</aside>
-	<article>
-		<table class="download-meta">
+	<article class="col-md-9">
+		<table class="single-download-meta">
 			<?php
 				// Get formatted list of tags
 				$terms = wp_get_post_terms( $dlm_download->id, 'dlm_download_tag' );
@@ -40,7 +42,7 @@ $previous_versions = '';
 				if ( sizeof( $versions ) > 1 ) {
 					array_shift( $versions );
 
-					$previous_versions = ' <a href="#" class="toggle-previous-versions">' . __( 'Previous versions', 'dlm_page_addon' ) . '</a><ul class="previous-versions" style="display: none">';
+					$previous_versions = ' <a href="#" class="toggle-previous-versions btn btn-primary btn-xs"><i class="fa fa-code-fork"></i> ' . __( 'Previous versions', 'dlm_page_addon' ) . '</a><ul class="previous-versions" style="display: none">';
 
 					foreach ( $versions as $version ) {
 						$dlm_download->set_version( $version->id );
@@ -122,6 +124,7 @@ $previous_versions = '';
 		</table>
 
 		<?php the_content(); ?>
+		
 	</article>
 	<script type="text/javascript">
 		jQuery('.toggle-previous-versions').click(function() {
