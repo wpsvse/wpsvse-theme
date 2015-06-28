@@ -528,14 +528,18 @@ input[type=text], .form-inline input, .form-control {
 #download-page .download_group#download-search label, #download-page #download-search#download-search label, #download-page .download_group#download-search input[type=submit], #download-page #download-search#download-search input[type=submit] { display: inline-block; }
 #download-page .input-lg { height: 46px !important; }
 #download-page .fa { color: #CDCDCD; }
-#download-page .download_group, #download-page #download-search {
+#download-page .download_group,
+#download-page #download-search,
+#download-page .download-monitor-orderby,
+#download-page .download-monitor-subcategories {
   box-shadow: none;
   background-color: #f8f8f8;
   border: 1px solid #eee;
 }
 #download-page label { font-weight: normal; }
 
-#download-page .download_group h3, #download-page #download-search h3 {
+#download-page .download_group h3,
+#download-page #download-search h3 {
   background-color: #286090;
   color: #fff;
   -webkit-border-top-left-radius: 4px;
@@ -546,6 +550,7 @@ input[type=text], .form-inline input, .form-control {
   border-top-right-radius: 4px;
 }
 #download-page .download_group h3 a { color: #fff; }
+
 
 /* ==========================================================================
 	Panels
