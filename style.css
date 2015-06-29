@@ -535,8 +535,15 @@ input[type=text], .form-inline input, .form-control {
   background-color: #f8f8f8;
   border: 1px solid #eee;
 }
+#download-page .download_group h3,
+#download-page #download-search h3 { padding: 8px 15px; }
 #download-page label { font-weight: normal; }
-
+.download-monitor-categories ul { margin: 0; }
+.download-monitor-categories li {
+  padding: 4px 15px;
+  border-bottom: 1px solid #eee;
+}
+.download-link p { display: inline; }
 #download-page .download_group h3,
 #download-page #download-search h3 {
   background-color: #21759B;
@@ -573,9 +580,9 @@ table.single-download-meta {
 #download-page tr:nth-child(odd) {
    background-color: #f8f8f8;
 }
-.previous-versions li {
-  padding: 3px 0;
-}
+.toggle-previous-versions { margin-left: 4px; }
+.previous-versions li { padding: 3px 0; }
+
 
 /* ==========================================================================
 	Panels
