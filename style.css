@@ -539,7 +539,7 @@ input[type=text], .form-inline input, .form-control {
 
 #download-page .download_group h3,
 #download-page #download-search h3 {
-  background-color: #286090;
+  background-color: #21759B;
   color: #fff;
   -webkit-border-top-left-radius: 4px;
   -webkit-border-top-right-radius: 4px;
@@ -561,13 +561,20 @@ input[type=text], .form-inline input, .form-control {
 table.single-download-meta {
   width: 100%;
   font-size: 13px;
+	margin-bottom: 25px;
 }
 #download-page td {
-  padding: 4px 4px 4px 0;
+  padding: 4px;
 }
 #download-page td.name {
   font-weight: bold;
   width: 20%;
+}
+#download-page tr:nth-child(odd) {
+   background-color: #f8f8f8;
+}
+.previous-versions li {
+  padding: 3px 0;
 }
 
 /* ==========================================================================
