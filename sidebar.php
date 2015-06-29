@@ -7,7 +7,7 @@
 ?>
 	<div id="sidebar" class="col-md-3 widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
-		<?php if ( is_page('filer') ) {
+		<?php if ( !is_page('filer') ) {
 		if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="meta" class="widget">
