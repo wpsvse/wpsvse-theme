@@ -17,7 +17,7 @@ $previous_versions = '';
 
 		<?php echo $dlm_download->get_the_image( 'full' ); ?>
 
-		<a class="btn btn-primary btn-dlm" href="<?php $dlm_download->the_download_link(); ?>" rel="nofollow">
+		<a class="btn btn-primary btn-dlm btn-lg" href="<?php $dlm_download->the_download_link(); ?>" rel="nofollow">
 			<i class="fa fa-cloud-download"></i> Ladda ner
 		</a>
 
