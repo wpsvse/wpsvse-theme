@@ -7,7 +7,8 @@
 ?>
 	<div id="sidebar" class="col-md-3 widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
-		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+		<?php if ( !is_page('filer') ) {
+		if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="meta" class="widget">
 				<h3 class="widget-title"><?php _e( 'Meta', 'wpsvse' ); ?></h3>
@@ -18,5 +19,8 @@
 				</ul>
 			</aside>
 
-		<?php endif; // end sidebar widget area ?>
+		<?php endif; // end sidebar widget area 
+		} else {
+			if ( ! dynamic_sidebar( 'file-widgets' ) ) : endif;
+		} ?>
 	</div><!-- #secondary -->
