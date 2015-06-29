@@ -18,7 +18,7 @@ $previous_versions = '';
 		<?php echo $dlm_download->get_the_image( 'full' ); ?>
 
 		<a class="btn btn-primary btn-dlm" href="<?php $dlm_download->the_download_link(); ?>" rel="nofollow">
-			<i class="fa fa-cloud-download"></i> <?php _e( 'Download', 'dlm_page_addon' ); ?>
+			<i class="fa fa-cloud-download"></i> Ladda ner
 		</a>
 
 		<?php do_action( 'dlm_page_addon_aside_end' ); ?>
@@ -42,13 +42,13 @@ $previous_versions = '';
 				if ( sizeof( $versions ) > 1 ) {
 					array_shift( $versions );
 
-					$previous_versions = ' <a href="#" class="toggle-previous-versions btn btn-primary btn-xs"><i class="fa fa-code-fork"></i> ' . __( 'Previous versions', 'dlm_page_addon' ) . '</a><ul class="previous-versions" style="display: none">';
+					$previous_versions = ' <a href="#" class="toggle-previous-versions btn btn-primary btn-xs"><i class="fa fa-code-fork"></i> Tidigare versioner</a><ul class="previous-versions" style="display: none">';
 
 					foreach ( $versions as $version ) {
 						$dlm_download->set_version( $version->id );
 						$version_post = get_post( $version->id );
 
-						$previous_versions .= '<li><a href="' . $dlm_download->get_the_download_link() . '">' . sprintf( __( 'Version %s', 'dlm_page_addon' ), $dlm_download->get_the_version_number() ) . '</a> - ' . date_i18n( get_option( 'date_format' ), strtotime( $version_post->post_date ) ) . '</li>';
+						$previous_versions .= '<li><a href="' . $dlm_download->get_the_download_link() . '" title="Ladda ner">' . sprintf( __( 'Version %s', 'dlm_page_addon' ), $dlm_download->get_the_version_number() ) . '</a> - ' . date_i18n( get_option( 'date_format' ), strtotime( $version_post->post_date ) ) . '</li>';
 					}
 
 					$dlm_download->set_version();
@@ -58,12 +58,12 @@ $previous_versions = '';
 
 				$download_meta = array(
 					'filename' => array(
-						'name'     => __( 'Filename', 'dlm_page_addon' ),
+						'name'     => __( 'Filnamn', 'dlm_page_addon' ),
 						'value'    => $dlm_download->get_the_filename(),
 						'priority' => 1
 					),
 					'filesize' => array(
-						'name'     => __( 'Filesize', 'dlm_page_addon' ),
+						'name'     => __( 'Filstorlek', 'dlm_page_addon' ),
 						'value'    => $dlm_download->get_the_filesize(),
 						'priority' => 2
 					),
@@ -73,22 +73,22 @@ $previous_versions = '';
 						'priority' => 3
 					),
 					'date' => array(
-						'name'     => __( 'Date added', 'dlm_page_addon' ),
+						'name'     => __( 'Upplagd', 'dlm_page_addon' ),
 						'value'    => date_i18n( get_option( 'date_format' ), strtotime( $dlm_download->post->post_date ) ),
 						'priority' => 4
 					),
 					'downloaded' => array(
-						'name'     => __( 'Downloaded', 'dlm_page_addon' ),
-						'value'    => sprintf( _n( '1 time', '%d times', $dlm_download->get_the_download_count(), 'dlm_page_addon' ), $dlm_download->get_the_download_count() ),
+						'name'     => __( 'Nedladdad', 'dlm_page_addon' ),
+						'value'    => sprintf( _n( '1 gång', '%d gånger', $dlm_download->get_the_download_count(), 'dlm_page_addon' ), $dlm_download->get_the_download_count() ),
 						'priority' => 5
 					),
 					'categories' => array(
-						'name'     => __( 'Category', 'dlm_page_addon' ),
+						'name'     => __( 'Kategori', 'dlm_page_addon' ),
 						'value'    => implode( ', ', $cats ),
 						'priority' => 6
 					),
 					'tags' => array(
-						'name'     => __( 'Tags', 'dlm_page_addon' ),
+						'name'     => __( 'Taggar', 'dlm_page_addon' ),
 						'value'    => implode( ', ', $tags ),
 						'priority' => 7
 					)
