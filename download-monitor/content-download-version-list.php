@@ -15,7 +15,7 @@ if ( $versions ) : ?>
 			$version_post = get_post( $version->id );
 			?>
 			<li><a class="download-link"
-			       title="<?php printf( _n( 'Downloaded 1 time', 'Downloaded %d times', $dlm_download->get_the_download_count(), 'download-monitor' ), $dlm_download->get_the_download_count() ) ?>"
+			       title="<?php printf( _n( 'Nedladdad 1 gång', 'Nedladdad %d gånger', $dlm_download->get_the_download_count(), 'download-monitor' ), $dlm_download->get_the_download_count() ) ?>"
 			       href="<?php $dlm_download->the_download_link(); ?>" rel="nofollow">
 					<?php $dlm_download->the_filename(); ?> <?php if ( $dlm_download->has_version_number() ) {
 						echo '- ' . $dlm_download->get_the_version_number();
