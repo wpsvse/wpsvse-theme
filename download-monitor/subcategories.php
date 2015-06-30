@@ -13,7 +13,7 @@ if ( ! $categories )
 	return;
 ?>
 <ul class="download-monitor-subcategories">
-	<li><?php _e( 'Subcategories:', 'dlm_page_addon' ); ?></li>
+	<li><?php _e( 'Underkategorier:', 'dlm_page_addon' ); ?></li>
 	<?php
 		foreach ( $categories as $term ) {
 			?><li><a href="<?php echo $dlm_page_addon->get_category_link( $term ); ?>"><?php echo $term->name . ' (' . $term->count . ')';; ?></a></li><?php
