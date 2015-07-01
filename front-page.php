@@ -14,24 +14,29 @@ get_header(); ?>
         <section id="welcome" class="section">
           <div class="col-md-7">
 
-        	<?php while ( have_posts() ) : the_post();
+        	<?php while ( have_posts() ) : the_post(); ?>
 
-            	the_content('Läs mer');
-
-            endwhile; ?>
+            	<?php the_content('Läs mer'); ?>
 
             <section id="latest-downloads">
-                <h3>Ladda ner senaste WordPress</h3>
-                    <div id="dl-btns">
-										<div class="col-md-6">
-                      <a class="btn btn-blue btn-dl" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.2.2 <span>(svensk)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
-										</div>
-										<div class="col-md-6">
-											<a class="btn btn-dark btn-dl" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.2.2 <span>(internationell)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
-										</div>
-                      <p class="col-md-12"><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
-                    </div>
+							<h3>Ladda ner senaste WordPress</h3>
+								<div id="dl-btns">
+									<?php // Get main download IDs
+									$dlsvse = get_post_meta($post->ID, '_dl_meta_sv_se', true);
+									$dlinter = get_post_meta($post->ID, '_dl_meta_inter', true); 
+									?>
+									<div class="col-md-6 dl-btn-sv">
+										<?php echo do_shortcode('[download id="'. $dlsvse .'" template="front"]'); ?>
+									</div>
+									<div class="col-md-6 dl-btn-inter">
+										<?php echo do_shortcode('[download id="'. $dlinter .'" template="front"]'); ?>
+									</div>
+									<p class="col-md-12"><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
+								</div>
             </section>
+						
+					<?php endwhile; ?>
+					
           </div>
         </section>
         <!-- End welcome -->
