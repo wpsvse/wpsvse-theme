@@ -31,7 +31,7 @@ get_header(); ?>
 									<div class="col-md-6 dl-btn-inter">
 										<?php echo do_shortcode('[download id="'. $dlinter .'" template="front"]'); ?>
 									</div>
-									<p class="col-md-12"><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
+									<p class="col-md-12"><a href="<?php echo esc_url( home_url( '/filer/hjalp/' ) ); ?>" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
 								</div>
             </section>
 						
