@@ -32,11 +32,12 @@ function wpsvse_brand_logo() {
 			padding-bottom: 7px;
 		}
 		#wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a, #wpadminbar .shortlink-input { height: 48px; line-height: 48px;}
-    #wpadminbar>#wp-toolbar #wp-admin-bar-wp-logo .ab-icon {
+    #wpadminbar>#wp-toolbar #wp-admin-bar-wpsv-logo .ab-icon {
 			background-image: url(' . get_bloginfo('stylesheet_directory') . '/img/icons/brand-icon.png) !important;
 			background-position: center 8px;
 			background-repeat: no-repeat;
 			width: 32px;
+		  height: 24px;
     }
 		#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input,
 		#wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu,
@@ -50,10 +51,10 @@ function wpsvse_brand_logo() {
 			padding: 12px 0;
 		}
 		#wpadminbar .menupop .menupop>.ab-item:before { padding: 2px 0; }
-    #wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon:before {
+    #wpadminbar #wp-admin-bar-wpsv-logo>.ab-item .ab-icon:before {
     	content: "";
     }
-    #wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {
+    #wpadminbar #wp-admin-bar-wpsv-logo.hover > .ab-item .ab-icon {
     	background-position: 0 0;
     }
 		#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input {
@@ -80,7 +81,7 @@ function wpsvse_brand_logo() {
 				#wpadminbar .ab-icon, #wpadminbar .ab-item:before, #wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon {
 					padding: 0;
 				}
-				#wpadminbar>#wp-toolbar #wp-admin-bar-wp-logo .ab-icon {
+				#wpadminbar>#wp-toolbar #wp-admin-bar-wpsv-logo .ab-icon {
 					width: 48px;
 				}
 				#wpadminbar #wp-admin-bar-wpsvse-mobile-login,
@@ -159,6 +160,27 @@ function wpsvse_toolbar_links( $wp_admin_bar ) {
   }
 }
 add_action( 'admin_bar_menu', 'wpsvse_toolbar_links' );
+
+//**************************************************
+// Modify toolbar logo links
+//**************************************************
+function wpsvse_modify_toolbar_links( $wp_admin_bar ) {
+	global $wp_admin_bar;
+	$wp_admin_bar->add_menu( array(
+		'parent' => false,
+		'id'     => 'wpsv-logo',
+		'title' => '<span class="ab-icon"></span><span class="screen-reader-text">WordPress Sverige</span>',
+		'href'   => get_home_url(),
+	) );
+}
+add_action( 'admin_bar_menu', 'wpsvse_modify_toolbar_links', 1 );
+
+// Remove standard items
+function wpsvse_remove_toolbar_links( $wp_admin_bar ) {
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu( 'wp-logo' );
+}
+add_action( 'wp_before_admin_bar_render', 'wpsvse_remove_toolbar_links' );
 
 //**************************************************
 // Remove BP login link
