@@ -121,6 +121,8 @@ function wpsvse_widgets_init() {
 		'description'   => 'Widgetfält på startsidan för huvudsponsor.',
 		'before_widget' => '<div id="%1$s" class="widget sponsor-link %2$s">',
 		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title screen-reader-text">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Widgets för 404', 'wpsvse' ),

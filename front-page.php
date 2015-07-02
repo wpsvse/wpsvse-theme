@@ -111,7 +111,7 @@ get_header(); ?>
                           	  <div class="comments-meta"><?php comments_popup_link('0 kommentarer', '1 kommentar', '% kommentarer'); ?></div>
                               <time datetime="<?php the_time('c'); ?>"><?php the_time('l, j F'); ?></time>
                               <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
-							  <?php if ( has_post_thumbnail() ) {
+							  						<?php if ( has_post_thumbnail() ) {
                                 	the_post_thumbnail( 'post-image', array('class' => 'img-responsive') );
                         	  } else { ?>
                               	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />
