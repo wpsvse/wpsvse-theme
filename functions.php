@@ -173,11 +173,6 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
- * Custom functions for the adminbar.
- */
-require get_template_directory() . '/inc/adminbar.php';
-
-/**
  * Custom functions metaboxes
  */
 require get_template_directory() . '/inc/metaboxes.php';

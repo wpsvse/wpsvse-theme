@@ -93,13 +93,6 @@ class BBP_Default extends BBP_Theme_Compat {
 		/** Override **********************************************************/
 
 		do_action_ref_array( 'bbp_theme_compat_actions', array( &$this ) );
-
-		/** EpicWebs Additions ************************************************/
-
-		add_action( 'admin_menu', array( $this, 'epicwebs_theme_menu'      ) );
-		add_action( 'wp_head',    array( $this, 'epicweb_hide_sidebar_css' ) );
-		add_filter( 'wp_footer',  array( $this, 'epicweb_add_forum_link'   ) , 1000 );
-
 	}
 
 	/**
