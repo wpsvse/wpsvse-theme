@@ -21,6 +21,13 @@
 
 		<?php endif; // end sidebar widget area 
 		} else {
-			if ( ! dynamic_sidebar( 'file-widgets' ) ) : endif;
-		} ?>
+			if ( ! dynamic_sidebar( 'file-widgets' ) ) : endif; ?>
+			<aside id="file-dl-stats" class="widget widget_text">
+				<h3 class="widget-title">Statistik</h3>
+					<div class="textwidget">
+						Totalt antal nedladdningar: <?php echo do_shortcode('[total_downloads]'); ?><br />
+						Totalt antal filer: <?php echo do_shortcode('[total_files]'); ?>
+					</div>
+		</aside>
+		<?php } ?>
 	</div><!-- #secondary -->
