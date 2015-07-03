@@ -546,12 +546,27 @@ input[type=text], .form-inline input, .form-control {
 #download-page .download_group#download-search label, #download-page #download-search#download-search label, #download-page .download_group#download-search input[type=submit], #download-page #download-search#download-search input[type=submit] { display: inline-block; }
 #download-page .input-lg { height: 46px !important; }
 #download-page .download_group,
-#download-page #download-search,
-#download-page .download-monitor-orderby,
-#download-page .download-monitor-subcategories {
+#download-page #download-search {
   box-shadow: none;
   background-color: #f8f8f8;
   border: 1px solid #eee;
+}
+#download-page .download-monitor-orderby,
+#download-page .download-monitor-subcategories {
+	box-shadow: none;
+  background-color: #21759B;
+  border: none;
+	color: #fff;
+}
+#download-page .download-monitor-orderby a,
+#download-page .download-monitor-subcategories a {
+	color: #fff;
+}
+#download-page .download-monitor-orderby a:hover,
+#download-page .download-monitor-subcategories a:hover,
+#download-page .download-monitor-orderby .active,
+#download-page .download-monitor-subcategories .active {
+	color: #AFDBED !important;
 }
 #download-page .download_group h3,
 #download-page #download-search h3 { padding: 8px 15px; }
@@ -600,6 +615,32 @@ table.single-download-meta {
 }
 .toggle-previous-versions { margin-left: 4px; }
 .previous-versions li { padding: 3px 0; }
+
+#download-page .dlm-downloads-cat li {
+	background-color: #f8f8f8;
+  border: 1px solid #eee;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+#download-page .dlm-downloads-cat li .download-link {
+	font-weight: bold;
+}
+#download-page .dlm-downloads-cat .dl-date-time,
+#download-page .dlm-downloads-cat .dl-stats {
+	font-size: 12px;
+	margin-right: 8px;
+}
+#download-page .dlm-downloads-cat img {
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  margin: 0 1em 0 0;
+	float: left;
+}
+#download-page .dlm-downloads-cat li .btn {
+	float: right;
+	margin-top: -42px;
+}
 
 
 /* ==========================================================================
