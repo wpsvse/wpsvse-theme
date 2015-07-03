@@ -641,6 +641,7 @@ table.single-download-meta {
 	float: right;
 	margin-top: -42px;
 }
+#download-page-tags { display: none; }
 
 
 /* ==========================================================================
