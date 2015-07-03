@@ -577,6 +577,14 @@ input[type=text], .form-inline input, .form-control {
   border-bottom: 1px solid #eee;
 }
 .download-link p { display: inline; }
+.download-link-front p {
+	display: inline;
+	font-weight: normal;
+  text-transform: none;
+  font-size: 11px;
+  color: #fff !important;
+  line-height: normal;
+}
 #download-page .download_group h3,
 #download-page #download-search h3 {
   background-color: #21759B;
