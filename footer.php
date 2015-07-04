@@ -17,10 +17,10 @@
                 	<p><small>Information för forummarkeringar</small></p>
                   <ul>
                     	<li><i class="fa fa-bullhorn"></i> Forumnotis</li>
-                        <li><i class="fa fa-thumb-tack"></i> Klistrat ämne</li>
-                        <li><i class="fa fa-exclamation-triangle"></i> Rapporterat ämne</li>
-                        <li><i class="fa fa-lock"></i> Stängt/låst ämne</li>
-                    </ul>
+											<li><i class="fa fa-thumb-tack"></i> Klistrat ämne</li>
+											<li><i class="fa fa-exclamation-triangle"></i> Rapporterat ämne</li>
+											<li><i class="fa fa-lock"></i> Stängt/låst ämne</li>
+									</ul>
                 </div>
                 <div class="col-md-5 app-note">
                     <p><small>Smidigare forumupplevelse med <strong>Tapatalk</strong></small></p>
@@ -51,10 +51,10 @@
 					<div class="social-container">
             <ul class="social">
              <!-- Start FOLLOW WORDPRESS -->
-              <li class="facebook"><a href="#" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sveriges Facebooksida"><i class="fa fa-facebook"></i></a></li>
-              <li class="fb-group"><a href="#" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sveriges officiella Facebookgrupp"><i class="fa fa-facebook-square"></i></a></li>
-              <li class="twitter"><a href="#" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sverige på Twitter"><i class="fa fa-twitter"></i></a></li>
-              <li class="rss"><a href="#" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sveriges RSS-flöden"><i class="fa fa-rss"></i></a></li>
+              <li class="facebook"><a href="https://www.facebook.com/wpsv.se" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sveriges Facebooksida"><i class="fa fa-facebook"></i></a></li>
+              <li class="fb-group"><a href="https://www.facebook.com/groups/wpsvse/" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sveriges officiella Facebookgrupp"><i class="fa fa-facebook-square"></i></a></li>
+              <li class="twitter"><a href="https://twitter.com/WPSverige" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sverige på Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li class="rss"><a href="<?php bloginfo('rss2_url'); ?>" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Sveriges RSS-flöden"><i class="fa fa-rss"></i></a></li>
              <!-- End FOLLOW WORDPRESS -->
             </ul>
 					</div>
