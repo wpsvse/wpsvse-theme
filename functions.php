@@ -178,3 +178,8 @@ require get_template_directory() . '/inc/extras.php';
  * Custom functions metaboxes
  */
 require get_template_directory() . '/inc/metaboxes.php';
+
+/**
+ * Custom shortcodes
+ */
+require get_template_directory() . '/inc/shortcodes.php';

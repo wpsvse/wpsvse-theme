@@ -85,6 +85,19 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+.page-content ul,
+.single-content ul {
+  list-style: disc;
+  padding-left: 25px;
+}
+.page-content ul li,
+.single-content ul li {
+  padding: 4px 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 select, .form-control {
   display: block;
   width: 100%;
@@ -428,6 +441,27 @@ select, .form-control {
 input[type=text], .form-inline input, .form-control {
   border: 1px solid rgba(0, 0, 0.5);
 }
+
+/* Shortcodes */
+.box-shortcode {
+	padding: 15px;
+	margin-bottom: 25px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.box-primary {
+	background-color: #f8f8f8;
+	border: 1px solid #eee;
+}
+.box-info {
+	background-color: #D9EDF7;
+}
+.box-warning {
+	background-color: #FFD7E1;
+}
+
+
 /* ==========================================================================
 	Buttons
 ============================================================================ */
