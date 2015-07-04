@@ -7,7 +7,24 @@
 ?>
 	<div id="sidebar" class="col-md-3 widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
-		<?php if ( !is_page('filer') ) {
+		
+		<?php if ( is_page('filer') ) {
+			
+		if ( ! dynamic_sidebar( 'file-widgets' ) ) : endif; ?>
+		
+			<aside id="file-dl-stats" class="widget widget_text">
+				<h3 class="widget-title">Statistik</h3>
+					<div class="textwidget">
+						Totalt antal nedladdningar: <?php echo do_shortcode('[total_downloads]'); ?><br />
+						Totalt antal filer: <?php echo do_shortcode('[total_files]'); ?>
+					</div>
+			</aside>
+		
+		<?php } elseif ( 'wpsvse_blog' == get_post_type() ) {
+			if ( ! dynamic_sidebar( 'blog-widgets' ) ) : endif;
+		} elseif ( 'post' == get_post_type() ) {
+			if ( ! dynamic_sidebar( 'news-widgets' ) ) : endif;
+		} else {
 		if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="meta" class="widget">
@@ -19,15 +36,5 @@
 				</ul>
 			</aside>
 
-		<?php endif; // end sidebar widget area 
-		} else {
-			if ( ! dynamic_sidebar( 'file-widgets' ) ) : endif; ?>
-			<aside id="file-dl-stats" class="widget widget_text">
-				<h3 class="widget-title">Statistik</h3>
-					<div class="textwidget">
-						Totalt antal nedladdningar: <?php echo do_shortcode('[total_downloads]'); ?><br />
-						Totalt antal filer: <?php echo do_shortcode('[total_files]'); ?>
-					</div>
-		</aside>
-		<?php } ?>
+		<?php endif; } ?>
 	</div><!-- #secondary -->
