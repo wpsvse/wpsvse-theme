@@ -871,7 +871,10 @@ span.bbp-author-ip {
   max-width: 450px;
 }
 .extra-download-link {
-  color: #999;
+  color: #ccc;
+}
+.extra-download-link.hover {
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -1101,6 +1104,7 @@ article.post.search-results {
 
 #sponsor {
   text-align: center;
+	padding: 25px 0;
 }
 #sponsor a {
   color: #999;
