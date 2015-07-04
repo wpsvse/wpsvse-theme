@@ -229,6 +229,7 @@ select, .form-control {
 }
 .dropdown-menu > li > a {
   color: #fff;
+	padding: 5px 20px;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
 .dropdown-menu > .active > a:hover {
@@ -449,6 +450,7 @@ input[type=text], .form-inline input, .form-control {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	display: -webkit-box;
 }
 .box-primary {
 	background-color: #f8f8f8;
@@ -1025,7 +1027,7 @@ article.post.search-results {
   vertical-align: middle;
 }
 .sd-social-icon .sd-content ul li[class*='share-'] a.sd-button.share-custom {
-  padding: 10px 8px 6px 8px;
+  padding: 10px 8px 6px 8px !important;
   top: 5px;
 }
 .sd-social-icon .sd-content ul li[class*='share-'] a.sd-button.share-custom span {
