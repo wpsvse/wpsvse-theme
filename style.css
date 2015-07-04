@@ -1978,11 +1978,15 @@ article.post h1 a, article.wpsvse_blog h1 a {
    Widgets
 ============================================================================ */
 
+.widget.widget_tag_cloud .tag_cloud {
+  margin-top: 10px;
+}
 .widget_tag_cloud .tagcloud a {
   background: #2174A5;
   color: #fff;
   padding: 7px 10px;
   border-radius: 4px;
+  font-size: 16px !important;
 }
 .widget_tag_cloud .tagcloud a:hover {
   background: #000;
@@ -2046,7 +2050,7 @@ article.post h1 a, article.wpsvse_blog h1 a {
   margin: 10px 0;
 }
 .widget.widget_display_topics li {
-  padding: 5px 0;
+  padding: 2px 0;
 }
 .widget.widget_display_topics .bbp-forum-title:before {
   display: inline-block;
@@ -2059,13 +2063,13 @@ article.post h1 a, article.wpsvse_blog h1 a {
   content; '\f054';
 }
 .widget .widget-title {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .widget.widget_recent_entries .post-date {
   display: block;
 }
 .widget.widget_recent_entries li {
-  padding: 7px 0;
+  padding: 2px 0;
 }
 .widget.widget_recent_entries > a:before {
   display: inline-block;
