@@ -1861,12 +1861,13 @@ article.post h1 a, article.wpsvse_blog h1 a {
   margin-top: 10px;
 }
 .widget_tag_cloud .tagcloud a {
-  background: #2174A5;
+  padding: 3px 8px;
+  background-color: #21759b;
+  border-radius: 3px;
+  font-size: 12px !important;
+  font-weight: normal;
+  line-height: 28px;
   color: #fff;
-  padding: 7px 10px;
-  border-radius: 4px;
-  font-size: 16px !important;
-  line-height: 40px;
   word-break: break-word;
 }
 .widget_tag_cloud .tagcloud a:hover {
