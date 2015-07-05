@@ -573,6 +573,22 @@ input[type=text], .form-inline input, .form-control {
 .btn-windows {
   background-color: #13B4F4;
 }
+.frm_style_formidable-style.with_frm_style input[type=submit] {
+  color: #fff;
+  border-color: none;
+  box-shadow: none;
+  border: 0;
+  font-family: 'Open Sans', Sans-Serif;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.frm_style_formidable-style.with_frm_style input[type=submit]:hover {
+  background: #000;
+  color: #FFF;
+  -webkit-transition: all 500ms ease;
+}
 
 /* ==========================================================================
 	Downloads
@@ -1384,6 +1400,38 @@ article.post.search-results {
 }
 #buddypress div#item-header div#item-meta {
   color: #747474;
+}
+#buddypress div#item-header a.group-button.join-group {
+  border-radius: 4px;
+  background-color: #21759b;
+  color: #fff;
+  padding: 5px 10px;
+}
+#buddypress div#item-header a.group-button.join-group:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  content:"\f067";
+  margin-right: 5px;
+}
+#buddypress div#item-header a.group-button.leave-group {
+  border-radius: 4px;
+  background-color: #a94442;
+  color: #fff;
+  padding: 5px 10px;
+}
+#buddypress div#item-header a.group-button.leave-group:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  content:"\f068";
+  margin-right: 5px;
 }
 #buddypress ul.item-list li .item-type-wrapper adiv.request {
   position: static;
