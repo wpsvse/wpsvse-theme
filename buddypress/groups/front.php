@@ -14,7 +14,7 @@
             	<a href="<?php bp_group_permalink(); ?>" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="<?php bp_group_name(); ?> - <?php bp_group_member_count(); ?>"><?php bp_group_avatar( 'type=thumb&width=256&height=256' ); ?>
 								<div class="item-type-wrapper clearfix">
 										<div class="item-title"><?php bp_group_name(); ?></div>
-                    <div class="item-meta"><?php printf( __( 'Active %s', 'buddypress' ), bp_get_group_last_active() ); ?></div>
+                    <div class="item-meta"><?php printf( __( 'Aktiv %s', 'buddypress' ), bp_get_group_last_active() ); ?></div>
               	</div>
 						  </a>
 
@@ -35,7 +35,7 @@
 <?php else: ?>
 
 	<div id="message" class="info">
-		<p><?php _e( 'There were no groups found.', 'buddypress' ); ?></p>
+		<p>Inga grupper kunde hittas.</p>
 	</div>
 
 <?php endif; ?>
