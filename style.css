@@ -450,7 +450,6 @@ input[type=text], .form-inline input, .form-control {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	display: -webkit-box;
 }
 .box-primary {
 	background-color: #f8f8f8;
