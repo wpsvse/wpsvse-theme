@@ -691,7 +691,6 @@ table.single-download-meta {
 /* ==========================================================================
 	Panels
 ============================================================================ */
-
 .panel-primary>.panel-heading {
   color: #fff;
   background-color: #21759b;
@@ -707,6 +706,22 @@ table.single-download-meta {
 .panel-primary label {
   font-weight: normal;
 }
+.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+	display: block;
+}
+.faq-page .panel-heading {
+	padding: 15px;
+}
+.faq-page .panel-heading a:hover {
+	color: #DFF1F9;
+}
+.faq-page .panel-title { position: relative; }
+.faq-page .share-faq {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 /* ==========================================================================
   Main Sections
 ============================================================================ */
