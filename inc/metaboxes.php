@@ -96,13 +96,13 @@ function wpsvse_faq_page_field_groups() {
 		'id'           => $prefix . 'metabox',
 		'title'        => __( 'Poster för vanliga frågor', 'wpsvse' ),
 		'object_types' => array( 'page', ),
-		'show_on_cb' => array( 'key' => 'page-faq', 'value' => 'page-faq.php' ),
+		'show_on_cb' => array( 'key' => 'page-template', 'value' => 'page-faq.php' ),
 	) );
 	// $group_field_id is the field id string
 	$group_field_id = $cmb_group->add_field( array(
 		'id'          => $prefix . 'faq',
 		'type'        => 'group',
-		'description' => __( 'Generera poster för vanliga frågor', 'wpsvse' ),
+		'description' => __( 'Generera paneler för vanliga frågor', 'wpsvse' ),
 		'options'     => array(
 			'group_title'   => __( 'Post {#}', 'wpsvse' ), // {#} gets replaced by row number
 			'add_button'    => __( 'Lägg till post', 'wpsvse' ),

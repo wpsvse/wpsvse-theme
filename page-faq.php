@@ -46,7 +46,7 @@ get_header();
 							</div>
 							<div id="faq-<?php echo $faq_post['permalink']; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-faq-<?php echo $faq_post['permalink']; ?>">
 								<div class="panel-body">
-									<?php echo $faq_post['answer']; ?>
+									<?php echo wpautop($faq_post['answer']); ?>
 								</div>
 							</div>
 						</div>
