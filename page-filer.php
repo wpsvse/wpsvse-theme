@@ -37,8 +37,6 @@ global $dlm_download;
             'before' => '<div class="page-links">' . __( 'Sidor:', 'wpsvse' ),
             'after'  => '</div>',
           ) );
-          
-          edit_post_link( 'Redigera', '<span class="edit-link">', '</span>' );
           ?>
         </div>
         <?php get_sidebar(); ?>

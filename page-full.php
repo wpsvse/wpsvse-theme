@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying full width pages.
  *
  * @package WordPress Sverige
  */
@@ -30,9 +30,9 @@ get_header();
 			<div class="row">
         <div class="col-md-12 page-content">
           <?php 
-          the_content(); 
-          
-          wp_link_pages( array(
+          the_content();
+					
+					wp_link_pages( array(
             'before' => '<div class="page-links">' . __( 'Sidor:', 'wpsvse' ),
             'after'  => '</div>',
           ) );
