@@ -1868,7 +1868,8 @@ article.post h1 a, article.wpsvse_blog h1 a {
   font-weight: normal;
   line-height: 28px;
   color: #fff;
-  word-break: break-word;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 .widget_tag_cloud .tagcloud a:hover {
   background: #000;
