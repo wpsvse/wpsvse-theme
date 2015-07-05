@@ -35,7 +35,7 @@ get_header();
 					<div class="panel-group faq-page" id="accordion" role="tablist" aria-multiselectable="true">
 					<?php $faq_posts = get_post_meta( get_the_ID(), '_faq_group_faq', true ); 
 					foreach((array)$faq_posts as $faq_post ){ ?>
-						<div class="panel panel-primary">
+						<div class="panel panel-primary <?php echo ($c++%2==1) ? 'odd' : 'even' ?>">
 							<div class="panel-heading" role="tab" id="heading-faq-<?php echo $faq_post['permalink']; ?>">
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq-<?php echo $faq_post['permalink']; ?>" aria-expanded="false" aria-controls="collapse-faq-<?php echo $faq_post['permalink']; ?>">
