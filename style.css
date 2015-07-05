@@ -1961,8 +1961,8 @@ article.post h1 a, article.wpsvse_blog h1 a {
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
   content: "\f105";
-  left: 15px;
-  position: absolute;
+  margin-left: -10px;
+  padding-right: 10px;
 }
 #sidebar li:hover:before {
   color: #21759B;
@@ -2002,6 +2002,8 @@ article.post h1 a, article.wpsvse_blog h1 a {
   padding: 7px 10px;
   border-radius: 4px;
   font-size: 16px !important;
+  line-height: 40px;
+  word-break: break-word;
 }
 .widget_tag_cloud .tagcloud a:hover {
   background: #000;
@@ -2417,6 +2419,9 @@ ul.apps {
   /* BuddyPress Profile */
   #buddypress div.item-list-tabs ul li {
     float: none;
+  }
+  #buddypress #item-body table th, table td {
+    text-align: left;
   }
   #buddypress table.profile-fields tr td {
     text-align: left;
