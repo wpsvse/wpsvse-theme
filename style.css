@@ -939,6 +939,13 @@ span.bbp-author-ip {
 #latest-downloads {
   padding-top: 35px;
 }
+.dl-help-link {
+  font-size: 16px;
+  color: #fff;
+}
+.dl-help-link:hover {
+	color: #2174A5;
+}
 #latest-downloads .btn-sv-se {
   max-width: 450px;
 }

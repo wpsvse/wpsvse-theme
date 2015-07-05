@@ -19,7 +19,7 @@ get_header(); ?>
             	<?php the_content('Läs mer'); ?>
 
             <section id="latest-downloads">
-							<h3>Ladda ner senaste WordPress</h3>
+							<h3>Ladda ner senaste WordPress <sup><a href="<?php echo esc_url( home_url( '/filer/hjalp/' ) ); ?>" class="dl-help-link" title="Behöver du hjälp med filen?"><i class="fa fa-question-circle"></i></a></sup></h3>
 								<div id="dl-btns">
 									<?php // Get main download IDs
 									$dlsvse = get_post_meta($post->ID, '_dl_meta_sv_se', true);
@@ -31,7 +31,7 @@ get_header(); ?>
 									<div class="col-md-6 dl-btn-inter">
 										<?php echo do_shortcode('[download id="'. $dlinter .'" template="front"]'); ?>
 									</div>
-									<p class="col-md-12"><a href="<?php echo esc_url( home_url( '/filer/hjalp/' ) ); ?>" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
+									<p class="col-md-12"><a href="<?php echo esc_url( home_url( '/filer/information-for-filer/' ) ); ?>" class="extra-download-link">Behöver du andra format? Information för filer &rarr;</a></p>
 								</div>
             </section>
 						
