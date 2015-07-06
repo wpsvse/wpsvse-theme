@@ -25,12 +25,10 @@
 			
 			<?php do_action( 'bp_before_account_details_fields' ); ?>
 
-			<div class="register-section">
+			<div class="register-section" id="register-account">
 
 				<?php /***** Basic Account Details ******/ ?>
 
-				<hr />
-				
 				<h2><?php _e( 'Account Details', 'buddypress' ); ?></h2>
 				
 				<hr />
@@ -61,10 +59,8 @@
 
 				<?php do_action( 'bp_before_signup_profile_fields' ); ?>
 
-				<div class="register-section">
+				<div class="register-section" id="register-profile">
 
-					<hr />
-					
 					<h2><?php _e( 'Profile Details', 'buddypress' ); ?></h2>
 					
 					<hr />
@@ -242,6 +238,8 @@
 				<?php do_action( 'bp_after_blog_details_fields' ); ?>
 
 			<?php endif; ?>
+			
+			<hr />
 
 			<?php do_action( 'bp_before_registration_submit_buttons' ); ?>
 
