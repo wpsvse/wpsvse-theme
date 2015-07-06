@@ -25,8 +25,6 @@
 			
 			<?php do_action( 'bp_before_account_details_fields' ); ?>
 
-			<div class="register-section col-md-6">
-
 				<?php /***** Basic Account Details ******/ ?>
 
 				<h2><?php _e( 'Account Details', 'buddypress' ); ?></h2>
@@ -49,8 +47,6 @@
 				<?php do_action( 'bp_signup_password_confirm_errors' ); ?>
 				<input class="form-control" type="password" name="signup_password_confirm" value="" />
 
-			</div><!-- #basic-details-section -->
-
 			<?php do_action( 'bp_after_account_details_fields' ); ?>
 
 			<?php /***** Extra Profile Details ******/ ?>
@@ -58,8 +54,6 @@
 			<?php if ( bp_is_active( 'xprofile' ) ) : ?>
 
 				<?php do_action( 'bp_before_signup_profile_fields' ); ?>
-
-				<div class="register-section col-md-6">
 
 					<h2><?php _e( 'Profile Details', 'buddypress' ); ?></h2>
 					
@@ -190,8 +184,6 @@
 
 					<?php endwhile; endif; endif; ?>
 
-				</div><!-- #profile-details-section -->
-
 				<?php do_action( 'bp_after_signup_profile_fields' ); ?>
 
 			<?php endif; ?>
@@ -201,8 +193,6 @@
 				<?php do_action( 'bp_before_blog_details_fields' ); ?>
 
 				<?php /***** Blog Creation Details ******/ ?>
-
-				<div class="register-section" id="blog-details-section">
 
 					<h2><?php _e( 'Blog Details', 'buddypress' ); ?></h2>
 					
@@ -232,8 +222,6 @@
 						<label><input type="radio" name="signup_blog_privacy" id="signup_blog_privacy_private" value="private"<?php if ( 'private' == bp_get_signup_blog_privacy_value() ) : ?> checked="checked"<?php endif; ?> /> <?php _e( 'No', 'buddypress' ); ?></label>
 
 					</div>
-
-				</div><!-- #blog-details-section -->
 
 				<?php do_action( 'bp_after_blog_details_fields' ); ?>
 
