@@ -1992,9 +1992,6 @@ article.post h1 a, article.wpsvse_blog h1 a {
    Sidebar
 ============================================================================ */
 
-#sidebar {
-  word-break: break-all;
-}
 #sidebar .widget {
   padding-bottom: 25px;
 }
