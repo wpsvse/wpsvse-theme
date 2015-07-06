@@ -257,5 +257,6 @@ add_action( 'wp_before_admin_bar_render', 'wpsvse_remove_toolbar_links' );
 //**************************************************
 function wpsvse_remove_bplogin_link( $wp_admin_bar ) {
 	$wp_admin_bar->remove_node( 'bp-login' );
+	$wp_admin_bar->remove_node( 'bp-register' );
 }
 add_action( 'admin_bar_menu', 'wpsvse_remove_bplogin_link', 999 );
