@@ -21,6 +21,8 @@
 
 			<p><?php _e( 'Registering for this site is easy, just fill in the fields below and we\'ll get a new account set up for you in no time.', 'buddypress' ); ?></p>
 
+			<div class="box-shortcode box-primary">
+			
 			<?php do_action( 'bp_before_account_details_fields' ); ?>
 
 			<div class="register-section col-md-6">
@@ -259,6 +261,8 @@
 		<?php endif; // completed-confirmation signup step ?>
 
 		<?php do_action( 'bp_custom_signup_steps' ); ?>
+		
+		</div>
 
 		</form>
 
