@@ -2436,6 +2436,7 @@ ul.apps {
     float: none;
     width: auto;
     margin-top: 0;
+		padding-left: 15px;
     background-color: transparent;
     border: 0;
     -webkit-box-shadow: none;
