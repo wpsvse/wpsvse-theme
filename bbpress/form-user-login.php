@@ -11,7 +11,7 @@
 
 <form method="post" action="<?php bbp_wp_login_action( array( 'context' => 'login_post' ) ); ?>" class="bbp-login-form">
 	
-    <div class="panel panel-primary">
+    <div class="panel panel-primary panel-login">
         <div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-user"></i>
 		
 		<?php _e( 'Log In', 'bbpress' ); ?>
@@ -36,6 +36,8 @@
 			<label for="rememberme"><?php _e( 'Keep me signed in', 'bbpress' ); ?></label>
 		</div>
 
+		<a href="<?php echo esc_url( home_url( '/aterstallning-losenord/' ) ); ?>" title="Återställ ditt lösenord" class="pass-reset-link">Glömt lösenordet?</a>
+		
 		<div class="bbp-submit-wrapper">
 
 			<?php do_action( 'login_form' ); ?>
@@ -46,5 +48,6 @@
 
 		</div>
 	</div>
-    </div>
+  </div>
+	<p style="text-align:right;">Inte medlem än? <a href="<?php echo esc_url( home_url( '/bli-medlem/' ) ); ?>" title="Registrera dig på WordPress Sverige">Bli medlem nu!</a></p>
 </form>
