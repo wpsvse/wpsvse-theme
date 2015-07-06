@@ -881,6 +881,10 @@ input#file {
 	color: #999;
 }
 
+#register-page .submit {
+	text-align: center;
+}
+
 /* Overrides for embedded WP editors */
 #buddypress .wp-editor-wrap a.button,
 #buddypress .wp-editor-wrap button,
