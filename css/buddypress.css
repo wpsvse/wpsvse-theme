@@ -845,6 +845,7 @@ input#file {
   border-radius: 3px;
   padding: 8px;
   margin-bottom: 3px;
+	clear: both;
 }
 
 #register-page label {
@@ -858,15 +859,26 @@ input#file {
   color: red;
 }
 
+#register-page .field-visibility-settings label {
+	margin: 0;
+}
+
+#register-page .field-visibility-settings label span {
+	color: #666;
+	font-size: 13px;
+}
+
 .field-visibility-settings-toggle,
 .field-visibility-settings-notoggle {
   float: right;
-	font-style: normal;
+	font-style: normal !important;
 	font-size: 13px;
 }
 
 #register-page p.description {
 	float: left;
+	font-size: 12px;
+	color: #999;
 }
 
 /* Overrides for embedded WP editors */
