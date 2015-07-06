@@ -1504,6 +1504,9 @@ body.my-account #bbpress-forums {
 	border-radius: 3px;
 	font-size: 12px !important;
 	font-weight: normal;
-	line-height: 28px;
+	line-height: normal;
 	color: #fff;
+}
+#latest-forum-sidebar .widget_tag_cloud a:hover {
+	background-color: #333;
 }
