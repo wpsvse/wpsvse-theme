@@ -835,6 +835,10 @@ input#file {
 	margin-bottom: 15px;
 }
 
+#register-page #register-profile {
+  margin-top: 45px;
+}
+
 #register-page fieldset {
   border: 1px solid #eee;
   background-color: #fff;
@@ -843,9 +847,26 @@ input#file {
   margin-bottom: 3px;
 }
 
+#register-page label {
+  display: block;
+  font-weight: normal;
+  margin: 15px 0 5px 0;
+  clear: both;
+}
+
+#register-page label span {
+  color: red;
+}
+
 .field-visibility-settings-toggle,
 .field-visibility-settings-notoggle {
   float: right;
+	font-style: normal;
+	font-size: 13px;
+}
+
+#register-page p.description {
+	float: left;
 }
 
 /* Overrides for embedded WP editors */
