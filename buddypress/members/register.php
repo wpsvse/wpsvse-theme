@@ -4,7 +4,7 @@
 
 	<div class="page" id="register-page">
 
-		<form action="" name="signup_form" id="signup_form" class="standard-form" method="post" enctype="multipart/form-data">
+		<form action="" name="signup_form" id="signup_form" method="post" enctype="multipart/form-data">
 
 		<?php if ( 'registration-disabled' == bp_get_current_signup_step() ) : ?>
 			<?php do_action( 'template_notices' ); ?>
@@ -25,27 +25,33 @@
 			
 			<?php do_action( 'bp_before_account_details_fields' ); ?>
 
+			<div class="register-section">
+
 				<?php /***** Basic Account Details ******/ ?>
 
+				<hr />
+				
 				<h2><?php _e( 'Account Details', 'buddypress' ); ?></h2>
 				
 				<hr />
 
-				<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+				<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <span>*</span></label>
 				<?php do_action( 'bp_signup_username_errors' ); ?>
 				<input class="form-control" type="text" name="signup_username" value="<?php bp_signup_username_value(); ?>" />
 
-				<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+				<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <span>*</span></label>
 				<?php do_action( 'bp_signup_email_errors' ); ?>
 				<input class="form-control" type="text" name="signup_email" value="<?php bp_signup_email_value(); ?>" />
 
-				<label for="signup_password"><?php _e( 'Choose a Password', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+				<label for="signup_password"><?php _e( 'Choose a Password', 'buddypress' ); ?> <span>*</span></label>
 				<?php do_action( 'bp_signup_password_errors' ); ?>
 				<input class="form-control" type="password" name="signup_password" value="" />
 
-				<label for="signup_password_confirm"><?php _e( 'Confirm Password', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+				<label for="signup_password_confirm"><?php _e( 'Confirm Password', 'buddypress' ); ?> <span>*</span></label>
 				<?php do_action( 'bp_signup_password_confirm_errors' ); ?>
 				<input class="form-control" type="password" name="signup_password_confirm" value="" />
+
+			</div><!-- #basic-details-section -->
 
 			<?php do_action( 'bp_after_account_details_fields' ); ?>
 
@@ -55,6 +61,10 @@
 
 				<?php do_action( 'bp_before_signup_profile_fields' ); ?>
 
+				<div class="register-section">
+
+					<hr />
+					
 					<h2><?php _e( 'Profile Details', 'buddypress' ); ?></h2>
 					
 					<hr />
@@ -68,7 +78,7 @@
 
 							<?php if ( 'textbox' == bp_get_the_profile_field_type() ) : ?>
 
-								<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+								<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><span>*</span><?php endif; ?></label>
 								<?php do_action( bp_get_the_profile_field_errors_action() ); ?>
 								<input class="form-control" type="text" name="<?php bp_the_profile_field_input_name(); ?>" value="<?php bp_the_profile_field_edit_value(); ?>" />
 
@@ -76,7 +86,7 @@
 
 							<?php if ( 'textarea' == bp_get_the_profile_field_type() ) : ?>
 
-								<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+								<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><span>*</span><?php endif; ?></label>
 								<?php do_action( bp_get_the_profile_field_errors_action() ); ?>
 								<textarea class="form-control" name="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_edit_value(); ?></textarea>
 
@@ -84,7 +94,7 @@
 
 							<?php if ( 'selectbox' == bp_get_the_profile_field_type() ) : ?>
 
-								<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+								<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><span>*</span><?php endif; ?></label>
 								<?php do_action( bp_get_the_profile_field_errors_action() ); ?>
 								<select class="form-control" name="<?php bp_the_profile_field_input_name(); ?>">
 									<?php bp_the_profile_field_options(); ?>
@@ -94,7 +104,7 @@
 
 							<?php if ( 'multiselectbox' == bp_get_the_profile_field_type() ) : ?>
 
-								<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+								<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><span>*</span><?php endif; ?></label>
 								<?php do_action( bp_get_the_profile_field_errors_action() ); ?>
 								<select class="form-control" name="<?php bp_the_profile_field_input_name(); ?>" multiple="multiple">
 									<?php bp_the_profile_field_options(); ?>
@@ -105,7 +115,7 @@
 							<?php if ( 'radio' == bp_get_the_profile_field_type() ) : ?>
 
 								<div class="radio">
-									<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
+									<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><span>*</span><?php endif; ?></span>
 
 									<?php do_action( bp_get_the_profile_field_errors_action() ); ?>
 									<?php bp_the_profile_field_options(); ?>
@@ -120,7 +130,7 @@
 							<?php if ( 'checkbox' == bp_get_the_profile_field_type() ) : ?>
 
 								<div class="checkbox">
-									<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
+									<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><span>*</span><?php endif; ?></span>
 
 									<?php do_action( bp_get_the_profile_field_errors_action() ); ?>
 									<?php bp_the_profile_field_options(); ?>
@@ -131,7 +141,7 @@
 							<?php if ( 'datebox' == bp_get_the_profile_field_type() ) : ?>
 
 								<div class="datebox">
-									<label for="<?php bp_the_profile_field_input_name(); ?>_day"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+									<label for="<?php bp_the_profile_field_input_name(); ?>_day"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><span>*</span><?php endif; ?></label>
 									<?php do_action( bp_get_the_profile_field_errors_action() ); ?>
 
 									<select class="form-control" name="<?php bp_the_profile_field_input_name(); ?>_day">
@@ -148,7 +158,9 @@
 								</div>
 
 							<?php endif; ?>
-
+							
+							<p class="description"><?php bp_the_profile_field_description(); ?></p>
+							
 							<?php do_action( 'bp_custom_profile_edit_fields_pre_visibility' ); ?>
 
 							<?php if ( bp_current_user_can( 'bp_xprofile_change_field_visibility' ) ) : ?>
@@ -158,7 +170,7 @@
 
 								<div class="field-visibility-settings" id="field-visibility-settings-<?php bp_the_profile_field_id() ?>">
 									<fieldset>
-										<legend><?php _e( 'Who can see this field?', 'buddypress' ) ?></legend>
+										<h4><?php _e( 'Who can see this field?', 'buddypress' ) ?></h4>
 
 										<?php bp_profile_visibility_radio_buttons() ?>
 
@@ -174,8 +186,6 @@
 
 							<?php do_action( 'bp_custom_profile_edit_fields' ); ?>
 
-							<p class="description"><?php bp_the_profile_field_description(); ?></p>
-
 						</div>
 
 					<?php endwhile; ?>
@@ -183,6 +193,8 @@
 					<input type="hidden" name="signup_profile_field_ids" id="signup_profile_field_ids" value="<?php bp_the_profile_group_field_ids(); ?>" />
 
 					<?php endwhile; endif; endif; ?>
+
+				</div><!-- #profile-details-section -->
 
 				<?php do_action( 'bp_after_signup_profile_fields' ); ?>
 
@@ -194,6 +206,8 @@
 
 				<?php /***** Blog Creation Details ******/ ?>
 
+				<div class="register-section">
+
 					<h2><?php _e( 'Blog Details', 'buddypress' ); ?></h2>
 					
 					<hr />
@@ -202,7 +216,7 @@
 
 					<div id="blog-details"<?php if ( (int) bp_get_signup_with_blog_value() ) : ?>class="show"<?php endif; ?>>
 
-						<label for="signup_blog_url"><?php _e( 'Blog URL', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+						<label for="signup_blog_url"><?php _e( 'Blog URL', 'buddypress' ); ?> <span>*</span></label>
 						<?php do_action( 'bp_signup_blog_url_errors' ); ?>
 
 						<?php if ( is_subdomain_install() ) : ?>
@@ -211,7 +225,7 @@
 							<?php echo home_url( '/' ); ?> <input type="text" name="signup_blog_url" id="signup_blog_url" value="<?php bp_signup_blog_url_value(); ?>" />
 						<?php endif; ?>
 
-						<label for="signup_blog_title"><?php _e( 'Site Title', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+						<label for="signup_blog_title"><?php _e( 'Site Title', 'buddypress' ); ?> <span>*</span></label>
 						<?php do_action( 'bp_signup_blog_title_errors' ); ?>
 						<input class="form-control" type="text" name="signup_blog_title" id="signup_blog_title" value="<?php bp_signup_blog_title_value(); ?>" />
 
@@ -222,6 +236,8 @@
 						<label><input type="radio" name="signup_blog_privacy" id="signup_blog_privacy_private" value="private"<?php if ( 'private' == bp_get_signup_blog_privacy_value() ) : ?> checked="checked"<?php endif; ?> /> <?php _e( 'No', 'buddypress' ); ?></label>
 
 					</div>
+
+				</div><!-- #blog-details-section -->
 
 				<?php do_action( 'bp_after_blog_details_fields' ); ?>
 

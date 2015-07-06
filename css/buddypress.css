@@ -835,6 +835,19 @@ input#file {
 	margin-bottom: 15px;
 }
 
+#register-page fieldset {
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 3px;
+}
+
+.field-visibility-settings-toggle,
+.field-visibility-settings-notoggle {
+  float: right;
+}
+
 /* Overrides for embedded WP editors */
 #buddypress .wp-editor-wrap a.button,
 #buddypress .wp-editor-wrap button,
