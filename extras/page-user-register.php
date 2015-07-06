@@ -33,7 +33,7 @@ get_header();
 	<section id="page-full" class="section">
 		<div class="container">
 			<div class="row">
-        <div class="col-md-9 page-content">
+        <div class="col-md-12 page-content">
 				
 				<?php do_action( 'bbp_template_notices' );
 				
@@ -42,7 +42,6 @@ get_header();
 				bbp_get_template_part( 'form', 'user-register' ); ?>
 				
         </div>
-        <?php get_sidebar(); ?>
 			</div>
 		</div>
 	</section>
