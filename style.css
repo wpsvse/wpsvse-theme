@@ -53,7 +53,7 @@ h4 {
 }
 p {
   font-size: 15px;
-  line-height: 28px;
+  line-height: 24px;
   margin-bottom: 15px;
 }
 a {
@@ -2436,6 +2436,7 @@ ul.apps {
     float: none;
     width: auto;
     margin-top: 0;
+		padding-left: 15px;
     background-color: transparent;
     border: 0;
     -webkit-box-shadow: none;
