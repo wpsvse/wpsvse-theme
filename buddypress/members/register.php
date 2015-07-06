@@ -239,6 +239,8 @@
 
 			<?php endif; ?>
 			
+			<div class="clearfix"></div>
+			
 			<hr />
 
 			<?php do_action( 'bp_before_registration_submit_buttons' ); ?>
@@ -270,7 +272,6 @@
 
 		<?php do_action( 'bp_custom_signup_steps' ); ?>
 		
-		<div class="clearfix"></div>
 		</div>
 
 		</form>
