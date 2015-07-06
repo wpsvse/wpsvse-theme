@@ -26,6 +26,13 @@ jQuery(document).ready(function($) {
 	$('.lightbox').magnificPopup({
 			type:'image'
 	});
+	
+	// Backward compatibility and media inserts
+	$('.single-content').magnificPopup({
+		delegate: 'a', // child items selector, by clicking on it popup will open
+		type: 'image'
+		// other options
+	});
 
 	// ***************************
 	// Collapse trigger
