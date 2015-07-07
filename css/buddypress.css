@@ -950,6 +950,16 @@ input#file {
 	border-bottom-left-radius: 0;
 }
 
+#register-page .submit {
+  text-align: right;
+	clear: both;
+	padding: 0;
+}
+
+#register-page .submit input {
+	margin: 0;
+}
+
 /* Overrides for embedded WP editors */
 #buddypress .wp-editor-wrap a.button,
 #buddypress .wp-editor-wrap button,
