@@ -1692,6 +1692,10 @@ img.emoji {
   max-height: 20px !important;
   vertical-align: middle !important;
 }
+.mobile_banner {
+	z-index: 999999 !important;
+	margin-top: 48px;
+}
 
 /* ---------------------------------------------------------------------- */
 /*	Headlines
