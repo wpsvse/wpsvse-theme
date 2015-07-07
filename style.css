@@ -1572,9 +1572,17 @@ fieldset[disabled] #buddypress .standard-form textarea {
 fieldset[disabled] #buddypress .standard-form textarea {
   cursor: not-allowed;
 }
+#profile-edit-form .gdbbx-signature-form > textarea.signature {
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
 /* Profile */
 #buddypress table.profile-fields {
-
 }
 #buddypress table.profile-fields td {
   text-align: left;
