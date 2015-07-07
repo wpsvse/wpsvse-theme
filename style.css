@@ -2337,6 +2337,11 @@ ul.apps {
 
 /* XS */
 @media handheld, only screen and (max-width: 500px) {
+
+  .home-page h2 {
+    font-size: 30px;
+  }
+
   .navbar-collapse {
     background-color: transparent;
   }
