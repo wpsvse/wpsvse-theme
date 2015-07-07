@@ -684,6 +684,17 @@ div#message-outer {
 #buddypress .standard-form input[type=text] {
 	width: 75%;
 }
+#register-page .standard-form input[type=text],
+#register-page .standard-form input[type=password],
+#register-page .standard-form#signup_form textarea {
+	width: 100% !important;
+}
+#register-page .standard-form#signup_form textarea {
+	min-height: 150px;
+}
+#register-page .standard-form input[type=password] {
+	margin: 0;
+}
 #buddypress .standard-form#sidebar-login-form input[type=text],
 #buddypress .standard-form#sidebar-login-form input[type=password] {
 	padding: 4px;
@@ -877,12 +888,66 @@ input#file {
 
 #register-page p.description {
 	float: left;
-	font-size: 12px;
-	color: #999;
+	font-size: 11px !important;
+	color: #999 !important;
+	margin: 0 !important;
 }
 
 #register-page .submit {
 	text-align: center;
+}
+
+#register-page .field_type_textbox input,
+#register-page .field_type_textarea textarea {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#register-page .field_type_textbox input:focus,
+#register-page .field_type_textarea textarea:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+#register-page .standard-form a.clear-value {
+  display: block;
+  margin-top: 0;
+  outline: none;
+  background-color: #2174A5;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#register-page .field_type_multiselectbox select {
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
 /* Overrides for embedded WP editors */
