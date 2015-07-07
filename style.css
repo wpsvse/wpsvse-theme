@@ -529,12 +529,36 @@ input[type=text], .form-inline input, .form-control {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .frm_style_formidable-style.with_frm_style input[type=submit]:hover {
   background: #000;
   color: #FFF;
-  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.group-settings-form input[type=submit] {
+  background-color: #21759b;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.group-settings-form[type=submit]:hover {
+  background: #000;
+  transition: all 500ms ease;
 }
 
 /* ==========================================================================
@@ -704,6 +728,8 @@ span.bbp-author-ip {
 /* ==========================================================================
   WP Page Nav
 ============================================================================ */
+
+#buddypress div.pagination .pagination-links a,
 .wp-pagenavi .extend, .wp-pagenavi a, .wp-pagenavi .pages {
   margin-bottom: 40px;
   background: #21759b;
@@ -715,12 +741,16 @@ span.bbp-author-ip {
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: #FFF;
 }
+
+#buddypress div.pagination .pagination-links a:hover,
 .wp-pagenavi a:hover {
   background: #000;
   color: #FFF;
   -webkit-transition: all 500ms ease;
 }
 /* active */
+
+#buddypress div.pagination .pagination-links .current,
 .wp-pagenavi .current {
   margin-bottom: 40px;
   background: #000;
