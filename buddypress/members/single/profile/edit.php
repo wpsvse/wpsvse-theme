@@ -35,8 +35,11 @@ if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) )
 
 				<?php
 				$field_type = bp_xprofile_create_field_type( bp_get_the_profile_field_type() );
-				$field_type->edit_field_html();
+				$field_type->edit_field_html(); ?>
+				
+				<p class="description"><?php bp_the_profile_field_description(); ?></p>
 
+				<?php
 				/**
 				 * Fires before the display of visibility options for the field.
 				 *
@@ -73,8 +76,7 @@ if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) )
 				 * @since BuddyPress (1.1.0)
 				 */
 				do_action( 'bp_custom_profile_edit_fields' ); ?>
-
-				<p class="description"><?php bp_the_profile_field_description(); ?></p>
+				
 			</div>
 
 		<?php endwhile; ?>
