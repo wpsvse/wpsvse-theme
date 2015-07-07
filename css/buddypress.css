@@ -627,36 +627,6 @@ div#message-outer {
 /*--------------------------------------------------------------
 3.5 - Forms
 --------------------------------------------------------------*/
-/*#buddypress .standard-form textarea,
-#buddypress .standard-form input[type=text],
-#buddypress .standard-form input[type=text],
-#buddypress .standard-form input[type=color],
-#buddypress .standard-form input[type=date],
-#buddypress .standard-form input[type=datetime],
-#buddypress .standard-form input[type=datetime-local],
-#buddypress .standard-form input[type=email],
-#buddypress .standard-form input[type=month],
-#buddypress .standard-form input[type=number],
-#buddypress .standard-form input[type=range],
-#buddypress .standard-form input[type=search],
-#buddypress .standard-form input[type=tel],
-#buddypress .standard-form input[type=time],
-#buddypress .standard-form input[type=url],
-#buddypress .standard-form input[type=week],
-#buddypress .standard-form select,
-#buddypress .standard-form input[type=password],
-#buddypress .dir-search input[type=search],
-#buddypress .dir-search input[type=text],
-#buddypress .groups-members-search input[type=search],
-#buddypress .groups-members-search input[type=text] {
-	border: 1px solid #ccc;
-	background: #fafafa;
-	border-radius: 0;
-	color: #888;
-	font: inherit;
-	font-size: 100%;
-	padding: 6px;
-}*/
 #buddypress .standard-form select {
 	padding: 3px;
 }
@@ -686,7 +656,10 @@ div#message-outer {
 }
 #register-page .standard-form input[type=text],
 #register-page .standard-form input[type=password],
-#register-page .standard-form#signup_form textarea {
+#register-page .standard-form#signup_form textarea,
+#profile-edit-form input[type=text],
+#profile-edit-form input[type=password],
+#profile-edit-form textarea {
 	width: 100% !important;
 }
 #register-page .standard-form#signup_form textarea {
@@ -778,42 +751,6 @@ div#message-outer {
 	padding: 5px;
 	width: 160px;
 }
-/*#buddypress button,
-#buddypress a.button,
-#buddypress input[type=submit],
-#buddypress input[type=button],
-#buddypress input[type=reset],
-#buddypress ul.button-nav li a,
-#buddypress div.generic-button a,
-#buddypress .comment-reply-link,
-a.bp-title-button {
-	background: #fff;
-	border: 1px solid #ccc;
-	color: #777;
-	font-size: .8rem;
-	cursor: pointer;
-	outline: none;
-	padding: 4px 10px;
-	text-align: center;
-	text-decoration: none;
-}
-#buddypress button:hover,
-#buddypress a.button:hover,
-#buddypress a.button:focus,
-#buddypress input[type=submit]:hover,
-#buddypress input[type=button]:hover,
-#buddypress input[type=reset]:hover,
-#buddypress ul.button-nav li a:hover,
-#buddypress ul.button-nav li.current a,
-#buddypress div.generic-button a:hover,
-#buddypress .comment-reply-link:hover {
-	background: #ededed;
-	border: 1px solid #bbb;
-	color: #555;
-	outline: none;
-	text-decoration: none;
-}
-*/
 #buddypress form.standard-form .left-menu {
 	float: left;
 }
@@ -859,15 +796,21 @@ input#file {
 	clear: both;
 }
 
-#register-page label {
+#profile-edit-form fieldset {
+	border: 1px solid #eee;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 3px;
+	clear: both;
+}
+
+#register-page label,
+#profile-edit-form label {
   display: block;
   font-weight: normal;
   margin: 15px 0 5px 0;
   clear: both;
-}
-
-#register-page label span {
-  color: red;
 }
 
 #register-page .field-visibility-settings label {
@@ -886,11 +829,16 @@ input#file {
 	font-size: 13px;
 }
 
-#register-page p.description {
+#register-page p.description,
+#profile-edit-form .description {
 	float: left;
 	font-size: 11px !important;
 	color: #999 !important;
 	margin: 0 !important;
+}
+
+#profile-edit-form span.description {
+	margin-bottom: 15px !important;
 }
 
 #register-page .submit {
@@ -898,7 +846,11 @@ input#file {
 }
 
 #register-page .field_type_textbox input,
-#register-page .field_type_textarea textarea {
+#register-page .field_type_url input,
+#register-page .field_type_textarea textarea,
+#profile-edit-form .field_type_textbox input,
+#profile-edit-form .field_type_url input,
+#profile-edit-form .field_type_textarea textarea {
   display: block;
   width: 100%;
   height: 34px;
@@ -917,15 +869,25 @@ input#file {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
+#profile-edit-form .field-visibility-settings input {
+  width: auto !important;
+  height: auto !important;
+}
+
 #register-page .field_type_textbox input:focus,
-#register-page .field_type_textarea textarea:focus {
+#register-page .field_type_url input:focus,
+#register-page .field_type_textarea textarea:focus,
+#profile-edit-form .field_type_textbox input:focus,
+#profile-edit-form .field_type_url input:focus,
+#profile-edit-form .field_type_textarea textarea:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
 }
 
-#register-page .standard-form a.clear-value {
+#register-page .standard-form a.clear-value,
+#profile-edit-form .standard-form a.clear-value {
   display: block;
   margin-top: 0;
   outline: none;
@@ -941,7 +903,8 @@ input#file {
   border-bottom-left-radius: 5px;
 }
 
-#register-page .field_type_multiselectbox select {
+#register-page .field_type_multiselectbox select,
+#profile-edit-form .field_type_multiselectbox select {
 	-webkit-border-bottom-right-radius: 0;
 	-webkit-border-bottom-left-radius: 0;
 	-moz-border-radius-bottomright: 0;
@@ -951,13 +914,41 @@ input#file {
 }
 
 #register-page .submit {
-  text-align: right;
+  text-align: right !important;
 	clear: both;
-	padding: 0;
+	padding: 0 !important;
+	float: none !important;
 }
 
 #register-page .submit input {
-	margin: 0;
+	margin: 0 !important;
+}
+
+.jqEasyCounterMsg {
+  border: 1px solid #eee;
+  background-color: #f8f8f8;
+  padding: 0 3px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  opacity: 100 !important;
+  font-size: 13px !important;
+}
+
+.gdbbx-signature-form {
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.gdbbx-signature-form br {
+  display: none;
 }
 
 /* Overrides for embedded WP editors */
@@ -1601,7 +1592,6 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 
 #buddypress div.profile h4 {
 	margin-bottom: auto;
-	margin-top: 15px;
 }
 #buddypress #profile-edit-form ul.button-nav {
 	margin-top: 15px;
@@ -1653,6 +1643,37 @@ div#bbp-user-replies-created,
 div#bbp-user-favorites,
 div#bbp-user-subscriptions {
 	margin-top: 35px;
+}
+
+.bp-avatar-nav ul {
+	border-bottom: none; 
+	margin-bottom: 0; 
+  background-color: #f8f8f8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.bp-avatar-nav ul.avatar-nav-items li.current {
+	border: none;
+	background-color: #21759b;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.bp-avatar-nav ul #bp-avatar-upload {
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.bp-avatar-nav li.current a {
+	font-weight: normal; 
+	opacity: 1; 
+	color: #fff;
 }
 
 /*--------------------------------------------------------------
