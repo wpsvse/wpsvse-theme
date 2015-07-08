@@ -926,42 +926,33 @@ span.bbp-author-ip {
 #item-body > #bbpress-forums {
   padding: 15px 0;
 }
+
 /* ==========================================================================
   WP Page Nav
 ============================================================================ */
-
 #buddypress div.pagination .pagination-links a,
 .wp-pagenavi .extend, .wp-pagenavi a, .wp-pagenavi .pages {
-  margin-bottom: 40px;
   background: #21759b;
-  border-radius: 0;
-  padding: 0 12px;
+  border-radius: 3px;
+  padding: 2px 12px;
   font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   color: #FFF;
 }
-
 #buddypress div.pagination .pagination-links a:hover,
 .wp-pagenavi a:hover {
-  background: #000;
+  background: #474747;
   color: #FFF;
   -webkit-transition: all 500ms ease;
 }
 /* active */
-
 #buddypress div.pagination .pagination-links .current,
 .wp-pagenavi .current {
-  margin-bottom: 40px;
-  background: #000;
-  border-radius: 0;
-  padding: 0 12px;
+  background: #474747;
+  border-radius: 3px;
+  padding: 2px 12px;
   font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   color: #FFF;
+	margin-right: 2px;
 }
 /* ==========================================================================
   Welcome Block
