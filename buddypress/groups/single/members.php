@@ -46,10 +46,8 @@
 
 						<?php do_action( 'bp_group_members_list_item' ); ?>
 
-					</div>
-						
 						<?php if ( bp_is_active( 'friends' ) ) : ?>
-						
+
 							<div class="item-type action">
 
 								<?php bp_add_friend_button( bp_get_group_member_id(), bp_get_group_member_is_friend() ); ?>
@@ -57,11 +55,10 @@
 								<?php do_action( 'bp_group_members_list_item_action' ); ?>
 
 							</div>
-						
-						<?php endif; ?>
-
+					</div>
 				</div>
-				
+
+				<?php endif; ?>
 			</li>
 
 		<?php endwhile; ?>
