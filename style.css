@@ -1190,7 +1190,19 @@ article.post.search-results {
 .home-page #groups-list .col-xs-8 {
   margin-bottom: 25px;
 }
-
+#buddypress #group-settings-form .bp-widget h5 {
+  display: inline-block;
+}
+#buddypress #group-settings-form .bp-widget h4 {
+  padding-top: 15px;
+}
+#buddypress #group-settings-form .bp-widget li {
+  margin: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+#buddypress ul.item-list li h5 span.small {
+  margin-left: 30px;
+}
 /* ==========================================================================
   BuddyPress
 ============================================================================ */
