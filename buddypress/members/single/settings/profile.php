@@ -53,7 +53,7 @@ do_action( 'bp_before_member_settings_template' ); ?>
 	do_action( 'bp_core_xprofile_settings_before_submit' ); ?>
 
 	<div class="submit">
-		<input id="submit" type="submit" name="xprofile-settings-submit" value="<?php esc_attr_e( 'Save Settings', 'buddypress' ); ?>" class="auto btn btn-primay" />
+		<input id="submit" type="submit" name="xprofile-settings-submit" value="<?php esc_attr_e( 'Save Settings', 'buddypress' ); ?>" class="btn btn-primary" />
 	</div>
 
 	<?php
