@@ -1559,7 +1559,14 @@ article.post.search-results {
 }
 #buddypress ul.item-list .friendship-button a.remove:before,
 #buddypress ul.item-list .friendship-button a.pending_friend:before {
-  content: "\f00d";
+  content: "\f235";
+  font-family: "fontawesome";
+  font-size: 16px;
+  display: block;
+  padding: 4px;
+}
+#buddypress ul.item-list .friendship-button a.add:before {
+	content: "\f234";
   font-family: "fontawesome";
   font-size: 16px;
   display: block;
