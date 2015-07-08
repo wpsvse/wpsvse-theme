@@ -937,6 +937,7 @@ span.bbp-author-ip {
   padding: 2px 12px;
   font-size: 14px;
   color: #FFF;
+	margin-right: 2px;
 }
 #buddypress div.pagination .pagination-links a:hover,
 .wp-pagenavi a:hover {
