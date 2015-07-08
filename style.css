@@ -53,7 +53,7 @@ h4 {
 }
 p {
   font-size: 15px;
-  line-height: 24px;
+  line-height: 28px;
   margin-bottom: 15px;
 }
 a {
@@ -84,19 +84,6 @@ button.popover-link:focus {
 ul {
   list-style: none;
   padding-left: 0;
-}
-.page-content ul,
-.single-content ul {
-  list-style: disc;
-  padding-left: 25px;
-}
-.page-content ul li,
-.single-content ul li {
-  padding: 4px 0;
-}
-img {
-  max-width: 100%;
-  height: auto;
 }
 select, .form-control {
   display: block;
@@ -229,7 +216,6 @@ select, .form-control {
 }
 .dropdown-menu > li > a {
   color: #fff;
-	padding: 5px 20px;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
 .dropdown-menu > .active > a:hover {
@@ -442,92 +428,16 @@ select, .form-control {
 input[type=text], .form-inline input, .form-control {
   border: 1px solid rgba(0, 0, 0.5);
 }
-
-/* Shortcodes */
-.box-shortcode {
-	padding: 15px;
-	margin-bottom: 25px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-.box-primary {
-	background-color: #f8f8f8;
-	border: 1px solid #eee;
-}
-.box-info {
-	background-color: #D9EDF7;
-}
-.box-warning {
-	background-color: #FFD7E1;
-}
-
-/* ==========================================================================
-	Forms
-============================================================================ */
-.frm_style_formidable-style.with_frm_style label.frm_primary_label,
-.frm_style_formidable-style.with_frm_style.frm_login_form label {
-  font-family: inherit;
-  color: #747474;
-  padding: 0;
-}
-.frm_forms .btn-primary {
-	font-family: inherit !important;
-  background-color: #21759b !important;
-	color: #fff !important;
-	border-color: #2e6da4 !important;
-}
-.frm_forms .btn-primary:hover, .frm_forms .btn-primary:focus, .frm_forms .btn-primary:active, .frm_forms .btn-primary.active {
-  background-color: #333 !important;
-  border-color: #000 !important;
-}
-
-
 /* ==========================================================================
 	Buttons
 ============================================================================ */
-.nav-previous a,
-.nav-next a { /* Bootstrap "btn" class */
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-.btn-primary,
-.nav-previous a,
-.nav-next a {
+
+.btn-primary {
   background-color: #21759b;
-	color: #fff;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary,
-.nav-previous a:hover, .nav-previous a:focus, .nav-previous a:active, .nav-next a:hover, .nav-next a:focus, .nav-next a:active {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
   background-color: #333;
   border-color: #000;
-}
-.nav-previous {
-	float: left;
-}
-.nav-next {
-	float: right;
-}
-.post-navigation-mobile,
-.post-navigation {
-	padding-bottom: 40px;
 }
 .btn-blue {
   margin-bottom: 40px;
@@ -574,24 +484,6 @@ input[type=text], .form-inline input, .form-control {
   text-align: left;
   white-space: normal;
   padding: 15px;
-	color: #fff;
-  border-radius: 0;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-.dl-btn-sv .btn-dl {
-	background-color: #21759b;
-}
-.dl-btn-inter .btn-dl {
-	background-color: #1C232E;
-}
-.dl-btn-sv .btn-dl:hover,
-.dl-btn-inter .btn-dl:hover {
-  background: #000;
-  color: #FFF;
-  -webkit-transition: all 500ms ease;
 }
 .btn-dl .fa-cloud-download {
   font-size: 42px;
@@ -664,121 +556,9 @@ input[type=text], .form-inline input, .form-control {
 }
 
 /* ==========================================================================
-	Downloads
-============================================================================ */
-#download-page .download_group#download-search, #download-page #download-search#download-search { padding: 15px 15px 35px; }
-#download-page .download_group#download-search label, #download-page #download-search#download-search label, #download-page .download_group#download-search input[type=submit], #download-page #download-search#download-search input[type=submit] { display: inline-block; }
-#download-page .input-lg { height: 46px !important; }
-#download-page .download_group,
-#download-page #download-search {
-  box-shadow: none;
-  background-color: #f8f8f8;
-  border: 1px solid #eee;
-}
-#download-page .download-monitor-orderby,
-#download-page .download-monitor-subcategories {
-	box-shadow: none;
-  background-color: #21759B;
-  border: none;
-	color: #fff;
-}
-#download-page .download-monitor-orderby a,
-#download-page .download-monitor-subcategories a {
-	color: #fff;
-}
-#download-page .download-monitor-orderby a:hover,
-#download-page .download-monitor-subcategories a:hover,
-#download-page .download-monitor-orderby .active,
-#download-page .download-monitor-subcategories .active {
-	color: #AFDBED !important;
-}
-#download-page .download_group h3,
-#download-page #download-search h3 { padding: 8px 15px; }
-#download-page label { font-weight: normal; }
-.download-monitor-categories ul { margin: 0; }
-.download-monitor-categories li {
-  padding: 4px 15px;
-  border-bottom: 1px solid #eee;
-}
-.download-link p { display: inline; }
-.download-link-front p {
-	display: inline;
-	font-weight: normal;
-  text-transform: none;
-  font-size: 11px;
-  color: #fff !important;
-  line-height: normal;
-}
-#download-page .download_group h3,
-#download-page #download-search h3 {
-  background-color: #21759B;
-  color: #fff;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-#download-page .download_group h3 a { color: #fff; }
-.btn-dlm { 
-	display: block;
-	margin-bottom: 15px;
-}
-#download-page img.wp-post-image {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 8px;
-}
-table.single-download-meta {
-  width: 100%;
-  font-size: 13px;
-	margin-bottom: 25px;
-}
-#download-page td {
-  padding: 4px;
-}
-#download-page td.name {
-  font-weight: bold;
-  width: 20%;
-}
-#download-page tr:nth-child(odd) {
-   background-color: #f8f8f8;
-}
-.toggle-previous-versions { margin-left: 4px; }
-.previous-versions li { padding: 3px 0; }
-
-#download-page .dlm-downloads-cat li {
-	background-color: #f8f8f8;
-  border: 1px solid #eee;
-	padding: 15px;
-	margin-bottom: 15px;
-}
-#download-page .dlm-downloads-cat li .download-link {
-	font-weight: bold;
-}
-#download-page .dlm-downloads-cat .dl-date-time,
-#download-page .dlm-downloads-cat .dl-stats {
-	font-size: 12px;
-	margin-right: 8px;
-}
-#download-page .dlm-downloads-cat img {
-  vertical-align: middle;
-  width: 48px;
-  height: 48px;
-  margin: 0 1em 0 0;
-	float: left;
-}
-#download-page .dlm-downloads-cat li .btn {
-	float: right;
-	margin-top: -42px;
-}
-#download-page-tags { display: none; }
-
-
-/* ==========================================================================
 	Panels
 ============================================================================ */
+
 .panel-primary>.panel-heading {
   color: #fff;
   background-color: #21759b;
@@ -791,31 +571,9 @@ table.single-download-meta {
 .panel-primary {
   border-color: #2e6da4;
 }
-.panel-primary.odd>.panel-heading {
-	background-color: #333;
-}
-.panel-primary.odd {
-	border-color: #333;
-}
 .panel-primary label {
   font-weight: normal;
 }
-.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
-	display: block;
-}
-.faq-page .panel-heading {
-	padding: 15px;
-}
-.faq-page .panel-heading a:hover {
-	color: #DFF1F9;
-}
-.faq-page .panel-title { position: relative; }
-.faq-page .share-faq {
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
 /* ==========================================================================
   Main Sections
 ============================================================================ */
@@ -961,34 +719,42 @@ span.bbp-author-ip {
 #item-body > #bbpress-forums {
   padding: 15px 0;
 }
-
 /* ==========================================================================
   WP Page Nav
 ============================================================================ */
+
 #buddypress div.pagination .pagination-links a,
 .wp-pagenavi .extend, .wp-pagenavi a, .wp-pagenavi .pages {
+  margin-bottom: 40px;
   background: #21759b;
-  border-radius: 3px;
-  padding: 2px 12px;
+  border-radius: 0;
+  padding: 0 12px;
   font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   color: #FFF;
-	margin-right: 2px;
 }
+
 #buddypress div.pagination .pagination-links a:hover,
 .wp-pagenavi a:hover {
-  background: #474747;
+  background: #000;
   color: #FFF;
   -webkit-transition: all 500ms ease;
 }
 /* active */
+
 #buddypress div.pagination .pagination-links .current,
 .wp-pagenavi .current {
-  background: #474747;
-  border-radius: 3px;
-  padding: 2px 12px;
+  margin-bottom: 40px;
+  background: #000;
+  border-radius: 0;
+  padding: 0 12px;
   font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   color: #FFF;
-	margin-right: 2px;
 }
 /* ==========================================================================
   Welcome Block
@@ -1010,21 +776,11 @@ span.bbp-author-ip {
 #latest-downloads {
   padding-top: 35px;
 }
-.dl-help-link {
-  font-size: 16px;
-  color: #fff;
-}
-.dl-help-link:hover {
-	color: #2174A5;
-}
 #latest-downloads .btn-sv-se {
   max-width: 450px;
 }
 .extra-download-link {
-  color: #ccc;
-}
-.extra-download-link.hover {
-  color: #fff;
+  color: #999;
 }
 
 /* ==========================================================================
@@ -1141,7 +897,7 @@ article.post.search-results {
   vertical-align: middle;
 }
 .sd-social-icon .sd-content ul li[class*='share-'] a.sd-button.share-custom {
-  padding: 10px 8px 6px 8px !important;
+  padding: 10px 8px 6px 8px;
   top: 5px;
 }
 .sd-social-icon .sd-content ul li[class*='share-'] a.sd-button.share-custom span {
@@ -1254,7 +1010,6 @@ article.post.search-results {
 
 #sponsor {
   text-align: center;
-	padding: 25px 0;
 }
 #sponsor a {
   color: #999;
@@ -1368,6 +1123,12 @@ article.post.search-results {
 .delete-activity, .delete-activity-single, .ac-reply-cancel {
   color: #C30;
 }
+.activity-content .activity-inner img {
+  display: block;
+  margin: 10px 0;
+  width: 100px;
+  height: auto;
+}
 /* ==========================================================================
 	Groups
 ============================================================================ */
@@ -1445,8 +1206,8 @@ article.post.search-results {
   margin: 20px 0;
   border-bottom: 1px solid #e5e5e5;
 }
-#buddypress ul.item-list li h5 span.small {
-  margin-left: 30px;
+#buddypress #group-settings-form .bp-widget h5 span.small {
+  marign-left: 30px;
 }
 /* ==========================================================================
   BuddyPress
@@ -1571,14 +1332,7 @@ article.post.search-results {
 }
 #buddypress ul.item-list .friendship-button a.remove:before,
 #buddypress ul.item-list .friendship-button a.pending_friend:before {
-  content: "\f235";
-  font-family: "fontawesome";
-  font-size: 16px;
-  display: block;
-  padding: 4px;
-}
-#buddypress ul.item-list .friendship-button a.add:before {
-	content: "\f234";
+  content: "\f00d";
   font-family: "fontawesome";
   font-size: 16px;
   display: block;
@@ -1662,17 +1416,9 @@ fieldset[disabled] #buddypress .standard-form textarea {
 fieldset[disabled] #buddypress .standard-form textarea {
   cursor: not-allowed;
 }
-#profile-edit-form .gdbbx-signature-form > textarea.signature {
-	-webkit-border-bottom-right-radius: 0;
-	-webkit-border-bottom-left-radius: 0;
-	-moz-border-radius-bottomright: 0;
-	-moz-border-radius-bottomleft: 0;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
 /* Profile */
 #buddypress table.profile-fields {
+
 }
 #buddypress table.profile-fields td {
   text-align: left;
@@ -1694,8 +1440,8 @@ fieldset[disabled] #buddypress .standard-form textarea {
 #buddypress input#file {
   line-height: 1;
 }
-
 /* Tables in BuddyPress with Tweaks for sepcifics */
+
 #buddypress #item-body table {
   border: 1px solid #ccc;
   width: 100%;
@@ -1705,15 +1451,17 @@ fieldset[disabled] #buddypress .standard-form textarea {
   border: 0;
   border-spacing: 0;
 }
+
 #buddypress #item-body table tr {
   border: 1px solid #ddd;
   padding: 5px;
 }
+
 #buddypress #item-body table th,
 #buddypress #item-body table td {
   padding: 10px;
-  text-align: center;
 }
+
 #buddypress #item-body table th {
   font-size: 14px;
 }
@@ -1789,10 +1537,6 @@ img.emoji {
   height: 20px !important;
   max-height: 20px !important;
   vertical-align: middle !important;
-}
-.mobile_banner {
-	z-index: 999999 !important;
-	margin-top: 48px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -2094,6 +1838,9 @@ article.post h1 a, article.wpsvse_blog h1 a {
    Sidebar
 ============================================================================ */
 
+#sidebar {
+  word-break: break-all;
+}
 #sidebar .widget {
   padding-bottom: 25px;
 }
@@ -2161,14 +1908,15 @@ article.post h1 a, article.wpsvse_blog h1 a {
   border-radius: 3px;
   font-size: 12px !important;
   font-weight: normal;
-  line-height: normal;
+  line-height: 28px;
   color: #fff;
   display: inline-block;
   margin-bottom: 5px;
 }
 .widget_tag_cloud .tagcloud a:hover {
-  background: #333;
+  background: #000;
 }
+
 #wp-calendar thead th {
   text-align: center;
   margin-bottom: 5px;
@@ -2538,7 +2286,6 @@ ul.apps {
     float: none;
     width: auto;
     margin-top: 0;
-		padding-left: 15px;
     background-color: transparent;
     border: 0;
     -webkit-box-shadow: none;
@@ -2681,7 +2428,6 @@ ul.apps {
     margin: 10px 0;
   }
 }
-
 /* =Screen reader
 ----------------------------------------------- */
 /* Text meant only for screen readers */
@@ -2709,28 +2455,6 @@ ul.apps {
   z-index: 100000;
   /* Above WP toolbar */
 }
-
-/* Alignments
------------------------------------------------ */
-.alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
-}
-
-.alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
-}
-
-.aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 /* =Media
 ----------------------------------------------- */
 
@@ -3068,55 +2792,6 @@ img.mfp-img {
 
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
-	
-/* =Galleries
------------------------------------------------ */
-.gallery {
-	margin-bottom: 1.5em;
-}
-
-.gallery-item {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
-}
-
-.gallery-columns-2 .gallery-item {
-	max-width: 50%;
-}
-
-.gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
-}
-
-.gallery-columns-4 .gallery-item {
-	max-width: 25%;
-}
-
-.gallery-columns-5 .gallery-item {
-	max-width: 20%;
-}
-
-.gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
-}
-
-.gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
-}
-
-.gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
-}
-
-.gallery-caption {
-	display: block;
-}
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
   /**
