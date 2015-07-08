@@ -462,6 +462,26 @@ input[type=text], .form-inline input, .form-control {
 	background-color: #FFD7E1;
 }
 
+/* ==========================================================================
+	Forms
+============================================================================ */
+.frm_style_formidable-style.with_frm_style label.frm_primary_label,
+.frm_style_formidable-style.with_frm_style.frm_login_form label {
+  font-family: inherit;
+  color: #747474;
+  padding: 0;
+}
+.frm_forms .btn-primary {
+	font-family: inherit !important;
+  background-color: #21759b !important;
+	color: #fff !important;
+	border-color: #2e6da4 !important;
+}
+.frm_forms .btn-primary:hover, .frm_forms .btn-primary:focus, .frm_forms .btn-primary:active, .frm_forms .btn-primary.active {
+  background-color: #333 !important;
+  border-color: #000 !important;
+}
+
 
 /* ==========================================================================
 	Buttons
