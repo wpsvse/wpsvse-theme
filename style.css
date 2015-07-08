@@ -486,13 +486,48 @@ input[type=text], .form-inline input, .form-control {
 /* ==========================================================================
 	Buttons
 ============================================================================ */
-
-.btn-primary {
-  background-color: #21759b;
+.nav-previous a,
+.nav-next a { /* Bootstrap "btn" class */
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.btn-primary,
+.nav-previous a,
+.nav-next a {
+  background-color: #21759b;
+	color: #fff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary,
+.nav-previous a:hover, .nav-previous a:focus, .nav-previous a:active, .nav-next a:hover, .nav-next a:focus, .nav-next a:active {
   background-color: #333;
   border-color: #000;
+}
+.nav-previous {
+	float: left;
+}
+.nav-next {
+	float: right;
+}
+.post-navigation-mobile,
+.post-navigation {
+	padding-bottom: 40px;
 }
 .btn-blue {
   margin-bottom: 40px;

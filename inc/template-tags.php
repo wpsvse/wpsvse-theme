@@ -51,6 +51,7 @@ function wpsvse_content_nav( $nav_id ) {
 			<?php if ( get_previous_posts_link() ) : ?>
       	<div class="nav-next"><?php previous_posts_link( __( 'Nyare inlägg <span class="meta-nav">&rarr;</span>', 'wpsvse' ) ); ?></div>
       <?php endif; ?>
+			<div class="clearfix"></div>
 			</div>
 		
 	<?php endif; ?>
