@@ -40,10 +40,11 @@ function wpsvse_content_nav( $nav_id ) {
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
-		<?php if(function_exists('wp_pagenavi')) { ?>
-			<div class="post-navigation hidden-xs hidden-sm"><?php wp_pagenavi(); ?></div>
-		<?php } else { ?>
-			<div class="post-navigation hidden-md hidden-lg">
+			<?php if(function_exists('wp_pagenavi')) { ?>
+				<div class="post-navigation hidden-xs hidden-sm"><?php wp_pagenavi(); ?></div>
+			<?php } ?>
+		
+			<div class="post-navigation-mobile hidden-md hidden-lg">
 			<?php if ( get_next_posts_link() ) : ?>
      		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Äldre inlägg', 'wpsvse' ) ); ?></div>
       <?php endif; ?>
@@ -51,7 +52,6 @@ function wpsvse_content_nav( $nav_id ) {
       	<div class="nav-next"><?php previous_posts_link( __( 'Nyare inlägg <span class="meta-nav">&rarr;</span>', 'wpsvse' ) ); ?></div>
       <?php endif; ?>
 			</div>
-		<?php } ?>
 		
 	<?php endif; ?>
 
