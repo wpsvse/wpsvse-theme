@@ -1,15 +1,16 @@
-<?php if ( bp_group_has_members( bp_ajax_querystring( 'group_members' ) ) ) : ?>
+<?php if ( bp_group_has_members( 'exclude_admins_mods=0' ) ) : ?>
 
-	<?php
+	<?php do_action( 'bp_before_group_members_content' ); ?>
 
-	/**
-	 * Fires before the display of the group members content.
-	 *
-	 * @since BuddyPress (1.1.0)
-	 */
-	do_action( 'bp_before_group_members_content' ); ?>
+	<div class="item-list-tabs" id="subnav" role="navigation">
+		<ul>
 
-	<div id="pag-top" class="pagination">
+			<?php do_action( 'bp_members_directory_member_sub_types' ); ?>
+
+		</ul>
+	</div>
+
+	<div id="pag-top" class="pagination no-ajax">
 
 		<div class="pag-count" id="member-count-top">
 
@@ -25,72 +26,54 @@
 
 	</div>
 
-	<?php
+	<?php do_action( 'bp_before_group_members_list' ); ?>
 
-	/**
-	 * Fires before the display of the group members list.
-	 *
-	 * @since BuddyPress (1.1.0)
-	 */
-	do_action( 'bp_before_group_members_list' ); ?>
-
-	<ul id="member-list" class="item-list">
+	<ul id="member-list" class="item-list" role="main">
 
 		<?php while ( bp_group_members() ) : bp_group_the_member(); ?>
 
-			<li>
-				<a href="<?php bp_group_member_domain(); ?>">
+			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buddypress-listing">
+				
+
+				<div class="item">
+					<div class="item-type-wrapper clearfix">
+					
+					<a href="<?php bp_group_member_domain(); ?>">
 
 					<?php bp_group_member_avatar_thumb(); ?>
 
-				</a>
+					</a>
+					
+						<div class="item-type item-title"><?php bp_group_member_link(); ?></div>
+						<div class="item-type item-meta"><?php bp_group_member_joined_since(); ?></div>
 
-				<h5><?php bp_group_member_link(); ?></h5>
-				<span class="activity"><?php bp_group_member_joined_since(); ?></span>
-
-				<?php
-
-				/**
-				 * Fires inside the listing of an individual group member listing item.
-				 *
-				 * @since BuddyPress (1.1.0)
-				 */
-				do_action( 'bp_group_members_list_item' ); ?>
-
-				<?php if ( bp_is_active( 'friends' ) ) : ?>
-
-					<div class="action">
-
-						<?php bp_add_friend_button( bp_get_group_member_id(), bp_get_group_member_is_friend() ); ?>
-
-						<?php
-
-						/**
-						 * Fires inside the action section of an individual group member listing item.
-						 *
-						 * @since BuddyPress (1.1.0)
-						 */
-						do_action( 'bp_group_members_list_item_action' ); ?>
+						<?php do_action( 'bp_group_members_list_item' ); ?>
 
 					</div>
+						
+						<?php if ( bp_is_active( 'friends' ) ) : ?>
+						
+							<div class="item-type action">
 
-				<?php endif; ?>
+								<?php bp_add_friend_button( bp_get_group_member_id(), bp_get_group_member_is_friend() ); ?>
+
+								<?php do_action( 'bp_group_members_list_item_action' ); ?>
+
+							</div>
+						
+						<?php endif; ?>
+
+				</div>
+				
 			</li>
 
 		<?php endwhile; ?>
 
 	</ul>
 
-	<?php
+	<?php do_action( 'bp_after_group_members_list' ); ?>
 
-	/**
-	 * Fires after the display of the group members list.
-	 *
-	 * @since BuddyPress (1.1.0)
-	 */
-	do_action( 'bp_after_group_members_list' ); ?>
-
-	<div id="pag-bottom" class="pagination">
+	<div id="pag-bottom" class="pagination no-ajax">
 
 		<div class="pag-count" id="member-count-bottom">
 
@@ -106,19 +89,12 @@
 
 	</div>
 
-	<?php
-
-	/**
-	 * Fires after the display of the group members content.
-	 *
-	 * @since BuddyPress (1.1.0)
-	 */
-	do_action( 'bp_after_group_members_content' ); ?>
+	<?php do_action( 'bp_after_group_members_content' ); ?>
 
 <?php else: ?>
 
 	<div id="message" class="info">
-		<p><?php _e( 'No members were found.', 'buddypress' ); ?></p>
+		<p><?php _e( 'This group has no members.', 'buddypress' ); ?></p>
 	</div>
 
 <?php endif; ?>
