@@ -1120,14 +1120,14 @@ article.post.search-results {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+.delete-activity, .delete-activity-single, .ac-reply-cancel {
+  color: #C30;
+}
 .activity-content .activity-inner img {
   display: block;
   margin: 10px 0;
   width: 100px;
   height: auto;
-}
-.delete-activity, .delete-activity-single, .ac-reply-cancel {
-  color: #C30;
 }
 /* ==========================================================================
 	Groups
@@ -1206,8 +1206,8 @@ article.post.search-results {
   margin: 20px 0;
   border-bottom: 1px solid #e5e5e5;
 }
-#buddypress ul.item-list li h5 span.small {
-  margin-left: 30px;
+#buddypress #group-settings-form .bp-widget h5 span.small {
+  marign-left: 30px;
 }
 /* ==========================================================================
   BuddyPress

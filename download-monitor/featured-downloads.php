@@ -1,6 +1,6 @@
 <?php global $dlm_page_addon; ?>
 <div id="download-page-featured" class="download_group">
-	<h3><?php _e( 'Featured', 'dlm_page_addon' ); ?></h3>
+	<h3>Utvalda</h3>
 	<ul>
 		<?php while ( $downloads->have_posts() ) : $downloads->the_post(); ?>
 

@@ -984,6 +984,9 @@ div.reply.status-reported {
 
 /* =Widgets
 -------------------------------------------------------------- */
+.panel-login {
+  position: relative;
+}
 
 .bbp-login-form fieldset legend {
 	display: none;
@@ -996,7 +999,6 @@ div.reply.status-reported {
 }
 
 .bbp-login-form label {
-	width: 140px;
 	display: inline-block;
 }
 
@@ -1013,7 +1015,11 @@ div.reply.status-reported {
 }
 
 .bbp-login-form .bbp-remember-me {
+}
 
+.pass-reset-link {
+  position: absolute;
+  bottom: 20px;
 }
 
 .bbp-login-form .bbp-submit-wrapper {
@@ -1504,6 +1510,9 @@ body.my-account #bbpress-forums {
 	border-radius: 3px;
 	font-size: 12px !important;
 	font-weight: normal;
-	line-height: 28px;
+	line-height: normal;
 	color: #fff;
+}
+#latest-forum-sidebar .widget_tag_cloud a:hover {
+	background-color: #333;
 }

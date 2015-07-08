@@ -1,10 +1,10 @@
 <ul class="download-monitor-orderby">
-	<li><?php _e( 'Order by:', 'dlm_page_addon' ); ?></li>
+	<li><?php _e( 'Ordna efter:', 'dlm_page_addon' ); ?></li>
 	<?php
 		$order_by = apply_filters( 'dlm_page_addon_order_by', array(
-			'title'          => __( 'Title', 'dlm_page_addon' ),
-			'date'           => __( 'Date added', 'dlm_page_addon' ),
-			'download_count' => __( 'Download count', 'dlm_page_addon' )
+			'title'          => __( 'Titel', 'dlm_page_addon' ),
+			'date'           => __( 'Datum', 'dlm_page_addon' ),
+			'download_count' => __( 'Antal nedladdningar', 'dlm_page_addon' )
 		) );
 
 		foreach ( $order_by as $key => $value ) {

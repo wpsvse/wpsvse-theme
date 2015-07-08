@@ -14,24 +14,29 @@ get_header(); ?>
         <section id="welcome" class="section">
           <div class="col-md-7">
 
-        	<?php while ( have_posts() ) : the_post();
+        	<?php while ( have_posts() ) : the_post(); ?>
 
-            	the_content('Läs mer');
-
-            endwhile; ?>
+            	<?php the_content('Läs mer'); ?>
 
             <section id="latest-downloads">
-                <h3>Ladda ner senaste WordPress</h3>
-                    <div id="dl-btns">
-										<div class="col-md-6">
-                      <a class="btn btn-blue btn-dl" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.2.2 <span>(svensk)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
-										</div>
-										<div class="col-md-6">
-											<a class="btn btn-dark btn-dl" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.2.2 <span>(internationell)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
-										</div>
-                      <p class="col-md-12"><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
-                    </div>
+							<h3>Ladda ner senaste WordPress <sup><a href="<?php echo esc_url( home_url( '/filer/hjalp/' ) ); ?>" class="dl-help-link" title="Behöver du hjälp med filen?"><i class="fa fa-question-circle"></i></a></sup></h3>
+								<div id="dl-btns">
+									<?php // Get main download IDs
+									$dlsvse = get_post_meta($post->ID, '_dl_meta_sv_se', true);
+									$dlinter = get_post_meta($post->ID, '_dl_meta_inter', true); 
+									?>
+									<div class="col-md-6 dl-btn-sv">
+										<?php echo do_shortcode('[download id="'. $dlsvse .'" template="front"]'); ?>
+									</div>
+									<div class="col-md-6 dl-btn-inter">
+										<?php echo do_shortcode('[download id="'. $dlinter .'" template="front"]'); ?>
+									</div>
+									<p class="col-md-12"><a href="<?php echo esc_url( home_url( '/filer/information-for-filer/' ) ); ?>" class="extra-download-link">Behöver du andra format? Information för filer &rarr;</a></p>
+								</div>
             </section>
+						
+					<?php endwhile; ?>
+					
           </div>
         </section>
         <!-- End welcome -->
@@ -106,7 +111,7 @@ get_header(); ?>
                           	  <div class="comments-meta"><?php comments_popup_link('0 kommentarer', '1 kommentar', '% kommentarer'); ?></div>
                               <time datetime="<?php the_time('c'); ?>"><?php the_time('l, j F'); ?></time>
                               <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
-							  <?php if ( has_post_thumbnail() ) {
+							  						<?php if ( has_post_thumbnail() ) {
                                 	the_post_thumbnail( 'post-image', array('class' => 'img-responsive') );
                         	  } else { ?>
                               	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />

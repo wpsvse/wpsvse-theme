@@ -10,7 +10,7 @@
 
 			<div class="bp-widget <?php bp_the_profile_group_slug(); ?>">
 
-				<h4><?php bp_the_profile_group_name(); ?></h4>
+				<h2><?php bp_the_profile_group_name(); ?></h2>
 
 				<table class="profile-fields">
 

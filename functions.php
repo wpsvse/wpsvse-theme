@@ -121,6 +121,8 @@ function wpsvse_widgets_init() {
 		'description'   => 'Widgetfält på startsidan för huvudsponsor.',
 		'before_widget' => '<div id="%1$s" class="widget sponsor-link %2$s">',
 		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title screen-reader-text">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Widgets för 404', 'wpsvse' ),
@@ -142,32 +144,21 @@ function wpsvse_scripts() {
 
 	// Enqueue Stylesheets
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
-
 	wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css' );
-
 	wp_enqueue_style( 'dropdowns-enhancement-style', get_template_directory_uri() . '/css/dropdowns-enhancement.min.css' );
-
 	// wp_enqueue_style( 'bbpress-style', get_template_directory_uri() . '/css/bbpress.css' );
-
 	wp_enqueue_style( 'wpsvse-style', get_stylesheet_uri() );
 
 	// Engueue Javascripts
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.2.0', true );
-
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.2', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/dropdowns-enhancement.js', array('jquery'), '3.2.0', true );
-
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.min.js', array(), '2.8.3' );
-
 	wp_enqueue_script( 'HTML5shiv', get_template_directory_uri() . '/js/html5shiv.js', array('jquery'), '3.7.0' );
-
 	wp_enqueue_script( 'respond_js', get_template_directory_uri() . '/js/respond.min.js', array('jquery'), '1.3.0' );
-
 	wp_enqueue_script( 'magnific_popup', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array('jquery'), '1.0.0' );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
 	wp_enqueue_script( 'wpsvse-scripts', get_template_directory_uri() . '/js/wpsvse.js', array(), '20140719', true );
 
 }
@@ -184,6 +175,11 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
- * Custom functions for the adminbar.
+ * Custom functions metaboxes
  */
-require get_template_directory() . '/inc/adminbar.php';
+require get_template_directory() . '/inc/metaboxes.php';
+
+/**
+ * Custom shortcodes
+ */
+require get_template_directory() . '/inc/shortcodes.php';
