@@ -33,13 +33,8 @@
 		<?php while ( bp_group_members() ) : bp_group_the_member(); ?>
 
 			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 buddypress-listing">
-				<a href="<?php bp_group_member_domain(); ?>">
-
-					<?php bp_group_member_avatar_thumb(); ?>
-
-				</a>
-
 				<div class="item">
+					<a href="<?php bp_group_member_domain(); ?>"> <?php bp_group_member_avatar_thumb(); ?> </a>
 					<div class="item-type-wrapper clearfix">
 						<div class="item-type item-title"><?php bp_group_member_link(); ?></div>
 						<div class="item-type item-meta"><?php bp_group_member_joined_since(); ?></div>
