@@ -1123,6 +1123,12 @@ article.post.search-results {
 .delete-activity, .delete-activity-single, .ac-reply-cancel {
   color: #C30;
 }
+.activity-content .activity-inner img {
+  display: block;
+  margin: 10px 0;
+  width: 100px;
+  height: auto;
+}
 /* ==========================================================================
 	Groups
 ============================================================================ */
@@ -1451,9 +1457,9 @@ fieldset[disabled] #buddypress .standard-form textarea {
   padding: 5px;
 }
 
-#buddypress #item-body table th, table td {
+#buddypress #item-body table th,
+#buddypress #item-body table td {
   padding: 10px;
-  text-align: center;
 }
 
 #buddypress #item-body table th {
