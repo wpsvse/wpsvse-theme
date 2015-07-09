@@ -1475,7 +1475,8 @@ article.post.search-results {
 }
 #buddypress .buddypress-listing .item-type.item-meta,
 #buddypress .buddypress-listing .item-type.item-title,
-#buddypress .buddypress-listing .item-type.item-update {
+#buddypress .buddypress-listing .item-type.item-update,
+#buddypress .buddypress-listing .item-type.item-count {
   color: #fff;
   padding: 3px 8px;
   text-align: right;
