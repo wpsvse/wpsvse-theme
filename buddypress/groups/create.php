@@ -139,7 +139,7 @@
 					</div><!-- .left-menu -->
 
 					<div class="main-column">
-						<p><?php _e( "Upload an image to use as an avatar for this group. The image will be shown on the main group page, and in search results.", 'buddypress' ); ?></p>
+						<p>Ladda upp en bild att använda som gruppbild/avatar. Denna bild visas i gruppvyer och i sökresultat.</p>
 
 						<p>
 							<input type="file" name="file" id="file" />
@@ -147,7 +147,7 @@
 							<input type="hidden" name="action" id="action" value="bp_avatar_upload" />
 						</p>
 
-						<p><?php _e( 'To skip the avatar upload process, hit the "Next Step" button.', 'buddypress' ); ?></p>
+						<p>För att hoppa över denna del, klicka på knappen "Nästa steg".</p>
 					</div><!-- .main-column -->
 
 				<?php endif; ?>
