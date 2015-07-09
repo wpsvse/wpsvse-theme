@@ -1565,6 +1565,22 @@ article.post.search-results {
   top: 0;
   background-color: rgba(33, 117, 155, .7);
 }
+#buddypress ul.invites li div.action a {
+  top: 0;
+  background-color: rgba(33, 117, 155, .7);
+  padding: 3px 8px;
+  text-align: right;
+  color: #fff;
+  border-radius: 4px;
+}
+#buddypress #group-list.invites.item-list li > h4 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+#buddypress #group-list.invites.item-list li {
+  margin: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
 #buddypress ul.item-list li div.request {
   background-color: rgba(33, 117, 155, .7);
   padding: 3px 8px;
