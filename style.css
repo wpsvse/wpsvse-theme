@@ -1575,6 +1575,11 @@ article.post.search-results {
   top: 0;
   background-color: rgba(33, 117, 155, .7);
 }
+#buddypress ul.item-list li div.request {
+  background-color: rgba(33, 117, 155, .7);
+  padding: 3px 8px;
+  text-align: right;
+}
 #buddypress ul.item-list .friendship-button {
   color: #fff;
   padding: 3px 3px 3px 8px;
