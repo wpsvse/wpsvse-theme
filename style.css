@@ -725,7 +725,7 @@ input[type=text], .form-inline input, .form-control {
   border-top-right-radius: 4px;
 }
 #download-page .download_group h3 a { color: #fff; }
-.btn-dlm { 
+.btn-dlm {
 	display: block;
 	margin-bottom: 15px;
 }
@@ -1372,6 +1372,13 @@ article.post.search-results {
 .delete-activity, .delete-activity-single, .ac-reply-cancel {
   color: #C30;
 }
+.activity-content .activity-inner img {
+  display: block;
+  margin: 10px 0;
+  width: 100px;
+  height: auto;
+}
+
 /* ==========================================================================
 	Groups
 ============================================================================ */
@@ -1722,7 +1729,6 @@ fieldset[disabled] #buddypress .standard-form textarea {
 #buddypress #item-body table th,
 #buddypress #item-body table td {
   padding: 10px;
-  text-align: center;
 }
 #buddypress #item-body table th {
   font-size: 14px;
@@ -3078,7 +3084,7 @@ img.mfp-img {
 
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
-	
+
 /* =Galleries
 ----------------------------------------------- */
 .gallery {
