@@ -20,30 +20,10 @@
     
     	<?php bbp_single_forum_description(); ?>
 			
-			<?php if ( bbp_is_forum_category() && !bbp_has_topics() ) { ?>
-			
-				<a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-				
-			<? } else { ?>
-        
-        	<a href="#new-post" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-					
-			<?php } ?>
-
 		<?php if ( bbp_get_forum_subforum_count() && bbp_has_forums() ) : ?>
 			
 			<?php bbp_get_template_part( 'loop', 'forums' ); ?>
       
-			<?php if ( bbp_is_forum_category() ) { ?>
-			
-				<a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-				
-			<? } else { ?>
-        
-        	<a href="#new-post" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-					
-			<?php } ?>
-
 		<?php endif; ?>
 
 		<?php if ( !bbp_is_forum_category() && bbp_has_topics() ) : ?>
@@ -54,16 +34,6 @@
 
 			<?php bbp_get_template_part( 'pagination', 'topics'    ); ?>
 			
-			<?php if ( bbp_is_forum_category() ) { ?>
-			
-				<a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-				
-			<? } else { ?>
-        
-        	<a href="#new-post" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-					
-			<?php } ?>
-
 			<?php bbp_get_template_part( 'form',       'topic'     ); ?>
 
 		<?php elseif ( !bbp_is_forum_category() ) : ?>

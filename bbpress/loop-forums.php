@@ -11,6 +11,8 @@
 
 <?php do_action( 'bbp_template_before_forums_loop' ); ?>
 
+<a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
+
 <ul id="forums-list-<?php bbp_forum_id(); ?>" class="bbp-forums">
 
 	<li class="forum-title-item">
@@ -47,5 +49,7 @@
 	</li><!-- .bbp-footer -->
 
 </ul><!-- .forums-directory -->
+
+<a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 
 <?php do_action( 'bbp_template_after_forums_loop' ); ?>
