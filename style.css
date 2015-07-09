@@ -1474,7 +1474,8 @@ article.post.search-results {
   width: 100%;
 }
 #buddypress .buddypress-listing .item-type.item-meta,
-#buddypress .buddypress-listing .item-type.item-title {
+#buddypress .buddypress-listing .item-type.item-title,
+#buddypress .buddypress-listing .item-type.item-update {
   color: #fff;
   padding: 3px 8px;
   text-align: right;
@@ -1555,6 +1556,9 @@ article.post.search-results {
   color: #747474;
   font-weight: 400;
 }
+#buddypress ul.item-list li div.action {
+	top: 0;
+}
 #buddypress ul.item-list li div.action .generic-button.friendship-button {
   top: 0;
   background-color: rgba(33, 117, 155, .7);
@@ -1568,7 +1572,7 @@ article.post.search-results {
 }
 #buddypress ul.item-list .friendship-button {
   font-size: 0;
-  padding: 0 4px;
+  padding: 3px 6px;
 }
 #buddypress ul.item-list .friendship-button a.remove:before,
 #buddypress ul.item-list .friendship-button a.pending_friend:before {
