@@ -17,41 +17,17 @@
 		<li id="activity-filter-select" class="last">
 			<label for="activity-filter-by"><?php _e( 'Show:', 'buddypress' ); ?></label>
 			<select id="activity-filter-by">
-				<option value="-1"><?php _e( 'Allt', 'buddypress' ); ?></option>
-				<option value="activity_update"><?php _e( 'Updates', 'buddypress' ); ?></option>
+				<option value="-1"><?php _e( '&mdash; Everything &mdash;', 'buddypress' ); ?></option>
+
+				<?php bp_activity_show_filters(); ?>
 
 				<?php
-				if ( !bp_is_current_action( 'groups' ) ) :
-					if ( bp_is_active( 'blogs' ) ) : ?>
 
-						<option value="new_blog_post"><?php _e( 'Posts', 'buddypress' ); ?></option>
-						<option value="new_blog_comment"><?php _e( 'Comments', 'buddypress' ); ?></option>
-
-					<?php
-					endif;
-
-					if ( bp_is_active( 'friends' ) ) : ?>
-
-						<option value="friendship_accepted,friendship_created"><?php _e( 'Friendships', 'buddypress' ); ?></option>
-
-					<?php endif;
-
-				endif;
-
-				if ( bp_is_active( 'forums' ) ) : ?>
-
-					<option value="new_forum_topic"><?php _e( 'Forum Topics', 'buddypress' ); ?></option>
-					<option value="new_forum_post"><?php _e( 'Forum Replies', 'buddypress' ); ?></option>
-
-				<?php endif;
-
-				if ( bp_is_active( 'groups' ) ) : ?>
-
-					<option value="created_group"><?php _e( 'New Groups', 'buddypress' ); ?></option>
-					<option value="joined_group"><?php _e( 'Group Memberships', 'buddypress' ); ?></option>
-
-				<?php endif;
-
+				/**
+				 * Fires inside the select input for member activity filter options.
+				 *
+				 * @since BuddyPress (1.2.0)
+				 */
 				do_action( 'bp_member_activity_filter_options' ); ?>
 
 			</select>
@@ -59,19 +35,44 @@
 	</ul>
 </div><!-- .item-list-tabs -->
 
-<?php do_action( 'bp_before_member_activity_post_form' ); ?>
+<?php
+
+/**
+ * Fires before the display of the member activity post form.
+ *
+ * @since BuddyPress (1.2.0)
+ */
+do_action( 'bp_before_member_activity_post_form' ); ?>
 
 <?php
 if ( is_user_logged_in() && bp_is_my_profile() && ( !bp_current_action() || bp_is_current_action( 'just-me' ) ) )
 	bp_get_template_part( 'activity/post-form' );
 
+/**
+ * Fires after the display of the member activity post form.
+ *
+ * @since BuddyPress (1.2.0)
+ */
 do_action( 'bp_after_member_activity_post_form' );
+
+/**
+ * Fires before the display of the member activities list.
+ *
+ * @since BuddyPress (1.2.0)
+ */
 do_action( 'bp_before_member_activity_content' ); ?>
 
-<div class="activity" role="main">
+<div class="activity">
 
 	<?php bp_get_template_part( 'activity/activity-loop' ) ?>
 
 </div><!-- .activity -->
 
-<?php do_action( 'bp_after_member_activity_content' ); ?>
+<?php
+
+/**
+ * Fires after the display of the member activities list.
+ *
+ * @since BuddyPress (1.2.0)
+ */
+do_action( 'bp_after_member_activity_content' ); ?>
