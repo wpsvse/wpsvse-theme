@@ -1,7 +1,4 @@
-<?php
-
-/** This action is documented in bp-templates/bp-legacy/buddypress/members/single/settings/profile.php */
-do_action( 'bp_before_member_settings_template' ); ?>
+<?php do_action( 'bp_before_member_settings_template' ); ?>
 
 <div id="message" class="info">
 
@@ -19,14 +16,7 @@ do_action( 'bp_before_member_settings_template' ); ?>
 
 <form action="<?php echo bp_displayed_user_domain() . bp_get_settings_slug() . '/delete-account'; ?>" name="account-delete-form" id="account-delete-form" class="standard-form" method="post">
 
-	<?php
-
-	/**
-	 * Fires before the display of the submit button for user delete account submitting.
-	 *
-	 * @since BuddyPress (1.5.0)
-	 */
-	do_action( 'bp_members_delete_account_before_submit' ); ?>
+	<?php do_action( 'bp_members_delete_account_before_submit' ); ?>
 
 	<label>
 		<input type="checkbox" name="delete-account-understand" id="delete-account-understand" value="1" onclick="if(this.checked) { document.getElementById('delete-account-button').disabled = ''; } else { document.getElementById('delete-account-button').disabled = 'disabled'; }" />
@@ -34,23 +24,13 @@ do_action( 'bp_before_member_settings_template' ); ?>
 	</label>
 
 	<div class="submit">
-		<input class="btn btn-primary" type="submit" disabled="disabled" value="<?php esc_attr_e( 'Delete Account', 'buddypress' ); ?>" id="delete-account-button" name="delete-account-button" />
+		<input type="submit" disabled="disabled" value="<?php _e( 'Delete Account', 'buddypress' ); ?>" id="delete-account-button" name="delete-account-button" />
 	</div>
 
-	<?php
-
-	/**
-	 * Fires after the display of the submit button for user delete account submitting.
-	 *
-	 * @since BuddyPress (1.5.0)
-	 */
-	do_action( 'bp_members_delete_account_after_submit' ); ?>
+	<?php do_action( 'bp_members_delete_account_after_submit' ); ?>
 
 	<?php wp_nonce_field( 'delete-account' ); ?>
 
 </form>
 
-<?php
-
-/** This action is documented in bp-templates/bp-legacy/buddypress/members/single/settings/profile.php */
-do_action( 'bp_after_member_settings_template' ); ?>
+<?php do_action( 'bp_after_member_settings_template' ); ?>

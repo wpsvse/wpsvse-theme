@@ -1199,9 +1199,6 @@ input#file {
 #buddypress table tr td.thread-info p {
 	margin: 0;
 }
-#buddypress table.notification-settings thead {
-	background-color: #eaeaea !important;
-}
 #buddypress table tr td.thread-info p.thread-excerpt {
 	color: #888;
 	font-size: 80%;
