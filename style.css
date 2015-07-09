@@ -1473,7 +1473,8 @@ article.post.search-results {
 #buddypress ul.item-list li div.item-title {
   width: 100%;
 }
-#buddypress .buddypress-listing .item-type {
+#buddypress .buddypress-listing .item-type.item-meta,
+#buddypress .buddypress-listing .item-type.item-title {
   color: #fff;
   padding: 3px 8px;
   text-align: right;
@@ -1554,7 +1555,7 @@ article.post.search-results {
   color: #747474;
   font-weight: 400;
 }
-#buddypress ul.item-list li div.action {
+#buddypress ul.item-list li div.action .generic-button.friendship-button {
   top: 0;
   background-color: rgba(33, 117, 155, .7);
 }
