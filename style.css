@@ -1405,7 +1405,7 @@ article.post.search-results {
 	position: absolute;
 	color: #fff;
   font-size: 0;
-  background: #21759b;
+  background-color: rgba(33, 117, 155, .7);
 	top: 0;
 	left: 225px;
 }
