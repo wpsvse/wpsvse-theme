@@ -20,7 +20,7 @@
     
     	<?php bbp_single_forum_description(); ?>
 			
-			<?php if ( bbp_is_forum_category() ) { ?>
+			<?php if ( bbp_is_forum_category() && !bbp_has_topics() ) { ?>
 			
 				<a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 				
