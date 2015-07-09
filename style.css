@@ -487,7 +487,8 @@ input[type=text], .form-inline input, .form-control {
 	Buttons
 ============================================================================ */
 .nav-previous a,
-.nav-next a { /* Bootstrap "btn" class */
+.nav-next a,
+#group-settings-form submit { /* Bootstrap "btn" class */
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -510,12 +511,15 @@ input[type=text], .form-inline input, .form-control {
 }
 .btn-primary,
 .nav-previous a,
-.nav-next a {
+.nav-next a,
+#group-settings-form submit {
   background-color: #21759b;
 	color: #fff;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary,
-.nav-previous a:hover, .nav-previous a:focus, .nav-previous a:active, .nav-next a:hover, .nav-next a:focus, .nav-next a:active {
+.nav-previous a:hover, .nav-previous a:focus, .nav-previous a:active,
+.nav-next a:hover, .nav-next a:focus, .nav-next a:active,
+#group-settings-form submit:hover, #group-settings-form submit:focus, #group-settings-form submit:active {
   background-color: #333;
   border-color: #000;
 }
