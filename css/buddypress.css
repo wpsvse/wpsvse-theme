@@ -1654,6 +1654,8 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 #buddypress #message-threads img.avatar {
 	max-width: none;
+	margin-right: 4px;
+	float: left;
 }
 #buddypress div.message-search {
 	float: right;
@@ -1698,10 +1700,35 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
   border-color: #000;
 }
 #buddypress .message-action-star:before {
+	content: "\f006";
+	font-family: "fontawesome";
+	display: inline-block;
+}
+#buddypress .message-action-unstar:before {
 	content: "\f005";
 	font-family: "fontawesome";
 	display: inline-block;
 }
+#buddypress #message-threads .message-action-star .bp-screen-reader-text,
+#buddypress #message-threads .message-action-unstar .bp-screen-reader-text {
+	display: none;
+}
+#buddypress #message-threads .message-action-star:before {
+	content: "\f006";
+	font-family: "fontawesome";
+	display: block;
+	color: #21759b;
+}
+#buddypress #message-threads .message-action-unstar:before {
+	content: "\f005";
+	font-family: "fontawesome";
+	display: block;
+	color: #21759b;
+}
+#buddypress #message-threads span.activity {
+	display: block;
+}
+
 
 /*--------------------------------------------------------------
 3.10 - Extended Profiles

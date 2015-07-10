@@ -45,7 +45,7 @@ do_action( 'bp_before_member_messages_loop' ); ?>
 
 			<thead>
 				<tr>
-					<th scope="col" class="thread-checkbox bulk-select-all"><label class="bp-screen-reader-text" for="select-all-messages"><?php _e( 'Select all', 'buddypress' ); ?></label><input id="select-all-messages" type="checkbox"></th>
+					<th scope="col" class="thread-checkbox bulk-select-all"><label class="bp-screen-reader-text" for="select-all-messages"><?php _e( 'Select all', 'buddypress' ); ?></label> <input id="select-all-messages" type="checkbox"></th>
 					<th scope="col" class="thread-from"><?php _e( 'From', 'buddypress' ); ?></th>
 					<th scope="col" class="thread-info"><?php _e( 'Subject', 'buddypress' ); ?></th>
 
@@ -62,7 +62,7 @@ do_action( 'bp_before_member_messages_loop' ); ?>
 					do_action( 'bp_messages_inbox_list_header' ); ?>
 
 					<?php if ( bp_is_active( 'messages', 'star' ) ) : ?>
-						<th scope="col" class="thread-star"><span class="message-action-star"><span class="icon"></span> <span class="screen-reader-text"><?php _e( 'Star', 'buddypress' ); ?></span></span></th>
+						<th scope="col" class="thread-star"><span class="message-action-star"><i class="fa fa-star"></i> <span class="screen-reader-text"><?php _e( 'Star', 'buddypress' ); ?></span></span></th>
 					<?php endif; ?>
 
 					<th scope="col" class="thread-options"><?php _e( 'Actions', 'buddypress' ); ?></th>
