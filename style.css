@@ -1785,7 +1785,6 @@ input#select-all-notifications{
   font-size: 14px;
   border-radius: 4px;
   margin-top: 15px;
-  font-weight: bold;
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: #FFF;
 }
@@ -1796,17 +1795,12 @@ input#select-all-notifications{
 }
 /* unread messages */
 #buddypress table#message-threads tr.unread td {
-  background: #21759b;
-  border-top: 1px solid #21759b;
+  background: none;
+  border-top: none;
   border-bottom: 1px solid #e5e5e5;
-  color: #fff;
-  font-weight: bold;
+	font-weight: normal;
 }
-#buddypress table tr.unread td.thread-options a,
-#buddypress table tr.unread td.thread-info p.thread-excerpt,
-#buddypress table tr.unread td.thread-info a {
-  color: #fff;
-}
+
 
 /* ==========================================================================
 	Other
