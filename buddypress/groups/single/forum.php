@@ -73,18 +73,18 @@ else : ?>
 				<h4><?php _e( 'Post a New Topic:', 'buddypress' ); ?></h4>
 
 				<label><?php _e( 'Title:', 'buddypress' ); ?></label>
-				<input type="text" name="topic_title" id="topic_title" value="" maxlength="100" />
+				<input class="form-control" type="text" name="topic_title" id="topic_title" value="" maxlength="100" />
 
 				<label><?php _e( 'Content:', 'buddypress' ); ?></label>
-				<textarea name="topic_text" id="topic_text"></textarea>
+				<textarea class="form-control" name="topic_text" id="topic_text"></textarea>
 
 				<label><?php _e( 'Tags (comma separated):', 'buddypress' ); ?></label>
-				<input type="text" name="topic_tags" id="topic_tags" value="" />
+				<input class="form-control" type="text" name="topic_tags" id="topic_tags" value="" />
 
 				<?php do_action( 'bp_after_group_forum_post_new' ); ?>
 
 				<div class="submit">
-					<input type="submit" name="submit_topic" id="submit" value="<?php _e( 'Post Topic', 'buddypress' ); ?>" />
+					<input class="btn btn-primary" type="submit" name="submit_topic" id="submit" value="<?php _e( 'Post Topic', 'buddypress' ); ?>" />
 				</div>
 
 				<?php wp_nonce_field( 'bp_forums_new_topic' ); ?>
