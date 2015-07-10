@@ -28,7 +28,12 @@ function wpsvse_setup() {
 	 * to change 'wpsvse' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'wpsvse', get_template_directory() . '/languages' );
-
+	
+	/**
+	 * Always show toolbar
+	 */
+	show_admin_bar( true );
+	
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
