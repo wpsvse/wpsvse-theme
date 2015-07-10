@@ -1607,7 +1607,6 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 #buddypress div.messages-options-nav {
 	background: #eee;
-	font-size: 80%;
 	margin: 0;
 	padding: 5px 15px;
 	text-align: right;
@@ -1672,33 +1671,6 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
   background-color: #f8f8f8;
   border-radius: 5px;
 }
-#buddypress .message-action-star {
-	display: inline-block;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-	padding: 1px 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-	background-color: #21759b;
-  color: #fff;
-}
-#buddypress .message-action-star:hover {
-	background-color: #333;
-  border-color: #000;
-}
 #buddypress .message-action-star:before {
 	content: "\f006";
 	font-family: "fontawesome";
@@ -1719,6 +1691,9 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	display: block;
 	color: #21759b;
 }
+#buddypress .thread-star .message-action-star:before {
+	display: none;
+}
 #buddypress #message-threads .message-action-unstar:before {
 	content: "\f005";
 	font-family: "fontawesome";
@@ -1728,6 +1703,16 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 #buddypress #message-threads span.activity {
 	display: block;
 }
+#buddypress #message-threads .bulk-select-check {
+	text-align: center;
+}
+#buddypress #message-threads .thread-from .bp-screen-reader-text {
+	background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
 
 
 /*--------------------------------------------------------------
