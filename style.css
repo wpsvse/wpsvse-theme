@@ -98,7 +98,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-select, .form-control {
+select, .form-control, #messages_search {
   display: block;
   width: 100%;
   height: 34px;
@@ -115,6 +115,10 @@ select, .form-control {
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+#messages_search {
+	display: inline-block;
+	width: 165px;
 }
 
 /* ==========================================================================
@@ -489,7 +493,8 @@ input[type=text], .form-inline input, .form-control {
 .nav-previous a,
 .nav-next a,
 #group-settings-form input[type=submit],
-#buddypress .messages-options-nav input#messages-bulk-manage { /* Bootstrap "btn" class */
+#buddypress .messages-options-nav input#messages-bulk-manage,
+#messages_search_submit { /* Bootstrap "btn" class */
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -514,18 +519,24 @@ input[type=text], .form-inline input, .form-control {
 .nav-previous a,
 .nav-next a,
 #group-settings-form input[type=submit],
-#buddypress .messages-options-nav input#messages-bulk-manage {
+#buddypress .messages-options-nav input#messages-bulk-manage,
+#messages_search_submit {
   background-color: #21759b;
 	color: #fff;
 }
 #buddypress .messages-options-nav input#messages-bulk-manage {
 	margin-top: 15px;
 }
+#messages_search_submit {
+	float: right;
+  margin-left: 3px;
+}
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary,
 .nav-previous a:hover, .nav-previous a:focus, .nav-previous a:active,
 .nav-next a:hover, .nav-next a:focus, .nav-next a:active,
 #group-settings-form input[type=submit]:hover, #group-settings-form input[type=submit]:focus, #group-settings-form input[type=submit]:active,
-#buddypress .messages-options-nav input#messages-bulk-manage:hover, #buddypress .messages-options-nav input#messages-bulk-manage:focus, #buddypress .messages-options-nav input#messages-bulk-manage:active {
+#buddypress .messages-options-nav input#messages-bulk-manage:hover, #buddypress .messages-options-nav input#messages-bulk-manage:focus, #buddypress .messages-options-nav input#messages-bulk-manage:active,
+#messages_search_submit:hover, #messages_search_submit:focus, #messages_search_submit:active {
   background-color: #333;
   border-color: #000;
 }
