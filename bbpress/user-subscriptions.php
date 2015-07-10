@@ -16,7 +16,7 @@
 		<?php if ( bbp_is_user_home() || current_user_can( 'edit_users' ) ) : ?>
 
 			<div id="bbp-user-subscriptions" class="bbp-user-subscriptions">
-				<h2 class="entry-title"><?php _e( 'Subscribed Forum Topics', 'bbpress' ); ?></h2>
+				<h2 class="entry-title"><?php _e( 'Ämnen du prenumererar på', 'bbpress' ); ?></h2>
 				<div class="bbp-user-section">
 
 					<?php if ( bbp_get_user_subscriptions() ) : ?>
