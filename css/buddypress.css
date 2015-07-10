@@ -1666,7 +1666,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 #buddypress .ac_over {
   background-color: #474747;
 }
-#buddypress .main-message-thread {
+#buddypress .message-main-thread {
   border: 1px solid #eee;
   background-color: #f8f8f8;
   border-radius: 5px;
@@ -1692,7 +1692,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	color: #21759b;
 }
 #buddypress .thread-star .message-action-star:before {
-	display: none;
+	display: none !important;
 }
 #buddypress #message-threads .message-action-unstar:before {
 	content: "\f005";
