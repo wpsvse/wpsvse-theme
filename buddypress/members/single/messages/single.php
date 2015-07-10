@@ -32,8 +32,10 @@
 
 			</span>
 
-			<a class="button btn btn-primary confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php esc_attr_e( "Delete Conversation", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
+			<a class="button btn btn-primary btn-xs confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php esc_attr_e( "Delete Conversation", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
 		</p>
+		
+		<div class="message-main-thread">
 
 		<?php
 
@@ -201,5 +203,7 @@
 	 * @since BuddyPress (1.1.0)
 	 */
 	do_action( 'bp_after_message_thread_content' ); ?>
+	
+	</div>
 
 </div>

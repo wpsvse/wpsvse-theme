@@ -563,6 +563,8 @@ body.activity-permalink #buddypress div.activity-comments div.acomment-content {
 --------------------------------------------------------------*/
 #buddypress div#message {
 	margin: 0 0 15px;
+	clear: both;
+	padding-top: 25px;
 }
 #buddypress #message.info {
 	margin-bottom: 0;
@@ -1639,17 +1641,94 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	overflow: hidden;
 }
 #buddypress div#message-thread div.message-content {
-	margin-left: 45px;
+	margin: 15px 0 0 40px;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+#buddypress div#message-thread #send-reply div.message-content {
+	border: none;
 }
 #buddypress div#message-thread div.message-options {
 	text-align: right;
 }
 #buddypress #message-threads img.avatar {
 	max-width: none;
+	margin-right: 4px;
+	float: left;
 }
 #buddypress div.message-search {
 	float: right;
 }
+#buddypress .ac_results {
+  min-width: 200px;
+	border: 1px solid #474747;
+}
+#buddypress .ac_over {
+  background-color: #474747;
+}
+#buddypress .main-message-thread {
+  border: 1px solid #eee;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+#buddypress .message-action-star {
+	display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+	padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+	background-color: #21759b;
+  color: #fff;
+}
+#buddypress .message-action-star:hover {
+	background-color: #333;
+  border-color: #000;
+}
+#buddypress .message-action-star:before {
+	content: "\f006";
+	font-family: "fontawesome";
+	display: inline-block;
+}
+#buddypress .message-action-unstar:before {
+	content: "\f005";
+	font-family: "fontawesome";
+	display: inline-block;
+}
+#buddypress #message-threads .message-action-star .bp-screen-reader-text,
+#buddypress #message-threads .message-action-unstar .bp-screen-reader-text {
+	display: none;
+}
+#buddypress #message-threads .message-action-star:before {
+	content: "\f006";
+	font-family: "fontawesome";
+	display: block;
+	color: #21759b;
+}
+#buddypress #message-threads .message-action-unstar:before {
+	content: "\f005";
+	font-family: "fontawesome";
+	display: block;
+	color: #21759b;
+}
+#buddypress #message-threads span.activity {
+	display: block;
+}
+
 
 /*--------------------------------------------------------------
 3.10 - Extended Profiles
