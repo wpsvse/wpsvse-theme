@@ -672,7 +672,9 @@ input[type=text], .form-inline input, .form-control {
   background: #000;
   transition: all 500ms ease;
 }
-.home .latest-forum-topics .bbp-new-topic-btn {
+.home .latest-forum-topics .bbp-new-topic-btn,
+.bbp-user-topics-started .bbp-new-topic-btn,
+.bbp-view .bbp-new-topic-btn {
   display: none;
 }
 
