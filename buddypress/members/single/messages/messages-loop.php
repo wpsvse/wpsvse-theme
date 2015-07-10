@@ -121,10 +121,10 @@ do_action( 'bp_before_member_messages_loop' ); ?>
 							<?php if ( bp_message_thread_has_unread() ) : ?>
 								<a class="read btn btn-primary btn-xs" href="<?php bp_the_message_thread_mark_read_url();?>"><?php _e( 'Read', 'buddypress' ); ?></a>
 							<?php else : ?>
-								<a class="unread btn-primary btn-xs" href="<?php bp_the_message_thread_mark_unread_url();?>"><?php _e( 'Unread', 'buddypress' ); ?></a>
+								<a class="unread btn btn-primary btn-xs" href="<?php bp_the_message_thread_mark_unread_url();?>"><?php _e( 'Unread', 'buddypress' ); ?></a>
 							<?php endif; ?>
 							 |
-							<a class="delete btn-primary btn-xs" href="<?php bp_message_thread_delete_link(); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
+							<a class="delete btn btn-primary btn-xs" href="<?php bp_message_thread_delete_link(); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
 						</td>
 					</tr>
 
