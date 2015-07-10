@@ -1716,6 +1716,9 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	background-color: #21759b;
 	color: #fff;
 }
+#buddypress table#message-threads tr.unread td.bulk-select-check {
+  border-left: 3px solid #21759b;
+}
 
 /*--------------------------------------------------------------
 3.10 - Extended Profiles
