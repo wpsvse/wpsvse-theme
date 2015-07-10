@@ -693,7 +693,8 @@ input[type=text], .form-inline input, .form-control {
 }
 .home .latest-forum-topics .bbp-new-topic-btn,
 .bbp-user-topics-started .bbp-new-topic-btn,
-.bbp-view .bbp-new-topic-btn {
+.bbp-view .bbp-new-topic-btn,
+.topic-tag .bbp-new-topic-btn {
   display: none;
 }
 
