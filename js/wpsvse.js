@@ -28,11 +28,11 @@ jQuery(document).ready(function($) {
 	});
 	
 	// Backward compatibility and media inserts
-	$('.single-content').magnificPopup({
-		delegate: 'a', // child items selector, by clicking on it popup will open
-		type: 'image'
-		// other options
-	});
+	//$('.single-content').magnificPopup({
+//		delegate: 'a', // child items selector, by clicking on it popup will open
+//		type: 'image'
+//		// other options
+//	});
 
 	// ***************************
 	// Collapse trigger
