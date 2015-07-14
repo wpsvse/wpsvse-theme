@@ -474,6 +474,24 @@ input[type=text], .form-inline input, .form-control {
 	background-color: #FFD7E1;
 }
 
+/* Code highlight */
+ol.EnlighterJS li {
+  list-style: decimal-leading-zero !important;
+  margin: 0 0 0 40px !important;
+}
+ol.gitEnlighterJS li.hoverEnabled:hover,
+ul.gitEnlighterJS li.hoverEnabled:hover {
+  background-color: #D9EDF7 !important;
+}
+ol.EnlighterJS li,
+ul.EnlighterJS li {
+	background-color: #f8f8f8;
+}
+ol.EnlighterJS,
+ul.EnlighterJS {
+	background-color: #eee;
+}
+
 /* ==========================================================================
 	Forms
 ============================================================================ */
