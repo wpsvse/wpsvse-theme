@@ -520,7 +520,8 @@ ul.EnlighterJS {
 .nav-next a,
 #group-settings-form input[type=submit],
 #buddypress .messages-options-nav input#messages-bulk-manage,
-#messages_search_submit { /* Bootstrap "btn" class */
+#messages_search_submit,
+#bp-create-doc-button { /* Bootstrap "btn" class */
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -546,7 +547,8 @@ ul.EnlighterJS {
 .nav-next a,
 #group-settings-form input[type=submit],
 #buddypress .messages-options-nav input#messages-bulk-manage,
-#messages_search_submit {
+#messages_search_submit,
+#bp-create-doc-button {
   background-color: #21759b;
 	color: #fff;
 }
@@ -562,7 +564,8 @@ ul.EnlighterJS {
 .nav-next a:hover, .nav-next a:focus, .nav-next a:active,
 #group-settings-form input[type=submit]:hover, #group-settings-form input[type=submit]:focus, #group-settings-form input[type=submit]:active,
 #buddypress .messages-options-nav input#messages-bulk-manage:hover, #buddypress .messages-options-nav input#messages-bulk-manage:focus, #buddypress .messages-options-nav input#messages-bulk-manage:active,
-#messages_search_submit:hover, #messages_search_submit:focus, #messages_search_submit:active {
+#messages_search_submit:hover, #messages_search_submit:focus, #messages_search_submit:active,
+#bp-create-doc-button:hover, #bp-create-doc-button:focus, #bp-create-doc-button:active {
   background-color: #333;
   border-color: #000;
 }
@@ -828,6 +831,47 @@ table.single-download-meta {
 }
 #download-page-tags { display: none; }
 
+/* ==========================================================================
+	Codex
+============================================================================ */
+div.docs-info-header {
+   background: none !important; 
+   padding: 0 !important; 
+}
+.docs-filters {
+  border: 1px solid #eee;
+  background-color: #f8f8f8;
+  padding: 8px 15px;
+  -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#bp-create-doc-button {
+  float: none !important;
+  margin: 25px 0 0 0 !important;
+  font-weight: normal !important;
+}
+#bp-create-doc-button:before {
+  content: "\f0f6";
+  font-family: "fontawesome";
+  margin-right: 4px;
+}
+span.bp-docs-date {
+  font-size: 13px;
+  font-weight: normal;
+  float: right;
+}
+.bp-docs-edit-link {
+  font-size: 14px;
+  margin-left: 4px;
+  color: #474747;
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: #f8f8f8;
+  line-height: normal;
+  border-radius: 5px;
+  vertical-align: middle;
+}
 
 /* ==========================================================================
 	Panels

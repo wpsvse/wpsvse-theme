@@ -8,8 +8,6 @@
 		<?php if ( ! bp_docs_is_theme_compat_active() ) : ?>
 			<h2 class="doc-title"><?php the_title() ?><?php if ( bp_docs_is_doc_trashed() ) : ?> <span class="bp-docs-trashed-doc-notice" title="<?php esc_html_e( 'This Doc is in the Trash', 'bp-docs' ) ?>">Trash</span><?php endif ?></h2>
 		<?php endif ?>
-
-		<?php do_action( 'bp_docs_single_doc_header_fields' ) ?>
 	</div>
 
 	<div class="doc-tabs">
