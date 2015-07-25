@@ -38,9 +38,11 @@
 	<div class="doc-meta">
 		<?php do_action( 'bp_docs_single_doc_meta' ) ?>
 	</div>
+	
+	<?php do_action( 'bp_docs_single_doc_header_fields' ) ?>
 
 	<?php if ( apply_filters( 'bp_docs_allow_comment_section', true ) ) : ?>
-		<?php comments_template( '/docs/single/comments.php' ) ?>
+		<?php comments_template(); ?>
 	<?php endif ?>
 </div>
 
