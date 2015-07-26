@@ -1,6 +1,6 @@
 				<?php do_action( 'bp_before_directory_activity' ); ?>
 
-            <div id="buddypress">
+            <div id="buddypress" class="col-md-12">
 
                 <?php do_action( 'bp_before_directory_activity_content' ); ?>
 
