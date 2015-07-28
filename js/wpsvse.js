@@ -27,12 +27,25 @@ jQuery(document).ready(function($) {
 			type:'image'
 	});
 	
-	// Backward compatibility and media inserts
-	//$('.single-content').magnificPopup({
-//		delegate: 'a', // child items selector, by clicking on it popup will open
-//		type: 'image'
-//		// other options
-//	});
+	// ***************************
+	// Backward compatibility 
+	// and media inserts for
+	// Magnific Popup
+	// ***************************
+	$('.single-content a[href*=".jpg"], .single-content a[href*=".jpeg"], .single-content a[href*=".png"], .single-content a[href*=".gif"]').each(function(){
+			//single image popup
+			if ($(this).parents('.gallery').length == 0) {
+							$(this).magnificPopup({type:'image'});
+			}
+	});
+	//gallery popup
+	$('.gallery').each(function() {
+			$(this).magnificPopup({
+							delegate: 'a',
+							type: 'image',
+							gallery: {enabled:true}
+			});
+	});
 
 	// ***************************
 	// Collapse trigger
