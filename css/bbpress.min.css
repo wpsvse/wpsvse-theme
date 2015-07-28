@@ -661,6 +661,8 @@ a.bbpl_button.liked {
 	display: inline-block;
 	width: auto;
 	border-bottom: none;
+	font-size: 16px;
+  margin-bottom: 0;
 }
 
 #bbpress-forums fieldset.bbp-form label {
@@ -682,6 +684,8 @@ a.bbpl_button.liked {
 #bbpress-forums fieldset.bbp-form input {
 	margin: 0 0 8px;
 }
+
+.bbp-attachments-form .bbp-attachments-input { padding: 0 !important; }
 
 textarea#bbp_reply_content,
 textarea#bbp_topic_content,
@@ -923,11 +927,11 @@ div.bbp-template-notice a {
 	div.bbp-template-notice a:hover {
 		color: #000;
 	}
-	div.bbp-template-notice.info {
+	div.bbp-template-notice {
 		background-color: #d9edf7;
 	}
 	div.bbp-template-notice.important {
-		background-color: #fcf8e3;
+	background-color: #FFE9D2;
 	}
 	div.bbp-template-notice.error,
 	div.bbp-template-notice.warning {

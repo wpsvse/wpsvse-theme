@@ -501,13 +501,18 @@ ul.EnlighterJS {
   color: #747474;
   padding: 0;
 }
-.frm_forms .btn-primary {
+.frm_forms .btn-primary,
+.bbp-attachments-form .bbp-validation-active .bbp-attachment-preview span {
 	font-family: inherit !important;
   background-color: #21759b !important;
 	color: #fff !important;
 	border-color: #2e6da4 !important;
 }
-.frm_forms .btn-primary:hover, .frm_forms .btn-primary:focus, .frm_forms .btn-primary:active, .frm_forms .btn-primary.active {
+.bbp-attachments-form .bbp-validation-active .bbp-attachment-preview span {
+	font-weight: normal !important;
+}
+.frm_forms .btn-primary:hover, .frm_forms .btn-primary:focus, .frm_forms .btn-primary:active, .frm_forms .btn-primary.active,
+.bbp-attachments-form .bbp-validation-active .bbp-attachment-preview span:hover, .bbp-attachments-form .bbp-validation-active .bbp-attachment-preview span:focus {
   background-color: #333 !important;
   border-color: #000 !important;
 }
@@ -1040,8 +1045,7 @@ span.bbp-author-ip {
   padding: 6px;
 }
 #bbpress-forums fieldset.bbp-form {
-  padding: 0;
-  border: 0;
+	clear: both;
 }
 #bbpress-forums div.bbp-reply-author img.avatar {
   margin: 12px auto;
