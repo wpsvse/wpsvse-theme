@@ -74,6 +74,13 @@ function wpsvse_setup() {
 
 	// Register Custom Navigation Walker
 	require_once('inc/wp_bootstrap_navwalker.php');
+	
+	// Register custom blog post type for activity feed
+	add_filter ( 'bp_blogs_record_post_post_types', 'activity_publish_custom_post_types',1,1 );
+	function activity_publish_custom_post_types( $post_types ) {
+		$post_types[] = 'wpsvse_blog';
+		return $post_types;
+	}
 
 }
 endif; // wpsvse_setup
@@ -188,3 +195,8 @@ require get_template_directory() . '/inc/metaboxes.php';
  * Custom shortcodes
  */
 require get_template_directory() . '/inc/shortcodes.php';
+
+/**
+ * Branding and adminbar functions
+ */
+require get_template_directory() . '/inc/branding.php';

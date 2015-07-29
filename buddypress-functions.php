@@ -1558,6 +1558,9 @@ function bp_legacy_theme_ajax_messages_autocomplete_results() {
 	exit;
 }
 
+/**
+ * Reform output for member search form
+ */
 function wpsvse_bp_directory_members_search_form() {
 	$search_form_html = '<form action="" method="get" id="search-members-form">
 				<label><input type="text" name="s" class="form-control" id="members_search" placeholder="'. esc_attr( $search_value ) .'" /></label>
@@ -1567,6 +1570,9 @@ function wpsvse_bp_directory_members_search_form() {
 }
 add_filter('bp_directory_members_search_form', 'wpsvse_bp_directory_members_search_form');
 
+/**
+ * Reform output for group search form
+ */
 function wpsvse_bp_directory_groups_search_form() {
   $search_form_html = '<form action="" method="get" id="search-groups-form">
 				<label><input type="text" name="s" class="form-control" id="groups_search" placeholder="'. esc_attr( $search_value ) .'" /></label>
