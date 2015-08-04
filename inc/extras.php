@@ -76,13 +76,3 @@ function wpsvse_bbp_subscribe_as_default( $checked, $topic_subscribed  ) {
     return checked( $topic_subscribed, true, false );
 }
 add_filter( 'bbp_get_form_topic_subscribed', 'wpsvse_bbp_subscribe_as_default', 10, 2 );
-
-//**************************************************
-// Enable TinyMCE in bbPress
-//**************************************************
-function wpsvse_bbp_enable_visual_editor( $args = array() ) {
-    $args['tinymce'] = true;
-		$args['quicktags'] = false;
-    return $args;
-}
-add_filter( 'bbp_after_get_the_content_parse_args', 'wpsvse_bbp_enable_visual_editor' );
