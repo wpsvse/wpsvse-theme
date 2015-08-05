@@ -1508,7 +1508,7 @@ article.post.search-results {
   font-size: 0;
   background-color: rgba(33, 117, 155, .7);
 	top: 0;
-	right: 15px;
+	right: 0;
 }
 #bp-groups .group-button .join-group:before {
   content: "\f067";
@@ -2725,38 +2725,35 @@ ul.apps {
   #buddypress table {
     border: 0;
   }
-
   #buddypress table thead {
     display: none;
   }
-
   #buddypress table#message-threads tr td {
     text-align: left;
   }
-
   #buddypress table tr {
     margin-bottom: 10px;
     display: block;
     border-bottom: 2px solid #ddd;
   }
-
   #buddypress table td {
     display: block;
     text-align: right;
     font-size: 13px;
     border-bottom: 1px dotted #ccc;
   }
-
   #buddypress table td:last-child {
     border-bottom: 0;
   }
-
   table td:before {
     content: attr(data-label);
     float: left;
     text-transform: uppercase;
     font-weight: bold;
   }
+	#bp-groups .item {
+		margin: 0 auto;
+	}
 }
 
 /* XS */
