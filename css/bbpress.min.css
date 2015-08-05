@@ -777,13 +777,11 @@ p.form-allowed-tags {
 	border: 1px solid #eee;
 	border-top: none;
 }
-
 #bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
 	width: 100%;
 	margin: 0;
 	font-size: 12px;
 }
-
 #bbpress-forums div.bbp-the-content-wrapper table,
 #bbpress-forums div.bbp-the-content-wrapper tbody,
 #bbpress-forums div.bbp-the-content-wrapper tr,
@@ -794,7 +792,6 @@ p.form-allowed-tags {
 	width: auto;
 	line-height: 1em;
 }
-
 #bbpress-forums div.bbp-the-content-wrapper input {
 	font-size: 12px;
 	padding: 5px;
@@ -802,7 +799,6 @@ p.form-allowed-tags {
 	line-height: 1em;
 	margin: 0;
 }
-
 #bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar {
 	padding: 5px;
 	min-height: 26px;
@@ -810,16 +806,19 @@ p.form-allowed-tags {
 #bbpress-forums div.bbp-the-content-wrapper td.mceToolbar {
 	padding: 4px 4px 8px;
 }
-
 #bbpress-forums div.wp-editor-container {
 	margin: 0;
 	padding: 0;
 	line-height: 0;
 }
-
 #bbpress-forums div.bbp-the-content-wrapper td.mceStatusbar {
 	line-height: 16px;
 }
+div.mce-edit-area { border-right: 1px solid #eee !important; }
+#wp-link #link-options label span { font-weight: normal; }
+.has-text-field #wp-link .query-results { top: 215px !important; }
+#wp-link .link-search-field { border: 1px solid #a9a9a9; }
+
 
 /* =Edit User
 -------------------------------------------------------------- */

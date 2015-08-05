@@ -526,7 +526,9 @@ ul.EnlighterJS {
 #group-settings-form input[type=submit],
 #buddypress .messages-options-nav input#messages-bulk-manage,
 #messages_search_submit,
-#bp-create-doc-button { /* Bootstrap "btn" class */
+#bp-create-doc-button,
+#wp-link-submit,
+.mce-primary button { /* Bootstrap "btn" class */
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -553,7 +555,9 @@ ul.EnlighterJS {
 #group-settings-form input[type=submit],
 #buddypress .messages-options-nav input#messages-bulk-manage,
 #messages_search_submit,
-#bp-create-doc-button {
+#bp-create-doc-button,
+#wp-link-submit,
+.mce-primary button {
   background-color: #21759b;
 	color: #fff;
 }
@@ -570,7 +574,8 @@ ul.EnlighterJS {
 #group-settings-form input[type=submit]:hover, #group-settings-form input[type=submit]:focus, #group-settings-form input[type=submit]:active,
 #buddypress .messages-options-nav input#messages-bulk-manage:hover, #buddypress .messages-options-nav input#messages-bulk-manage:focus, #buddypress .messages-options-nav input#messages-bulk-manage:active,
 #messages_search_submit:hover, #messages_search_submit:focus, #messages_search_submit:active,
-#bp-create-doc-button:hover, #bp-create-doc-button:focus, #bp-create-doc-button:active {
+#bp-create-doc-button:hover, #bp-create-doc-button:focus, #bp-create-doc-button:active,
+#wp-link-submit:hover, #wp-link-submit:focus, #wp-link-submit:active {
   background-color: #333;
   border-color: #000;
 }
