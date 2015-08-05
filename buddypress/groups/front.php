@@ -8,7 +8,7 @@
 
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
-		<li class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-6 buddypress-listing">
+		<li class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-md-6 col-sm-4 buddypress-listing">
 
 			<div class="item">
             	<a href="<?php bp_group_permalink(); ?>" class="wpsvse-tooltip" data-toggle="tooltip" data-placement="top" title="<?php bp_group_name(); ?> - <?php bp_group_member_count(); ?>"><?php bp_group_avatar( 'type=thumb&width=256&height=256' ); ?>
