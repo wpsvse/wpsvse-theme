@@ -1508,7 +1508,7 @@ article.post.search-results {
   font-size: 0;
   background-color: rgba(33, 117, 155, .7);
 	top: 0;
-	left: 225px;
+	right: 15px;
 }
 #bp-groups .group-button .join-group:before {
   content: "\f067";
@@ -1565,6 +1565,10 @@ article.post.search-results {
   width: auto;
 }
 /* Listings */
+li.buddypress-listing {
+  padding-left: 5px;
+  padding-bottom: 20px;
+}
 .buddypress-listing .item {
   position: relative;
   max-width: 256px;
