@@ -1,0 +1,28 @@
+/*
+ * WordPress Sverige editor styles
+ * 
+ * @package wpsvse
+ */
+ 
+body#tinymce pre {
+  font-family: Consolas, Monaco, monospace;
+  border: 1px dashed #ccc;
+  padding: 15px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+body#tinymce pre:before {
+  content: "Kodblock";
+  font-size: 11px;
+	line-height: 15px;
+  position: absolute;
+  right: -1px;
+  background-color: #21759B;
+  color: #fff;
+  padding: 0 8px;
+  font-family: sans-serif;
+  top: -1px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+}
