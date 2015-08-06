@@ -169,6 +169,22 @@ function wpsvse_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wpsvse_scripts' );
 
+/*
+ * Set WordPress email and name
+ */
+// Set from email
+add_filter( 'wp_mail_from', 'wpsvse_mail_from' );
+function wpsvse_mail_from( $email )
+{
+    return "utskick@wpsv.se";
+}
+// Set from name
+add_filter( 'wp_mail_from_name', 'wpsvse_mail_from_name' );
+function wpsvse_mail_from_name( $name )
+{
+    return "WordPress Sverige";
+}
+
 /**
  * Custom template tags for this theme.
  */
