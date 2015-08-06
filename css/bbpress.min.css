@@ -757,7 +757,7 @@ div.bbp-submit-wrapper {
 }
 
 p.form-allowed-tags {
-	width: 462px;
+	display: none;
 }
 
 .bbp-search-form-forum {
