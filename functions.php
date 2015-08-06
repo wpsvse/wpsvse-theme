@@ -165,9 +165,27 @@ function wpsvse_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	wp_enqueue_script( 'wpsvse-scripts', get_template_directory_uri() . '/js/wpsvse.js', array(), '20140719', true );
-
+	
 }
 add_action( 'wp_enqueue_scripts', 'wpsvse_scripts' );
+
+// Set editor style
+add_filter('the_editor_content', 'wpsvse_add_editor_styles');
+function wpsvse_add_editor_styles($content) {
+    add_editor_style('css/wpsvse-editor-style.css');
+
+    if ( ! is_admin() ) {
+        global $editor_styles;
+        $editor_styles = (array) $editor_styles;
+        $stylesheet    = (array) $stylesheet;
+
+        $stylesheet[] = 'css/wpsvse-editor-style.css';
+
+        $editor_styles = array_merge( $editor_styles, $stylesheet );
+
+    }
+    return $content;
+}
 
 /*
  * Set WordPress email and name
