@@ -14,15 +14,15 @@ header( 'Content-Type: text/html; charset=utf-8' );
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="WordPress Sverige, Tillfälligt underhållsläge">
     <meta name="author" content="WordPress Sverige">
-    <link rel="icon" href="maintenence/favicon.ico">
+    <link rel="icon" href="maintenance/favicon.ico">
 
     <title>WordPress Sverige - Tillfälligt underhållsläge</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="maintenence/css/bootstrap.min.css" rel="stylesheet">
+    <link href="maintenance/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="maintenence/style.css" rel="stylesheet">
+    <link href="maintenance/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -33,7 +33,7 @@ header( 'Content-Type: text/html; charset=utf-8' );
 
   <body>
 	
-	<a href="http://wpsv.se" class="little-blue"><img src="maintenence/little-blue.png" width="60" height="112" alt="little blue"></a>
+	<a href="http://wpsv.se" class="little-blue"><img src="maintenance/little-blue.png" width="60" height="112" alt="little blue"></a>
 
     <div class="site-wrapper">
 
@@ -42,7 +42,7 @@ header( 'Content-Type: text/html; charset=utf-8' );
         <div class="cover-container">
 
           <div class="inner cover">
-					<div class="logo"><img src="maintenence/logo.png" alt="" /></div>
+					<div class="logo"><img src="maintenance/logo.png" alt="" /></div>
             <h1 class="cover-heading"><strong>WordPress</strong> Sverige<br>
 						<span>Tillfälligt underhållsläge</span></h1>
             <p class="lead">WordPress Sverige är i tillfälligt underhållsläge. Det innebär att någon modul på WordPress Sverige just nu uppdateras.</p>
@@ -64,9 +64,9 @@ header( 'Content-Type: text/html; charset=utf-8' );
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="maintenence/js/bootstrap.min.js"></script>
+    <script src="maintenance/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="maintenence/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="maintenance/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
 
