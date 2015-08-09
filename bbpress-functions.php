@@ -17,7 +17,6 @@ function add_bootstrap_class( $classes ) {
 	$classes[] = 'row';
 	return $classes;
 }
-	
 add_filter( 'bbp_get_forum_class', 'add_bootstrap_class' );
 
 /** Theme Setup ***************************************************************/
@@ -134,18 +133,26 @@ class BBP_Default extends BBP_Theme_Compat {
 	 */
 	public function enqueue_styles() {
 
-		// RTL and/or minified
-		$suffix  = is_rtl() ? '-rtl' : '';
-		$suffix .= defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+		// Setup styles array
+		$styles = array();
 
-		// Get and filter the bbp-default style
-		$styles = apply_filters( 'bbp_default_styles', array(
-			'bbp-default' => array(
-				'file'         => 'css/bbpress' . $suffix . '.css',
-				'dependencies' => array()
-			)
-		) );
+		// LTR
+		$styles['bbp-default'] = array(
+			'file'         => 'css/bbpress.css',
+			'dependencies' => array()
+		);
 
+		// RTL helpers
+		if ( is_rtl() ) {
+			$styles['bbp-default-rtl'] = array(
+				'file'         => 'css/bbpress-rtl.css',
+				'dependencies' => array( 'bbp-default' )
+			);
+		}
+
+		// Filter the scripts
+		$styles = apply_filters( 'bbp_default_styles', $styles );
+		
 		// Enqueue the styles
 		foreach ( $styles as $handle => $attributes ) {
 			bbp_enqueue_style( $handle, $attributes['file'], $attributes['dependencies'], $this->version, 'screen' );
@@ -168,13 +175,10 @@ class BBP_Default extends BBP_Theme_Compat {
 		// Setup scripts array
 		$scripts = array();
 
-		// Minified
-		$suffix  = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-
 		// Always pull in jQuery for TinyMCE shortcode usage
 		if ( bbp_use_wp_editor() ) {
 			$scripts['bbpress-editor'] = array(
-				'file'         => 'js/editor' . $suffix . '.js',
+				'file'         => 'js/editor.js',
 				'dependencies' => array( 'jquery' )
 			);
 		}
@@ -182,7 +186,7 @@ class BBP_Default extends BBP_Theme_Compat {
 		// Forum-specific scripts
 		if ( bbp_is_single_forum() ) {
 			$scripts['bbpress-forum'] = array(
-				'file'         => 'js/forum' . $suffix . '.js',
+				'file'         => 'js/forum.js',
 				'dependencies' => array( 'jquery' )
 			);
 		}
@@ -192,14 +196,14 @@ class BBP_Default extends BBP_Theme_Compat {
 
 			// Topic favorite/unsubscribe
 			$scripts['bbpress-topic'] = array(
-				'file'         => 'js/topic' . $suffix . '.js',
+				'file'         => 'js/topic.js',
 				'dependencies' => array( 'jquery' )
 			);
 
 			// Hierarchical replies
 			if ( bbp_thread_replies() ) {
 				$scripts['bbpress-reply'] = array(
-					'file'         => 'js/reply' . $suffix . '.js',
+					'file'         => 'js/reply.js',
 					'dependencies' => array( 'jquery' )
 				);
 			}
@@ -208,7 +212,7 @@ class BBP_Default extends BBP_Theme_Compat {
 		// User Profile edit
 		if ( bbp_is_single_user_edit() ) {
 			$scripts['bbpress-user'] = array(
-				'file'         => 'js/user' . $suffix . '.js',
+				'file'         => 'js/user.js',
 				'dependencies' => array( 'user-query' )
 			);
 		}
@@ -355,7 +359,7 @@ class BBP_Default extends BBP_Theme_Compat {
 		}
 
 		// Bail if user is not logged in
-		if ( !is_user_logged_in() ) {
+		if ( ! is_user_logged_in() ) {
 			bbp_ajax_response( false, __( 'Please login to make this topic a favorite.', 'bbpress' ), 301 );
 		}
 
@@ -364,7 +368,7 @@ class BBP_Default extends BBP_Theme_Compat {
 		$id      = !empty( $_POST['id'] ) ? intval( $_POST['id'] ) : 0;
 
 		// Bail if user cannot add favorites for this user
-		if ( !current_user_can( 'edit_user', $user_id ) ) {
+		if ( ! current_user_can( 'edit_user', $user_id ) ) {
 			bbp_ajax_response( false, __( 'You do not have permission to do this.', 'bbpress' ), 302 );
 		}
 
@@ -377,7 +381,7 @@ class BBP_Default extends BBP_Theme_Compat {
 		}
 
 		// Bail if user did not take this action
-		if ( !isset( $_POST['nonce'] ) || !wp_verify_nonce( $_POST['nonce'], 'toggle-favorite_' . $topic->ID ) ) {
+		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'toggle-favorite_' . $topic->ID ) ) {
 			bbp_ajax_response( false, __( 'Are you sure you meant to do that?', 'bbpress' ), 304 );
 		}
 
@@ -417,12 +421,12 @@ class BBP_Default extends BBP_Theme_Compat {
 	public function ajax_subscription() {
 
 		// Bail if subscriptions are not active
-		if ( !bbp_is_subscriptions_active() ) {
+		if ( ! bbp_is_subscriptions_active() ) {
 			bbp_ajax_response( false, __( 'Subscriptions are no longer active.', 'bbpress' ), 300 );
 		}
 
 		// Bail if user is not logged in
-		if ( !is_user_logged_in() ) {
+		if ( ! is_user_logged_in() ) {
 			bbp_ajax_response( false, __( 'Please login to subscribe to this topic.', 'bbpress' ), 301 );
 		}
 
@@ -431,7 +435,7 @@ class BBP_Default extends BBP_Theme_Compat {
 		$id      = intval( $_POST['id'] );
 
 		// Bail if user cannot add favorites for this user
-		if ( !current_user_can( 'edit_user', $user_id ) ) {
+		if ( ! current_user_can( 'edit_user', $user_id ) ) {
 			bbp_ajax_response( false, __( 'You do not have permission to do this.', 'bbpress' ), 302 );
 		}
 
@@ -444,7 +448,7 @@ class BBP_Default extends BBP_Theme_Compat {
 		}
 
 		// Bail if user did not take this action
-		if ( !isset( $_POST['nonce'] ) || !wp_verify_nonce( $_POST['nonce'], 'toggle-subscription_' . $topic->ID ) ) {
+		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'toggle-subscription_' . $topic->ID ) ) {
 			bbp_ajax_response( false, __( 'Are you sure you meant to do that?', 'bbpress' ), 304 );
 		}
 
