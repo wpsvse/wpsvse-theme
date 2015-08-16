@@ -1,6 +1,6 @@
 <?php do_action( 'bp_before_groups_loop' ); ?>
 
-<?php if ( bp_has_groups( bp_ajax_querystring( 'groups' ) . '&max=6' ) ) : ?>
+<?php if ( bp_has_groups( bp_ajax_querystring( 'groups' ) . '&max=4' ) ) : ?>
 
 	<?php do_action( 'bp_before_directory_groups_list' ); ?>
 
