@@ -235,7 +235,7 @@ select, .form-control, #messages_search {
   border-radius: 5px;
 }
 .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 5px !important;
   border: rgba(0, 0, 0, 0.05) solid 1px;
 }
@@ -245,7 +245,7 @@ select, .form-control, #messages_search {
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
 .dropdown-menu > .active > a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #000;
   color: #999;
   text-decoration: none;
 }
