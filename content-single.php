@@ -11,7 +11,7 @@
           <?php if ( has_post_thumbnail() ) { 
             the_post_thumbnail('post-image');
           } else { ?>
-            <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/default.jpg" alt="" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/default.jpg" alt="" />
           <?php } ?>
       </a>
         <div class="single-meta-comments"><?php comments_popup_link('0 kommentarer', '1 kommentar', '% kommentarer'); ?></div>

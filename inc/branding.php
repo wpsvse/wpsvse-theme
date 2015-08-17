@@ -9,7 +9,7 @@
 // Customize the login screen
 //**************************************************
 function wpsvse_custom_login_logo() {
-	$style = '<style type="text/css"> h1 a { background: transparent url(' . get_bloginfo('template_directory') . '/img/login-logo.png) no-repeat center top !important; padding-bottom: 70px!important; width: 260px!important;} </style>';
+	$style = '<style type="text/css"> h1 a { background: transparent url(' .  get_stylesheet_directory_uri() . '/img/login-logo.png) no-repeat center top !important; padding-bottom: 70px!important; width: 260px!important;} </style>';
 	echo $style;
 }
 add_action( 'login_head', 'wpsvse_custom_login_logo' );
@@ -18,7 +18,7 @@ add_action( 'login_head', 'wpsvse_custom_login_logo' );
 // Brand Adminbar
 //**************************************************
 function wpsvse_brand_logo() {
-    echo '<style type="text/css">@import url("' . get_bloginfo('stylesheet_directory') . '/css/wpsvse_adminbar.css");</style>';
+    echo '<style type="text/css">@import url("' . get_stylesheet_directory_uri() . '/css/wpsvse_adminbar.css");</style>';
 }
 
 //hook into the administrative header output
