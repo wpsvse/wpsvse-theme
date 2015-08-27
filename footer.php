@@ -84,6 +84,14 @@
 	<!-- Back to Top -->	
 	<a href="#" class="back-to-top" title="Till toppen"><i class="fa fa-arrow-up"></i></a>
 	<!-- End Back to Top -->
+	
+	<script type="text/javascript">
+	(function() {
+		var cl = document.createElement('script'); cl.type = 'text/javascript'; cl.async = true;
+		cl.src = document.location.protocol + '//www.adrecord.com/cl.php?u=5649&ref=' + document.location.hostname;
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cl, s);
+	})();
+	</script>
 
 <?php wp_footer(); ?>
 
