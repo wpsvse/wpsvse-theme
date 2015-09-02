@@ -2401,7 +2401,7 @@ article.post h1 a, article.wpsvse_blog h1 a {
   background: #fff;
   border: solid 1px #ddd;
   border-top: none;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 .twitter-container .nav > li,
 .twitter-container .nav > li:hover {
