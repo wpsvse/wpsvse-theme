@@ -592,11 +592,13 @@ div#message-outer {
 	color: #250;
 }
 #buddypress .standard-form#signup_form div div.error {
-	background: #faa;
-	color: #a00;
-	margin: 0 0 10px 0;
-	padding: 6px;
-	width: 90%;
+	background: #FFD7E1 none repeat scroll 0% 0%;
+	color: #A00;
+	margin: 0px 0px 10px;
+	padding: 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 #buddypress div.accept,
 #buddypress div.reject {
