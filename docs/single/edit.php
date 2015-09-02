@@ -1,7 +1,5 @@
 <div id="buddypress">
 
-	<?php include( bp_docs_locate_template( 'single/sidebar.php' ) ) ?>
-
 	<?php include( apply_filters( 'bp_docs_header_template', bp_docs_locate_template( 'docs-header.php' ) ) ) ?>
 
 	<?php
@@ -10,7 +8,7 @@
 
 	if ( !function_exists( 'wp_editor' ) ) {
 		require_once ABSPATH . '/wp-admin/includes/post.php' ;
-		wp_tiny_mce();
+		wp_editor();
 	}
 
 	?>
@@ -52,6 +50,7 @@
 						$wp_editor_args = apply_filters( 'bp_docs_wp_editor_args', array(
 							'media_buttons' => false,
 							'dfw'		=> false,
+							'quicktags' => false
 						) );
 						wp_editor( bp_docs_get_edit_doc_content(), 'doc_content', $wp_editor_args );
 					} else {

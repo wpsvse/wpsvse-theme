@@ -227,3 +227,8 @@ require get_template_directory() . '/inc/shortcodes.php';
  * Branding and adminbar functions
  */
 require get_template_directory() . '/inc/branding.php';
+
+/**
+ * Custom BuddyPress Docs
+ */
+// require get_template_directory() . '/inc/bp-doc-functions.php';

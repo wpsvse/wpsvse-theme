@@ -1,4 +1,4 @@
-<?php do_action( 'bp_docs_before_doc_header' ) ?>
+
 
 <?php do_action( 'bp_docs_before_doc_header_content' ) ?>
 
