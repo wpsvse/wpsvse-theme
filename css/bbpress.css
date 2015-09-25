@@ -120,6 +120,14 @@
 	list-style: none;
 }
 
+#bbpress-forums li ul li {
+	list-style: disc;
+}
+
+#bbpress-forums li ul li ul li{
+	list-style: circle;
+}
+
 #bbpress-forums .bbp-forums .status-category > .sub-divider > .bbp-forum-info {
 	padding: 0;
 	width: 100%;
@@ -985,6 +993,11 @@ div.reply.status-reported {
 	padding: 8px 0 0 0 !important;
 	font-size: 11px;
 	color: #aaa;
+}
+
+#bbpress-forums .bbp-topic-revision-log li,
+#bbpress-forums .bbp-reply-revision-log li {
+  list-style: none;
 }
 
 /* =Widgets
