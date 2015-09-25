@@ -1703,7 +1703,8 @@ li.buddypress-listing {
 }
 #buddypress ul.item-list .friendship-button {
   font-size: 0;
-  padding: 3px 6px;
+  padding: 1px 2px;
+  display: block;
 }
 #buddypress ul.item-list .friendship-button a.remove:before,
 #buddypress ul.item-list .friendship-button a.pending_friend:before {
