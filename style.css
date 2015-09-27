@@ -1276,9 +1276,6 @@ article.post.search-results {
   display: block;
   padding: 25px 0;
 }
-#quick-buttons h2 {
-  font-size: 23px;  
-}
 #quick-buttons a h2 {
   color: #000;
 }
@@ -2580,16 +2577,36 @@ ul.apps {
 	Responsive Fixes
 ============================================================================ */
 
-/* LG */
-@media handheld, only screen and (max-width:1199px) {}
+@media handheld, only screen and (max-width:1199px) {
+ #quick-buttons i {
+   float: none;
+ }
+ #quick-buttons a h2 {
+    clear: both;
+    margin-top: 10px;
+  }
+  .quick-link {
+    text-align: center;
+  }
+}
 
 /* MD */
 @media handheld, only screen and (max-width:991px) {
+ #quick-buttons i {
+   float: left;
+ }
+ #quick-buttons a h2 {
+    clear: none;
+    margin-top: 0;
+  }
+  .quick-link {
+    text-align: left;
+  }
   /* Resposnive menu */
   header#header .container {
     width: 100%;
   }
-  .navbar-header {
+    .navbar-header {
     float: none;
     position: static;
   }
