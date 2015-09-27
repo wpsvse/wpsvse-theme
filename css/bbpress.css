@@ -202,6 +202,7 @@
 #bbpress-forums .bbp-reply-content ul {
 	list-style: square;
 	padding-left: 15px;
+	padding-bottom: 10px;
 }
 
 #bbpress-forums .bbp-forum-content p {
