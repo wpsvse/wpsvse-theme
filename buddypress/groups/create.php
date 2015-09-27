@@ -24,6 +24,8 @@
 			<?php if ( bp_is_group_creation_step( 'group-details' ) ) : ?>
 
 				<?php do_action( 'bp_before_group_details_creation_step' ); ?>
+				
+				<?php if ( ! dynamic_sidebar( 'groups-creation-rules' ) ) : endif; ?>
 
 				<div>
 					<label for="group-name"><?php _e( 'Group Name (required)', 'buddypress' ); ?></label>
