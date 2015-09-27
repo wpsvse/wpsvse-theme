@@ -845,8 +845,8 @@ table.single-download-meta {
 	Codex
 ============================================================================ */
 div.docs-info-header {
-   background: none !important; 
-   padding: 0 !important; 
+   background: none !important;
+   padding: 0 !important;
 }
 .docs-filters {
   border: 1px solid #eee;
@@ -1275,6 +1275,9 @@ article.post.search-results {
 #quick-buttons .quick-link {
   display: block;
   padding: 25px 0;
+}
+#quick-buttons h2 {
+  font-size: 23px;  
 }
 #quick-buttons a h2 {
   color: #000;
@@ -2755,6 +2758,18 @@ ul.apps {
 	#bp-groups .item {
 		margin: 0 auto;
 	}
+  .bbp-topics .bbp-topic-counts,
+  .bbp-topics .bbp-topic-freshness {
+    display: none;
+  }
+  #bbpress-forums div.bbp-reply-author {
+    float: none;
+    clear: both;
+    margin: 0 auto;
+  }
+  #bbpress-forums div.bbp-reply-content {
+    margin-left: 0;
+  }
 }
 
 /* XS */
