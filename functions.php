@@ -144,8 +144,8 @@ function wpsvse_widgets_init() {
 		'description'   => 'Widgetfält som används för att visa regler för att skapa nya grupper.',
 		'before_widget' => '<div id="%1$s" class="box-shortcode box-info %2$s">',
 		'after_widget'  => '</div',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
 	) );
 }
 endif;
