@@ -658,16 +658,24 @@ div#message-outer {
 #buddypress .standard-form input[type=text] {
 	width: 75%;
 }
+#buddypress input#send-to-input {
+  clear: both;
+}
 #register-page .standard-form input[type=text],
 #register-page .standard-form input[type=password],
 #register-page .standard-form#signup_form textarea,
 #profile-edit-form input[type=text],
 #profile-edit-form input[type=password],
-#profile-edit-form textarea {
+#profile-edit-form textarea,
+#register-page .register-tos-content {
 	width: 100% !important;
 }
 #register-page .standard-form#signup_form textarea {
 	min-height: 150px;
+}
+#register-page .register-tos-content {
+	height: 250px;
+	overflow: scroll;
 }
 #register-page .standard-form input[type=password] {
 	margin: 0;

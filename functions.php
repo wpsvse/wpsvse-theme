@@ -143,8 +143,17 @@ function wpsvse_widgets_init() {
 		'id'            => 'groups-creation-rules',
 		'description'   => 'Widgetfält som används för att visa regler för att skapa nya grupper.',
 		'before_widget' => '<div id="%1$s" class="box-shortcode box-info %2$s">',
-		'after_widget'  => '</div',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'TOS Registrering', 'wpsvse' ),
+		'id'            => 'register-tos',
+		'description'   => 'Widgetfält som används för att visa webbplatsens förhållningsregler vid registrering.',
+		'before_widget' => '<div id="%1$s" class="register-tos-content %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title screen-reader-text">',
 		'after_title'   => '</h3>',
 	) );
 }
