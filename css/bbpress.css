@@ -410,7 +410,7 @@ li.bbp-header div.bbp-reply-content .subscription-toggle:before {
   content: "\f164";
 }
 
-#bbpress-forums .gdbbx-footer-meta a.d4p-bbt-quote-link {
+#bbpress-forums .gdbbx-footer-meta a.d4p-bbt-quote-link:before {
 	content: "\f10e";
 }
 
