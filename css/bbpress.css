@@ -354,10 +354,21 @@ li.bbp-header div.bbp-reply-content .subscription-toggle:before {
 	margin-right: 3px;
 }
 
+#bbpress-forums div.bbp-topic-content .bbp-signature,
+#bbpress-forums div.bbp-reply-content .bbp-signature {
+	margin: 15px 0;
+}
+
 #bbpress-forums div.bbp-topic-content .bbp-signature p,
 #bbpress-forums div.bbp-reply-content .bbp-signature p {
 	font-size: 11px;
 	color: #757575;
+}
+
+#bbpress-forums .bbp-attachments,
+#bbpress-forums .bbp-attachments-errors,
+#bbpress-forums .bbp-said-thanks {
+	border: 1px dotted #ddd;
 }
 
 #bbpress-forums .bbp-said-thanks h6 {
