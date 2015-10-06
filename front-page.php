@@ -293,13 +293,13 @@ get_header(); ?>
 				<div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
 						<i class="fa fa-thumb-tack"></i>
-						<h1><?php echo esc_html( $stats['topic_count'] ); ?><span>Ämnen</span></h1>
+						<h1><?php echo esc_html( $stats['reply_count'] ); ?><span>Ämnen</span></h1>
 					</div>
 				</div>
 				<div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
 						<i class="fa fa-comments"></i>
-						<h1><?php echo esc_html( $stats['reply_count'] ); ?><span>Svar</span></h1>
+						<h1><?php echo esc_html( $stats['topic_count'] ); ?><span>Svar</span></h1>
 					</div>
 				</div>
 
