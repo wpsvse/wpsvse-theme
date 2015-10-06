@@ -2900,9 +2900,12 @@ ul.apps {
   padding: 0;
 }
 .wp-caption {
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   margin-bottom: 1.5em;
   max-width: 100%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .wp-caption img[class*="wp-image-"] {
   display: block;
@@ -2913,7 +2916,12 @@ ul.apps {
   text-align: center;
 }
 .wp-caption .wp-caption-text {
-  margin: 0.8075em 0;
+  margin: 4px 0;
+  font-size: 12px;
+  color: #999;
+}
+.wp-caption .wp-caption-text a {
+	color: #999;
 }
 .site-main .gallery {
   margin-bottom: 1.5em;
