@@ -140,6 +140,7 @@
 
 .forum-list {
 	clear: both;
+	list-style: none !important;
 }
 
 #bbpress-forums ul.bbp-lead-topic,
@@ -330,6 +331,7 @@ li.bbp-header div.bbp-reply-content .subscription-toggle:before {
 #bbpress-forums div.bbp-reply-content .d4pbbc-quote {
 	background-color: #F9F9F9;
 	font-size: 13px;
+	padding: 15px;
 }
 
 #bbpress-forums div.bbp-topic-content .d4pbbc-quote p,
