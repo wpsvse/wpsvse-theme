@@ -76,3 +76,11 @@ function wpsvse_bbp_subscribe_as_default( $checked, $topic_subscribed  ) {
     return checked( $topic_subscribed, true, false );
 }
 add_filter( 'bbp_get_form_topic_subscribed', 'wpsvse_bbp_subscribe_as_default', 10, 2 );
+
+//**************************************************
+// Set KSES for superadmins for BP-groups
+//**************************************************
+if ( is_super_admin() ) {
+	remove_filter( 'groups_group_description_before_save', 'wp_filter_kses', 1 );
+	remove_filter( 'bp_get_group_description', 'bp_groups_filter_kses', 1 );
+}
