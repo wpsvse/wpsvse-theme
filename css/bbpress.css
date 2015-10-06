@@ -360,6 +360,60 @@ li.bbp-header div.bbp-reply-content .subscription-toggle:before {
 	color: #757575;
 }
 
+#bbpress-forums .bbp-said-thanks h6 {
+  font-size: 13px;
+  color: #999;
+}
+
+#bbpress-forums .bbp-said-thanks .bbp-thanks-list {
+	font-size: 12px;
+}
+
+#bbpress-forums .gdbbx-footer-meta {
+	background: none;
+}
+
+#bbpress-forums .gdbbx-footer-meta span.bbp-admin-links {
+  color: #fff;
+}
+
+#bbpress-forums .gdbbx-footer-meta .bbp-admin-links a {
+  padding: 6px 10px;
+  background: #f4f4f4;
+  border-radius: 4px;
+}
+
+#bbpress-forums .gdbbx-footer-meta .bbp-admin-links a:hover {
+  background: #2174A5;
+	color: #fff;
+}
+
+#bbpress-forums .gdbbx-footer-meta .bbp-admin-links a:before {
+	font-family: "fontawesome";
+	font-size: 13px;
+	margin-right: 3px;
+}
+
+#bbpress-forums .gdbbx-footer-meta a.d4p-bbt-dupe-topic-link:before {
+	content: "\f24d";
+}
+
+#bbpress-forums .gdbbx-footer-meta a.d4p-bbt-lock-link:before {
+  content: "\f023";
+}
+
+#bbpress-forums .gdbbx-footer-meta a.d4p-bbt-unthanks-link:before {
+  content: "\f087";
+}
+
+#bbpress-forums .gdbbx-footer-meta a.d4p-bbt-thanks-link:before {
+  content: "\f164";
+}
+
+#bbpress-forums .gdbbx-footer-meta a.d4p-bbt-quote-link {
+	content: "\f10e";
+}
+
 #bbpress-forums li.bbp-header .bbp-topic-author,
 #bbpress-forums li.bbp-footer .bbp-topic-author,
 #bbpress-forums li.bbp-header .bbp-reply-author,
