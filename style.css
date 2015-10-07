@@ -51,6 +51,14 @@ h4 {
   letter-spacing: -1px;
   color: #31363a;
 }
+.single-content h1,
+.single-content h2,
+.single-content h3,
+.single-content h4,
+.single-content h5,
+.single-content h6 {
+	margin-top: 25px;
+}
 p {
   font-size: 15px;
   line-height: 24px;
