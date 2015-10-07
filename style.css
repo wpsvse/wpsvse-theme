@@ -1228,7 +1228,6 @@ article.post.search-results {
 .container .sd-social-icon .sd-content ul li[class*='share-'] a, .container .sd-social-icon .sd-content ul li[class*='share-'] a:hover {
   position: static;
   top: 0;
-  box-shadow: inset 0px 0px 1px #333;
   height: 35px;
   width: 35px;
   line-height: 35px;
