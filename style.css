@@ -2098,9 +2098,10 @@ article.post img, article.wpsvse_blog img {
   padding: 25px 25px 0px 25px;
 }
 .post .single-entry-title, .wpsvse_blog .single-entry-title {
-  font-size: 28px;
+  font-size: 36px;
   text-shadow: none;
   padding: 25px 0 0;
+	margin-top: 0;
 }
 article.post h1 a, article.wpsvse_blog h1 a {
   font-weight: 300;
