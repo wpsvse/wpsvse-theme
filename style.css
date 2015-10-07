@@ -2922,6 +2922,9 @@ ul.apps {
 .wp-caption .wp-caption-text a {
 	color: #999;
 }
+#bbpress-forums .bbp-attachments li a {
+	color: #2174A5 !important;
+}
 .site-main .gallery {
   margin-bottom: 1.5em;
 }
