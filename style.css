@@ -1006,8 +1006,9 @@ span.bp-docs-date {
   width: 100%;
 }
 #bbpress-forums .bbp-attachments h6 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
+	color: #999;
 }
 .bbp-user-stats {
   margin-top: 20px;
