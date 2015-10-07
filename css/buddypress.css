@@ -285,7 +285,8 @@ body.activity-permalink #buddypress .activity-list li .activity-header > p {
 	float: none !important;
 }
 #buddypress a.bp-secondary-action,
-#buddypress span.highlight {
+#buddypress span.highlight,
+#buddypress a.wangguard-user-report {
 	font-size: 80%;
 	padding: 0;
 	margin-right: 5px;
