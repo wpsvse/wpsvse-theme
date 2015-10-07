@@ -34,6 +34,11 @@ get_header();
 					<?php the_content(); ?>
 				</div>
 			</div>
+		<div class="share-frame">
+			<?php if ( bbp_is_single_topic() ) :
+				if ( function_exists( 'sharing_display' ) ) echo sharing_display();
+			endif; ?>
+		</div>
 		</div>
 	</section>
 	<!-- End Page Content -->
