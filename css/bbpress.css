@@ -227,7 +227,7 @@
 	vertical-align: middle;
 }
 
-.bbp-topics li.bbp-forum-topic-count {
+#bbpress-forums li.bbp-forum-topic-count {
   padding-right: 0;
 }
 
