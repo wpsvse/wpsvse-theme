@@ -15,7 +15,7 @@ if ( file_exists(  __DIR__ .'/cmb2/init.php' ) ) {
 //**************************************************
 // Metaboxes for front page downloads
 //**************************************************
-add_action( 'cmb2_init', 'wpsvse_front_page_dl_metabox' );
+add_action( 'cmb2_admin_init', 'wpsvse_front_page_dl_metabox' );
 
 function wpsvse_front_page_dl_metabox() {
 	// Start with an underscore to hide fields from custom fields list
@@ -82,7 +82,7 @@ add_filter( 'cmb2_show_on', 'wpsvse_metabox_on_front_page', 10, 2 );
 //**************************************************
 // Repeatable metaboxes for FAQ pages
 //**************************************************
-add_action( 'cmb2_init', 'wpsvse_faq_page_field_groups' );
+add_action( 'cmb2_admin_init', 'wpsvse_faq_page_field_groups' );
 /**
  * Hook in and add a metabox to repeatable grouped fields
  */
