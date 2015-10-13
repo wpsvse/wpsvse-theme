@@ -9,6 +9,6 @@ global $dlm_download;
 	<?php printf( __( '%s ', 'download-monitor' ), $dlm_download->get_the_title() ); 
 	if ( $dlm_download->has_version_number() ) {
 		printf( __( '%s', 'download-monitor' ), $dlm_download->get_the_version_number() );
-	} ?>&nbsp;<?php if ( get_post_meta($dlm_download->ID, 'dlm_extra_att', true) !== '') { echo ' <p>' . get_post_meta($dlm_download->ID, 'dlm_extra_att', true) . '</p>'; } ?>
+	} ?>&nbsp;<?php if ( get_post_meta($dlm_download->id, '_dlm_meta_extra', true) !== '') { echo ' <p>' . get_post_meta($dlm_download->id, '_dlm_meta_extra', true) . '</p>'; } ?>
 	<br /><span>Det officiella paketet från wordpress.org</span>
 </a>

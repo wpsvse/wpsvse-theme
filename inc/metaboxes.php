@@ -47,6 +47,33 @@ function wpsvse_front_page_dl_metabox() {
 }
 
 //**************************************************
+// Metaboxes for downloads extra meta
+//**************************************************
+add_action( 'cmb2_admin_init', 'wpsvse_dlm_extra_meta' );
+
+function wpsvse_dlm_extra_meta() {
+	// Start with an underscore to hide fields from custom fields list
+	$prefix = '_dlm_meta_';
+	/**
+	 * Metabox to be displayed on the front page
+	 */
+	$cmb_dl_meta = new_cmb2_box( array(
+		'id'           => $prefix . 'metabox',
+		'title'        => __( 'Extra meta', 'wpsvse' ),
+		'object_types' => array( 'dlm_download', ), // Post type
+		'context'      => 'normal',
+		'priority'     => 'high',
+		'show_names'   => true, // Show field names on the left
+	) );
+	$cmb_dl_meta->add_field( array(
+		'name' => __( 'Extra filmeta', 'wpsvse' ),
+		'desc' => __( 'Extra filmeta för nedladdningar. Kan används för att skilja liknande nedladdningar, så som WordPress (Svenska) och (Internationell).', 'wpsvse' ),
+		'id'   => $prefix . 'extra',
+		'type' => 'text_medium',
+	) );
+}
+
+//**************************************************
 // Add CMB show_on filter for front page display
 //**************************************************
 function wpsvse_metabox_on_front_page( $display, $meta_box ) {
