@@ -1,0 +1,39 @@
+{
+  "name": "wpsvse",
+  "version": "1.0.0",
+  "description": "Huvudtema för WordPress Sverige ===============================",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcustisater/wpsvse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcustisater/wpsvse/issues"
+  },
+  "homepage": "https://github.com/marcustisater/wpsvse",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-colorguard": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-csscomb-lint": "0.0.2",
+    "gulp-csslint": "^0.2.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.2",
+    "gulp-uncss": "^1.0.4",
+    "gulp-watch": "^4.3.5"
+  },
+  "dependencies": {
+    "gulp-shorthand": "^1.1.0"
+  }
+}

@@ -16,7 +16,7 @@
   var saveClones = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i;
 
   /** Detect whether the browser supports default html5 styles */
-  var supportsHtml5Styles;
+  var supportsHtml5Styles;  
 
   /** Name of the expando, to work with multiple documents or to re-shiv one document */
   var expando = '_html5shiv';

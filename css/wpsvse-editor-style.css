@@ -1,9 +1,9 @@
 /*
  * WordPress Sverige editor styles
- * 
+ *
  * @package wpsvse
  */
- 
+
 body#tinymce pre {
   font-family: Consolas, Monaco, monospace;
   border: 1px dashed #ccc;

@@ -19,16 +19,16 @@ jQuery(document).ready(function($) {
 	$('#header-slider').carousel({
   		interval: 10000
 	})
-
+ 
 	// ***************************
 	// Magnific Popup trigger
-	// ***************************	
+	// ***************************
 	$('.lightbox').magnificPopup({
 			type:'image'
 	});
-	
+
 	// ***************************
-	// Backward compatibility 
+	// Backward compatibility
 	// and media inserts for
 	// Magnific Popup
 	// ***************************
@@ -53,13 +53,13 @@ jQuery(document).ready(function($) {
 	$(".bbp-topic-reply-link,.d4p-bbt-quote-link").click(function(){
 			$(".bbp-reply-form .collapse").collapse('toggle');
 	});
-	
+
 	// Show collapsed elemento on load
 	// for new topic page and .no-js class
 	$(function() {
 			$(".page-new-topic .bbp-topic-form .collapse,.no-js .bbp-topic-form .collapse,.no-js .bbp-reply-form .collapse,.reply-edit .bbp-reply-form .collapse,.topic-edit .bbp-topic-form .collapse,.topic-edit .bbp-reply-form .collapse").collapse('show');
 	});
-	
+
 	// Trigger show on hash url for accordion
 	location.hash && $(location.hash + '.collapse').collapse('show');
 

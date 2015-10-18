@@ -8,7 +8,7 @@ Hello, this is the BuddyPress Legacy stylesheet.
 	1.1 - Pagination
 2.0 - WordPress
 	2.1 - Images
-3.0 - BuddyPress
+3.0 - BuddyPress 
 	3.1 - Activity
 		3.1.1 - Activity Listing
 		3.1.2 - Activity Comments
@@ -1386,7 +1386,7 @@ div.register-section.wangguard {
 	background-color: #ffd;
 	border: 1px solid #cb2;
 	color: #440;
-	
+
 }
 #buddypress div#item-header {
 	overflow: hidden;
@@ -1820,8 +1820,8 @@ div#bbp-user-subscriptions {
 }
 
 .bp-avatar-nav ul {
-	border-bottom: none; 
-	margin-bottom: 0; 
+	border-bottom: none;
+	margin-bottom: 0;
   background-color: #f8f8f8;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1845,8 +1845,8 @@ div#bbp-user-subscriptions {
 }
 
 .bp-avatar-nav li.current a {
-	font-weight: normal; 
-	opacity: 1; 
+	font-weight: normal;
+	opacity: 1;
 	color: #fff;
 }
 

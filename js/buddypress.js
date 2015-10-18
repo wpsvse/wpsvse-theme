@@ -9,7 +9,7 @@ var bp_ajax_request = null;
 var newest_activities = '';
 var activity_last_recorded  = 0;
 
-jq(document).ready( function() {
+jq(document).ready( function() { 
 	/**** Page Load Actions *******************************************************/
 
 	/* Hide Forums Post Form */

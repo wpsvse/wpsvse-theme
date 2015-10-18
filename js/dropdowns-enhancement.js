@@ -14,7 +14,7 @@
         menuClass = 'dropdown-menu',
         subMenuClass = 'dropdown-submenu',
         namespace = '.bs.dropdown.data-api',
-        eventNamespace = '.bs.dropdown',
+        eventNamespace = '.bs.dropdown', 
         openClass = 'open',
         touchSupport = 'ontouchstart' in document.documentElement,
         opened;

@@ -18,7 +18,7 @@ add_action( 'login_head', 'wpsvse_custom_login_logo' );
 // Brand Adminbar
 //**************************************************
 function wpsvse_brand_logo() {
-    echo '<style type="text/css">@import url("' . get_stylesheet_directory_uri() . '/css/wpsvse_adminbar.css");</style>';
+    echo '<style type="text/css">@import url("' . get_stylesheet_directory_uri() . '/css/compressed/wpsvse_adminbar.min.css");</style>';
 }
 
 //hook into the administrative header output

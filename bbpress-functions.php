@@ -138,7 +138,7 @@ class BBP_Default extends BBP_Theme_Compat {
 
 		// LTR
 		$styles['bbp-default'] = array(
-			'file'         => 'css/bbpress.css',
+			'file'         => 'css/compressed/bbpress.min.css',
 			'dependencies' => array()
 		);
 
@@ -152,7 +152,7 @@ class BBP_Default extends BBP_Theme_Compat {
 
 		// Filter the scripts
 		$styles = apply_filters( 'bbp_default_styles', $styles );
-		
+
 		// Enqueue the styles
 		foreach ( $styles as $handle => $attributes ) {
 			bbp_enqueue_style( $handle, $attributes['file'], $attributes['dependencies'], $this->version, 'screen' );
