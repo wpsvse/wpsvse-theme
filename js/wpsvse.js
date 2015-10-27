@@ -62,6 +62,16 @@ jQuery(document).ready(function($) {
 	
 	// Trigger show on hash url for accordion
 	location.hash && $(location.hash + '.collapse').collapse('show');
+	
+	// Open extarnal links in new tab and add class
+	$('a').each(function() {
+      var a = new RegExp('/' + window.location.host + '/');
+      if (!a.test(this.href)) {
+      	$(this).attr("target","_blank");
+				$(this).attr("rel","external");
+				$(this).addClass('ext-link');
+      }
+   });
 
 });
 
