@@ -2194,6 +2194,66 @@ article.post h1 a, article.wpsvse_blog h1 a {
 }
 
 /* ==========================================================================
+  Translation projects
+============================================================================ */
+
+#translation-projects .project-entry-content {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #eee;
+}
+#translation-projects .project-entry-title {
+	padding-bottom: 8px;
+}
+#translation-projects .project-entry-title a {
+	color: #666;
+}
+#translation-projects span.fa-stack {
+	font-size: 24px;
+	float: right;
+}
+#translation-projects span.fa-stack .fa-circle {
+	color: #21759B;
+}
+#translation-projects .project-meta {
+  background-color: #21759B;
+	color: #fff;
+	padding: 0 8px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#translation-projects .project-meta div {
+  display: inline-block;
+	padding: 6px 8px;
+}
+#translation-projects .project-meta div a {
+  color: #fff;
+  font-size: 12px;
+}
+#translation-projects .project-meta a:hover {
+	color: #AFDBED;
+}
+#translation-projects .translation-user {
+	padding: 10px;
+	background-color: #f8f8f8;
+	border: 1px solid #eee;
+}
+#translation-projects .avatar {
+	float: left;
+	margin-right: 8px;
+	width: 64px;
+}
+#translation-projects .profile-link.wporg {
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+#translation-projects .profile-link.wpse {
+  font-size: 12px;
+}
+
+
+/* ==========================================================================
    Extra Features
 ============================================================================ */
 
