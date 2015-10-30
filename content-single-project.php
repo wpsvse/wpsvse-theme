@@ -35,9 +35,9 @@
 				<div class="project-meta">
 					<div class="project-type"><i class="fa fa-folder"></i> <?php echo get_the_term_list( $post->ID, 'wpsvse_project_type', '', '', '' ); ?></div>
 					<div class="project-sv-translate"><i class="fa fa-language"></i> <a href="https://translate.wordpress.org/locale/sv/default/<?php echo $project_type; ?>/<?php echo $project_id; ?>" title="Svenskt översättningsprojekt på WordPress.org">Visa översättningsprojekt</a></div>
-					<?php if ( !has_term( array ( 'meta','app','wordpress' ), 'wpsvse_project_type' ) ) { ?><div class="project-sv-repository"><i class="fa fa-wordpress"></i> <a href="https://sv.wordpress.org/<?php echo $project_page; ?>/<?php echo $project_id; ?>/" title="Tema/tillägg i katalogen på WordPress.org">I katalogen på WordPress.org</a></div><?php } ?>
+					<?php if ( !has_term( array ( 'meta','app','wordpress' ), 'wpsvse_project_type' ) ) { ?><div class="project-sv-repository"><i class="fa fa-wordpress"></i> <a href="https://sv.wordpress.org/<?php echo $project_page; ?>/<?php echo $project_id; ?>/" title="Tema/tillägg i katalogen på WordPress.org">Visa i katalogen på WordPress.org</a></div><?php } ?>
 				</div>
-        <div class="project-editors">
+        <div class="project-editors row">
 				<?php
 					// Find connected translators
 					$connected = new WP_Query( array(
@@ -51,7 +51,8 @@
 					?>
 					<ul>
 					<?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
-							<li class="col-md-4 translation-user">
+							<li class="col-md-4">
+							<div class="translation-user clearfix">
 								<?php 
 									$translation_user = get_post_meta($post->ID, '_wpsvse_translator_user_se', true);
 									$user = get_user_by( 'slug', $translation_user );
@@ -60,6 +61,7 @@
 								?>
 								<div class="profile-link wporg"><a href="https://profiles.wordpress.org/<?php the_title_attribute(); ?>" title="Profil på WordPress.org"><?php the_title(); ?></a></div>
 								<div class="profile-link wpse"><?php if ( $translation_user !='' ) { ?><a href="http://wpsv.se/medlemmar/<?php echo $translation_user; ?>/profile/" title="Profil på WordPress Sverige">@<?php echo $translation_user; ?></a> på wpsv.se<?php } else { ?><small><em>Ingen användare angiven för wpsv.se</em></small><?php } ?></div>
+							</div>
 							</li>
 					<?php endwhile; ?>
 					</ul>
