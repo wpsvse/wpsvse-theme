@@ -7,7 +7,8 @@
  * @package WordPress Sverige
  */
 
-get_header(); ?>
+get_header();
+query_posts( 'post_type=wpsvse_projects&orderby=title&order=ASC' ); ?>
 
     <section id="page-header" class="section">
 		<div class="container">
