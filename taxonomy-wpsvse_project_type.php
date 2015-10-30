@@ -7,8 +7,7 @@
  * @package WordPress Sverige
  */
 
-get_header();
-query_posts( 'post_type=wpsvse_projects&orderby=title&order=ASC' ); ?>
+get_header(); ?>
 
     <section id="page-header" class="section">
 		<div class="container">
@@ -26,19 +25,6 @@ query_posts( 'post_type=wpsvse_projects&orderby=title&order=ASC' ); ?>
 		<div class="container">
 			<div class="row">
         <div id="translation-projects" class="col-md-9">
-				
-				<form method="GET" id="translator-search">
-					<div>
-						<i class="fa fa-search"></i>
-						<label for="translator_search">Hitta projekt eller validerare</label>
-						<div class="input-group">
-							<input class="form-control input-lg" type="text" id="translator_search" name="translator_search" placeholder="Sök efter projekt eller validerare...">
-							<span class="input-group-btn">
-								<input type="submit" class="btn btn-primary input-lg" value="Sök">
-							</span>
-						</div>
-					</div>
-				</form>
 
 				<?php if ( $wp_query->have_posts() ) : ?>
 

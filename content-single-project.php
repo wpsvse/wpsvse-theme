@@ -35,7 +35,7 @@
 				<div class="project-meta">
 					<div class="project-type"><i class="fa fa-folder"></i> <?php echo get_the_term_list( $post->ID, 'wpsvse_project_type', '', '', '' ); ?></div>
 					<div class="project-sv-translate"><i class="fa fa-language"></i> <a href="https://translate.wordpress.org/locale/sv/default/<?php echo $project_type; ?>/<?php echo $project_id; ?>" title="Svenskt översättningsprojekt på WordPress.org">Visa översättningsprojekt</a></div>
-					<?php if ( !has_term( array ( 'meta','app','wordpress' ), 'wpsvse_project_type' ) ) { ?><div class="project-sv-repository"><i class="fa fa-wordpress"></i> <a href="https://sv.wordpress.org/<?php echo $project_page; ?>/<?php echo $project_id; ?>/" title="Tema/tillägg i katalogen på WordPress.org">I katalogen på WordPress.org</a></div><?php } ?>
+					<?php if ( !has_term( array ( 'meta','app','wordpress' ), 'wpsvse_project_type' ) ) { ?><div class="project-sv-repository"><i class="fa fa-wordpress"></i> <a href="https://sv.wordpress.org/<?php echo $project_page; ?>/<?php echo $project_id; ?>/" title="Tema/tillägg i katalogen på WordPress.org">Visa i katalogen på WordPress.org</a></div><?php } ?>
 				</div>
         <div class="project-editors row">
 				<?php
