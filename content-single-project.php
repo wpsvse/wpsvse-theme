@@ -7,19 +7,19 @@
  if ( has_term( 'tillagg', 'wpsvse_project_type' ) ) {
 	 $project_type = 'wp-plugins';
 	 $project_page = 'plugins';
-	 $project_icon = '<span class="fa-stack" title="Tillägg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-plug fa-stack-1x fa-inverse"></i></span> ';
+	 $project_icon = '<span class="fa-stack icon-plugin" title="Tillägg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-plug fa-stack-1x fa-inverse"></i></span> ';
  } elseif ( has_term( 'tema', 'wpsvse_project_type' ) ) {
 	 $project_type = 'wp-themes';
 	 $project_page = 'themes';
-	 $project_icon = '<span class="fa-stack" title="Tema"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i></span> ';
+	 $project_icon = '<span class="fa-stack icon-theme" title="Tema"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i></span> ';
  } elseif ( has_term( 'app', 'wpsvse_project_type' ) ) {
 	 $project_type = 'apps';
 	 $project_page = '';
-	 $project_icon = '<span class="fa-stack" title="App"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-tablet fa-stack-1x fa-inverse"></i></span> ';
+	 $project_icon = '<span class="fa-stack icon-app" title="App"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-tablet fa-stack-1x fa-inverse"></i></span> ';
  } elseif ( has_term( 'meta', 'wpsvse_project_type' ) ) {
 	 $project_type = 'meta';
 	 $project_page = '';
-	 $project_icon = '<span class="fa-stack" title="Meta"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-info-circle fa-stack-1x fa-inverse"></i></span> ';
+	 $project_icon = '<span class="fa-stack icon-meta" title="Meta"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-info-circle fa-stack-1x fa-inverse"></i></span> ';
  } elseif ( has_term( 'wordpress', 'wpsvse_project_type' ) ) {
 	 $project_type = 'wp';
 	 $project_page = '';

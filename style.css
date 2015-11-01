@@ -2212,13 +2212,34 @@ article.post h1 a, article.wpsvse_blog h1 a {
 }
 #translation-projects .project-entry-title a {
 	color: #666;
+	vertical-align: middle;
 }
 #translation-projects span.fa-stack {
 	font-size: 24px;
 	float: right;
 }
+#translation-projects .validator-project span.fa-stack {
+	font-size: 34px;
+	float: left;
+	margin-right: 3px;
+}
+#translation-projects .project-link-icons span.fa-stack {
+	font-size: 16px;
+}
 #translation-projects span.fa-stack .fa-circle {
 	color: #21759B;
+}
+#translation-projects span.fa-stack.icon-plugin .fa-circle {
+	color: #40685F;
+}
+#translation-projects span.fa-stack.icon-theme .fa-circle {
+	color: #4C4567;
+}
+#translation-projects span.fa-stack.icon-app .fa-circle {
+	color: #887D00;
+}
+#translation-projects span.fa-stack.icon-meta .fa-circle {
+	color: #666;
 }
 #translation-projects .project-meta {
   background-color: #21759B;
@@ -2249,6 +2270,12 @@ article.post h1 a, article.wpsvse_blog h1 a {
 	float: left;
 	margin-right: 8px;
 	width: 64px;
+}
+#translation-projects.validators .avatar {
+	width: 48px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	border-radius: 24px;
 }
 #translation-projects .profile-link.wporg {
   font-size: 18px;
