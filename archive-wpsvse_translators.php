@@ -8,7 +8,7 @@
  */
 
 get_header();
-query_posts( 'post_type=wpsvse_projects&orderby=title&order=ASC' ); ?>
+query_posts( 'post_type=wpsvse_translators&orderby=title&order=ASC' ); ?>
 
     <section id="page-header" class="section">
 		<div class="container">
@@ -25,7 +25,7 @@ query_posts( 'post_type=wpsvse_projects&orderby=title&order=ASC' ); ?>
 	<section id="page-full" class="section">
 		<div class="container">
 			<div class="row">
-        <div id="translation-projects" class="col-md-9">
+        <div id="translation-projects" class="col-md-9 validators">
 				
 				<div id="translator-search" class="row">
 				<form action="<?php echo esc_url( home_url( '/oversattningsprojekt/' ) ); ?>" class="col-md-6">
@@ -63,7 +63,7 @@ query_posts( 'post_type=wpsvse_projects&orderby=title&order=ASC' ); ?>
 					
 					<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 
-									<?php	get_template_part( 'content', 'projects' ); ?>
+									<?php	get_template_part( 'content', 'translators' ); ?>
 
 							<?php endwhile; ?>
 
