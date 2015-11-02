@@ -59,7 +59,7 @@
 							<div class="translation-user validator-project clearfix">
 								<?php echo $project_icon; ?>
 								<div class="profile-link wporg"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></div>
-								<div class="project-link-icons"><a href="https://translate.wordpress.org/locale/sv/default/<?php echo $project_type; ?>/<?php echo $project_id; ?>" title="Svenskt översättningsprojekt på WordPress.org"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-language fa-stack-1x fa-inverse"></i></span></a><?php if ( !has_term( array ( 'meta','app','wordpress' ), 'wpsvse_project_type' ) ) { ?><a href="https://sv.wordpress.org/<?php echo $project_page; ?>/<?php echo $project_id; ?>/" title="Tema/tillägg i katalogen på WordPress.org"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-wordpress fa-stack-1x fa-inverse"></i></span></a><?php } ?></div>
+								<div class="project-link-icons"><a href="https://translate.wordpress.org/locale/sv/default/<?php echo $project_type; ?>/<?php echo $project_id; ?>" title="Svenskt översättningsprojekt på WordPress.org"><i class="fa fa-language"></i></a><?php if ( !has_term( array ( 'meta','app','wordpress' ), 'wpsvse_project_type' ) ) { ?><a href="https://sv.wordpress.org/<?php echo $project_page; ?>/<?php echo $project_id; ?>/" title="Tema/tillägg i katalogen på WordPress.org"><i class="fa fa-wordpress"></i></a><?php } ?></div>
 							</div>
 							</li>
 					<?php endwhile; ?>
