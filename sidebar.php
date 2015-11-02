@@ -24,7 +24,7 @@
 			if ( ! dynamic_sidebar( 'blog-widgets' ) ) : endif;
 		} elseif ( 'post' == get_post_type() ) {
 			if ( ! dynamic_sidebar( 'news-widgets' ) ) : endif;
-		} elseif ( 'wpsvse_projects' == get_post_type() || 'wpsvse_translators' == get_post_type() ) {
+		} elseif ( 'wpsvse_projects' == get_post_type() || 'wpsvse_translators' == get_post_type() || is_post_type_archive('wpsvse_translators') || is_post_type_archive('wpsvse_projects') ) {
 			if ( ! dynamic_sidebar( 'translator-widgets' ) ) : endif;
 		} else {
 		if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
