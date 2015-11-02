@@ -59,7 +59,7 @@
 									$user_email = $user->user_email;
 									echo get_avatar( $user_email, 128 );
 								?>
-								<div class="profile-link wporg"><a href="https://profiles.wordpress.org/<?php the_title_attribute(); ?>" title="Profil på WordPress.org"><?php the_title(); ?></a></div>
+								<div class="profile-link wporg"><a href="https://profiles.wordpress.org/<?php the_title_attribute(); ?>" title="Profil på WordPress.org"><?php the_title(); ?></a> <a href="<?php the_permalink(); ?>" title="Visa valideringsprofil"><i class="fa fa-info-circle"></i></a></div>
 								<div class="profile-link wpse"><?php if ( $translation_user !='' ) { ?><a href="http://wpsv.se/medlemmar/<?php echo $translation_user; ?>/profile/" title="Profil på WordPress Sverige">@<?php echo $translation_user; ?></a> på wpsv.se<?php } else { ?><small><em>Ingen användare angiven för wpsv.se</em></small><?php } ?></div>
 							</div>
 							</li>

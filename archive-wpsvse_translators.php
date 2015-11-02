@@ -27,13 +27,15 @@ query_posts( 'post_type=wpsvse_translators&orderby=title&order=ASC' ); ?>
 			<div class="row">
         <div id="translation-projects" class="col-md-9 validators">
 				
+				<p class="tp-breadcrumbs"><a href="<?php echo esc_url( home_url( '/oversattning/' ) ); ?>">Översättning</a> <i class="fa fa-angle-right"></i> Översättningsvaliderare</p>
+				
 				<div id="translator-search" class="row">
 				<form action="<?php echo esc_url( home_url( '/oversattningsprojekt/' ) ); ?>" class="col-md-6">
 					<div>
 						<i class="fa fa-search"></i>
 						<label for="translator_search">Hitta projekt</label>
 						<div class="input-group">
-							<input class="form-control input-lg" type="text" id="translator_search" name="translator_search" placeholder="Sök efter projekt...">
+							<input class="form-control input-lg" type="text" id="translator_search" name="s" placeholder="Sök efter projekt...">
 							<span class="input-group-btn">
 								<input type="submit" class="btn btn-primary input-lg" value="Sök">
 							</span>
@@ -45,7 +47,7 @@ query_posts( 'post_type=wpsvse_translators&orderby=title&order=ASC' ); ?>
 						<i class="fa fa-search"></i>
 						<label for="translator_search">Hitta validerare</label>
 						<div class="input-group">
-							<input class="form-control input-lg" type="text" id="translator_search" name="translator_search" placeholder="Sök efter validerare...">
+							<input class="form-control input-lg" type="text" id="translator_search" name="s" placeholder="Sök efter validerare...">
 							<span class="input-group-btn">
 								<input type="submit" class="btn btn-primary input-lg" value="Sök">
 							</span>

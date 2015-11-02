@@ -2223,8 +2223,10 @@ article.post h1 a, article.wpsvse_blog h1 a {
 	float: left;
 	margin-right: 3px;
 }
-#translation-projects .project-link-icons span.fa-stack {
-	font-size: 16px;
+#translation-projects .project-link-icons i {
+	font-size: 20px;
+	padding-right: 8px;
+	color: #666;
 }
 #translation-projects span.fa-stack .fa-circle {
 	color: #21759B;
