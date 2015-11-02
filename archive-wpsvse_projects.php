@@ -30,24 +30,26 @@ query_posts( 'post_type=wpsvse_projects&orderby=title&order=ASC' ); ?>
 				<p class="tp-breadcrumbs"><a href="<?php echo esc_url( home_url( '/oversattning/' ) ); ?>">Översättning</a> <i class="fa fa-angle-right"></i> Översättningsprojekt</p>
 				
 				<div id="translator-search" class="row">
-				<form action="<?php echo esc_url( home_url( '/oversattningsprojekt/' ) ); ?>" class="col-md-6">
+				<form action="<?php echo esc_url( home_url( '/' ) ); ?>" class="col-md-6">
 					<div>
 						<i class="fa fa-search"></i>
 						<label for="translator_search">Hitta projekt</label>
 						<div class="input-group">
 							<input class="form-control input-lg" type="text" id="translator_search" name="s" placeholder="Sök efter projekt...">
+							<input type="hidden" name="post_type" value="wpsvse_projects" />
 							<span class="input-group-btn">
 								<input type="submit" class="btn btn-primary input-lg" value="Sök">
 							</span>
 						</div>
 					</div>
 				</form>
-				<form action="<?php echo esc_url( home_url( '/oversattningsvaliderare/' ) ); ?>" class="col-md-6">
+				<form action="<?php echo esc_url( home_url( '/' ) ); ?>" class="col-md-6">
 					<div>
 						<i class="fa fa-search"></i>
 						<label for="translator_search">Hitta validerare</label>
 						<div class="input-group">
 							<input class="form-control input-lg" type="text" id="translator_search" name="s" placeholder="Sök efter validerare...">
+							<input type="hidden" name="post_type" value="wpsvse_translators" />
 							<span class="input-group-btn">
 								<input type="submit" class="btn btn-primary input-lg" value="Sök">
 							</span>

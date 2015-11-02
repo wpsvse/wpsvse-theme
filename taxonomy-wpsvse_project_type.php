@@ -25,6 +25,8 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
         <div id="translation-projects" class="col-md-9">
+				
+				<p class="tp-breadcrumbs"><a href="<?php echo esc_url( home_url( '/oversattning/' ) ); ?>">Översättning</a> <i class="fa fa-angle-right"></i> <a href="<?php echo esc_url( home_url( '/oversattningsprojekt/' ) ); ?>">Översättningsprojekt</a> <i class="fa fa-angle-right"></i> Översättningsprojekt av typen &quot;<?php single_tag_title(); ?>&quot;</p>
 
 				<?php if ( $wp_query->have_posts() ) : ?>
 
