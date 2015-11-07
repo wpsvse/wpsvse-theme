@@ -15,59 +15,70 @@
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
  */
-if ( post_password_required() )
+if ( post_password_required() ) {
 	return;
+}
 ?>
 
 <div id="comments" class="comments-area">
 
-	<?php // You can start editing here -- including this comment! ?>
-
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
+		<h3 class="comments-title">
 			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'wpsvse' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+				$comments_number = get_comments_number();
+				if ( 1 === $comments_number ) {
+					/* translators: %s: post title */
+					printf( _x( 'One thought on &quot;%s&quot;', 'comments title', 'wpsvse' ), get_the_title() );
+				} else {
+					printf(
+						/* translators: 1: number of comments, 2: post title */
+						_nx(
+							'%1$s kommentar till &quot;%2$s&quot;',
+							'%1$s kommentarer till &quot;%2$s&quot;',
+							$comments_number,
+							'comments title',
+							'wpsvse'
+						),
+						number_format_i18n( $comments_number ),
+						get_the_title()
+					);
+				}
 			?>
-		</h2>
+		</h3>
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'wpsvse' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'wpsvse' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'wpsvse' ) ); ?></div>
-		</nav><!-- #comment-nav-above -->
-		<?php endif; // check for comment navigation ?>
+		<?php the_comments_navigation(); ?>
 
 		<ol class="comment-list">
 			<?php
-				/* Loop through and list the comments. Tell wp_list_comments()
-				 * to use wpsvse_comment() to format the comments.
-				 * If you want to override this in a child theme, then you can
-				 * define wpsvse_comment() and that will be used instead.
-				 * See wpsvse_comment() in inc/template-tags.php for more.
-				 */
-				wp_list_comments();
+				wp_list_comments( array( 'style' => 'ol','type' => 'comment','callback' => 'wpsvse_comments' ) );
 			?>
-		</ol><!-- .comment-list -->
+		</ol>
+		
+		<?php if ( ! empty($comments_by_type['pingback']) ) : ?>
+		<h4 id="pingbacks-header">Inkommande länkar</h4>
+		<ol id="ping-list">
+			<?php
+				wp_list_comments( array( 'type' => 'pingback','callback' => 'wpsvse_comments' ) );
+			?>
+		</ol>
+    <?php endif; ?>
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'wpsvse' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'wpsvse' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'wpsvse' ) ); ?></div>
-		</nav><!-- #comment-nav-below -->
-		<?php endif; // check for comment navigation ?>
+		<?php the_comments_navigation(); ?>
 
-	<?php endif; // have_comments() ?>
+	<?php endif; // Check for have_comments(). ?>
 
 	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'wpsvse' ); ?></p>
+		<p class="no-comments"><?php _e( 'Kommentarer inaktiverade.', 'wpsvse' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+	<?php
+		comment_form( array(
+			'title_reply_before' => '<h3 id="reply-title" class="comment-reply-title">',
+			'title_reply_after'  => '</h3>',
+		) );
+	?>
 
-</div><!-- #comments -->
+</div><!-- .comments-area -->

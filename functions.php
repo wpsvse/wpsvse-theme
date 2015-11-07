@@ -231,6 +231,11 @@ function wpsvse_mail_from_name( $name )
 }
 
 /**
+ * Custom callback function for comments.
+ */
+require get_template_directory() . '/inc/wpsvse_comments.php';
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
