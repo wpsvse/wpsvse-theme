@@ -2314,6 +2314,9 @@ article.post h1 a, article.wpsvse_blog h1 a {
 	font-size: 13px;
 	font-style: italic;
 }
+#comments #cancel-comment-reply-link {
+  font-size: 13px;
+}
 #comments .comment-respond label {
 	font-weight: normal;
 }
@@ -2344,6 +2347,10 @@ article.post h1 a, article.wpsvse_blog h1 a {
 }
 #comments #respond {
 	padding-top: 35px;
+}
+ol.comment-list #respond {
+  padding-left: 90px;
+  padding-top: 15px!important;
 }
 
 /* ==========================================================================
