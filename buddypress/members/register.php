@@ -46,7 +46,7 @@
 			/** This action is documented in bp-templates/bp-legacy/buddypress/activity/index.php */
 			do_action( 'template_notices' ); ?>
 
-			<p><?php _e( 'Registering for this site is easy. Just fill in the fields below, and we\'ll get a new account set up for you in no time.', 'buddypress' ); ?></p>
+			<p>Bli medlem på <?php bloginfo( 'name' ); ?>. Allt du behöver är en giltig e-postadress. Fyll i fälten nedan. Ett meddelande med en bekräftelelänk kommer att skickas till angiven e-postadress <em>(glöm inte att kolla i skräppostmappen om du inte fått något)</em>. Det kostar ingenting att bli medlem.</p>
 			
 			<div class="box-shortcode box-primary">
 			
@@ -146,10 +146,6 @@
 				do_action( 'bp_before_signup_profile_fields' ); ?>
 
 				<div class="register-section" id="register-profile">
-
-					<h2><?php _e( 'Profile Details', 'buddypress' ); ?></h2>
-					
-					<hr />
 
 					<?php /* Use the profile field loop to render input fields for the 'base' profile field group */ ?>
 					<?php if ( bp_is_active( 'xprofile' ) ) : if ( bp_has_profile( array( 'profile_group_id' => 1, 'fetch_field_data' => false ) ) ) : while ( bp_profile_groups() ) : bp_the_profile_group(); ?>
