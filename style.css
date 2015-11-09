@@ -466,7 +466,7 @@ select,
   top: 168px;
 }
 input[type=text], .form-inline input, .form-control {
-  border: 1px solid rgba(0, 0, 0.5);
+  border: 1px solid #ccc;
 }
 
 /* Shortcodes */
