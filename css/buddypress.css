@@ -270,6 +270,9 @@ body.activity-permalink #buddypress .activity-list li .activity-header > p {
 #buddypress .activity-list .activity-content .activity-header img.avatar {
 	float: none !important;
 }
+.bp-user #buddypress a.wangguard-user-report {
+  font-size: 100% !important;
+}
 #buddypress a.bp-secondary-action,
 #buddypress span.highlight,
 #buddypress .activity-meta a.wangguard-user-report {
@@ -1021,6 +1024,7 @@ div.register-section.wangguard {
   border-bottom-left-radius: 5px;
   opacity: 100 !important;
   font-size: 13px !important;
+	width: 100% !important;
 }
 
 #profile-edit-form .gdbbx-signature-form > textarea.signature {
@@ -1828,6 +1832,10 @@ div#bbp-user-subscriptions {
 	font-weight: normal; 
 	opacity: 1; 
 	color: #fff;
+}
+
+#buddypress #item-body table.profile-fields {
+  margin-bottom: 25px;
 }
 
 /*--------------------------------------------------------------
