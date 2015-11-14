@@ -1758,3 +1758,12 @@ function bp_legacy_theme_ajax_messages_star_handler() {
 	echo '-1';
 	die();
 }
+
+/**
+ * Disable profile textarea editor 
+ */
+function wpsvse_bp_no_profile_editor($richtext_enabled) {
+	$richtext_enabled = false;
+	return $richtext_enabled;
+}
+add_filter( 'bp_xprofile_is_richtext_enabled_for_field', 'wpsvse_bp_no_profile_editor' );
