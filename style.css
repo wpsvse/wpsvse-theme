@@ -544,7 +544,8 @@ ul.EnlighterJS {
 #wp-link-submit,
 .mce-primary button,
 #comments .comment-meta a.comment-reply-link,
-#comments .comment-respond .submit { /* Bootstrap "btn" class */
+#comments .comment-respond .submit,
+#buddypress ul.button-nav li.current a { /* Bootstrap "btn" class */
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -575,7 +576,8 @@ ul.EnlighterJS {
 #wp-link-submit,
 .mce-primary button,
 #comments .comment-meta a.comment-reply-link,
-#comments .comment-respond .submit {
+#comments .comment-respond .submit,
+#buddypress ul.button-nav li.current a {
   background-color: #21759b;
 	color: #fff;
 }
@@ -595,7 +597,8 @@ ul.EnlighterJS {
 #bp-create-doc-button:hover, #bp-create-doc-button:focus, #bp-create-doc-button:active,
 #wp-link-submit:hover, #wp-link-submit:focus, #wp-link-submit:active,
 #comments .comment-meta a.comment-reply-link:hover, #comments .comment-meta a.comment-reply-link:focus, #comments .comment-meta a.comment-reply-link:active,
-#comments .comment-respond .submit:hover, #comments .comment-respond .submit:focus, #comments .comment-respond .submit:active {
+#comments .comment-respond .submit:hover, #comments .comment-respond .submit:focus, #comments .comment-respond .submit:active,
+#buddypress ul.button-nav li.current a:hover, #buddypress ul.button-nav li.current a:focus, #buddypress ul.button-nav li.current a:active {
   background-color: #333;
   border-color: #000;
 }
