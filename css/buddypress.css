@@ -594,11 +594,11 @@ div#message-outer {
 	margin: 0 10px 10px 0;
 	list-style: none;
 }
-#buddypress ul.button-nav li.current a {
-	padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
+#buddypress ul.button-nav li a {
+	padding: 5px 10px !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  border-radius: 3px !important;
 }
 #sitewide-notice #message {
 	left: 2%;
