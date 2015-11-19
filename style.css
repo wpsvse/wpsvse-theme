@@ -545,7 +545,7 @@ ul.EnlighterJS {
 .mce-primary button,
 #comments .comment-meta a.comment-reply-link,
 #comments .comment-respond .submit,
-#buddypress ul.button-nav li.current a { /* Bootstrap "btn" class */
+#buddypress ul.button-nav li a { /* Bootstrap "btn" class */
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
