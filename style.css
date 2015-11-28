@@ -2369,16 +2369,30 @@ ol.comment-list #respond {
   margin-bottom: 35px;
   border-bottom: 1px solid #eee;
 }
+#translation-projects .project-header {
+  background-color: #21759b;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 3px solid #ccc;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 #translation-projects .project-entry-title {
-	padding-bottom: 8px;
+	font-size: 16px;
+  margin: 0;
 }
 #translation-projects .project-entry-title a {
-	color: #666;
+	color: #fff;
 	vertical-align: middle;
 }
 #translation-projects span.fa-stack {
-	font-size: 24px;
+	font-size: 15px;
 	float: right;
+	margin-top: -6px;
 }
 #translation-projects .validator-project span.fa-stack {
 	font-size: 34px;
@@ -2391,44 +2405,35 @@ ol.comment-list #respond {
 	color: #666;
 }
 #translation-projects span.fa-stack .fa-circle {
+	color: #fff;
+}
+#translation-projects span.fa-stack .fa-inverse {
 	color: #21759B;
 }
-#translation-projects span.fa-stack.icon-plugin .fa-circle {
-	color: #40685F;
-}
-#translation-projects span.fa-stack.icon-theme .fa-circle {
-	color: #4C4567;
-}
-#translation-projects span.fa-stack.icon-app .fa-circle {
-	color: #887D00;
-}
-#translation-projects span.fa-stack.icon-meta .fa-circle {
-	color: #666;
-}
 #translation-projects .project-meta {
-  background-color: #21759B;
-	color: #fff;
-	padding: 0 8px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	margin-bottom: 10px;
+	background-color: #f4f4f4;
+  color: #21759B;
+  padding: 0 8px;
 }
 #translation-projects .project-meta div {
   display: inline-block;
 	padding: 6px 8px;
 }
 #translation-projects .project-meta div a {
-  color: #fff;
+  color: #747474;
   font-size: 12px;
 }
 #translation-projects .project-meta a:hover {
-	color: #AFDBED;
+	color: #999;
 }
 #translation-projects .translation-user {
 	padding: 10px;
-	background-color: #f8f8f8;
+	background-color: #fff;
 	border: 1px solid #eee;
+	border-top: none !important;
+}
+#translation-projects li:nth-child(even) .translation-user {
+	background-color: #f8f8f8;
 }
 #translation-projects .avatar {
 	float: left;
