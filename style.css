@@ -2389,8 +2389,9 @@ ol.comment-list #respond {
 }
 #translation-projects span.fa-stack {
 	font-size: 15px;
-	float: right;
+	float: left;
 	margin-top: -6px;
+	margin-right: 8px;
 }
 #translation-projects .validator-project span.fa-stack {
 	font-size: 34px;
@@ -2399,14 +2400,23 @@ ol.comment-list #respond {
 }
 #translation-projects .project-link-icons i {
 	font-size: 20px;
-	padding-right: 8px;
 	color: #666;
+}
+#translation-projects .project-link-icons a {
+  font-size: 13px;
+  padding-right: 15px;
 }
 #translation-projects span.fa-stack .fa-circle {
 	color: #fff;
 }
 #translation-projects span.fa-stack .fa-inverse {
 	color: #21759B;
+}
+#translation-projects .translation-user span.fa-stack .fa-circle {
+	color: #21759B;
+}
+#translation-projects .translation-user span.fa-stack .fa-inverse {
+	color: #fff;
 }
 #translation-projects .project-meta {
 	background-color: #f4f4f4;
@@ -2442,10 +2452,11 @@ ol.comment-list #respond {
 	border-radius: 32px;
 }
 #translation-projects.validators .avatar {
-	width: 48px;
-	-webkit-border-radius: 24px;
-	-moz-border-radius: 24px;
-	border-radius: 24px;
+  width: 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  margin-top: -3px;
 }
 #translation-projects .profile-link.wporg {
   font-size: 18px;
