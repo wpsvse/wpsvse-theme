@@ -2365,9 +2365,7 @@ ol.comment-list #respond {
   margin: 0 0 1.5em;
 }
 #translation-projects .project-entry-content {
-  padding-bottom: 35px;
-  margin-bottom: 35px;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 50px;
 }
 #translation-projects .project-header {
   background-color: #21759b;
@@ -2439,6 +2437,9 @@ ol.comment-list #respond {
 	float: left;
 	margin-right: 8px;
 	width: 64px;
+	-webkit-border-radius: 32px;
+	-moz-border-radius: 32px;
+	border-radius: 32px;
 }
 #translation-projects.validators .avatar {
 	width: 48px;
