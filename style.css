@@ -138,6 +138,17 @@ select,
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+ol#ping-list {
+  list-style: none;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+li.pingback {
+  border: 1px solid #eee;
+  padding: 4px 8px;
+	margin-bottom: 4px;
+	border-radius: 4px;
+}
 #messages_search {
 	display: inline-block;
 	width: 165px;
