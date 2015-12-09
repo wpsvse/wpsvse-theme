@@ -74,7 +74,7 @@ $previous_versions = '';
 					),
 					'date' => array(
 						'name'     => __( 'Upplagd', 'dlm_page_addon' ),
-						'value'    => date_i18n( get_option( 'date_format' ), strtotime( $dlm_download->post->post_date ) ),
+						'value'    => date_i18n( get_option( 'date_format' ), strtotime( $dlm_download->post->post_modified ) ),
 						'priority' => 4
 					),
 					'downloaded' => array(
