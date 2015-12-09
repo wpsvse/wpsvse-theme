@@ -1279,7 +1279,11 @@ article.post.search-results {
   padding: 20px 0 10px 0;
 }
 .sd-content ul li {
+  position: relative;
   vertical-align: middle;
+}
+.sd-social-icon .sd-button span.share-count {
+  right: 4px;
 }
 .sd-social-icon .sd-content ul li[class*='share-'] a.sd-button.share-custom {
   padding: 10px 8px 6px 8px !important;
