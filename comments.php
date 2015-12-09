@@ -54,14 +54,11 @@ if ( post_password_required() ) {
 			?>
 		</ol>
 		
-		<?php if ( ! empty($comments_by_type['pingback']) ) : ?>
-		<h4 id="pingbacks-header">Inkommande länkar</h4>
 		<ol id="ping-list">
 			<?php
-				wp_list_comments( array( 'type' => 'pingback','callback' => 'wpsvse_comments' ) );
+				wp_list_comments( array( 'style' => 'ol','type' => 'pings','callback' => 'wpsvse_comments' ) );
 			?>
 		</ol>
-    <?php endif; ?>
 
 		<?php the_comments_navigation(); ?>
 

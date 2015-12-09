@@ -14,7 +14,7 @@ function wpsvse_comments( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li <?php comment_class(); ?>>
-		<p><?php comment_author_link(); ?> <?php edit_comment_link( 'Redigera', ' - ', '' ); ?></p>
+		Ping <?php comment_author_link(); ?> <?php edit_comment_link( 'Redigera', ' - ', '' ); ?>
 	<?php
 		break;
 		default :
