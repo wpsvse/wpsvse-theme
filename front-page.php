@@ -255,7 +255,7 @@ get_header(); ?>
 
             <div class="forum-widget new-bbp-post">
             <h3>Ställ en fråga</h3>
-              <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett inlägg med din fråga nu&hellip;</p>
+              <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett ämne med din fråga nu&hellip;</p>
               <!-- Start BBPRESS NEW POST BUTTON -->
               <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</a>
               <!-- End BBPRESS NEW POST BUTTON -->
@@ -358,19 +358,18 @@ get_header(); ?>
 
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
-              <li class="active"><a href="#wpsvse-twitter" role="tab" data-toggle="tab">@WPSverige</a></li>
-              <li><a href="#wpse-twitter" role="tab" data-toggle="tab">#wpse</a></li>
+              <li class="active"><a href="#wpse-twitter" role="tab" data-toggle="tab">#wpse</a></li>
+              <li><a href="#wpsvse-twitter" role="tab" data-toggle="tab">@WPSverige</a></li>
           </ul>
 
-                  <!-- Tab panes -->
+          <!-- Tab panes -->
           <div class="tab-content">
-              <div class="tab-pane text-center active" id="wpsvse-twitter">
-                <a class="twitter-timeline" width="100%" href="https://twitter.com/WPSverige" data-widget-id="498245749222543361" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">Tweets by @WPSverige</a>
-  					    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-              </div>
-
-              <div class="tab-pane text-center" id="wpse-twitter">
+              <div class="tab-pane text-center active" id="wpse-twitter">
                 <a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="498246358826897408" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">#wpse Tweets</a>
+              </div>
+              <div class="tab-pane text-center" id="wpsvse-twitter">
+                <a class="twitter-timeline" width="100%" href="https://twitter.com/WPSverige" data-widget-id="498245749222543361" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">Tweets by @WPSverige</a>
+  				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
               </div>
           </div>
 		</div>
