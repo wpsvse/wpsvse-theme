@@ -97,7 +97,7 @@ $previous_versions = '';
 				$priority = sizeof( $download_meta );
 
 				foreach ( get_post_custom( $dlm_download->id ) as $key => $meta ) {
-					if ( strpos( $key, '_' ) === 0 )
+					if ( strpos( $key, '_' ) === 0 || strpos( $key, 'afap_auto_post' ) === 0 )
 						continue;
 
 					$download_meta[ $key ] = array(
