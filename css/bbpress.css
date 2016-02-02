@@ -1612,4 +1612,4 @@ body.my-account #bbpress-forums {
 }
 /* Enlighter row fix */
 ol.gitEnlighterJS, ol.mochaEnlighterJS, ol.tuttiEnlighterJS, ol.twilightEnlighterJS{ list-style-type: decimal!important; }
-ol.gitEnlighterJS.hoverEnabled li:hover, ul.gitEnlighterJS.hoverEnabled li:hover{ background-color: #DDF2FF; }
+ol.gitEnlighterJS.hoverEnabled li:hover, ul.gitEnlighterJS.hoverEnabled li:hover{ background-color: #DDF2FF!important; }
