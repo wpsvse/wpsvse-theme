@@ -332,7 +332,7 @@ li.bbp-header div.bbp-reply-content .subscription-toggle:before {
 #bbpress-forums div.bbp-topic-content p,
 #bbpress-forums div.bbp-reply-content p {
 	font-size: 14px;
-	line-height: normal;	
+	line-height: normal;
 }
 
 #bbpress-forums div.bbp-topic-content .d4pbbc-quote,
@@ -723,7 +723,7 @@ a.bbpl_button.liked {
 		background-color: #333;
 		color: #fff;
 	}
-		
+
 .home .bbp-pagination {
 	display: none;
 }
@@ -1391,7 +1391,7 @@ body.my-account #bbpress-forums {
 	-webkit-box-shadow: inset 0px 0px 1px 1px #f8f8f8;
 	box-shadow: inset 0px 0px 1px 1px #f8f8f8;
 }
-	
+
 #bbpress-forums .bbp-forums-list .bbp-forum-title-container  {
 	width: 60%;
 	display: block;
@@ -1484,8 +1484,8 @@ body.my-account #bbpress-forums {
 #bbpress-forums .bbp-replies {
 }
 
-#bbpress-forums .status-category > .sub-divider > .bbp-forum-topic-count, 
-#bbpress-forums .status-category > .sub-divider > .bbp-forum-reply-count, 
+#bbpress-forums .status-category > .sub-divider > .bbp-forum-topic-count,
+#bbpress-forums .status-category > .sub-divider > .bbp-forum-reply-count,
 #bbpress-forums .status-category > .sub-divider > .bbp-forum-freshness {
 	display: none;
 }
@@ -1610,3 +1610,6 @@ body.my-account #bbpress-forums {
 #latest-forum-sidebar .widget_tag_cloud a:hover {
 	background-color: #333;
 }
+/* Enlighter row fix */
+ol.gitEnlighterJS, ol.mochaEnlighterJS, ol.tuttiEnlighterJS, ol.twilightEnlighterJS{ list-style-type: decimal!important; }
+ol.gitEnlighterJS.hoverEnabled li:hover, ul.gitEnlighterJS.hoverEnabled li:hover{ background-color: #DDF2FF; }
