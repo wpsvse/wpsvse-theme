@@ -22,15 +22,6 @@
 											<li><i class="fa fa-lock"></i> Stängt/låst ämne</li>
 									</ul>
                 </div>
-                <div class="col-md-5 app-note">
-                    <p><small>Smidigare forumupplevelse med <strong>Tapatalk</strong></small></p>
-                    <p>
-                      <a href="https://play.google.com/store/apps/details?id=com.quoord.tapatalkpro.activity" class="btn btn-android"><i class="fa fa-android"></i> Android</a> 
-                      <a href="https://itunes.apple.com/se/app/tapatalk-community-reader/id307880732?mt=8" class="btn btn-apple"><i class="fa fa-apple"></i> iOS</a> 
-                      <a href="http://www.windowsphone.com/sv-se/store/app/tapatalk/913ffd61-3ba0-435c-a894-9d3ec7e78d6e" class="btn btn-wphone"><i class="fa fa-windows"></i> Windows Phone</a> 
-                      <a href="http://apps.microsoft.com/windows/sv-se/app/0ea0706f-33ea-4842-8706-77e89cecda16" class="btn btn-windows"><i class="fa fa-windows"></i> Windows 8</a>
-                    </p>
-                </div>
             <?php } ?>
             </div>
         </div>
@@ -59,7 +50,7 @@
             </ul>
 					</div>
 				</div>
-			</div>		
+			</div>
 		</div>
 	</section>
 	<!-- End Footer Widgets -->
@@ -81,10 +72,10 @@
 	</footer>
 	<!-- End Footer -->
 
-	<!-- Back to Top -->	
+	<!-- Back to Top -->
 	<a href="#" class="back-to-top" title="Till toppen"><i class="fa fa-arrow-up"></i></a>
 	<!-- End Back to Top -->
-	
+
 	<script type="text/javascript">
 	(function() {
 		var cl = document.createElement('script'); cl.type = 'text/javascript'; cl.async = true;

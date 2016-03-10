@@ -23,7 +23,7 @@ get_header(); ?>
 								<div id="dl-btns">
 									<?php // Get main download IDs
 									$dlsvse = get_post_meta($post->ID, '_dl_meta_sv_se', true);
-									$dlinter = get_post_meta($post->ID, '_dl_meta_inter', true); 
+									$dlinter = get_post_meta($post->ID, '_dl_meta_inter', true);
 									?>
 									<div class="col-md-6 dl-btn-sv">
 										<?php echo do_shortcode('[download id="'. $dlsvse .'" template="front"]'); ?>
@@ -34,9 +34,9 @@ get_header(); ?>
 									<p class="col-md-12"><a href="<?php echo esc_url( home_url( '/filer/information-for-filer/' ) ); ?>" class="extra-download-link">Behöver du andra format? Information för filer &rarr;</a></p>
 								</div>
             </section>
-						
+
 					<?php endwhile; ?>
-					
+
           </div>
         </section>
         <!-- End welcome -->
@@ -221,15 +221,6 @@ get_header(); ?>
 			<div class="row">
 
         <div class="latest-forum-topics col-md-9">
-          <div class="tapatalk-note hidden-md hidden-lg">
-            <p>Du vet väl att vårt forum har stöd för appen <strong>Tapatalk</strong>! Ladda ner Tapatalk för din enhet.</p>
-            <p>
-              <a href="https://play.google.com/store/apps/details?id=com.quoord.tapatalkpro.activity" class="btn btn-android"><i class="fa fa-android"></i> Android</a>
-              <a href="https://itunes.apple.com/se/app/tapatalk-community-reader/id307880732?mt=8" class="btn btn-apple"><i class="fa fa-apple"></i> iOS</a>
-              <a href="http://www.windowsphone.com/sv-se/store/app/tapatalk/913ffd61-3ba0-435c-a894-9d3ec7e78d6e" class="btn btn-wphone"><i class="fa fa-windows"></i> Windows Phone</a>
-              <a href="http://apps.microsoft.com/windows/sv-se/app/0ea0706f-33ea-4842-8706-77e89cecda16" class="btn btn-windows"><i class="fa fa-windows"></i> Windows 8</a>
-            </p>
-          </div>
           <!-- Start LATEST FORUM POSTS -->
             <?php bbp_get_template_part( 'content-latest-topics' ); ?>
           <!-- End LATEST FORUM POSTS -->
@@ -365,11 +356,11 @@ get_header(); ?>
           <!-- Tab panes -->
           <div class="tab-content">
               <div class="tab-pane text-center active" id="wpse-twitter">
-                <a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="498246358826897408" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">#wpse Tweets</a>
+                <a class="twitter-timeline" href="https://twitter.com/hashtag/wpse" data-widget-id="498246358826897408">#wpse tweets</a>
               </div>
               <div class="tab-pane text-center" id="wpsvse-twitter">
-                <a class="twitter-timeline" width="100%" href="https://twitter.com/WPSverige" data-widget-id="498245749222543361" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">Tweets by @WPSverige</a>
-  				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <a class="twitter-timeline" href="https://twitter.com/WPSverige" data-widget-id="498245749222543361">Tweets av @WPSverige</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
               </div>
           </div>
 		</div>
