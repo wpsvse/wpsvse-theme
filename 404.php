@@ -24,9 +24,9 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
       <span class="back-headline">404</span>
-        <div class="col-md-12">  	
+        <div class="col-md-12">
         	<h2>Oops! Sidan kunde inte hittas</h2>
-          <p>Den här sidan laddade troligen inte det du förväntade dig, men bara lugn. Du kan ta dig vidare genom att använda huvudmenyn eller sökfältet längst upp till höger på sidan. Annars kanske någon av följande länkar kan hjälpa dig.</p>  
+          <p>Den här sidan laddade troligen inte det du förväntade dig, men bara lugn. Du kan ta dig vidare genom att använda huvudmenyn eller sökfältet längst upp till höger på sidan. Annars kanske någon av följande länkar kan hjälpa dig.</p>
         </div>
         <section id="latest-news">
         <div class="col-md-12">
@@ -36,15 +36,15 @@ get_header(); ?>
         <!-- Start NEWS LOOP -->
         <?php // WP_Query arguments
           $news_args = array ( 'posts_per_page' => '3' );
-  
+
           // The Query
           $news_query = new WP_Query( $news_args );
-  
+
           // The Loop
           if ( $news_query->have_posts() ) {
             while ( $news_query->have_posts() ) {
               $news_query->the_post(); ?>
-  
+
               <div class="col-md-4 article-item">
                   <article>
                     <div class="news-meta">
@@ -64,10 +64,10 @@ get_header(); ?>
                     </div>
                   </article>
               </div>
-  
+
           <?php  }
           }
-  
+
           // Restore original Post Data
           wp_reset_postdata(); ?>
         <!-- End NEWS LOOP -->
@@ -77,11 +77,11 @@ get_header(); ?>
         	<h2>Senaste aktiviteten i portalen</h2>
         </div>
         <section class="error-404-widgets">
-        	<?php if ( ! dynamic_sidebar( 'error-404' ) ) : endif;?>
+        	<?php if ( ! dynamic_sidebar( 'error-404' ) ) : endif; ?>
         </section>
 			</div>
 		</div>
 	</section>
 	<!-- End Page Content -->
-    
+
 <?php get_footer(); ?>
