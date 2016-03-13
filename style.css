@@ -3680,3 +3680,40 @@ img.mfp-img {
 .infinity-end.neverending .site-footer {
   display: block;
 }
+
+/* =Slack
+----------------------------------------------- */
+
+.invitations-for-slack-wrapper, .invite-box-wrapper {
+  padding-bottom: 25px!important;
+}
+
+.invitations-for-slack-wrapper .join-button {
+  font-size: 24px!important;
+  height: auto!important;
+  padding: 4px 25px 4px 50px!important;
+  font-family: inherit!important;
+}
+
+.slackbadge_container .button, .invitations-for-slack-wrapper .button, .invite-box-wrapper .button {
+  background: #21759B!important;
+  border: none!important;
+}
+
+.invitations-for-slack-wrapper .button:hover {
+  background: #333!important;
+}
+
+.invitations-for-slack-wrapper .join-button:after {
+  width: 24px!important;
+  height: 24px!important;
+  left: 15px!important;
+}
+
+.invitations-for-slack-wrapper .team-numbers {
+  font-size: 24px!important;
+}
+
+.invite-box-wrapper {
+  width: 387px!important;
+}

@@ -83,6 +83,8 @@ if ( ! function_exists( 'wpsvse_widgets_init' ) ) :
 /**
  * Register widgetized area and update sidebar with default widgets
  */
+add_filter('widget_text', 'do_shortcode');
+
 function wpsvse_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidofält', 'wpsvse' ),
