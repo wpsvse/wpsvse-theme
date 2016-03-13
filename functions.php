@@ -28,12 +28,12 @@ function wpsvse_setup() {
 	 * to change 'wpsvse' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'wpsvse', get_template_directory() . '/languages' );
-	
+
 	/**
 	 * Always show toolbar
 	 */
 	show_admin_bar( true );
-	
+
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
@@ -74,7 +74,7 @@ function wpsvse_setup() {
 
 	// Register Custom Navigation Walker
 	require_once('inc/wp_bootstrap_navwalker.php');
-	
+
 }
 endif; // wpsvse_setup
 add_action( 'after_setup_theme', 'wpsvse_setup' );
@@ -165,6 +165,33 @@ function wpsvse_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Flikar för Twitter', 'wpsvse' ),
+		'id'            => 'tab-widget',
+		'description'   => 'Widgetfält för flik-widget på startsidan.',
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title screen-reader-text">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Slack (inloggad)', 'wpsvse' ),
+		'id'            => 'slack-members',
+		'description'   => 'Widgetfält för inbjudan till Slack (Medlemmar).',
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title screen-reader-text">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Slack (inte inloggad)', 'wpsvse' ),
+		'id'            => 'slack',
+		'description'   => 'Widgetfält för inbjudan till Slack (ej inloggad).',
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title screen-reader-text">',
+		'after_title'   => '</h3>',
+	) );
 }
 endif;
 add_action( 'widgets_init', 'wpsvse_widgets_init' );
@@ -192,7 +219,7 @@ function wpsvse_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	wp_enqueue_script( 'wpsvse-scripts', get_template_directory_uri() . '/js/wpsvse.js', array(), '20140719', true );
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'wpsvse_scripts' );
 
