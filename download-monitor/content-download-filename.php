@@ -3,6 +3,10 @@
  * Default output for a download via the [download] shortcode
  */
 
+ if ( ! defined( 'ABSPATH' ) ) {
+ 	exit;
+ } // Exit if accessed directly
+ 
 global $dlm_download;
 ?>
 <a class="download-link filetype-icon <?php echo 'filetype-' . $dlm_download->get_the_filetype(); ?>"

@@ -857,11 +857,30 @@ p.form-allowed-tags {
 
 /* =TinyMCE in themes
 -------------------------------------------------------------- */
-#bbpress-forums div.bbp-the-content-wrapper {
+.forum-form-container {
+  position: relative;
+}
+button#bbcode-help-btn {
+  position: absolute;
+  right: 8px;
+}
+.bbp-topic-form button#bbcode-help-btn {
+	top: 85px;
+}
+.bbp-reply-form button#bbcode-help-btn {
+	top: 7px;
+}
+@media (min-width: 768px) {
+    #bbcode-help .modal-dialog {
+        width:600px !important;
+        margin: 50px auto 30px auto !important;
+    }
+}
+/*#bbpress-forums div.bbp-the-content-wrapper {
 	margin-bottom: 10px;
 	border: 1px solid #eee;
 	border-top: none;
-}
+}*/
 #bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
 	width: 100%;
 	margin: 0;
