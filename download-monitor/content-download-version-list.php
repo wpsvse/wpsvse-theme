@@ -3,6 +3,10 @@
  * List of versions
  */
 
+ if ( ! defined( 'ABSPATH' ) ) {
+ 	exit;
+ } // Exit if accessed directly
+ 
 global $dlm_download;
 
 $versions = $dlm_download->get_file_versions();

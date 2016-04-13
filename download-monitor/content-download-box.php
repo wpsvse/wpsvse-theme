@@ -2,7 +2,10 @@
 /**
  * Detailed download output
  */
-
+ if ( ! defined( 'ABSPATH' ) ) {
+ 	exit;
+ } // Exit if accessed directly
+ 
 global $dlm_download;
 ?>
 <aside class="download-box">
@@ -27,5 +30,3 @@ global $dlm_download;
 
 	</div>
 </aside>
-
-

@@ -3,6 +3,10 @@
  * Download button
  */
 
+ if ( ! defined( 'ABSPATH' ) ) {
+ 	exit;
+ } // Exit if accessed directly
+ 
 global $dlm_download;
 ?>
 <p><a class="aligncenter download-button" href="<?php $dlm_download->the_download_link(); ?>" rel="nofollow">

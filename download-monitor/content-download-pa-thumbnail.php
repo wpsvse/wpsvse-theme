@@ -3,6 +3,10 @@
  * Default output for a download via the [download] shortcode
  */
 
+ if ( ! defined( 'ABSPATH' ) ) {
+ 	exit;
+ } // Exit if accessed directly
+ 
 global $dlm_download, $dlm_page_addon;
 ?>
 <a class="download-link" href="<?php echo $dlm_page_addon->get_download_info_link( $dlm_download ); ?>" rel="nofollow">

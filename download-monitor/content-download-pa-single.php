@@ -3,6 +3,10 @@
  * Default output for a download via the [download] shortcode
  */
 
+ if ( ! defined( 'ABSPATH' ) ) {
+ 	exit;
+ } // Exit if accessed directly
+ 
 global $dlm_download, $dlm_page_addon;
 
 $versions = $dlm_download->get_file_versions();
@@ -124,7 +128,7 @@ $previous_versions = '';
 		</table>
 
 		<?php the_content(); ?>
-		
+
 	</article>
 	<script type="text/javascript">
 		jQuery('.toggle-previous-versions').click(function() {
