@@ -498,6 +498,13 @@ input[type=text], .form-inline input, .form-control {
 .box-warning {
 	background-color: #FFD7E1;
 }
+.info-notice{ font-size: 13px; }
+.info-notice i{
+  color: #21759B;
+  font-size: 24px;
+  vertical-align: bottom;
+  margin-right: 4px;
+}
 
 /* Code highlight */
 ol.EnlighterJS li {
