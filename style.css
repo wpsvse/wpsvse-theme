@@ -1088,9 +1088,9 @@ span.bbp-author-ip {
 #bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
   color: #333;
   font-size: 13px;
-  border-color: #dddddd;
   border-radius: 4px;
   padding: 6px;
+  border: 1px solid #ddd;
 }
 #bbpress-forums fieldset.bbp-form {
 	clear: both;
