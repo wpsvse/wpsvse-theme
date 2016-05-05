@@ -19,8 +19,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 /* =Fonts
 ----------------------------------------------- */
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
 /* =Content
 ----------------------------------------------- */
 
@@ -215,11 +215,9 @@ li.pingback {
   vertical-align: middle;
 }
 
-
 /* ==========================================================================
   Navigation
 ============================================================================ */
-
 #header {
   background-color: rgba(0, 0, 0, 0.3);
   border-color: transparent;
@@ -327,10 +325,10 @@ li.pingback {
 .navbar-header {
   position: absolute;
 }
+
 /* ==========================================================================
   Main Slider
 ============================================================================ */
-
 .carousel {}
 .carousel .item {}
 .carousel .item img {
@@ -389,10 +387,10 @@ li.pingback {
   margin-right: 15px;
   font-size: 22px;
 }
+
 /* ==========================================================================
 	Header Customizations
 ============================================================================ */
-
 .header-text h1 {
   font-size: 55px;
   font-weight: 400;
@@ -453,10 +451,10 @@ li.pingback {
   height: 410px;
   border: none;
 }
+
 /* ==========================================================================
 	Classes
 ============================================================================ */
-
 .section {
   padding: 60px 0;
 }
@@ -548,7 +546,6 @@ ul.EnlighterJS {
   background-color: #333 !important;
   border-color: #000 !important;
 }
-
 
 /* ==========================================================================
 	Buttons
@@ -884,45 +881,67 @@ table.single-download-meta {
 #download-page-tags { display: none; }
 
 /* ==========================================================================
-	Codex
+	Docs
 ============================================================================ */
+.docs-content h1, .docs-listings .doc-heading { text-shadow: none; }
+.docs-content .doc-heading, .docs-listings .doc-heading { font-weight: bold; }
+.docs-content .doc-heading a { color: #747474; }
+.doc-col h2 { border-bottom: 1px solid #eee; }
 div.docs-info-header {
    background: none !important;
    padding: 0 !important;
 }
-.docs-filters {
-  border: 1px solid #eee;
-  background-color: #f8f8f8;
-  padding: 8px 15px;
-  -webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+.docs-content .nav-tabs {
+    border-bottom: 1px solid #eee;
+    padding: 0;
+    margin-bottom: 15px;
 }
-#bp-create-doc-button {
-  float: none !important;
-  margin: 25px 0 0 0 !important;
-  font-weight: normal !important;
-}
-#bp-create-doc-button:before {
-  content: "\f0f6";
-  font-family: "fontawesome";
-  margin-right: 4px;
-}
-span.bp-docs-date {
-  font-size: 13px;
-  font-weight: normal;
+.docs-content .nav-tabs li {
+  padding: 0;
   float: right;
 }
-.bp-docs-edit-link {
-  font-size: 14px;
-  margin-left: 4px;
-  color: #474747;
-  display: inline-block;
-  padding: 2px 5px;
-  background-color: #f8f8f8;
-  line-height: normal;
-  border-radius: 5px;
-  vertical-align: middle;
+.docs-content .nav-tabs>li.active>a, .docs-content .nav-tabs>li.active>a:focus, .docs-content .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-bottom-color: transparent;
+}
+.docs-content .nav-tabs>li>a {
+    margin-right: 1px;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-size: 12px;
+}
+.docs-content .nav-tabs>li>a:focus, .docs-content .nav-tabs>li>a:hover { background-color: #f8f8f8; }
+#toc_container { border: 1px solid #ddd !important; }
+.docs-content .docs-meta {
+    font-size: 13px;
+    border: 1px solid #eee;
+    background-color: #f8f8f8;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 4px 0;
+    margin-top: 25px;
+}
+.docs-content .docs-date-meta { text-align: right; }
+.docs-listings .doc-col { padding-bottom: 25px; }
+.doc-col li:before {
+    content: "\f016";
+    font-family: "fontawesome";
+    margin-right: 2px;
+}
+.doc-cat-listings .doc-col li:before { margin-right: 6px; }
+.doc-col li { font-size: 16px; }
+.doc-update-notice { font-size: 13px; }
+.doc-update-notice i {
+    font-size: 32px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 8px;
+    color: #BB102E;
 }
 
 /* ==========================================================================
