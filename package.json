@@ -19,7 +19,9 @@
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.5",
     "postcss": "^5.0.19",
+    "postcss-cssnext": "^2.5.2",
     "postcss-focus": "^1.0.0"
   }
 }
