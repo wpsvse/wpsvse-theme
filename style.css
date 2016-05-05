@@ -521,6 +521,7 @@ ol.EnlighterJS,
 ul.EnlighterJS {
 	background-color: #eee;
 }
+.syntaxhighlighter { display: none; }
 
 /* ==========================================================================
 	Forms
