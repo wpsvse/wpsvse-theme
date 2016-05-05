@@ -208,7 +208,7 @@ function wpsvse_scripts() {
 	wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css' );
 	wp_enqueue_style( 'dropdowns-enhancement-style', get_template_directory_uri() . '/css/dropdowns-enhancement.min.css' );
 	// wp_enqueue_style( 'bbpress-style', get_template_directory_uri() . '/css/bbpress.css' );
-	wp_enqueue_style( 'wpsvse-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'wpsvse-style', get_template_directory_uri() . 'style.min.css');
 
 	// Engueue Javascripts
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.2', true );

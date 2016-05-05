@@ -1,0 +1,25 @@
+{
+  "name": "wpsvse",
+  "version": "1.0.0",
+  "description": "WordPress Sverige npm",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpsvse/wpsvse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wpsvse/wpsvse/issues"
+  },
+  "homepage": "https://github.com/wpsvse/wpsvse#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.5.2",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "postcss": "^5.0.19",
+    "postcss-focus": "^1.0.0"
+  }
+}
