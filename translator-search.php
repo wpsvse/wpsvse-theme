@@ -23,28 +23,28 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 			 <?php if ( $post_type == 'wpsvse_projects' ) { ?>
-			 
+
         <div id="translation-projects" class="col-md-9">
-				
+
 				<p class="tp-breadcrumbs"><a href="<?php echo esc_url( home_url( '/oversattning/' ) ); ?>">Översättning</a> <i class="fa fa-angle-right"></i> <a href="<?php echo esc_url( home_url( '/oversattningsprojekt/' ) ); ?>">Översättningsprojekt</a> <i class="fa fa-angle-right"></i> <?php printf( __( 'Sökresultat för &quot;%s&quot;', 'wpsvse' ), '<span>' . get_search_query() . '</span>' ); ?></p>
-				
+
 				<?php if ( $wp_query->have_posts() ) : ?>
 
 					<?php
 					// Find connected pages (for all posts)
 					p2p_type( 'translator_to_projects' )->each_connected( $wp_query );
 					?>
-					
+
 					<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 
-									<?php	get_template_part( 'content', 'projects' ); ?>
+									<?php	get_template_part( 'template-parts/content', 'projects' ); ?>
 
 					<?php endwhile; ?>
 
 							<?php wpsvse_content_nav( 'nav-below' ); ?>
 
 					<?php else : ?>
-										
+
 					<div id="translator-search" class="row">
 					<form action="<?php echo esc_url( home_url( '/' ) ); ?>" class="col-md-6">
 						<div>
@@ -73,36 +73,36 @@ get_header(); ?>
 						</div>
 					</form>
 					</div>
-					
+
 					<p>Inga resultat kunde hittas för din sökning.</p>
 
 					<?php endif; ?>
 
 				</div>
-				
+
 				<?php } elseif ( $post_type == 'wpsvse_translators' ) { ?>
-				
+
         <div id="translation-projects" class="col-md-9 validators">
-				
+
 				<p class="tp-breadcrumbs"><a href="<?php echo esc_url( home_url( '/oversattning/' ) ); ?>">Översättning</a> <i class="fa fa-angle-right"></i> <a href="<?php echo esc_url( home_url( '/oversattningsvaliderare/' ) ); ?>">Översättningsvaliderare</a> <i class="fa fa-angle-right"></i> <?php printf( __( 'Sökresultat för &quot;%s&quot;', 'wpsvse' ), '<span>' . get_search_query() . '</span>' ); ?></p>
-				
+
 				<?php if ( $wp_query->have_posts() ) : ?>
 
 					<?php
 					// Find connected pages (for all posts)
 					p2p_type( 'translator_to_projects' )->each_connected( $wp_query );
 					?>
-					
+
 					<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 
-									<?php	get_template_part( 'content', 'translators' ); ?>
+									<?php	get_template_part( 'template-parts/content', 'translators' ); ?>
 
 							<?php endwhile; ?>
 
 							<?php wpsvse_content_nav( 'nav-below' ); ?>
 
 					<?php else : ?>
-					
+
 					<div id="translator-search" class="row">
 					<form action="<?php echo esc_url( home_url( '/' ) ); ?>" class="col-md-6">
 						<div>
@@ -131,13 +131,13 @@ get_header(); ?>
 						</div>
 					</form>
 					</div>
-					
+
 					<p>Inga resultat kunde hittas för din sökning.</p>
 
 					<?php endif; ?>
 
 				</div>
-				
+
 				<?php } ?>
 				<?php get_sidebar(); ?>
 			</div>
