@@ -82,7 +82,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
       	<!-- Start QUICK BUTTONS -->
-				<?php get_template_part( 'quickbuttons' ); ?>
+				<?php get_template_part( 'template-parts/quickbuttons' ); ?>
         <!-- End QUICK BUTTONS -->
       </div>
     </div>
@@ -218,6 +218,10 @@ get_header(); ?>
 					<span>Behöver du hjälp, har du funderingar, vill du hjälpa andra eller vara en del av communityn? Då är vårt <a href="<?php echo esc_url( home_url( '/forum/' ) ); ?>" rel="help">forum</a> platsen för dig!</span>
 				</div>
 			</div>
+
+      <?php // Check if bbPress plugin is loaded
+      if ( class_exists( 'bbPress' ) ) { ?>
+
 			<div class="row">
 
         <div class="latest-forum-topics col-md-9">
@@ -263,6 +267,11 @@ get_header(); ?>
           </div>
 
 			</div>
+
+      <?php } else { ?>
+        <p style="text-align:center;"><strong>bbPress är inte aktiverat.</strong></p>
+      <?php } ?>
+
 		</div>
 	</section>
 	<!-- End Latest Forum -->
@@ -271,10 +280,12 @@ get_header(); ?>
 	<section id="statistics" class="section">
 		<div class="container">
 			<div class="row">
-      <!-- Start SITEWIDE STATISTICS -->
+        <!-- Start SITEWIDE STATISTICS -->
+        <?php // Check if bbPress plugin is loaded
+        if ( class_exists( 'bbPress' ) ) { ?>
+
         <?php $stats = bbp_get_statistics(); ?>
 				<?php do_action( 'bbp_before_statistics' ); ?>
-
         <div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
 						<i class="fa fa-group"></i>
@@ -298,12 +309,16 @@ get_header(); ?>
 
         <?php unset( $stats ); ?>
 
+        <?php }
+        // Check if BuddyPress plugin is loaded
+        if ( class_exists( 'buddypress' ) ) { ?>
 				<div class="clearfix col-sm-6 col-md-3">
 					<div class="stats">
 						<i class="fa fa-sitemap"></i>
 						<h1><?php echo bp_get_total_group_count(); ?><span>Grupper</span></h1>
 					</div>
 				</div>
+        <?php } ?>
       <!-- End SITEWIDE STATISTICS -->
 			</div>
 		</div>
@@ -319,10 +334,18 @@ get_header(); ?>
 					<span>Följ den senaste <a href="<?php echo esc_url( home_url( '/aktivitet/' ) ); ?>">aktiviteten</a> på <?php bloginfo( 'name' ); ?></span>
 				</div>
 			</div>
+      <?php // Check if BuddyPress plugin is loaded
+      if ( class_exists( 'buddypress' ) ) { ?>
+
 			<div class="row">
 				<?php bp_get_template_part( 'activity/front' ); ?>
 			</div>
 		</div>
+
+    <?php } else { ?>
+      <p style="text-align:center;"><strong>BuddyPress är inte aktiverat.</strong></p>
+    <?php } ?>
+
 	</section>
 	<!-- End Activity -->
 
@@ -336,9 +359,17 @@ get_header(); ?>
             <span>Skapa kontakter via olika <a href="<?php echo esc_url( home_url( '/grupper/' ) ); ?>">grupper</a> inom WordPress</span>
           </div>
 
+          <?php // Check if BuddyPress plugin is loaded
+          if ( class_exists( 'buddypress' ) ) { ?>
+
           <div id="bp-groups">
             <?php bp_get_template_part( 'groups/front' ); ?>
           </div>
+
+          <?php } else { ?>
+            <p style="text-align:center;"><strong>BuddyPress är inte aktiverat.</strong></p>
+          <?php } ?>
+
       </div>
 
       <div class="row col-md-6 twitter-container">

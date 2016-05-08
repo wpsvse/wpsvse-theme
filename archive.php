@@ -11,12 +11,12 @@ get_header(); ?>
 
     <section id="page-header" class="section">
 		<div class="container">
-			<div class="row">
-              <div class="col-md-12">
-            	<h1 class="page-title"><?php the_archive_title(); ?></h1>
-              </div>
-            </div>
+		  <div class="row">
+        <div class="col-md-12">
+        	<h1 class="page-title"><?php the_archive_title(); ?></h1>
         </div>
+      </div>
+    </div>
     </section>
     <!-- Start Page Header -->
 
@@ -26,7 +26,7 @@ get_header(); ?>
 			<div class="row">
               <div class="col-md-9 blog-listings">
 
-				<?php if ( have_posts() ) : ?>
+				      <?php if ( have_posts() ) : ?>
 
                     <?php /* Start the Loop */ ?>
                     <?php while ( have_posts() ) : the_post(); ?>
@@ -36,7 +36,7 @@ get_header(); ?>
                              * If you want to override this in a child theme, then include a file
                              * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                              */
-                            get_template_part( 'content' );
+                            get_template_part( 'template-parts/content' );
                         ?>
 
                     <?php endwhile; ?>

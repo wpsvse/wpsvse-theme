@@ -25,9 +25,9 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
         <div id="translation-projects" class="col-md-9">
-				
+
 				<p class="tp-breadcrumbs"><a href="<?php echo esc_url( home_url( '/oversattning/' ) ); ?>">Översättning</a> <i class="fa fa-angle-right"></i> Översättningsprojekt</p>
-				
+
 				<div id="translator-search" class="row">
 				<form action="<?php echo esc_url( home_url( '/' ) ); ?>" class="col-md-6">
 					<div>
@@ -63,10 +63,10 @@ get_header(); ?>
 					// Find connected pages (for all posts)
 					p2p_type( 'translator_to_projects' )->each_connected( $wp_query );
 					?>
-					
+
 					<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 
-									<?php	get_template_part( 'content', 'projects' ); ?>
+									<?php	get_template_part( 'template-parts/content', 'projects' ); ?>
 
 							<?php endwhile; ?>
 
