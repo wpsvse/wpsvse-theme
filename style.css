@@ -521,7 +521,6 @@ ol.EnlighterJS,
 ul.EnlighterJS {
 	background-color: #eee;
 }
-.syntaxhighlighter { display: none; }
 
 /* ==========================================================================
 	Forms
@@ -935,7 +934,10 @@ div.docs-info-header {
     margin-right: 2px;
 }
 .doc-cat-listings .doc-col li:before { margin-right: 6px; }
-.doc-col li { font-size: 16px; }
+.doc-col li {
+  font-size: 16px;
+  padding: 4px 0;
+}
 .doc-update-notice { font-size: 13px; }
 .doc-update-notice i {
     font-size: 32px;
@@ -943,6 +945,16 @@ div.docs-info-header {
     margin-top: 3px;
     margin-right: 8px;
     color: #BB102E;
+}
+.new-doc-btn {
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 35px;
+}
+#docs-search { margin-bottom: 35px; }
+#docs-search .input-group-btn .btn {
+    height: 34px;
 }
 
 /* ==========================================================================
