@@ -387,11 +387,10 @@ get_header(); ?>
           <!-- Tab panes -->
           <div class="tab-content">
               <div class="tab-pane text-center active" id="wpse-twitter">
-                <a class="twitter-timeline" href="https://twitter.com/hashtag/wpse" data-widget-id="498246358826897408">#wpse tweets</a>
+                <?php if ( ! dynamic_sidebar( 'twitter-wpse' ) ) : endif; ?>
               </div>
               <div class="tab-pane text-center" id="wpsvse-twitter">
-                <a class="twitter-timeline" href="https://twitter.com/WPSverige" data-widget-id="498245749222543361">Tweets av @WPSverige</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <?php if ( ! dynamic_sidebar( 'twitter-wpsverige' ) ) : endif; ?>
               </div>
           </div>
 		</div>

@@ -194,6 +194,24 @@ function wpsvse_widgets_init() {
 		'before_title'  => '<h3 class="widget-title screen-reader-text">',
 		'after_title'   => '</h3>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Twitter-flik - #wpse', 'wpsvse' ),
+		'id'            => 'twitter-wpse',
+		'description'   => 'Twitterwidget för #wpse.',
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title screen-reader-text">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Twitter-flik - @WPSverige', 'wpsvse' ),
+		'id'            => 'twitter-wpsverige',
+		'description'   => 'Twitterwidget för @WPSverige.',
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title screen-reader-text">',
+		'after_title'   => '</h3>',
+	) );
 }
 endif;
 add_action( 'widgets_init', 'wpsvse_widgets_init' );
