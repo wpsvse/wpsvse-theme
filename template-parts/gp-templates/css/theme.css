@@ -1,0 +1,51 @@
+/*
+WordPress Sverige GlotPress theme stylesheet
+@package WordPress Sverige
+*/
+
+/* =Fonts
+----------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+
+/* =Main
+----------------------------------------------- */
+a, a:link, a:visited,.actionlist a, .actionlist a:link, .actionlist a:visited {
+    color: #2174A5;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a:hover, .actionlist a:hover {
+    color: #626c72;
+    text-decoration: none;
+}
+.gp-bar nav a {
+  color: #fff;
+}
+.gp-bar { background: rgba(0,0,0,.75); }
+.gp-bar h1 {
+  line-height: 12px;
+  margin: 10px 10px 6px 0;
+  font-family: 'Open Sans', Sans-Serif;
+  font-weight: 300;
+}
+.gp-bar h1 a {
+  background: url('../../../img/icons/translation-brand-icon.png') no-repeat left 0px;
+  height: 32px;
+  display: block;
+  padding-left: 62px;
+  padding-top: 4px;
+  color: #fff;
+}
+.gp-bar h1 span {
+    font-weight: bold;
+    margin-right: 6px;
+}
+.gp-bar h1 small {
+    font-size: 10px;
+    letter-spacing: 0.40px;
+    text-transform: uppercase;
+    color: #A9A9A9;
+}
