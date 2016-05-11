@@ -17,10 +17,9 @@
 			<a href="<?php echo gp_url( '/' ); ?>" rel="home"><span>WordPress</span>Sverige<br /><small>Översättningsplattform</small></a>
 		</h1>
 
+
 		<nav id="main-navigation" role="navigation">
-			<a href="#">Global ordlista</a>
-			<a href="http://wpsv.se/oversattning/stilguide-for-oversattningar/">Stilguide</a>
-			<a href="#">Föreslå projekt</a>
+			<?php wp_nav_menu( array( 'theme_location' => 'gp-menu','container' => false ) ); ?>
 		</nav>
 
 		<nav id="side-navigation">
@@ -29,6 +28,8 @@
 	</header>
 
 	<div class="gp-content">
+		<?php if ( ! dynamic_sidebar( 'gp-notice' ) ) : endif; ?>
+
 		<?php echo gp_breadcrumb(); ?>
 
 		<div id="gp-js-message"></div>

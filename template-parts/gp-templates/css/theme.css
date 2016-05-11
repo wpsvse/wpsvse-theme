@@ -11,42 +11,46 @@ WordPress Sverige GlotPress theme stylesheet
 /* =Main
 ----------------------------------------------- */
 a, a:link, a:visited,.actionlist a, .actionlist a:link, .actionlist a:visited {
-    color: #2174A5;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  color: #2174A5;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 a:hover, .actionlist a:hover {
-    color: #626c72;
-    text-decoration: none;
+  color: #626c72;
+  text-decoration: none;
 }
 button,#submit,.gp-content input.button {
-    background-color: #21759b;
-    background-image: none;
-    border: none;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px;
-    cursor: pointer;
-    text-shadow: none;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  background-color: #21759b;
+  background-image: none;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  cursor: pointer;
+  text-shadow: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .gp-content input.button { padding: 3px 10px; }
 button:hover,#submit:hover,.gp-content input.button:hover { background-color: #444; }
+ul#menu-gp {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#menu-gp li { display: inline-block; }
 .gp-bar nav a {
   color: #fff;
   padding: 10px;
   line-height: 32px;
 }
-.gp-bar nav a:hover {
-  color: #ccc;
-}
+.gp-bar nav a:hover { color: #ccc; }
 .gp-bar { background: rgba(0,0,0,.75); }
 .gp-bar h1 {
   line-height: 12px;
@@ -63,35 +67,37 @@ button:hover,#submit:hover,.gp-content input.button:hover { background-color: #4
   color: #fff;
 }
 .gp-bar h1 span {
-    font-weight: bold;
-    margin-right: 6px;
+  font-weight: bold;
+  margin-right: 6px;
 }
 .gp-bar h1 small {
-    font-size: 10px;
-    letter-spacing: 0.40px;
-    text-transform: uppercase;
-    color: #A9A9A9;
+  font-size: 10px;
+  letter-spacing: 0.40px;
+  text-transform: uppercase;
+  color: #A9A9A9;
 }
-.gp-js-notice, .notice {
-    background-color: #D9EDF7;
-}
-.gp-js-error, .error {
-	background-color: #E1315A;
-}
-.gp-js-success,
-span.morethan90 {
-	background-color: #BBDC04;
-}
+.gp-js-notice, .notice { background-color: #D9EDF7; }
+.gp-js-error, .error { background-color: #E1315A; }
+.gp-js-success, span.morethan90 { background-color: #BBDC04; }
 ul a.edit, dt a.edit {
-    background-color: #2174A5;
-    color: #fff;
-    padding: 3px 6px;
+  background-color: #2174A5;
+  color: #fff;
+  padding: 3px 6px;
 }
 span.active {
-    background-color: #BBDC04;
-    padding: 3px 6px;
-    text-shadow: none;
+  background-color: #BBDC04;
+  padding: 3px 6px;
+  text-shadow: none;
 }
 table.translations thead th, table.translations tfoot th, table.translation-sets thead th, table.translations tfoot th, table.glossary thead th, table.locale-sub-projects thead th, table.locales thead th {
-    background-color: #2174A5;
+  background-color: #2174A5;
 }
+.box-shortcode {
+	padding: 15px;
+	margin: 25px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.box-info { background-color: #D9EDF7; }
+.box-info h3 { display: none; }

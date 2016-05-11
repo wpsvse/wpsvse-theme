@@ -70,6 +70,7 @@ function wpsvse_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Huvudmeny', 'wpsvse' ),
 		'footer' => __( 'Sidfot', 'wpsvse' ),
+		'gp-menu' => __( 'GP', 'wpsvse' ),
 	) );
 
 	// Register Custom Navigation Walker
@@ -208,6 +209,15 @@ function wpsvse_widgets_init() {
 		'id'            => 'twitter-wpsverige',
 		'description'   => 'Twitterwidget för @WPSverige.',
 		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title screen-reader-text">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Notis - Översättningsplattform', 'wpsvse' ),
+		'id'            => 'gp-notice',
+		'description'   => 'Notiser som visas under sidhuvudet i översättningsplattformen GlotPress.',
+		'before_widget' => '<div id="%1$s" class="box-shortcode box-info %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title screen-reader-text">',
 		'after_title'   => '</h3>',
