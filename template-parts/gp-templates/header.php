@@ -18,7 +18,9 @@
 		</h1>
 
 		<nav id="main-navigation" role="navigation">
-			<?php echo gp_nav_menu(); ?>
+			<a href="#">Global ordlista</a>
+			<a href="http://wpsv.se/oversattning/stilguide-for-oversattningar/">Stilguide</a>
+			<a href="#">Föreslå projekt</a>
 		</nav>
 
 		<nav id="side-navigation">
