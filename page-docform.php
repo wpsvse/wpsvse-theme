@@ -16,11 +16,11 @@ get_header();
     <section id="page-header" class="section">
 		<div class="container">
 			<div class="row">
-              <div class="col-md-12">
-            	<h1 class="page-title"><?php the_title(); ?></h1>
-              </div>
-            </div>
+        <div class="col-md-12">
+        	<h1 class="page-title"><?php the_title(); ?></h1>
         </div>
+      </div>
+    </div>
     </section>
     <!-- Start Page Header -->
 
@@ -34,7 +34,8 @@ get_header();
 					    the_content();
 					} else { ?>
 							<h3>Inloggning krävs</h3>
-							<p>WordPress Sveriges dokumentation är öppen för alla att delta i. Man måste dock vara inloggad för att kunna skapa nya artiklar eller för att redigera befintliga artiklar. Detta för att undvika oseriös användning av dokumentationen och motverka skräpposter. <a href="<?php echo esc_url( home_url( '/logga-in/' ) ); ?>">Logga in</a> eller <a href="<?php echo esc_url( home_url( '/bli-medlem/' ) ); ?>">bli medlem</a> för att skapa/redigera artiklar i dokumetationen.</p>
+							<p><strong>Vad kul att du vill delta med artiklar i dokumentationen!</strong></p>
+							<p>WordPress Sveriges dokumentation är öppen för alla att delta i. Man måste dock vara inloggad för att kunna skapa nya artiklar eller för att redigera befintliga artiklar. Detta för att undvika oseriös användning och för att motverka skräpposter. <a href="<?php echo esc_url( home_url( '/logga-in/' ) ); ?>">Logga in</a> eller <a href="<?php echo esc_url( home_url( '/bli-medlem/' ) ); ?>">bli medlem</a> för att skapa/redigera artiklar i dokumetationen.</p>
 					<?php } ?>
 				</div>
         <?php get_sidebar(); ?>
