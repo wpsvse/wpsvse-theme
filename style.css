@@ -2914,7 +2914,16 @@ ul.apps {
 /* ==========================================================================
 	Responsive Fixes
 ============================================================================ */
-
+@media handheld, only screen and (max-width:1499px) {
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  .dropdown-submenu>.dropdown-menu {
+    left: auto;
+    right: 100%;
+  }
+}
 @media handheld, only screen and (max-width:1199px) {
  #quick-buttons i {
    float: none;
@@ -3628,8 +3637,8 @@ img.mfp-img {
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
   /**
-       * Remove all paddings around the image on small screen
-       */
+  * Remove all paddings around the image on small screen
+  */
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0; }

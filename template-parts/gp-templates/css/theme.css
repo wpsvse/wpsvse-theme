@@ -39,12 +39,12 @@ button,#submit,.gp-content input.button {
 }
 .gp-content input.button { padding: 3px 10px; }
 button:hover,#submit:hover,.gp-content input.button:hover { background-color: #444; }
-ul#menu-gp {
+#main-navigation ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-#menu-gp li { display: inline-block; }
+#main-navigation li { display: inline-block; }
 .gp-bar nav a {
   color: #fff;
   padding: 10px;
