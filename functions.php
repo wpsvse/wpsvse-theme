@@ -248,6 +248,9 @@ function wpsvse_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	if ( is_page('oversatt') ) {
+		wp_enqueue_script( 'jquery-iframe-auto-height', get_template_directory_uri() . '/js/jquery-iframe-auto-height.min.js', array('jquery'), '2.0.0' );
+	}
 	wp_enqueue_script( 'wpsvse-scripts', get_template_directory_uri() . '/js/wpsvse.js', array(), '20140719', true );
 
 }
