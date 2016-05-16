@@ -730,17 +730,14 @@ a.bbpl_button.liked {
 
 /* =Forms
 -------------------------------------------------------------- */
-
 #bbpress-forums fieldset.bbp-form {
 	clear: left;
 }
-
 #bbpress-forums fieldset.bbp-form {
 	border: 1px solid #eee;
 	padding: 10px 20px;
 	margin-bottom: 10px;
 }
-
 #bbpress-forums fieldset.bbp-form legend {
 	padding: 5px;
 	display: inline-block;
@@ -749,47 +746,39 @@ a.bbpl_button.liked {
 	font-size: 16px;
   margin-bottom: 0;
 }
-
 #bbpress-forums fieldset.bbp-form label {
 	margin: 0;
 	display: inline-block;
 	font-weight: 400;
 }
-
 #bbp-edit-topic-tag.bbp-form fieldset.bbp-form label,
 #bbp-login fieldset label,
 #bbp-register fieldset label,
 #bbp-lost-pass fieldset label {
 	width: 100px;
 }
-
 #bbpress-forums fieldset.bbp-form p,
 #bbpress-forums fieldset.bbp-form textarea,
 #bbpress-forums fieldset.bbp-form select,
 #bbpress-forums fieldset.bbp-form input {
 	margin: 0 0 8px;
 }
-
 .bbp-attachments-form .bbp-attachments-input { padding: 0 !important; }
-
 textarea#bbp_reply_content,
 textarea#bbp_topic_content,
 textarea#bbp_forum_content {
 	width: 97%;
 	box-sizing: border-box;
 }
-
 textarea#bbp_forum_content {
 	height: 210px;
 }
-
 #bbpress-forums fieldset.bbp-forum-form-attributes {
 	width: 200px;
 	float: right;
 	clear: none;
 	margin-left: 25px;
 }
-
 /**
  * Fix for too-long forum names, usually from conversion
  */
@@ -813,7 +802,6 @@ body.single-reply .bbp-reply-form div.avatar img {
 	line-height: 0;
 	background-color: #efefef;
 }
-
 body.page .bbp-reply-form code,
 body.page .bbp-topic-form code,
 body.single-topic .bbp-reply-form code,
@@ -828,31 +816,38 @@ body.reply-edit .bbp-reply-form code {
 	margin-top: 5px;
 	width: 369px;
 }
-
 #merge_tag,
 #delete_tag {
 	display: inline;
 }
-
 div.bbp-submit-wrapper {
 	margin-top: 15px;
 	float: right;
 	clear: both;
 }
-
 p.form-allowed-tags {
 	display: none;
 }
-
 .bbp-search-form-forum {
 	float: right;
 	max-width: 20%;
 }
-
 .bbp-search-form-topic {
 	float: left;
 	max-width: 20%;
 	margin-left: 15px;
+}
+#bbp-forums-statistics {
+  clear: both;
+  padding-top: 25px;
+}
+#bbp-forums-statistics .bbp-forums-stats-block h4 {
+  background-color: #f4f4f4 !important;
+  color: #31363a !important;
+}
+#bbp-forums-statistics .bbp-forums-stats-block p {
+	color: #747474;
+	font-size: 13px;
 }
 
 /* =TinyMCE in themes
