@@ -84,3 +84,15 @@ if ( is_super_admin() ) {
 	remove_filter( 'groups_group_description_before_save', 'wp_filter_kses', 1 );
 	remove_filter( 'bp_get_group_description', 'bp_groups_filter_kses', 1 );
 }
+
+//**************************************************
+// Add allowed file types
+//**************************************************
+function wpsvse_custom_upload_mimes ( $existing_mimes=array() ) {
+
+	$existing_mimes['po'] = 'text/x-gettext-translation';
+	$existing_mimes['pot'] = 'text/x-gettext-translation';
+
+	return $existing_mimes;
+}
+add_filter('upload_mimes', 'wpsvse_custom_upload_mimes');

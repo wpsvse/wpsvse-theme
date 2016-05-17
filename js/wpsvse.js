@@ -28,16 +28,11 @@ jQuery(document).ready(function($) {
 	});
 
 	// ***************************
-	// Iframe Auto Height
-	// ***************************
-	 $('iframe.gp-frame').iframeAutoHeight();
-
-	// ***************************
 	// Backward compatibility
 	// and media inserts for
 	// Magnific Popup
 	// ***************************
-	$('.single-content a[href*=".jpg"], .single-content a[href*=".jpeg"], .single-content a[href*=".png"], .single-content a[href*=".gif"]').each(function(){
+	$('.single-content a[href*=".jpg"], .single-content a[href*=".jpeg"], .single-content a[href*=".png"], .single-content a[href*=".gif"], .docs-content a[href*=".jpg"], .docs-content a[href*=".jpeg"], .docs-content a[href*=".png"], .docs-content a[href*=".gif"]').each(function(){
 			//single image popup
 			if ($(this).parents('.gallery').length == 0) {
 							$(this).magnificPopup({type:'image'});

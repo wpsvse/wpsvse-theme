@@ -19,7 +19,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 /* =Fonts
 ----------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
 /* =Content
 ----------------------------------------------- */
@@ -963,6 +963,9 @@ div.docs-info-header {
     text-transform: uppercase;
     width: 100%;
     margin-bottom: 35px;
+}
+.docs-content ol li {
+    padding: 6px 0;
 }
 #docs-search { margin-bottom: 35px; }
 #docs-search .input-group-btn .btn {
