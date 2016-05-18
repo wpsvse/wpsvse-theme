@@ -1747,9 +1747,16 @@ ol.comment-list #respond {
   border: 0;
   background: #21759B;
 }
-#sidebar li { padding: 4px 0 4px 15px; }
-#sidebar li:hover { background-color: #f8f8f8; }
-#sidebar li:before {
+#sidebar li a {
+  padding: 5px 15px;
+  display: block;
+  border-top: 1px solid #f4f4f4;
+}
+#sidebar li a:hover {
+  background-color: #f8f8f8;
+  margin-left: 7px;
+}
+#sidebar li a:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -1761,9 +1768,12 @@ ol.comment-list #respond {
   margin-left: -10px;
   padding-right: 10px;
 }
-#sidebar li:hover:before {
+#sidebar li a:hover:before {
   color: #21759B;
   content: "\f0da";
+}
+#sidebar li .sub-menu {
+    margin-left: 25px;
 }
 #sidebar label.search-form-short { max-width: 70%; }
 /* calendar */
