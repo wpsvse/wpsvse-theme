@@ -278,15 +278,20 @@ li.pingback {
 /* ==========================================================================
   Main Slider
 ============================================================================ */
-.carousel {}
-.carousel .item {}
 .carousel .item img { max-height: 400px; }
 .carousel .item h1 {
   font-size: 55px;
   font-weight: 400;
   line-height: 60px;
 }
-.carousel .item p {}
+.carousel-caption {
+  position: initial;
+  padding-top: 0;
+  height: 490px;
+  padding: 0 35px;
+  text-align: initial;
+  text-shadow: none;
+}
 .carousel .carousel-control { width: 7%; }
 .carousel-control.left, .carousel-control.right {
   background-image: none;
@@ -303,14 +308,22 @@ li.pingback {
   margin-top: -10px;
   margin-left: -10px;
 }
-.carousel-indicators {}
-#header-slider {}
+#header-slider .carousel-control {
+  display: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#header-slider:hover .carousel-control {
+  display: inline-block;
+}
 #header-slider h1 {
   color: #FFF;
   margin-bottom: 20px;
 }
 #header-slider p {
-  color: #A2A2A2;
+  color: #ccc;
   margin-bottom: 25px;
 }
 #header-slider h2 {
@@ -1122,6 +1135,57 @@ article.post.search-results { margin-bottom: 0; }
   display: inline-block;
   line-height: 1.6;
 }
+/* ==========================================================================
+  Social Login
+============================================================================ */
+.wp-social-login-connect-with {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    height: 12px;
+}
+.wp-social-login-connect-with:before {
+    content: "eller";
+    display: inline-block;
+    width: 48px;
+    border-radius: 24px;
+    height: 48px;
+    text-align: center;
+    background-color: #21759B;
+    top: -24px;
+    position: relative;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.wp-social-login-provider-list a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    clear: both;
+    display: block;
+    max-width: 280px;
+    text-align: center;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    color: #fff;
+}
+.wp-social-login-provider-facebook {
+    background-color: #3b5998;
+}
+.wp-social-login-provider-google {
+    background-color: #DD4B39;
+}
+.wp-social-login-provider-twitter {
+    background-color: #00ACEE;
+}
+.wp-social-login-provider-wordpress {
+    background-color: #23282D;
+}
+.wp-social-login-provider-live {
+    background-color: #1673BA;
+}
+.fa-live::before { content: "\f17a"; }
 /* ==========================================================================
   Quick Buttons
 ============================================================================ */

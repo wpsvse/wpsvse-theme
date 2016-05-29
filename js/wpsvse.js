@@ -16,8 +16,19 @@ jQuery(document).ready(function($) {
 	// ***************************
 	// Head slider
 	// ***************************
-	$('#header-slider').carousel({
-  		interval: 10000
+	// auto-generate carousel indicators
+	var myCarousel = $(".carousel");
+	myCarousel.append("<ol class='carousel-indicators'></ol>");
+	var indicators = $(".carousel-indicators");
+	myCarousel.find(".carousel-inner").children(".item").each(function(index) {
+	    (index === 0) ?
+	    indicators.append("<li data-target='#header-slider' data-slide-to='"+index+"' class='active'></li>") :
+	    indicators.append("<li data-target='#header-slider' data-slide-to='"+index+"'></li>");
+	});
+	$('.carousel-inner .item').first().addClass('active');
+	$('.carousel').carousel({
+  		interval: 10000,
+			pause: "hover"
 	})
 
 	// ***************************
