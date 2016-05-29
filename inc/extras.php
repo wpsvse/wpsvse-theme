@@ -96,3 +96,24 @@ function wpsvse_custom_upload_mimes ( $existing_mimes=array() ) {
 	return $existing_mimes;
 }
 add_filter('upload_mimes', 'wpsvse_custom_upload_mimes');
+
+//**************************************************
+// Output for social login
+//**************************************************
+function wpsvse_wsl_custom_icons( $provider_id, $provider_name, $authenticate_url )
+{
+    ?>
+        <a
+           rel           = "nofollow"
+           href          = "<?php echo $authenticate_url; ?>"
+           data-provider = "<?php echo $provider_id ?>"
+           class         = "wp-social-login-provider wp-social-login-provider-<?php echo strtolower( $provider_id ); ?>"
+         >
+            <span>
+                <i class="fa fa-<?php echo strtolower( $provider_id ); ?>"></i> Logga in med <strong><?php echo $provider_name; ?></strong>
+            </span>
+        </a>
+    <?php
+}
+
+add_filter( 'wsl_render_auth_widget_alter_provider_icon_markup', 'wpsvse_wsl_custom_icons', 10, 3 );

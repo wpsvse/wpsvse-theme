@@ -11,8 +11,8 @@ get_header(); ?>
     <div class="container">
       <section id="header-content" class="row">
         <!-- Start welcome -->
-        <section id="welcome" class="section">
-          <div class="col-md-7">
+        <section id="welcome" class="section col-md-7 col-xs-12">
+          <div>
 
         	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -41,38 +41,50 @@ get_header(); ?>
         </section>
         <!-- End welcome -->
         <!-- Start Slider -->
-        <section id="header-slider" class="section carousel slide col-md-5 hidden-xs">
-            <div class="slide-inner">
-              <!-- Start SLIDER LOOP -->
-              <?php // WP_Query arguments
-              $slider_args = array (
-                    'posts_per_page' 	=> '3',
-                    'post_type' 		=> 'wpsvse_slider'
-              );
+        <section class="section col-md-5 hidden-xs">
+          <!-- Start SLIDER LOOP -->
+          <?php // WP_Query arguments
+          $slider_args = array (
+                'posts_per_page' 	=> '3',
+                'post_type' 		=> 'wpsvse_slider'
+          );
 
-              // The Query
-              $slider_query = new WP_Query( $slider_args );
+          // The Query
+          $slider_query = new WP_Query( $slider_args ); ?>
 
-              // The Loop
+          <div id="header-slider" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <?php // The Loop
               if ( $slider_query->have_posts() ) {
-                  while ( $slider_query->have_posts() ) {
-                      $slider_query->the_post(); ?>
+                while ( $slider_query->have_posts() ) {
+                  $slider_query->the_post(); ?>
 
-                  <div class="item row">
+                  <div class="item">
+                    <div class="carousel-caption">
                       <?php the_content(); ?>
+                    </div>
                   </div>
 
               <?php }
               }
 
-              // Restore original Post Data
-              wp_reset_postdata(); ?>
-              <!-- End SLIDER LOOP -->
+            // Restore original Post Data
+            wp_reset_postdata(); ?>
+            <!-- End SLIDER LOOP -->
+
             </div>
-        </section>
+            <a class="left carousel-control" href="#header-slider" data-slide="prev">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </a>
+            <a class="right carousel-control" href="#header-slider" data-slide="next">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </section><!-- End Slider -->
       </section>
     </div>
-    <!-- End Slider -->
    	</div>
 	<!-- End Top-part -->
 
