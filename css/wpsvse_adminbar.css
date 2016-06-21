@@ -22,7 +22,7 @@ html { margin:0!important; }
 	padding-bottom: 7px;
 }
 #wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a,
-#wpadminbar .shortlink-input { 
+#wpadminbar .shortlink-input {
 	height: 48px;
 	line-height: 48px;
 }
@@ -34,7 +34,7 @@ html { margin:0!important; }
 	height: 24px;
 }
 #wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input,
-#wpadminbar .quicklinks .menupop ul.ab-sub-secondary, 
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
 #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu,
 #wpadminbar .ab-top-menu>li.hover>.ab-item,
 #wpadminbar .ab-top-menu>li:hover>.ab-item,
@@ -77,4 +77,7 @@ html.wp-toolbar { padding-top: 48px; }
 #wpadminbar #wp-admin-bar-my-account.with-avatar>a img {
 	border: none;
 	background: none;
+}
+#wpadminbar .svg {
+    background-position: 0 14px !important;
 }
