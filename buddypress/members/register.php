@@ -219,11 +219,6 @@
 					do_action( 'bp_signup_profile_fields' ); ?>
 
 				</div><!-- #profile-details-section -->
-				</div>
-				<div class="col-md-4">
-					<?php do_action( 'wordpress_social_login' ); ?> 
-				</div>
-				</div>
 
 				<?php
 
@@ -409,6 +404,12 @@
 		do_action( 'bp_custom_signup_steps' ); ?>
 
 		</div>
+
+	</div>
+	<div class="col-md-4">
+		<?php do_action( 'wordpress_social_login' ); ?>
+	</div>
+	</div>
 
 		</form>
 
