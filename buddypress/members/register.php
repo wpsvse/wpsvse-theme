@@ -47,9 +47,12 @@
 			do_action( 'template_notices' ); ?>
 
 			<p>Bli medlem på <?php bloginfo( 'name' ); ?>. Allt du behöver är en giltig e-postadress. Fyll i fälten nedan. Ett meddelande med en bekräftelelänk kommer att skickas till angiven e-postadress <em>(glöm inte att kolla i skräppostmappen om du inte fått något)</em>. Det kostar ingenting att bli medlem.</p>
-			
+
+			<div class="row">
+			<div class="col-md-8">
+
 			<div class="box-shortcode box-primary">
-			
+
 			<?php
 
 			/**
@@ -64,7 +67,7 @@
 				<?php /***** Basic Account Details ******/ ?>
 
 				<h2><?php _e( 'Account Details', 'buddypress' ); ?></h2>
-				
+
 				<hr />
 
 				<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
@@ -157,7 +160,7 @@
 							<?php
 							$field_type = bp_xprofile_create_field_type( bp_get_the_profile_field_type() );
 							$field_type->edit_field_html(); ?>
-							
+
 							<p class="description"><?php bp_the_profile_field_description(); ?></p>
 
 							<?php
@@ -216,6 +219,11 @@
 					do_action( 'bp_signup_profile_fields' ); ?>
 
 				</div><!-- #profile-details-section -->
+				</div>
+				<div class="col-md-4">
+					<?php do_action( 'wordpress_social_login' ); ?> 
+				</div>
+				</div>
 
 				<?php
 
@@ -312,33 +320,33 @@
 				do_action( 'bp_after_blog_details_fields' ); ?>
 
 			<?php endif; ?>
-			
+
 			<div class="clearfix"></div>
-			
+
 			<div id="register-tos">
-			
+
 				<h2>Förhållningsregler</h2>
 				<hr />
-				
+
 				<label>Godkännande av <?php bloginfo( 'name' ); ?>s förhållningsregler</label>
 				<?php if ( ! dynamic_sidebar( 'register-tos' ) ) : endif; ?>
-				
+
 			</div>
-			
+
 			<div id="register-form-end">
-			
+
 				<h2>Verifiering</h2>
 				<hr />
-	
+
 				<?php
-	
+
 				/**
 				 * Fires before the display of the registration submit buttons.
 				 *
 				 * @since BuddyPress (1.1.0)
 				 */
 				do_action( 'bp_before_registration_submit_buttons' ); ?>
-			
+
 			</div>
 
 			<div class="submit">
@@ -399,7 +407,7 @@
 		 * @since BuddyPress (1.1.0)
 		 */
 		do_action( 'bp_custom_signup_steps' ); ?>
-		
+
 		</div>
 
 		</form>
