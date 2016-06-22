@@ -80,4 +80,5 @@ html.wp-toolbar { padding-top: 48px; }
 }
 #wpadminbar .svg {
     background-position: 0 14px !important;
+		height: 48px !important;
 }
