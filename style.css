@@ -1688,6 +1688,14 @@ ol.comment-list #respond {
   padding-left: 90px;
   padding-top: 15px!important;
 }
+
+img[src*="wp-includes/images/smilies/"]{
+    width: 20px;
+    height: 20px;
+    max-height: 20px;
+    vertical-align: middle;
+}
+
 /* ==========================================================================
   Translation projects
 ============================================================================ */
