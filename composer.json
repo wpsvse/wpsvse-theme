@@ -1,0 +1,7 @@
+{
+  "name"       : "wpsv/wpsvse-theme",
+  "type"       : "wordpress-theme",
+  "require"    : {
+    "composer/installers": "1.*"
+  }
+}
