@@ -72,10 +72,6 @@
 	</footer>
 	<!-- End Footer -->
 
-	<!-- Back to Top -->
-	<a href="#" class="back-to-top" title="Till toppen"><i class="fa fa-arrow-up"></i></a>
-	<!-- End Back to Top -->
-
 	<?php if ( is_page('oversatt') ) { ?>
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {

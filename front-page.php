@@ -10,86 +10,18 @@ get_header(); ?>
 
     <div class="container">
       <section id="header-content" class="row">
-        <!-- Start welcome -->
-        <section id="welcome" class="section col-md-7 col-xs-12">
-          <div>
 
-        	<?php while ( have_posts() ) : the_post(); ?>
+        <h1 class="header-content-headline"> Vad söker du? </h1>
 
-            	<?php the_content('Läs mer'); ?>
+        <p class="header-content-text">
+          Bla bla bla bla.....
+        </p>
 
-            <section id="latest-downloads">
-							<h3>Ladda ner senaste WordPress <sup><a href="<?php echo esc_url( home_url( '/filer/hjalp/' ) ); ?>" class="dl-help-link" title="Behöver du hjälp med filen?"><i class="fa fa-question-circle"></i></a></sup></h3>
-								<div id="dl-btns">
-									<?php // Get main download IDs
-  									$dlsvse = get_post_meta($post->ID, '_dl_meta_sv_se', true);
-  									$dlinter = get_post_meta($post->ID, '_dl_meta_inter', true);
-									?>
-									<div class="col-md-6 dl-btn-sv">
-										<?php echo do_shortcode('[download id="'. $dlsvse .'" template="front"]'); ?>
-									</div>
-									<div class="col-md-6 dl-btn-inter">
-										<?php echo do_shortcode('[download id="'. $dlinter .'" template="front"]'); ?>
-									</div>
-									<p class="col-md-12"><a href="<?php echo esc_url( home_url( '/filer/information-for-filer/' ) ); ?>" class="extra-download-link">Behöver du andra format? Information för filer &rarr;</a></p>
-								</div>
-            </section>
-
-					<?php endwhile; ?>
-
-          </div>
-        </section>
-        <!-- End welcome -->
-        <!-- Start Slider -->
-        <section class="section col-md-5 hidden-xs">
-          <!-- Start SLIDER LOOP -->
-          <?php // WP_Query arguments
-          $slider_args = array (
-                'posts_per_page' 	=> '3',
-                'post_type' 		=> 'wpsvse_slider'
-          );
-
-          // The Query
-          $slider_query = new WP_Query( $slider_args ); ?>
-
-          <div id="header-slider" class="carousel slide" data-ride="carousel">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-
-              <?php // The Loop
-              if ( $slider_query->have_posts() ) {
-                while ( $slider_query->have_posts() ) {
-                  $slider_query->the_post(); ?>
-
-                  <div class="item">
-                    <div class="carousel-caption">
-                      <?php the_content(); ?>
-                    </div>
-                  </div>
-
-              <?php }
-              }
-
-            // Restore original Post Data
-            wp_reset_postdata(); ?>
-            <!-- End SLIDER LOOP -->
-
-            </div>
-            <a class="left carousel-control" href="#header-slider" data-slide="prev">
-              <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            </a>
-            <a class="right carousel-control" href="#header-slider" data-slide="next">
-              <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </section><!-- End Slider -->
-      </section>
     </div>
    	</div>
 	<!-- End Top-part -->
 
-
-	<!-- Start Quick Buttons -->
+  <!-- Start Quick Buttons -->
     <section id="quick-buttons" class="section">
 		<div class="container">
 			<div class="row">
@@ -101,64 +33,26 @@ get_header(); ?>
     </section>
     <!-- Start Quick Buttons -->
 
-    <!-- Start Latest News -->
-	<section id="latest-news" class="section">
-		<div class="container">
-			<div class="row">
-      <!-- Start NEWS LOOP -->
-      <?php // WP_Query arguments
-			  $news_args = array ( 'posts_per_page' => '3' );
 
-			  // The Query
-			  $news_query = new WP_Query( $news_args );
+    <!-- Information --->
 
-			  // The Loop
-			  if ( $news_query->have_posts() ) {
-				  while ( $news_query->have_posts() ) {
-					  $news_query->the_post(); ?>
+    <div class="row wpsv-information">
 
-                    <div class="col-md-4 article-item">
-                        <article>
-                          <div class="news-meta">
-                          	  <div class="comments-meta"><?php comments_popup_link('0 kommentarer', '1 kommentar', '% kommentarer'); ?></div>
-                              <time datetime="<?php the_time('c'); ?>"><?php the_time('l, j F'); ?></time>
-                              <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
-							  						<?php if ( has_post_thumbnail() ) {
-                                	the_post_thumbnail( 'post-image', array('class' => 'img-responsive') );
-                        	  } else { ?>
-                              	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />
-                              <?php } ?>
-                              </a>
-                          </div>
-                          <div class="news-title-frame">
-                              <h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-                              <div class="category-meta">Postat under <?php the_category(', '); ?></div>
-                          </div>
-                        </article>
-                    </div>
+      <div class="wpsv-information-story col-md-6">
+        <h2> Vad är WordPress Sverige? </h2>
 
-			  <?php  }
-			  }
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue ex, tincidunt ut nunc ac, lacinia egestas lacus. Nullam lobortis volutpat ante eu sollicitudin. Curabitur cursus urna at nisl pharetra maximus. Suspendisse at ligula ultricies, pharetra lectus at, pellentesque orci. Nunc vitae molestie odio. Nunc ac lacinia quam. Donec quis risus vel justo varius sagittis. Fusce finibus mauris odio, et condimentum nunc vestibulum a. Phasellus luctus ante nec felis sollicitudin vehicula. Maecenas in gravida dui, at consectetur erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec venenatis justo at nisi tincidunt ultrices. Curabitur eu convallis sapien. Integer tincidunt urna quis nisl molestie vestibulum. Cras urna est, cursus vel laoreet vel, porttitor vel lorem. </p>
+        <p>Cras in lacus quis tortor scelerisque hendrerit. Curabitur sodales nunc ex, at gravida tortor lobortis a. Pellentesque semper ex at leo venenatis elementum. Aliquam maximus metus libero, sed tempor nisi sagittis at. Phasellus molestie sem ac orci ultricies varius. Aliquam scelerisque bibendum molestie. Nullam volutpat dictum aliquet. Ut hendrerit varius lacus at sodales. Duis nisl neque, mollis eget enim gravida, iaculis sodales nisi. Cras sit amet nisi ac arcu suscipit sagittis. Etiam vestibulum a nulla nec gravida.</p>
 
-			  // Restore original Post Data
-			  wp_reset_postdata(); ?>
-      <!-- End NEWS LOOP -->
-			</div>
-		</div>
-	</section>
-	<!-- End Latest News -->
+      </div>
 
-	<!-- Start Sponsor -->
-	<section id="sponsor" class="section">
-		<div class="container">
-			<div class="row">
-         <!-- Start SPONSOR WIDGET -->
-           <?php if ( ! dynamic_sidebar( 'sponsor-widget' ) ) : endif; // end sidebar widget area ?>
-         <!-- End SPONSOR WIDGET -->
-			</div>
-		</div>
-	</section>
-	<!-- End Sponsor -->
+
+      <div class="wpsv-information-background hidden-xs hidden-sm col-md-6">
+      </div>
+
+    </div>
+
+    <!--- Information ends -->
 
 	<!-- Start Latest Blog Header -->
 	<section id="latest-blog-header" class="section">
@@ -221,74 +115,8 @@ get_header(); ?>
 	</section>
 	<!-- End Latest Blog Items -->
 
-	<!-- Start Latest Forum -->
-	<section id="latest-forum" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="section-headline">
-					<h2>Diskussionsforum</h2>
-					<span>Behöver du hjälp, har du funderingar, vill du hjälpa andra eller vara en del av communityn? Då är vårt <a href="<?php echo esc_url( home_url( '/forum/' ) ); ?>" rel="help">forum</a> platsen för dig!</span>
-				</div>
-			</div>
 
-      <?php // Check if bbPress plugin is loaded
-      if ( class_exists( 'bbPress' ) ) { ?>
-
-			<div class="row">
-
-        <div class="latest-forum-topics col-md-9">
-          <!-- Start LATEST FORUM POSTS -->
-            <?php bbp_get_template_part( 'content-latest-topics' ); ?>
-          <!-- End LATEST FORUM POSTS -->
-          </div>
-
-          <div id="latest-forum-sidebar" class="col-md-3">
-            <div class="forum-widget bbp-forum-search">
-              <h3>Hitta svar</h3>
-              <p>Vårt forum är som en stor databas med frågor och svar. Testa att söka efter din fråga och få ett svar direkt&hellip;</p>
-              <form role="search" method="get" id="bbp-search-form" action="<?php bbp_search_url(); ?>">
-              <label class="screen-reader-text hidden" for="bbp_search"><?php _e( 'Search for:', 'bbpress' ); ?></label>
-              <div class="input-group">
-               <!-- Start BBPRESS SEARCH FORM -->
-                <input type="text" value="<?php echo esc_attr( bbp_get_search_terms() ); ?>" name="bbp_search" id="bbp_search" class="form-control">
-                <input type="hidden" name="action" value="bbp-search-request" />
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="submit" id="bbp_search_submit">Sök</button>
-                </span>
-               <!-- End BBPRESS SEARCH FORM -->
-              </div><!-- /input-group -->
-              </form>
-            </div>
-
-            <div class="forum-widget new-bbp-post">
-            <h3>Ställ en fråga</h3>
-              <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett ämne med din fråga nu&hellip;</p>
-              <!-- Start BBPRESS NEW POST BUTTON -->
-              <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-              <!-- End BBPRESS NEW POST BUTTON -->
-            </div>
-
-            <!-- Start BBPRESS TAGCLOUD -->
-            <div class="forum-widget bbp-forum-tagcloud widget_tag_cloud">
-                <h3 class="widgettitle">Populära ämnestaggar</h3>
-                <div class="tagcloud">
-                  <?php echo do_shortcode('[bbp-topic-tags]'); ?>
-                </div>
-            </div>
-            <!-- End BBPRESS TAGCLOUD -->
-          </div>
-
-			</div>
-
-      <?php } else { ?>
-        <p style="text-align:center;"><strong>bbPress är inte aktiverat.</strong></p>
-      <?php } ?>
-
-		</div>
-	</section>
-	<!-- End Latest Forum -->
-
-	<!-- Start Statistics -->
+  <!-- Start Statistics -->
 	<section id="statistics" class="section">
 		<div class="container">
 			<div class="row">
@@ -336,77 +164,5 @@ get_header(); ?>
 		</div>
 	</section>
 	<!-- End Statistics -->
-
-	<!-- Start Activity -->
-	<section id="activity" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="section-headline">
-					<h2>Aktivitetsflöde</h2>
-					<span>Följ den senaste <a href="<?php echo esc_url( home_url( '/aktivitet/' ) ); ?>">aktiviteten</a> på <?php bloginfo( 'name' ); ?></span>
-				</div>
-			</div>
-      <?php // Check if BuddyPress plugin is loaded
-      if ( class_exists( 'buddypress' ) ) { ?>
-
-			<div class="row">
-				<?php bp_get_template_part( 'activity/front' ); ?>
-			</div>
-		</div>
-
-    <?php } else { ?>
-      <p style="text-align:center;"><strong>BuddyPress är inte aktiverat.</strong></p>
-    <?php } ?>
-
-	</section>
-	<!-- End Activity -->
-
-	<!-- Start Other -->
-	<section id="other" class="section">
-		<div class="container">
-			<div class="row col-md-6">
-
-          <div class="section-headline">
-            <h2>Aktiva grupper</h2>
-            <span>Skapa kontakter via olika <a href="<?php echo esc_url( home_url( '/grupper/' ) ); ?>">grupper</a> inom WordPress</span>
-          </div>
-
-          <?php // Check if BuddyPress plugin is loaded
-          if ( class_exists( 'buddypress' ) ) { ?>
-
-          <div id="bp-groups">
-            <?php bp_get_template_part( 'groups/front' ); ?>
-          </div>
-
-          <?php } else { ?>
-            <p style="text-align:center;"><strong>BuddyPress är inte aktiverat.</strong></p>
-          <?php } ?>
-
-      </div>
-
-      <div class="row col-md-6 twitter-container">
-          <div class="section-headline">
-            <h2>Socialt med WordPress?</h2>
-            <span>Få koll på vad som skrivs om WordPress <a href="https://twitter.com/hashtag/wpse?src=hash">#wpse</a></span>
-          </div>
-
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-              <li class="active"><a href="#wpse-twitter" role="tab" data-toggle="tab">#wpse</a></li>
-              <li><a href="#wpsvse-twitter" role="tab" data-toggle="tab">@WPSverige</a></li>
-          </ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content">
-              <div class="tab-pane text-center active" id="wpse-twitter">
-                <?php if ( ! dynamic_sidebar( 'twitter-wpse' ) ) : endif; ?>
-              </div>
-              <div class="tab-pane text-center" id="wpsvse-twitter">
-                <?php if ( ! dynamic_sidebar( 'twitter-wpsverige' ) ) : endif; ?>
-              </div>
-          </div>
-		</div>
-	</section>
-	<!-- End Other -->
 
 <?php get_footer(); ?>

@@ -8,29 +8,37 @@
 
             	<div id="support-btn" class="col-sm-6 col-md-3 quick-btn">
                 	<a href="<?php echo esc_url( home_url( '/support/' ) ); ?>" class="quick-link">
-                        <i class="fa fa-medkit"></i>
-                        <h2>Support</h2>
-                        <span>Ta del av support för WordPress</span>
+                        <i class="fa fa-support"></i>
+                        <h2>Få hjälp</h2>
+                        <p class="quick-btn-text">Lorum Ipsum..
+                          <span> Läs mer...</span>
+                        </p>
                     </a>
                 </div>
                 <div id="forum-btn" class="col-sm-6 col-md-3 quick-btn">
                 	<a href="<?php echo esc_url( home_url( '/forum/' ) ); ?>" class="quick-link">
-                        <i class="fa fa-comments"></i>
-                        <h2>Forum</h2>
-                        <span>Diskussioner och hjälp via vårt forum</span>
+                        <i class="fa fa-heart"></i>
+                        <h2>Bidra</h2>
+                        <p class="quick-btn-text">Lorum Ipsum...
+                          <span> Läs mer...</span>
+                        </p>
                     </a>
                 </div>
                 <div id="files-btn" class="col-sm-6 col-md-3 quick-btn">
                 	<a href="<?php echo esc_url( home_url( '/filer/' ) ); ?>" class="quick-link">
-                        <i class="fa fa-cloud-download"></i>
-                        <h2>Filer</h2>
-                        <span>Ladda ner översättningar, tillägg och teman</span>
+                        <i class="fa fa-group"></i>
+                        <h2>Delta</h2>
+                        <p class="quick-btn-text">Lorum Ipsum..
+                          <span> Läs mer...</span>
+                        </p>
                     </a>
                 </div>
                 <div id="community-btn" class="col-sm-6 col-md-3 quick-btn">
                 	<a href="<?php echo esc_url( home_url( '/community/' ) ); ?>" class="quick-link">
-                        <i class="fa fa-group"></i>
-                        <h2>Community</h2>
-                        <span>Var en del av den svenska communityn</span>
+                        <i class="fa fa-info"></i>
+                        <h2>Lär dig mer</h2>
+                        <p class="quick-btn-text">Lorum Ipsum..
+                          <span> Läs mer...</span>
+                        </p>
                     </a>
                 </div>
