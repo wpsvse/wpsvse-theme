@@ -150,15 +150,7 @@ li.pingback {
   Top Part
 ============================================================================ */
 .top-part {
-  background: url(img/blur.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   padding-top: 0;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
 }
 /* Adminbar login */
 #wpadminbar #loginform p { display: inline; }

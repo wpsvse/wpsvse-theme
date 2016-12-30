@@ -117,3 +117,27 @@ function wpsvse_wsl_custom_icons( $provider_id, $provider_name, $authenticate_ur
 }
 
 add_filter( 'wsl_render_auth_widget_alter_provider_icon_markup', 'wpsvse_wsl_custom_icons', 10, 3 );
+
+//***
+// Print a random background image on front page
+//***
+function wpsvse_frontpage_header_css() {
+	$image_number = is_front_page() ? rand(1, 7) : 7;
+	?>
+	<style type="text/css">
+		.top-part {
+			background: url(<?php echo get_stylesheet_directory_uri(); ?>/img/background/<?=$image_number?>.jpg);
+
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+
+			-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
+			-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
+		}
+	</style>
+	<?
+}
+add_filter( 'wp_head', 'wpsvse_frontpage_header_css' );
