@@ -8,7 +8,7 @@
  */
 get_header(); ?>
 
-    <div class="container">
+    <div class="container container-relative">
       <section id="header-content" class="row">
 
         <h1 class="header-content-headline"> Vad söker du? </h1>
@@ -16,6 +16,9 @@ get_header(); ?>
         <p class="header-content-text">
           Bla bla bla bla.....
         </p>
+
+
+        <p class="header-content-image--caption"> Stockholm </p>
 
     </div>
    	</div>
@@ -77,7 +80,7 @@ get_header(); ?>
               <?php // WP_Query arguments
               $args = array (
                   'post_type'		=> 'wpsvse_blog',
-                  'posts_per_page'	=> '4',
+                  'posts_per_page'	=> '8',
               );
 
               // The Query
@@ -109,7 +112,12 @@ get_header(); ?>
               wp_reset_postdata(); ?>
               <!-- End BLOG LOOP -->
             <div class="clearfix"></div>
+
           </div>
+
+          <a href="#"> Läs fler blogg inlägg </a>
+
+          
         </div>
 	</div>
 	</section>

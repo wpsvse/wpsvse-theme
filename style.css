@@ -2791,3 +2791,12 @@ img.mfp-img {
   margin: 25px 0 65px 0;
   text-align: center;
 }
+
+.header-content-image--caption {
+  color: #fff;
+  font-weight: 700;
+}
+
+.container-relative {
+  position: relative;
+}
