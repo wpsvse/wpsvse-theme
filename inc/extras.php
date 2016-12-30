@@ -119,14 +119,61 @@ function wpsvse_wsl_custom_icons( $provider_id, $provider_name, $authenticate_ur
 add_filter( 'wsl_render_auth_widget_alter_provider_icon_markup', 'wpsvse_wsl_custom_icons', 10, 3 );
 
 //***
-// Print a random background image on front page
+// Random image switcher
 //***
+
+function wpsv_header_image_number() {
+	global $wpsv_header_image;
+
+	if($wpsv_header_image) {
+		return $wpsv_header_image;
+	}
+	else {
+		$wpsv_header_image = is_front_page() ? rand(1, 7) : 7;
+		return $wpsv_header_image;
+	}
+}
+
+function wpsv_header_image_info($number) {
+	$info = array(
+		"image-1" => array(
+			'place' => 'Stockholm',
+			'author' => 'Teresita Garit'
+		),
+		"image-2" => array(
+			'place' => 'Stockholm',
+		),
+		"image-3" => array(
+			'place' => 'Stockholm',
+		),
+		"image-4" => array(
+			'place' => 'Stockholm',
+		),
+		"image-5" => array(
+			'place' => 'Stockholm',
+		),
+		"image-6" => array(
+			'place' => 'Stockholm',
+		),
+		"image-7" => array(
+			'place' => 'Stockholm',
+		),
+	);
+
+	return $info["image-{$number}"];
+}
+
+function wpsv_frontpage_body_classes($classes) {
+	$classes[] = 'top-header-' . wpsv_header_image_number();
+	return $classes;
+}
+add_filter('body_class', 'wpsv_frontpage_body_classes');
+
 function wpsvse_frontpage_header_css() {
-	$image_number = is_front_page() ? rand(1, 7) : 7;
 	?>
 	<style type="text/css">
 		.top-part {
-			background: url(<?php echo get_stylesheet_directory_uri(); ?>/img/background/<?=$image_number?>.jpg);
+			background: url(<?php echo get_stylesheet_directory_uri(); ?>/img/background/<?=wpsv_header_image_number()?>.jpg);
 
 			-webkit-background-size: cover;
 			-moz-background-size: cover;

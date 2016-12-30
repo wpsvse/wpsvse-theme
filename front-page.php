@@ -18,7 +18,7 @@ get_header(); ?>
         </p>
 
 
-        <p class="header-content-image--caption"> Stockholm </p>
+        <p class="header-content-image--caption"><?=wpsv_header_image_info(wpsv_header_image_number())['place']?> </p>
 
     </div>
    	</div>
