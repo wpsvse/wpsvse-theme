@@ -13,7 +13,3 @@ function wpsvse_custom_login_logo() {
 	echo $style;
 }
 add_action( 'login_head', 'wpsvse_custom_login_logo' );
-
-
-//hook into the administrative header output
-add_action('wp_before_admin_bar_render', 'wpsvse_brand_logo');
