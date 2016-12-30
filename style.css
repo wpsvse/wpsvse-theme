@@ -2795,6 +2795,26 @@ img.mfp-img {
 .header-content-image--caption {
   color: #fff;
   font-weight: 700;
+  margin-bottom: 0;
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.header-content-image--author {
+  color: #fff;
+  font-weight: normal;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+@media all and (max-width: 800px) {
+  .header-content-image--caption {
+    padding-left: 20px;
+  }
+
+  .header-content-image--author {
+    padding-left: 20px;
+  }
 }
 
 .container-relative {

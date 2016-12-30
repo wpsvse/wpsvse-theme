@@ -17,8 +17,11 @@ get_header(); ?>
           Bla bla bla bla.....
         </p>
 
-
-        <p class="header-content-image--caption"><?=wpsv_header_image_info(wpsv_header_image_number())['place']?> </p>
+	      <?php
+	      $header_info = wpsv_header_image_info();
+	      ?>
+        <p class="header-content-image--caption"><?=$header_info['place']?> </p>
+	    <p class="header-content-image--author"><?=$header_info['author']?> </p>
 
     </div>
    	</div>

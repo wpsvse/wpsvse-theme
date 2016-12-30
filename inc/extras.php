@@ -134,29 +134,40 @@ function wpsv_header_image_number() {
 	}
 }
 
-function wpsv_header_image_info($number) {
+function wpsv_header_image_info($number = null) {
+
+	if(!$number) {
+		$number = wpsv_header_image_number();
+	}
+
 	$info = array(
 		"image-1" => array(
-			'place' => 'Stockholm',
+			'place' => 'Malmö',
 			'author' => 'Teresita Garit'
 		),
 		"image-2" => array(
 			'place' => 'Stockholm',
+			'author' => 'Tatiana Lapina'
 		),
 		"image-3" => array(
-			'place' => 'Stockholm',
+			'place' => 'Grisslehamn',
+			'author' => 'Johan Rydberg'
 		),
 		"image-4" => array(
 			'place' => 'Stockholm',
+			'author' => 'Tatiana Lapina'
 		),
 		"image-5" => array(
-			'place' => 'Stockholm',
+			'place' => 'Åre',
+			'author' => 'Dmitriy Karfagenskiy'
 		),
 		"image-6" => array(
-			'place' => 'Stockholm',
+			'place' => 'Gällaryd, Värnamo ö',
+			'author' => 'Jon Flobrant'
 		),
 		"image-7" => array(
-			'place' => 'Stockholm',
+			'place' => 'Hovfjället',
+			'author' => 'Pigoff PhotographY'
 		),
 	);
 
