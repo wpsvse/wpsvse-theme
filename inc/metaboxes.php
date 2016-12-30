@@ -8,8 +8,8 @@
 //**************************************************
 // Initiate CMB2 class for metaboxes
 //**************************************************
-if ( file_exists(  __DIR__ .'/cmb2/init.php' ) ) {
-	require_once  __DIR__ .'/cmb2/init.php';
+if ( file_exists(  __DIR__ .'/../inc-embedded/cmb2/init.php' ) ) {
+	require_once  __DIR__ .'/../inc-embedded/cmb2/init.php';
 }
 
 //**************************************************

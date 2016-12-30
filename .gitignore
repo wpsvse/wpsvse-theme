@@ -5,6 +5,8 @@ wp-content/upgrade/
 wp-content/backup-db/
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
+vendor/
+inc-embedded/
 sitemap.xml
 *.log
 wp-content/cache/

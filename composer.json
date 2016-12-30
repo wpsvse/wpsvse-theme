@@ -1,7 +1,21 @@
 {
   "name"       : "wpsv/wpsvse-theme",
   "type"       : "wordpress-theme",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
   "require"    : {
-    "composer/installers": "1.*"
+    "composer/installers": "1.*",
+    "wpackagist-plugin/cmb2": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "inc-embedded/{$name}": [
+        "type:wordpress-plugin"
+      ]
+    }
   }
 }
