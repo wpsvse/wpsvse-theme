@@ -30,6 +30,9 @@ function wpsvse_setup() {
 	 */
 	load_theme_textdomain( 'wpsvse', get_template_directory() . '/languages' );
 
+	/* Always shot admin bar */
+
+	show_admin_bar( true );
 
 	/**
 	 * Add default posts and comments RSS feed links to head
