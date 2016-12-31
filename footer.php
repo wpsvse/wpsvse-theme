@@ -12,7 +12,7 @@
     <section id="other" class="section">
         <div class="container">
             <div class="row">
-            <?php if ( is_bbpress() ) { ?>
+            <?php if ( function_exists('is_bbpress') && is_bbpress() ) { ?>
             	<div class="col-md-7 forum-legend">
                 	<p><small>Information för forummarkeringar</small></p>
                   <ul>
