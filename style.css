@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', Lucida Sans Unicode, Sans-Serif;
   margin-top: 0;
 }
-h1 { text-shadow: 1px 1px 1px rgba(0, 0, 0, .2); }
+h1, h6 { text-shadow: 1px 1px 1px rgba(0, 0, 0, .2); }
 h2 { font-weight: 300; }
 h3 {
   font-size: 26px;
@@ -2779,9 +2779,16 @@ img.mfp-img {
 .invitations-for-slack-wrapper .team-numbers { font-size: 24px!important; }
 .invite-box-wrapper { width: 387px!important; }
 
-.header-content-headline {
+.header-content-headline-top {
   text-align: center;
   margin-top: 65px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.header-content-headline {
+  text-align: center;
+  margin-top: 20px;
   font-size: 45px;
   color: #fff;
 }
@@ -2790,6 +2797,12 @@ img.mfp-img {
   color: #fff;
   margin: 25px 0 65px 0;
   text-align: center;
+  max-width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .header-content-image--caption {

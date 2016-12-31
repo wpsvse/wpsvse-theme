@@ -15,62 +15,45 @@ if ( file_exists(  __DIR__ .'/../inc-embedded/cmb2/init.php' ) ) {
 //**************************************************
 // Metaboxes for front page downloads
 //**************************************************
-add_action( 'cmb2_admin_init', 'wpsvse_front_page_dl_metabox' );
 
-function wpsvse_front_page_dl_metabox() {
+add_action( 'cmb2_admin_init', 'wpsvse_front_page_fields' );
+
+function wpsvse_front_page_fields() {
 	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_dl_meta_';
-	/**
-	 * Metabox to be displayed on the front page
-	 */
-	$cmb_dl_meta = new_cmb2_box( array(
+	$prefix = 'frontpage_data';
+
+	$cmb_meta = new_cmb2_box( array(
 		'id'           => $prefix . 'metabox',
-		'title'        => __( 'Nedladdningsboxar', 'wpsvse' ),
+		'title'        => __( 'Övriga fält', 'wpsvse' ),
 		'object_types' => array( 'page', ), // Post type
 		'context'      => 'normal',
 		'priority'     => 'high',
-		'show_names'   => true, // Show field names on the left
 		'show_on' => array( 'key' => 'front-page', 'value' => '' ), // Specific post IDs to display this metabox
-	) );
-	$cmb_dl_meta->add_field( array(
-		'name' => __( 'Svensk nedladdning', 'wpsvse' ),
-		'desc' => __( 'ID för den svenska nedladdningsboxen (ange ID för nedladdning, inte version).', 'wpsvse' ),
-		'id'   => $prefix . 'sv_se',
-		'type' => 'text_small',
-	) );
-	$cmb_dl_meta->add_field( array(
-		'name' => __( 'Internationell nedladdning', 'wpsvse' ),
-		'desc' => __( 'ID för den internationella nedladdningsboxen (ange ID för nedladdning, inte version).', 'wpsvse' ),
-		'id'   => $prefix . 'inter',
-		'type' => 'text_small',
-	) );
-}
+	));
 
-//**************************************************
-// Metaboxes for downloads extra meta
-//**************************************************
-add_action( 'cmb2_admin_init', 'wpsvse_dlm_extra_meta' );
+	$cmb_meta->add_field( array(
+		'name'    => 'Topprubrik för hero-bilden',
+		'desc'    => '',
+		'default' => '',
+		'id'      => "{$prefix}_head_title_top",
+		'type'    => 'text',
+	) );
 
-function wpsvse_dlm_extra_meta() {
-	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_dlm_meta_';
-	/**
-	 * Metabox to be displayed on the front page
-	 */
-	$cmb_dl_meta = new_cmb2_box( array(
-		'id'           => $prefix . 'metabox',
-		'title'        => __( 'Extra meta', 'wpsvse' ),
-		'object_types' => array( 'dlm_download', ), // Post type
-		'context'      => 'normal',
-		'priority'     => 'high',
-		'show_names'   => true, // Show field names on the left
+	$cmb_meta->add_field( array(
+		'name'    => 'Underrubrik för hero-bilden',
+		'desc'    => '',
+		'default' => '',
+		'id'      => "{$prefix}_head_title",
+		'type'    => 'text',
 	) );
-	$cmb_dl_meta->add_field( array(
-		'name' => __( 'Extra filmeta', 'wpsvse' ),
-		'desc' => __( 'Extra filmeta för nedladdningar. Kan används för att skilja liknande nedladdningar, så som WordPress (Svenska) och (Internationell).', 'wpsvse' ),
-		'id'   => $prefix . 'extra',
-		'type' => 'text_medium',
-	) );
+
+	$cmb_meta->add_field(array(
+		'name'    => 'Beskrivningstext (efter header)',
+		'desc'    => 'Beskrivningstext längre ner på sidan',
+		'id'      => "{$prefix}_description_bottom",
+		'type'    => 'wysiwyg',
+		'options' => array(),
+	));
 }
 
 //**************************************************
