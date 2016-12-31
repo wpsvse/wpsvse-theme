@@ -88,7 +88,7 @@ get_header(); ?>
 	              <!-- Start BLOG LOOP -->
 	              <?php // WP_Query arguments
 	              $args = array (
-	                  'post_type'		=> 'wpsvse_blog',
+	                  'post_type'		=> 'post',
 	                  'posts_per_page'	=> '8',
 	              );
 

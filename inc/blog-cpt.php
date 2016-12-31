@@ -3,6 +3,7 @@
 add_action( 'init', 'wpsvse_cpt_blog' );
 
 function wpsvse_cpt_blog() {
+
 	$labels = array(
 		'name' => _x( 'Blogginlägg', 'wpsvse' ),
 		'singular_name' => _x( 'Blogginlägg', 'wpsvse' ),
@@ -80,4 +81,3 @@ function wpsvse_taxonomy_categories() {
     );
     register_taxonomy( 'blog_category', array('wpsvse_blog'), $args );
 }
-?>

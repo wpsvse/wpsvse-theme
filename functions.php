@@ -324,3 +324,8 @@ require get_template_directory() . '/inc/branding.php';
  * Custom BuddyPress Docs
  */
 // require get_template_directory() . '/inc/bp-doc-functions.php';
+
+/**
+ * Blog CPT
+ */
+require get_template_directory() . '/inc/blog-cpt.php';
