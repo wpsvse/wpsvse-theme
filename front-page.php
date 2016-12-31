@@ -49,10 +49,12 @@ get_header(); ?>
 	    <div class="row wpsv-information">
 
 	      <div class="wpsv-information-story col-md-6">
-	        <h2> Vad är WordPress Sverige? </h2>
+	        <h2>
+		        <?php echo esc_html(get_post_meta( get_the_ID(), 'frontpage_data_about_header', true )); ?>
+	        </h2>
 
 	        <div class="wpsv-information-story-wrapper">
-		        <?php echo apply_filters('the_content', get_post_meta( get_the_ID(), 'frontpage_data_description_bottom', true )); ?>
+		        <?php echo apply_filters('the_content', get_post_meta( get_the_ID(), 'frontpage_data_about_text', true )); ?>
 	        </div>
 	      </div>
 

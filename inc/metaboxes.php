@@ -48,9 +48,17 @@ function wpsvse_front_page_fields() {
 	) );
 
 	$cmb_meta->add_field(array(
-		'name'    => 'Beskrivningstext (efter header)',
+		'name'    => 'Rubrik för Om oss-blocket',
+		'desc'    => '',
+		'id'      => "{$prefix}_about_header",
+		'type'    => 'text',
+		'options' => array(),
+	));
+
+	$cmb_meta->add_field(array(
+		'name'    => 'Text för Om oss-blocket',
 		'desc'    => 'Beskrivningstext längre ner på sidan',
-		'id'      => "{$prefix}_description_bottom",
+		'id'      => "{$prefix}_about_text",
 		'type'    => 'wysiwyg',
 		'options' => array(),
 	));
