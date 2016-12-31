@@ -31,13 +31,17 @@ function wpsvse_setup() {
 	load_theme_textdomain( 'wpsvse', get_template_directory() . '/languages' );
 
 	/* Always shot admin bar */
-
-	show_admin_bar( true );
+	//show_admin_bar( true );
 
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
 	add_theme_support( 'automatic-feed-links' );
+
+	/**
+	 * Support title tag
+	 */
+	add_theme_support( 'title-tag' );
 
 	/**
 	 * Enable support for Post Thumbnails on posts and pages
