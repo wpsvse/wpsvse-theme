@@ -196,6 +196,6 @@ function wpsvse_frontpage_header_css() {
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
 		}
 	</style>
-	<?
+	<?php
 }
 add_filter( 'wp_head', 'wpsvse_frontpage_header_css' );
