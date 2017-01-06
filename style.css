@@ -2918,3 +2918,26 @@ img.mfp-img {
   color: inherit;
   font-weight: 700;
 }
+
+/* Slack signup */
+
+.slackbadge_container .invite-button,
+.invite-box-wrapper .invite-button {
+  width: auto;
+  padding: 6px 12px;
+  margin-top: 5px;
+}
+
+.invite-box input {
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+.invitations-for-slack-wrapper .join-button {
+  padding: 6px 25px 4px 50px !important;
+}
+
+.invitations-for-slack-wrapper,
+.invite-box-wrapper {
+  padding-bottom: 10px !important;
+}
