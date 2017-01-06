@@ -2658,6 +2658,36 @@ img.mfp-img {
 }
 .mfp-image-holder .mfp-content { max-width: 100%; }
 .mfp-gallery .mfp-image-holder .mfp-figure { cursor: pointer; }
+
+/* Header image */
+
+.top-part::after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.top-header-2 .top-part::after,
+.top-header-4 .top-part::after {
+  background: linear-gradient(rgba(0,0,0,0.4),transparent 70%);
+}
+
+.top-header-7 .top-part,
+.top-header-3 .top-part,
+.top-header-4 .top-part {
+  background-position: bottom;
+}
+
+.top-header-1 .top-part,
+.top-header-2 .top-part,
+.top-header-5 .top-part,
+.top-header-6 .top-part {
+  background-position: center;
+}
+
 /* ==========================================================================
 	Galleries
 ============================================================================ */
@@ -2873,7 +2903,7 @@ img.mfp-img {
 
 .btn.profile-button a {
   color: #fff;
-  font-family: 'Open Sans'; 
+  font-family: 'Open Sans';
 }
 
 .panel-body {
