@@ -54,10 +54,10 @@ function wpsvse_personer_shortcode( $atts, $content = null ) {
 	      <div class="panel-body text-center">
 	        <img class="panel-profile-img" src="//cdn.shopify.com/s/files/1/0691/5403/t/130/assets/avatar-fat.jpg?1331440162089783574">
 	        <h5 class="panel-title"><?php echo get_the_title($person->ID); ?></h5>
-	        <p class="m-b">Creator of Bootstrap, engineer at Twitter &amp; Medium. Founder of Bumpers.</p>
-	        <a href="//github.com/fat" target="_blank" class="btn btn-primary-outline btn-sm m-b">
-	          <span class="btn btn-primary"> Button </span>
-	        </a>
+	        <p class="m-b">body......</p>
+	          <span class="fa fa-twitter btn btn-primary profile-button"> <a href=""> Twitter </a> </span>
+						<span class="fa fa-github btn btn-primary profile-button"> <a href=""> Github </a> </span>
+						<span class="fa fa-linkedin btn btn-primary profile-button"> <a href=""> Linkedin </a> </span>
 	      </div>
 	    </div>
 		</div>

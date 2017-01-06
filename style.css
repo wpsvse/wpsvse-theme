@@ -2867,6 +2867,15 @@ img.mfp-img {
   background-size: cover;
 }
 
+.btn.profile-button {
+  margin: 5px 0;
+}
+
+.btn.profile-button a {
+  color: #fff;
+  font-family: 'Open Sans'; 
+}
+
 .panel-body {
   padding: 15px;
 }
