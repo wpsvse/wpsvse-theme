@@ -10,7 +10,7 @@
         <i class="fa fa-support"></i>
         <h2>Få hjälp</h2>
         <p class="quick-btn-text">
-            Få hjälp via diskussionsforum eller från professionalla företag
+            Om du stöter på problem eller har frågor kring WordPress så finns det många sätt att försöka få hjälp
           <span> Läs mer</span>
         </p>
     </a>
