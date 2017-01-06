@@ -13,7 +13,7 @@ if ( file_exists(  __DIR__ .'/../inc-embedded/cmb2/init.php' ) ) {
 }
 
 //**************************************************
-// Metaboxes for front page downloads
+// Metaboxes for front page fields
 //**************************************************
 
 add_action( 'cmb2_admin_init', 'wpsvse_front_page_fields' );
@@ -65,6 +65,47 @@ function wpsvse_front_page_fields() {
 }
 
 //**************************************************
+// Metaboxes for Nyckelperson CPT
+//**************************************************
+
+add_action( 'cmb2_admin_init', 'wpsvse_person_social_fields' );
+
+function wpsvse_person_social_fields() {
+
+	$social_meta = new_cmb2_box( array(
+		'id'           => 'person_social',
+		'title'        => __( 'Sociala medier', 'wpsvse' ),
+		'object_types' => array( 'person', ), // Post type
+		'context'      => 'normal',
+		'priority'     => 'high'
+	));
+
+	$social_meta->add_field( array(
+		'name'    => 'GitHub URL',
+		'desc'    => '',
+		'default' => '',
+		'id'      => "github",
+		'type'    => 'text',
+	));
+
+	$social_meta->add_field( array(
+		'name'    => 'Twitter URL',
+		'desc'    => '',
+		'default' => '',
+		'id'      => "twitter",
+		'type'    => 'text',
+	));
+
+	$social_meta->add_field( array(
+		'name'    => 'LinkedIn URL',
+		'desc'    => '',
+		'default' => '',
+		'id'      => "linkedin",
+		'type'    => 'text',
+	));
+}
+
+//**************************************************
 // Add CMB show_on filter for front page display
 //**************************************************
 function wpsvse_metabox_on_front_page( $display, $meta_box ) {
@@ -101,6 +142,7 @@ add_filter( 'cmb2_show_on', 'wpsvse_metabox_on_front_page', 10, 2 );
 // Repeatable metaboxes for FAQ pages
 //**************************************************
 add_action( 'cmb2_admin_init', 'wpsvse_faq_page_field_groups' );
+
 /**
  * Hook in and add a metabox to repeatable grouped fields
  */
