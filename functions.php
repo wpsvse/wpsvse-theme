@@ -330,6 +330,7 @@ require get_template_directory() . '/inc/branding.php';
 // require get_template_directory() . '/inc/bp-doc-functions.php';
 
 /**
- * Blog CPT
+ * CPTs
  */
-require get_template_directory() . '/inc/blog-cpt.php';
+require get_template_directory() . '/inc/cpt-blog.php';
+require get_template_directory() . '/inc/cpt-person.php';
