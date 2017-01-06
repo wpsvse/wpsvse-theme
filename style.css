@@ -2833,3 +2833,8 @@ img.mfp-img {
 .container-relative {
   position: relative;
 }
+
+.container-lg {
+  max-width: 1800px;
+  margin: 0 auto;
+}

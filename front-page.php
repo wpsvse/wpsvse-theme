@@ -46,9 +46,13 @@ get_header(); ?>
 
 	    <!-- Information --->
 
-	    <div class="row wpsv-information">
+	    <div class="row container-lg wpsv-information">
 
-	      <div class="wpsv-information-story col-md-6">
+				<div class="hidden-md hidden-lg clearfix">
+					<img src="/wp-content/themes/wpsvse-theme/img/wordcamp.jpg" alt="wordcamp" />
+				</div>
+
+	      <div class="wpsv-information-story col-md-offset-1 col-md-5">
 	        <h2>
 		        <?php echo esc_html(get_post_meta( get_the_ID(), 'frontpage_data_about_header', true )); ?>
 	        </h2>
@@ -59,7 +63,7 @@ get_header(); ?>
 	      </div>
 
 
-	      <div class="wpsv-information-background hidden-xs hidden-sm col-md-6">
+	      <div class="wpsv-information-background hidden-xs hidden-sm col-md-5 col-md-offset-1">
 	      </div>
 
 	    </div>
