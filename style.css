@@ -16,30 +16,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
  WordPress Sverige is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
-*/
-/* ==========================================================================
-  Fonts
-============================================================================ */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-
 /* ==========================================================================
   Content
 ============================================================================ */
 body {
   height: 100%;
   text-rendering: optimizeLegibility;
-  font-family: 'Open Sans', Sans-Serif;
-  color: #747474;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', Lucida Sans Unicode, Sans-Serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin-top: 0;
 }
 h1, h6 { text-shadow: 1px 1px 1px rgba(0, 0, 0, .2); }
-h2 { font-weight: 300; }
+
 h3 {
   font-size: 26px;
-  font-weight: 300;
   letter-spacing: -1px;
   line-height: 34px;
   color: #626c72;
@@ -621,7 +614,7 @@ ol.EnlighterJS,ul.EnlighterJS { background-color: #eee; }
   border-color: none;
   box-shadow: none;
   border: 0;
-  font-family: 'Open Sans', Sans-Serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -2903,7 +2896,7 @@ img.mfp-img {
 
 .btn.profile-button a {
   color: #fff;
-  font-family: 'Open Sans';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .panel-body {
