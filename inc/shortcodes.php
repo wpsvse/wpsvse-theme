@@ -29,3 +29,31 @@ function wpsvse_info_box_shortcode( $atts, $content = null ) {
 	return '<div class="box-shortcode box-info">' . $content . '</div>';
 }
 add_shortcode( 'info', 'wpsvse_info_box_shortcode' );
+
+//**************************************************
+// Shortcode [personer]
+//**************************************************
+function wpsvse_personer_shortcode( $atts, $content = null ) {
+
+	$person_query = new WP_Query(array(
+			'post_type' => 'person',
+			'order' => 'ASC',
+			'limit' => -1
+		)
+	);
+
+	ob_start();
+	?>
+
+	<?php /* @var $person WP_Post */ ?>
+	<?php foreach($person_query->posts as $person) : ?>
+
+		<?php var_dump($person->ID); ?>
+		<?php echo get_the_title($person->ID); ?>
+
+	<?php endforeach; ?>
+
+	<?php
+	return ob_get_clean();
+}
+add_shortcode( 'personer', 'wpsvse_personer_shortcode' );
