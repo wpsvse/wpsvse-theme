@@ -65,7 +65,7 @@ function wpsvse_front_page_fields() {
 }
 
 //**************************************************
-// Metaboxes for Nyckelperson CPT
+// Social metaboxes for Nyckelperson CPT
 //**************************************************
 
 add_action( 'cmb2_admin_init', 'wpsvse_person_social_fields' );
@@ -102,6 +102,35 @@ function wpsvse_person_social_fields() {
 		'default' => '',
 		'id'      => "linkedin",
 		'type'    => 'text',
+	));
+}
+
+//**************************************************
+// Other metaboxes for Nyckelperson CPT
+//**************************************************
+
+add_action( 'cmb2_admin_init', 'wpsvse_person_misc_fields' );
+
+function wpsvse_person_misc_fields() {
+
+	$misc_meta = new_cmb2_box( array(
+		'id'           => 'person_misc',
+		'title'        => __( 'Personfält', 'wpsvse' ),
+		'object_types' => array( 'person', ), // Post type
+		'context'      => 'normal',
+		'priority'     => 'high'
+	));
+
+	$misc_meta->add_field( array(
+		'name'    => 'Background image',
+		'desc'    => '',
+		'default' => '',
+		'id'      => "background_image",
+		'type'    => 'file',
+		// Optional:
+		'options' => array(
+			'url' => false, // Hide the text input for the url
+		)
 	));
 }
 
