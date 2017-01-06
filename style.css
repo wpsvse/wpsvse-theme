@@ -2838,3 +2838,51 @@ img.mfp-img {
   max-width: 1800px;
   margin: 0 auto;
 }
+
+
+.panel-default {
+  border-color: #ddd;
+}
+
+.Profile {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.panel-profile-img {
+  max-width: 100px;
+  margin-top: -70px;
+  margin-bottom: 5px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.panel-profile .panel-heading {
+  height: 150px;
+  background-size: cover;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-b-lg {
+  margin-bottom: 45px !important;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: inherit;
+  font-weight: 700;
+}

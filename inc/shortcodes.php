@@ -48,8 +48,21 @@ function wpsvse_personer_shortcode( $atts, $content = null ) {
 	<?php /* @var $person WP_Post */ ?>
 	<?php foreach($person_query->posts as $person) : ?>
 
-		<?php var_dump($person->ID); ?>
-		<?php echo get_the_title($person->ID); ?>
+		<div class="col-md-4 m-b-lg">
+			<div class="panel panel-default panel-profile m-b-0">
+	    	<div class="panel-heading" style="background-color: #21759b; background-image: url(//cdn.shopify.com/s/files/1/0691/5403/t/130/assets/insta-2.jpg?1331440162089783574);"></div>
+	      <div class="panel-body text-center">
+	        <img class="panel-profile-img" src="//cdn.shopify.com/s/files/1/0691/5403/t/130/assets/avatar-fat.jpg?1331440162089783574">
+	        <h5 class="panel-title"><?php echo get_the_title($person->ID); ?></h5>
+	        <p class="m-b">Creator of Bootstrap, engineer at Twitter &amp; Medium. Founder of Bumpers.</p>
+	        <a href="//github.com/fat" target="_blank" class="btn btn-primary-outline btn-sm m-b">
+	          <span class="btn btn-primary"> Button </span>
+	        </a>
+	      </div>
+	    </div>
+		</div>
+
+		<?php var_dump(get_post_meta($person->ID)); ?>
 
 	<?php endforeach; ?>
 
