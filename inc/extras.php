@@ -191,9 +191,9 @@ function wpsvse_frontpage_header_css() {
 			-o-background-size: cover;
 			background-size: cover;
 
-			-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
-			-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) inset;
+			-webkit-box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+			-moz-box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+			box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 		}
 	</style>
 	<?php
