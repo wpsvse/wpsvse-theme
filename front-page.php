@@ -46,11 +46,11 @@ get_header(); ?>
 
 	    <!-- Information --->
 
-	    <div class="row container-lg wpsv-information">
+			<div class="hidden-md hidden-lg clearfix">
+				<img src="/wp-content/themes/wpsvse-theme/img/wordcamp.jpg" alt="wordcamp" />
+			</div>
 
-				<div class="hidden-md hidden-lg clearfix">
-					<img src="/wp-content/themes/wpsvse-theme/img/wordcamp.jpg" alt="wordcamp" />
-				</div>
+	    <div class="row container-lg wpsv-information">
 
 	      <div class="wpsv-information-story col-md-offset-1 col-md-5">
 	        <h2>
@@ -128,8 +128,9 @@ get_header(); ?>
 
 	          </div>
 
-	          <a href="#"> Läs fler blogg inlägg </a>
-
+						<div class="read-more-posts">
+	          	<a href="#"> Läs fler blogg inlägg </a>
+						</div>
 
 	        </div>
 		</div>
