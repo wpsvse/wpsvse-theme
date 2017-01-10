@@ -48,21 +48,39 @@ function wpsvse_personer_shortcode( $atts, $content = null ) {
 	<?php /* @var $person WP_Post */ ?>
 	<?php foreach($person_query->posts as $person) : ?>
 
-		<div class="col-md-4 m-b-lg">
-			<div class="panel panel-default panel-profile m-b-0">
-	    	<div class="panel-heading" style="background-color: #21759b; background-image: url(//cdn.shopify.com/s/files/1/0691/5403/t/130/assets/insta-2.jpg?1331440162089783574);"></div>
-	      <div class="panel-body text-center">
-	        <img class="panel-profile-img" src="//cdn.shopify.com/s/files/1/0691/5403/t/130/assets/avatar-fat.jpg?1331440162089783574">
-	        <h5 class="panel-title"><?php echo get_the_title($person->ID); ?></h5>
-	        <p class="m-b">body......</p>
-	          <span class="fa fa-twitter btn btn-primary profile-button"> <a href=""> Twitter </a> </span>
-						<span class="fa fa-github btn btn-primary profile-button"> <a href=""> Github </a> </span>
-						<span class="fa fa-linkedin btn btn-primary profile-button"> <a href=""> Linkedin </a> </span>
-	      </div>
-	    </div>
-		</div>
+        <?php
+		$background_image_data = wp_get_attachment_image_src(get_post_meta($person->ID, 'background_image_id', true), 'large');
+		$background_image_url = isset($background_image_data[0]) ? esc_attr($background_image_data[0]) : null;
 
-		<?php var_dump(get_post_meta($person->ID)); ?>
+		$avatar_data = wp_get_attachment_image_src(get_post_thumbnail_id($person->ID), 'medium');
+		$avatar_url = isset($avatar_data[0]) ? esc_attr($avatar_data[0]) : null;
+        ?>
+
+        <div class="col-md-4 m-b-lg">
+            <div class="panel panel-default panel-profile m-b-0">
+                <div class="panel-heading" style="background-color: #21759b; <?php echo $background_image_url ? "background-image: url({$background_image_url});" : ''; ?>"></div>
+                <div class="panel-body text-center">
+                    <img class="panel-profile-img" src="<?php echo $avatar_url; ?>">
+                    <h5 class="panel-title"><?php echo get_the_title($person->ID); ?></h5>
+                    <p class="m-b"><?php echo wp_strip_all_tags($person->post_content); ?></p>
+
+                    <?php if($twitter = get_post_meta($person->ID, 'twitter', true)): ?>
+                    <span class="fa fa-twitter btn btn-primary profile-button"> <a href="<?php echo esc_attr($twitter); ?>"> Twitter </a> </span>
+                    <?php endif; ?>
+
+	                <?php if($github = get_post_meta($person->ID, 'github', true)): ?>
+                        <span class="fa fa-github btn btn-primary profile-button"> <a href="<?php echo esc_attr($github); ?>"> Github </a> </span>
+	                <?php endif; ?>
+
+	                <?php if($linkedin = get_post_meta($person->ID, 'linkedin', true)): ?>
+                        <span class="fa fa-linkedin btn btn-primary profile-button"> <a href="<?php echo esc_attr($linkedin); ?>"> Linkedin </a> </span>
+	                <?php endif; ?>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
 
 	<?php endforeach; ?>
 
