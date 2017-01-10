@@ -80,9 +80,9 @@ function wpsvse_personer_shortcode( $atts, $content = null ) {
             </div>
         </div>
 
-        <div class="clearfix"></div>
-
 	<?php endforeach; ?>
+
+    <div class="clearfix"></div>
 
 	<?php
 	return ob_get_clean();
