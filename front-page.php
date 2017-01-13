@@ -76,7 +76,6 @@ get_header(); ?>
 				<div class="row">
 					<div class="section-headline white-heading">
 						<h2>Senaste ur bloggen</h2>
-						<span>Det senaste ur <?php bloginfo( 'name' ); ?>s blogg</span>
 					</div>
 				</div>
 			</div>

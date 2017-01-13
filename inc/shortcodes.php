@@ -57,7 +57,7 @@ function wpsvse_personer_shortcode( $atts, $content = null ) {
 		$avatar_url = isset($avatar_data[0]) ? esc_attr($avatar_data[0]) : null;
         ?>
 
-        <div class="col-md-4 m-b-lg">
+        <div class="col-md-4 m-b-lg wpsv-profile">
             <div class="panel panel-default panel-profile m-b-0">
                 <div class="panel-heading" style="background-color: #21759b; <?php echo $background_image_url ? "background-image: url({$background_image_url});" : ''; ?>"></div>
                 <div class="panel-body text-center">

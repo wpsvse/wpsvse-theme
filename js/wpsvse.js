@@ -59,6 +59,15 @@ jQuery(document).ready(function($) {
 	});
 
 	// ***************************
+	// Equal height
+	// ***************************
+
+	$('.article-item').matchHeight();
+
+	$('.profile-wpsv').matchHeight();
+
+
+	// ***************************
 	// Collapse trigger
 	// ***************************
 	$(".bbp-topic-reply-link,.d4p-bbt-quote-link").click(function(){
