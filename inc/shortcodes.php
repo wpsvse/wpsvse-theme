@@ -53,7 +53,7 @@ function wpsvse_personer_shortcode( $atts, $content = null ) {
 		$background_image_data = wp_get_attachment_image_src(get_post_meta($person->ID, 'background_image_id', true), 'large');
 		$background_image_url = isset($background_image_data[0]) ? esc_attr($background_image_data[0]) : null;
 
-		$avatar_data = wp_get_attachment_image_src(get_post_thumbnail_id($person->ID), 'medium');
+		$avatar_data = wp_get_attachment_image_src(get_post_thumbnail_id($person->ID), 'about-grid-image');
 		$avatar_url = isset($avatar_data[0]) ? esc_attr($avatar_data[0]) : null;
         ?>
 
