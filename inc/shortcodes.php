@@ -37,8 +37,9 @@ function wpsvse_personer_shortcode( $atts, $content = null ) {
 
 	$person_query = new WP_Query(array(
 			'post_type' => 'person',
+            'orderby' => 'title',
 			'order' => 'ASC',
-			'limit' => -1
+			'posts_per_page' => -1
 		)
 	);
 
