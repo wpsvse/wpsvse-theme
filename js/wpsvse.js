@@ -66,6 +66,7 @@ jQuery(document).ready(function($) {
 
 	$('.profile-wpsv').matchHeight();
 
+	$('.quick-btn').matchHeight();
 
 	// ***************************
 	// Collapse trigger
