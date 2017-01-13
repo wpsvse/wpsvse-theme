@@ -10,7 +10,7 @@
         <i class="fa fa-support"></i>
         <h2>Få hjälp</h2>
         <p class="quick-btn-text">
-            Om du stöter på problem eller har frågor kring WordPress så finns det många sätt att försöka få hjälp
+            Om du stöter på problem eller har frågor kring WordPress så finns det många sätt att få hjälp
           <span> Läs mer</span>
         </p>
     </a>
@@ -29,7 +29,8 @@
     <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'engagera-dig' ) ) ); ?>" class="quick-link">
         <i class="fa fa-group"></i>
         <h2>Engagera dig</h2>
-        <p class="quick-btn-text">Lorum Ipsum..
+        <p class="quick-btn-text">
+            Hjälp till att bygga och vidareutvecklare WordPress eller var med och planera kommande event
           <span> Läs mer</span>
         </p>
     </a>
