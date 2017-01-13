@@ -54,6 +54,7 @@ function wpsvse_setup() {
 	 */
 	if ( function_exists( 'add_image_size' ) ) {
 		add_image_size( 'post-image', 850, 550, true );
+		add_image_size( 'about-grid-image', 500, 500, true );
 	}
 
 	/**
