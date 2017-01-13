@@ -20,7 +20,7 @@
         <i class="fa fa-heart"></i>
         <h2>Hitta event</h2>
         <p class="quick-btn-text">
-            Se kommande konferenser och meetups
+            Vill du lära dig mer och träffa nya människor så finns det många olika WordPress relaterade event
           <span> Läs mer</span>
         </p>
     </a>
