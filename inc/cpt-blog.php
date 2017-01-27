@@ -1,5 +1,6 @@
 <?php
 
+/*
 add_action( 'init', 'wpsvse_cpt_blog' );
 
 function wpsvse_cpt_blog() {
@@ -43,6 +44,8 @@ function wpsvse_cpt_blog() {
 	);
 	register_post_type( 'wpsvse_blog', $args );
 }
+*/
+
 /**
  * Register custom taxonomy for blog categories.
  */
