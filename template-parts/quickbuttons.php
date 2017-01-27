@@ -36,7 +36,7 @@
     </a>
 </div>
 <div id="community-btn" class="col-sm-6 col-md-3 quick-btn">
-    <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'om' ) ) ); ?>" class="quick-link">
+    <a href="#wpsv-story" class="quick-link">
         <i class="fa fa-info"></i>
         <h2>Lär dig mer</h2>
         <p class="quick-btn-text">

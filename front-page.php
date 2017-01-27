@@ -52,7 +52,7 @@ get_header(); ?>
 
 	    <div class="row container-lg wpsv-information">
 
-	      <div class="wpsv-information-story col-md-offset-1 col-md-5">
+	      <div class="wpsv-information-story col-md-offset-1 col-md-5" id="wpsv-story">
 	        <h2>
 		        <?php echo esc_html(get_post_meta( get_the_ID(), 'frontpage_data_about_header', true )); ?>
 	        </h2>
