@@ -61,7 +61,7 @@
 			<div class="row">
 				<div class="col-md-5">
 					<p><i class="fa fa-info-circle"></i> <abbr title="Gnu Public Licens version 2">GPLv2</abbr> - 2007-<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-					<p> WordPress Sverige driftas av <a href="https://seravo.com">Seravo</a> </p>
+					<p> WordPress Sverige driftas av <a href="https://seravo.com">Seravo</a> och är inte en del av <a href="https://wordpress.com/">wordpress.com</a> som är en fristående tjänst som drivs av företaget <a href="https://automattic.com/">Automattic</a>.</p>
 				</div>
 				<div class="col-md-7">
 					<!-- Start FOOTER MENU -->
