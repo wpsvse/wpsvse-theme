@@ -128,7 +128,7 @@ get_header(); ?>
 	          </div>
 
 						<div class="read-more-posts">
-	          	<a href="#"> Läs fler blogg inlägg </a>
+	          	            <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'blogg' ) ) ); ?>"> Läs fler blogginlägg </a>
 						</div>
 
 	        </div>
