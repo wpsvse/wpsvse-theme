@@ -30,7 +30,7 @@
         <i class="fa fa-group"></i>
         <h2>Engagera dig</h2>
         <p class="quick-btn-text">
-            Hjälp till att bygga och vidareutvecklare WordPress eller var med och planera kommande event
+            Det finns många sätt för dig som vill vara en del av communityn och vidareutveckla WordPress
           <span> Läs mer</span>
         </p>
     </a>
