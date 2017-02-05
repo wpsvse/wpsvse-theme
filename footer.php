@@ -17,10 +17,10 @@
                 	<p><small>Information för forummarkeringar</small></p>
                   <ul>
                     	<li><i class="fa fa-bullhorn"></i> Forumnotis</li>
-											<li><i class="fa fa-thumb-tack"></i> Klistrat ämne</li>
-											<li><i class="fa fa-exclamation-triangle"></i> Rapporterat ämne</li>
-											<li><i class="fa fa-lock"></i> Stängt/låst ämne</li>
-									</ul>
+			<li><i class="fa fa-thumb-tack"></i> Klistrat ämne</li>
+			<li><i class="fa fa-exclamation-triangle"></i> Rapporterat ämne</li>
+			<li><i class="fa fa-lock"></i> Stängt/låst ämne</li>
+		</ul>
                 </div>
             <?php } ?>
             </div>
@@ -61,7 +61,7 @@
 			<div class="row">
 				<div class="col-md-5">
 					<p><i class="fa fa-info-circle"></i> <abbr title="GNU Public License version 2">GPLv2</abbr> - 2007-<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-					<p> WordPress Sverige driftas av <a href="https://seravo.com">Seravo</a> och är inte en del av <a href="https://wordpress.com/">wordpress.com</a> som är en fristående tjänst som drivs av företaget <a href="https://automattic.com/">Automattic</a>.</p>
+					<p>Webbhotellet för WordPress Sverige sponsras av <a href="https://seravo.com">Seravo</a>. WordPress Sverige är inte en del av <a href="https://wordpress.com/" target="_blank">WordPress.com</a>. WordPress.com är en tjänst som drivs av företaget <a href="https://automattic.com/" target="_blank">Automattic</a>.</p>
 				</div>
 				<div class="col-md-7">
 					<!-- Start FOOTER MENU -->
@@ -81,13 +81,6 @@
 	});
 	</script>
 	<?php } ?>
-	<script type="text/javascript">
-	(function() {
-		var cl = document.createElement('script'); cl.type = 'text/javascript'; cl.async = true;
-		cl.src = document.location.protocol + '//www.adrecord.com/cl.php?u=5649&ref=' + document.location.hostname;
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cl, s);
-	})();
-	</script>
 
 <?php wp_footer(); ?>
 
